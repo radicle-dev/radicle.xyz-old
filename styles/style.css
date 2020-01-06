@@ -1,0 +1,250 @@
+@import "reset.css";
+@import "typography.css";
+
+/*
+ * $white: #FFFFFF;
+ * $black: #000000;
+ * $blue: #5555FF;
+ * $green: #55FF55;
+ * $teal: #55FFFF;
+ * $red: #FF5555;
+ * $pink: #FF55FF;
+ * $yellow: #FFFF55;
+ */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FFFFFF;
+  color: #000000;
+  height: 100%;
+  font-family: FoundersGrotesk, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  overflow-x: hidden;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+header {
+  background-color: #FFFFFF;
+}
+
+header a#logo {
+  border-bottom: 0;
+  margin-left: 0;
+}
+
+header a#logo svg:last-child {
+  margin-left: 8px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container a {
+  color: #FF55FF;
+}
+
+header .container a:last-child {
+  margin-left: 32px;
+}
+
+@media (max-width: 640px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .container nav {
+    margin-top: 24px;
+  }
+  header .container nav a:last-child {
+    margin-left: 16px;
+  }
+}
+
+h2 {
+  margin-bottom: 24px;
+}
+
+section .container,
+footer .container,
+header .container {
+  margin: auto;
+  max-width: 960px;
+  padding: 96px 24px;
+}
+
+input[type=email] {
+  padding: 8px 18px 12px;
+  border: 2px solid #5555FF;
+  border-radius: 4px;
+  color: #FFFFFF;
+}
+
+button {
+  padding: 8px 18px 12px;
+  background-color: #5555FF;
+  color: #FFFFFF;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#subtitle {
+  background-color: #FFFFFF;
+}
+
+#subtitle .container {
+  padding: 0 24px 24px;
+}
+
+@media (max-width: 640px) {
+  #subtitle .container {
+    padding: 0 24px;
+  }
+}
+
+#value-prop {
+  background-color: #FFFFFF;
+}
+
+#value-prop .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 48px;
+  grid-row-gap: 48px;
+  padding-bottom: 112px;
+}
+
+@media (max-width: 640px) {
+  #value-prop .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+#how-it-works {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+#how-it-works .container {
+  padding-top: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 120px;
+}
+
+@media (max-width: 640px) {
+  #how-it-works .container {
+    grid-template-columns: 1fr;
+    grid-row-gap: 32px;
+  }
+  #how-it-works .container .left-box {
+    padding-top: 64px;
+  }
+}
+
+#how-it-works .container .left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#how-it-works .container #dev-links {
+  display: flex;
+  flex-direction: column;
+}
+
+#subscribed {
+  text-align: center;
+}
+
+#subscribed h1 {
+  padding-bottom: 24px;
+}
+
+#clouds {
+  background-color: #000000;
+  color: #5555FF;
+  padding: 72px 0;
+  overflow: hidden;
+}
+
+#flowers {
+  background-color: #000000;
+  color: #55FF55;
+  overflow: hidden;
+}
+
+#flowers-success {
+  background-color: #FFFFFF;
+  color: #FF55FF;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+footer p {
+  padding-bottom: 24px;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+}
+
+@media (max-width: 640px) {
+  footer .container {
+    grid-template-columns: 1fr;
+    grid-row-gap: 32px;
+  }
+  footer .container div:last-child {
+    padding-top: 64px;
+  }
+}
+
+footer .container div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .container .input {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 16px;
+}
+
+@media (max-width: 640px) {
+  footer .container .input {
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+  }
+}
+
+#monadic {
+  display: flex;
+  overflow: hidden;
+  color: #FFFFFF;
+  padding: 96px 0 24px 0;
+  font-size: 14px;
+}
+
+#monadic a {
+  font-family: FoundersGroteskMono;
+  line-height: .95em;
+}
