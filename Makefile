@@ -1,9 +1,9 @@
-PAGES    := public/index.html public/subscribed.html
+PAGES    := docs/index.html docs/subscribed.html
 PARTIALS := $(shell ls partials/* | sed 's/^/-p /')
 
 build: $(PAGES)
 
-public/%.html: pages/%.html.mustache partials/*
+docs/%.html: pages/%.html.mustache partials/*
 	echo {} | mustache /dev/stdin $< $(PARTIALS) > $@
 
 clean:
