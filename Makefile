@@ -1,10 +1,9 @@
-PAGES    := index.html subscribed.html
-STATIC   := $(PAGES) favicon.ico style/ fonts/
+PAGES    := public/index.html public/subscribed.html
 PARTIALS := $(shell ls partials/* | sed 's/^/-p /')
 
 build: $(PAGES)
 
-%.html: pages/%.html.mustache partials/*
+public/%.html: pages/%.html.mustache partials/*
 	echo {} | mustache /dev/stdin $< $(PARTIALS) > $@
 
 clean:
