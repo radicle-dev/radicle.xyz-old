@@ -40,6 +40,10 @@ header a#logo {
   margin-left: 0;
 }
 
+header a#logo:hover {
+	text-decoration: none;
+}
+
 header a#logo svg:last-child {
   margin-left: 4px;
 }
