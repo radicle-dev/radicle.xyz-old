@@ -41,7 +41,7 @@ header a#logo {
 }
 
 header a#logo:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 header a#logo svg:last-child {
@@ -67,16 +67,19 @@ header .container a:last-child {
     flex-direction: column;
     align-items: flex-start;
   }
+
   header .container nav {
     margin-top: 24px;
   }
+
   header .container nav a:last-child {
     margin-left: 16px;
   }
 }
 
 h2 {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
+  line-height: 1.35em;
 }
 
 section .container,
@@ -152,6 +155,7 @@ button {
     grid-template-columns: 1fr;
     grid-row-gap: 32px;
   }
+
   #how-it-works .container .left-box {
     padding-top: 64px;
   }
@@ -187,6 +191,7 @@ button {
   background-color: #000000;
   color: #55FF55;
   overflow: hidden;
+  margin-top: 1em;
 }
 
 #flowers-success {
@@ -217,6 +222,7 @@ footer .container {
     grid-template-columns: 1fr;
     grid-row-gap: 32px;
   }
+
   footer .container div:last-child {
     padding-top: 64px;
   }
@@ -251,4 +257,72 @@ footer .container .input {
 #monadic a {
   font-family: FoundersGroteskMono;
   line-height: .95em;
+}
+
+article {
+  font-size: 1.2em;
+  line-height: 1.35em;
+}
+
+article .ascii {
+  color: #5555FF;
+  margin: 1em 0;
+}
+
+article h1 {
+  margin-bottom: .5em;
+}
+
+article h2 {
+  font-family: FoundersGroteskMedium, Arial, sans-serif;
+  margin-top: 2em;
+  font-size: 1.2em;
+}
+
+article h3 {
+  font-family: FoundersGroteskMedium, Arial, sans-serif;
+  margin: 1em 0;
+  font-size: 1em;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-bottom: 2em;
+}
+
+article p {
+  margin-bottom: 1em;
+}
+
+article hr {
+  border: none;
+  border-top: 1px solid #000000;
+  margin: 1.5em 0;
+}
+
+article blockquote {
+  font-family: FoundersGroteskMedium, Arial, sans-serif;
+  border-left: 6px solid #404040;
+  color: #404040;
+  padding-left: 1em;
+  margin-top: 1em;
+}
+
+article cite {
+  font-family: FoundersGrotesk, Arial, sans-serif;
+}
+
+article dt {
+  font-style: italic;
+  margin-bottom: .5em;
+}
+
+article dd {
+  margin-bottom: 1em;
+  margin-left: 1.2em;
+}
+
+article dd blockquote {
+  font-size: 1em;
+  margin-top: .5em;
 }
