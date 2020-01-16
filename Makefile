@@ -1,4 +1,4 @@
-PAGES    := docs/index.html docs/subscribed.html
+PAGES    := docs/index.html docs/subscribed.html docs/towards-decentralized-code-collaboration.html
 PARTIALS := $(shell ls partials/* | sed 's/^/-p /')
 
 build: $(PAGES)
