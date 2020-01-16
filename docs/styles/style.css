@@ -259,6 +259,10 @@ footer .container .input {
   line-height: .95em;
 }
 
+.hidden {
+  display: none;
+}
+
 article {
   font-size: 1.2em;
   line-height: 1.35em;
