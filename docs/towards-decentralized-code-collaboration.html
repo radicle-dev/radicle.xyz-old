@@ -390,10 +390,11 @@
         <p>
           Let’s look at hosting platforms like GitHub or GitLab in the context of this framework: they succeed by being
           user-friendly and accessible, but since they are centrally controlled, they are censorable, and do not
-          prioritize user freedoms. If we look at self-hosted solutions like Gitea, Phabricator or Gogs, they are free,
+          prioritize user freedoms. If we look at <em>self-hosted</em> solutions like Gitea, Phabricator or Gogs, they are free,
           uncensorable, and user user-friendly, however, they are not easily accessible due to gate-keeping and isolated
-          environments. They also present single points of failure and require internet connectivity for most
-          interactions with the system.
+          environments: users across Phabricator deployments cannot interact with each other. This is the case for all
+          currently available self-hosted solutions we've looked at. They also present single points of failure and
+          require internet connectivity for most interactions with the system.
         </p>
         <p>
           Hypothetically, a federated GitLab <em>could</em> fill all the requirements, however, federated services
@@ -488,7 +489,7 @@
         <p>
           To complement the <a href="https://en.wikipedia.org/wiki/Eventual_consistency">eventually-consistent</a>
           peer-to-peer replication layer, a global registry that holds canonical project metadata is also desirable.
-          This can provide features difficult to address at the gossip level, such as globally unique human-readable
+          This can provide functionality that is difficult to address at the gossip level, such as globally unique human-readable
           identifiers, as well as giving the ability for projects to anchor important information about their project in
           an immutable and totally-ordered way—for example the latest repository head. This can alleviate weaknesses at
           the replication layer which is unable to prove to the user that the information shown is the latest available.
