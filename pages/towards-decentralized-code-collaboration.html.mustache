@@ -14,8 +14,8 @@
         </p>
         <p>
           Throughout the last decade, open source has become a standard for software development. Sharing code freely
-          and publicly has made it drastically cheaper and easier to build software&mdash;and tech startups and
-          innovation are surging as a result.
+          and publicly has made it drastically cheaper and easier to build software&mdash;and tech
+          innovation is surging as a result.
         </p>
         <p>
           Code hosting and collaboration platforms like GitHub and GitLab have contributed heavily to the growth of open
@@ -24,12 +24,12 @@
           an undeniable fact that they have completely changed the way people write code.
         </p>
         <p>
-          As the incumbents for code collaboration, these platforms also host the largest repositories of open source
+          As the status quo for code collaboration, these platforms also host the largest repositories of open source
           development made up of not just code, but issues, pull requests, reviews, and comments. Even the social
           relationships—stars, likes, follows—exist solely within these platforms.
         </p>
         <p>
-          These platforms however are owned by corporations. They are subject to corporate law and have the right to
+          These platforms, however, are owned by corporations. They are subject to corporate law and have the right to
           define their terms of services. They can implement <a
           href="https://techcrunch.com/2019/07/29/github-ban-sanctioned-countries/">user bans</a>&mdash;like those
           currently in place against Iranian, Syrian, and Crimean GitHub accounts in response to pressure from the U.S.
@@ -61,7 +61,8 @@
         </blockquote>
         <h2>Exploring alternatives</h2>
         <p>
-          Alternatives to GitHub exist ranging from platforms like SourceForge and GitLab, to more established methods
+          Alternatives to GitHub exist ranging from platforms like <a href="https://sourceforge.net">SourceForge</a>
+          and <a href="https://about.gitlab.com">GitLab</a>, to more established methods
           of collaboration such as mailing lists. Platforms like <a href="https://gitea.io/en-us/">Gitea</a> or <a
           href="https://gogs.io/">Gogs</a> offer self-hosted and open source solutions for code collaboration that have
           low platform risk but leave developers in isolated environments with no access to the global network of
@@ -127,10 +128,11 @@
         <p>
           Let’s look at hosting platforms like GitHub or GitLab in the context of this framework: they succeed by being
           user-friendly and accessible, but since they are centrally controlled, they are censorable, and do not
-          prioritize user freedoms. If we look at self-hosted solutions like Gitea, Phabricator or Gogs, they are free,
-          uncensorable, and user user-friendly, however, they are not easily accessible due to gate-keeping and isolated
-          environments. They also present single points of failure and require internet connectivity for most
-          interactions with the system.
+          prioritize user freedoms. If we look at <em>self-hosted</em> solutions like Gitea, Phabricator or Gogs, they are free,
+          uncensorable, and user-friendly, however, they are not easily accessible due to gate-keeping and isolated
+          environments: users across Phabricator deployments cannot interact with each other. This is the case for all
+          currently available self-hosted solutions we've looked at. They also present single points of failure and
+          require internet connectivity for most interactions with the system.
         </p>
         <p>
           Hypothetically, a federated GitLab <em>could</em> fill all the requirements, however, federated services
@@ -142,8 +144,7 @@
           all outlined principles, but are limited in terms of user friendliness. It&#x27;s hard to compare the
           usability of email threads to the sophisticated workflows possible on platforms like GitHub and GitLab.
         </p>
-        <h2>Radicle: A p2p network for code
-            collaboration</h2>
+        <h2>Radicle: A p2p protocol for code collaboration 🌱</h2>
         <p>
           Radicle adopts the <a href="https://scuttlebutt.nz/">Scuttlebutt</a> social overlay paradigm by establishing a
           peer-to-peer replication layer on top of distributed version control systems, starting with <code>git</code>.
@@ -157,16 +158,18 @@
           repository head—with the guarantee of global availability and immutability.
         </p>
         <p>
-          The three major themes to highlight are the focus on peer-to-peer models for code collaboration the decision,
-          to build on the underlying DVCS for replication, and to adopt a protocol-first approach.
+          The three major themes to highlight are the decisions to focus on a peer-to-peer code collaboration model, to
+          build on the underlying distributed version control system for replication, and to adopt a protocol-first
+          approach.
         </p>
         <h3>Revisiting the Bazaar</strong></h3>
         <p>
           <a href="http://www.catb.org/~esr/writings/cathedral-bazaar/"><em>The Cathedral and the Bazaar</em></a>
-          describes two approaches to free software development. The cathedral model, exemplified by projects like<a
-          href="https://www.gnu.org/software/emacs/"> Emacs</a>, makes releases open and available but keeps development
+          describes two approaches to free software development. The cathedral model, exemplified by projects like <a
+          href="https://www.gnu.org/software/emacs/">Emacs</a>, makes releases open and available but keeps development
           exclusive to so called &quot;individual wizards&quot;. On the other hand, the bazaar model—popularized by
-          Linus Torvalds and validated by the massive success of Linux, calls for completely open development with
+          <a href="http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/ar01s04.html">Linus Torvalds</a>
+          and validated by the massive success of Linux, calls for completely open development with
           frequent and early releases, delegation throughout communities, and as many &quot;eyeballs&quot; on the code
           as possible. The conclusion of the essay speaks to the success of bazaar development practices in open source
           projects. In other words, <em>given enough eyeballs, all bugs are shallow</em>.
@@ -225,9 +228,9 @@
         <p>
           To complement the <a href="https://en.wikipedia.org/wiki/Eventual_consistency">eventually-consistent</a>
           peer-to-peer replication layer, a global registry that holds canonical project metadata is also desirable.
-          This can provide features difficult to address at the gossip level, such as globally unique human-readable
+          This can provide functionality that is difficult to address at the gossip level, such as globally unique human-readable
           identifiers, as well as giving the ability for projects to anchor important information about their project in
-          an immutable and totally-ordered way—for example the latest repository head. This can alleviate weaknesses at
+          an immutable and totally-ordered way&mdash;for example, the latest repository head. This can alleviate weaknesses at
           the replication layer which is unable to prove to the user that the information shown is the latest available.
           In essence, the registry can provide users with the trusted, auditable and shared view of the network that is
           otherwise lacking, delivering the same connected &quot;social&quot; layer that attraced developers to
