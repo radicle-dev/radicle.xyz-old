@@ -161,6 +161,7 @@ button {
 
 @media (max-width: 640px) {
   #how-it-works .container {
+    padding-top: 48px;
     grid-template-columns: 1fr;
     grid-row-gap: 32px;
   }
