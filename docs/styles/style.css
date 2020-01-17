@@ -42,10 +42,11 @@ header a#logo {
 
 @media (max-width: 640px) {
   header a#logo svg:first-child {
-	  max-width: 124px;
+    max-width: 124px;
   }
+
   header a#logo svg:last-child {
-	  max-width: 24px;
+    max-width: 24px;
   }
 }
 
@@ -97,6 +98,15 @@ header .container {
   margin: auto;
   max-width: 960px;
   padding: 96px 24px;
+}
+
+@media (max-width: 640px) {
+
+  section .container,
+  footer .container,
+  header .container {
+    padding: 48px 24px 64px;
+  }
 }
 
 input[type=email] {
