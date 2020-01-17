@@ -263,6 +263,12 @@ footer .container .input {
   display: none;
 }
 
+@media (max-width: 640px) {
+  #code-collab .container {
+    padding: 0px 24px 96px;
+  }
+}
+
 article {
   font-size: 1.2em;
   line-height: 1.35em;
@@ -271,6 +277,7 @@ article {
 article .ascii {
   color: #5555FF;
   margin: 1em 0;
+  overflow: hidden;
 }
 
 article h1 {
