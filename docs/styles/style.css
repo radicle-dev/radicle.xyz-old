@@ -40,6 +40,15 @@ header a#logo {
   margin-left: 0;
 }
 
+@media (max-width: 640px) {
+  header a#logo svg:first-child {
+	  max-width: 124px;
+  }
+  header a#logo svg:last-child {
+	  max-width: 24px;
+  }
+}
+
 header a#logo:hover {
   text-decoration: none;
 }
@@ -69,7 +78,7 @@ header .container a:last-child {
   }
 
   header .container nav {
-    margin-top: 24px;
+    margin-top: 16px;
   }
 
   header .container nav a:last-child {
@@ -263,10 +272,8 @@ footer .container .input {
   display: none;
 }
 
-@media (max-width: 640px) {
-  #code-collab .container {
-    padding: 0px 24px 96px;
-  }
+body.article section .container {
+  padding: 0px 24px 96px;
 }
 
 article {
