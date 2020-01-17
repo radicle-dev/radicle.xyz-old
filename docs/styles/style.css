@@ -263,10 +263,8 @@ footer .container .input {
   display: none;
 }
 
-@media (max-width: 640px) {
-  #code-collab .container {
-    padding: 0px 24px 96px;
-  }
+body.article section .container {
+  padding: 0px 24px 96px;
 }
 
 article {
