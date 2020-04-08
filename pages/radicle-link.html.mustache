@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+{{> head }}
+<body class="article">
+  {{> header }}
+  <section id="radicle-link">
+    <div class="container">
+      <article>
+        <h1>
+          Radicle Link
+        </h1>
+        <p class="subtitle">
+            This article will dive into the architecture and design of Radicle Link&mdash; the peer-to-peer replication protocol that powers Radicle. We will discuss our decision to build on git, how we ensure data availability, and how we replicate data across the network.
+        </p>
+        <p>
+            Behind every repository is a version control system. The most popular of these being git. Git was created in 2005 by Linus Torvalds for the development of the Linux kernel. It marked the rise of distributed version control systems as developers realized the centralized model of SVN and CVS didn&#x27;t scale well with the number of contributors. In fact, git was only created when Linus’ free <a href="http://www.bitkeeper.org/">Bitkeeper</a> license was revoked after a Linux kernel contributor tried to <a href="https://www.linuxjournal.com/content/git-origin-story">reverse engineer its networking protocols</a>. Git brought distributed version control to the forefront and changed the way software is developed today.
+        </p>
+        <p>
+            Code collaboration platforms &mdash; or “forges” &mdash; started building on top of git: they introduced search and discovery, canonicity, and social collaboration (issues &amp; code review) to git-based workflows, albeit not always following the same distributed model that git was designed for.
+        </p>
+        <p>
+            Radicle was designed to provide this same functionality while retaining git’s peer-to-peer nature, building on what made distributed version control so powerful in the first place.
+        </p>
+
+        <h2>
+          Git gossips well
+        </h2>
+        <p>
+          The earliest version of Radicle adopted a generalized approach to replication &mdash; it wasn’t tailored to replicating collaboration artifacts or source code and as we discovered, was ill-suited to the demands of real-world code collaboration.
+        </p>
+        <p>
+          On the other hand, the current iteration is specifically designed for this use case. The most outstanding difference is the decision to <strong>use git as our storage and replication layer</strong>, instead of a decentralized storage network such as IPFS. In our experimentation with decentralized storage, we realized that replicating git repos on the storage layer didn&#x27;t permit the use of <a href="https://git-scm.com/book/en/v2/Git-Internals-Packfiles">packfiles</a>, one of the key protocols that makes git useable at scale. Essentially, this approach would make source code a second-class citizen&mdash; making it impractical to store repositories with large histories. The reason is simple: the packfile protocol is interactive<a href="https://git-scm.com/book/en/v2/Git-Internals-Transfer-Protocols"><sup>[0]</sup></a>, which means before data is transferred between two parties, they determine exactly what needs to be sent over the wire, and the server  puts together a packfile on the fly, before sending it downstream. This incredibly efficient approach isn&#x27;t compatible with simple file storage protocols such as IPFS, which operate on the premise that content is usually <em>static</em>, unlike active code repositories that are constantly updated.
+        </p>
+
+        <blockquote>
+          <p>
+            “The dumb protocol is simple but a bit inefficient, and it can&#x27;t handle writing of data from the client to the server. The smart protocol is a more common method of transferring data, but it requires a process on the remote end that is intelligent about git – it can read local data, figure out what the client has and needs, and generate a custom packfile for it.<a href="https://git-scm.com/book/en/v2/Git-Internals-Transfer-Protocols"><sup>[0]</sup></a>"
+          </p>
+        </blockquote>
+
+        <p>
+          In order to keep git&#x27;s efficiency when it comes to data replication, while offering global decentralized repository storage, we chose to design Radicle as a peer-to-peer networking layer on top of git&#x27;s smart transfer protocol. Radicle would take care of discovering peers, offloading the actual data transfer to git.
+        </p>
+
+        <h2>
+          radicle-link
+        </h2>
+        <p>
+          <a href="https://github.com/radicle-dev/radicle-link">Radicle Link</a> is a peer-to-peer protocol with a generic distributed version control backend. It aims to be general enough to be used on top of systems such as <a href="https://pijul.org/">pijul</a> or <a href="https://www.mercurial-scm.org/">mercurial</a>, though it&#x27;s initial implementation is focused on supporting git.
+        </p>
+        <p>
+          Radicle Link extends git with <strong>peer-to-peer network discovery</strong>. Taking inspiration from <a href="https://scuttlebutt.nz/">Secure Scuttlebut</a>, a peer-to-peer protocol for social networking, data is disseminated via a process called <strong>gossip</strong>. That is, participants in the network share and spread data they are "interested" in by keeping redundant copies locally and sharing deltas with peers. With Radicle, we replicate data across connected repositories according to a “social graph” of contributors and maintainers, enabling source code and changesets to be disseminated according to use and value: the more peers who are interested in a certain project, the more available this project is made to the network.
+        </p>
+
+        <h3>
+          How it works
+        </h3>
+        <p>
+          Repositories are the base <em>unit of replication</em> in Radicle. To publish a repository to the network, it must first be initialized as a <em>project</em>. Projects combine source code, issues and proposed changes under a single umbrella, and carry a unique, shareable peer-to-peer identifier. The entirety of the project data and metadata, including social artefacts such as comments, are stored within the repository. To create a project, the owner of a repository defines a <em>project identity</em>. In the background, a <code>project.json</code> file is created in a predetermined disjoint branch of the repository, by convention <code>rad/id</code>. This file contains important metadata such as the project name, list of maintainers, as well as any related links.
+        </p>
+        <p>
+          The owner of the repository thus becomes the founder of the project and signs the initial version of the project metadata file (<code>project.json</code>) with their private key. The digest of the initial version, becomes the <em>project ID</em>.
+        </p>
+        <p>
+          In addition to the repository, a Radicle <em>project</em> includes the <em>identities</em> of all its maintainers &mdash; peers with designated rights over the project&#x27;s identity. Initially, the only maintainer is the <em>founder</em>. By adding other maintainers to the project metadata, additional layers of trust can be introduced around the project. Any update to the project metadata <strong>must</strong> be signed by a quorum of maintainers, providing a cryptographically secure way to manage project state &amp; metadata, for example in the case of transferring ownership. The history of the metadata file is backed by the underlying DVCS, and is verified upon replication,  ensuring it was&#x27;t tampered with.
+        </p>
+
+        <h4>Replication &amp; validation</h4>
+        <p>
+          To ensure data integrity and authenticity in the peer-to-peer network, we adopt an algorithm similar to the root file update process from The Update Framework <a href="https://theupdateframework.io/">(TUF)</a>. In this process, peers can fetch and verify the project metadata before replicating the latest changesets and revisions. This is important, since it effectively allows data to be served by <em>any peer</em>, in a secure manner. The physical location from which project data is fetched becomes irrelevant to the user.
+        </p>
+
+      <h4>Tracking &amp; Discovery</h4>
+        <p>
+          When a project is published to the network, the specific repository or <em>source tree</em> becomes identifiable by the maintainer of this tree, eg. <code>&lt;project-id&gt;/&lt;user-id&gt;</code>. This allows repositories to be addressed by a shareable URL, which is then resolved to a physical location on the network, for the purpose of replication.
+        </p>
+        <p>
+          Peers decide what data to replicate through the <strong>tracking</strong> of projects. Tracking a project signals interest, and means to impliestracking its maintainers, therefore replicating the data within their social graphs. In the context of a project, maintainers of a repository may choose to <strong>track</strong> the repositories of other owners (this is called a <strong>remote</strong> in git terminology: a named reference to a remote repository). If the remote repository is found to track other remotes, the tracking repository shall also transitively track those, up to a configurable <em>N</em> degrees out.
+        </p>
+
+        <h4>Availability</h4>
+        <p>
+          To improve data availability, participants in the network can choose to act as <strong>seeds</strong>. This is similar in concept to a "Pub" in <a href="https://ssbc.github.io/scuttlebutt-protocol-guide/">SSB</a>: seeds are “always-on” nodes that automatically track discovered projects, thereby increasing the availability of these projects on the network. Since seeds may track a large number of repositories for a given project, replicating a project from a seed will greatly increase the connectedness of the tracking graph. Tracking a seed will also increase the number of paths leading back to the original upstream, ensuring that contributions can flow back up to the project maintainers even if they come from participants not within the set of tracked repositories of the maintainer.
+        </p>
+
+        <h3>Offline &amp; local-first</h3>
+        <p>
+          With the introduction of hosted platforms came new ‘enhanced’ workflows like pull requests, issue tracking, and code reviews. These workflows were unique because they were non-git native but still tied to source code through rich user interfaces and features. As a result, they have further defined the common developer experience by making collaboration more than just code &mdash; the social interactions captured in issues, code reviews and discussions are just as important as the source code itself. However, they&#x27;ve also locked-in developers to the platforms that host these workflows and their artifacts. If you lost access to your GitHub account you&#x27;d have access to your source code, but wouldn&#x27;t have access to any of your issues, conversations, or pull requests. Even worse, access to valuable conversations could be completely lost.
+        </p>
+        <p>
+          With Radicle, central servers are unnecessary for ensuring the discoverability and availability of changesets and social artifacts. In addition, by returning to a fully distributed model, it enables a more complete offline experience. Not only is the source code available offline, but so is everything else. Radicle is built to provide a convenient collaboration experience <em>without intermediaries or vendor lock-in</em>.
+        </p>
+        <p>
+          Having git as the nexus of replication builds on its strengths and decentralized nature. Having issues, pull requests, comments, and reviews <em>locally</em> gives developers the tools to manage and design their workflows as they see fit Radicle will always exist foremost as an open protocol &mdash; not a platform.
+        </p>
+
+        <p>
+          You can follow the development of Radicle Link in the <a href="https://radicle.community/c/development-discussion/9">#development</a> category of our <a href="radicle.community">radicle.community</a> forum or sign up for our mailing list.
+        </p>
+        <div class="ascii">
+          <pre><code>               _(_)_                     _(_)_                      </code></pre>
+          <pre><code>   @@@@       (_)@(_)        @@@@       (_)@(_)        @@@@         </code></pre>
+          <pre><code>  @@()@@ wWWWw  (_)\        @@()@@ wWWWw  (_)\        @@()@@ wWWWw  </code></pre>
+          <pre><code>   @@@@  (___)     \|/       @@@@  (___)     \|/       @@@@  (___)  </code></pre>
+          <pre><code>    /      Y       \|         /      Y       \|         /      Y    </code></pre>
+          <pre><code> \ |     \ |/       | /    \ |     \ |/       | /    \ |     \ |/   </code></pre>
+          <pre><code> \\|//   \\|///  \\\|//    \\|//   \\|///  \\\|//    \\|//   \\|/// </code></pre>
+          <pre><code>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</code></pre>
+        </div>
+      </article>
+    </div>
+  </section>
+  {{> footer }}
+</body>
+</html>
