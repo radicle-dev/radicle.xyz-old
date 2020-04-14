@@ -363,7 +363,7 @@
         </p>
         <p>
           Radicle Link extends Git with <strong>peer-to-peer network discovery</strong>. Taking inspiration from <a
-          href="https://scuttlebutt.nz/">Secure Scuttlebut</a>, a peer-to-peer protocol for social networking, data is
+          href="https://scuttlebutt.nz/">Secure Scuttlebutt</a>, a peer-to-peer protocol for social networking, data is
           disseminated via a process called <strong>gossip</strong>. That is, participants in the network share and
           spread data they are "interested" in by keeping redundant copies locally and sharing deltas with peers. With
           Radicle, we replicate data across connected repositories according to a “social graph” of contributors and
@@ -463,7 +463,7 @@
         <h3>Availability</h3>
         <p>
           To improve data availability, participants in the network can choose to act as <strong>seeds</strong>. This is
-          similar in concept to a <em>pub</em> in <a href="https://scuttlebutt.nz/">Secure Scuttlebut</a>: seeds
+          similar in concept to a <em>pub</em> in <a href="https://scuttlebutt.nz/">Secure Scuttlebutt</a>: seeds
           are <q>always-on</q> nodes that automatically track discovered projects, thereby increasing the availability of
           these projects on the network. Since seeds may track a large number of repositories for a given project,
           replicating a project from a seed will greatly increase the connectedness of the tracking graph. Tracking a
@@ -472,7 +472,7 @@
           repositories of the maintainer.
         </p>
 
-        <h3>Offline and local-first</h3>
+        <h2>Offline and local-first</h2>
         <p>
           With the introduction of hosted platforms came new ‘enhanced’ workflows like pull requests, issue tracking,
           and code reviews. These workflows were unique because they were non-Git native but still tied to source code
@@ -481,7 +481,7 @@
           code reviews and discussions are just as important as the source code itself. However, they&#x27;ve also
           locked-in developers to the platforms that host these workflows and their artifacts. If you lost access to
           your GitHub account you&#x27;d have access to your source code, but wouldn&#x27;t have access to any of your
-          issues, conversations, or pull requests. Even worse, access to valuable conversations could be completely
+          issues, reviews, or pull requests. Even worse, access to valuable conversations could be completely
           lost.
         </p>
         <p>
@@ -511,7 +511,8 @@
         <p>
           Having Git as the nexus of replication builds on its strengths and decentralized nature. Having issues, pull
           requests, comments, and reviews <em>locally</em> gives developers the tools to manage and design their
-          workflows as they see fit. Radicle will always exist foremost as an open protocol&mdash;not a platform.
+          workflows as they see fit.  By existing as an open source protocol instead of a platform, Radicle gives
+          developers the freedom to collaborate without reliance on third parties.
         </p>
 
         <p>
