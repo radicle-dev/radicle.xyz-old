@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "reset.css";
 @import "typography.css";
 
@@ -122,6 +123,22 @@ button {
   color: #FFFFFF;
   border-radius: 2px;
   cursor: pointer;
+}
+
+q {
+  display: inline;
+}
+q::before {
+  content: "“";
+}
+q::after {
+  content: "”";
+}
+
+pre.code {
+  font-family: FoundersGroteskMono;
+  font-size: 90%;
+  margin-left: 24px;
 }
 
 #subtitle {
@@ -339,6 +356,7 @@ article blockquote {
 
 article cite {
   font-family: FoundersGrotesk, Arial, sans-serif;
+  text-align: right;
 }
 
 article dt {
@@ -354,4 +372,23 @@ article dd {
 article dd blockquote {
   font-size: 1em;
   margin-top: .5em;
+}
+
+article figure {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+article figure svg {
+	width: 100%;
+}
+
+section.inverted {
+	color: white;
+	background: black;
+	padding-top: 96px;
+}
+section.inverted blockquote {
+	color: #a0a0a0;
 }
