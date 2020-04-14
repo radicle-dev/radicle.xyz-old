@@ -384,11 +384,17 @@ article figure svg {
 	width: 100%;
 }
 
-section.inverted {
+body.inverted {
 	color: white;
 	background: black;
-	padding-top: 96px;
 }
-section.inverted blockquote {
+body.inverted > header {
+	background: black;
+}
+body.inverted > section blockquote {
 	color: #a0a0a0;
+}
+body.inverted #logo svg:first-child {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
 }
