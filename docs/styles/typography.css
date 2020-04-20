@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: var(--font-stack);
 }
 
 h1  {
