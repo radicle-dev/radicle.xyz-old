@@ -9,40 +9,63 @@
         <h1>Secure peer-to-peer code collaboration without intermediaries.</h1>
       </div>
     </section>
+    <section id="get-the-app">
+      <button>get the app</button>
+      <img src="" alt="app image">
+    </section>
     <section id="value-prop">
+      <h2>Why radicle</h2>
+      <p>It's not easy to switch to something new, but here's why you should</p>
       <div class="container">
         <div>
+          {{> leaf }}
+          <h2>Easy to use</h2>
+          <p>
+            The best interface for collaborating on code, period. Trust us, we’ve tried them all.
+          </p>
+        </div>
+        <div>
+          {{> leaf }}
           <h2>Peer-to-peer</h2>
           <p>
-            No hassle setting up your own hosting, and no need to trust
-            companies with your data. Radicle builds on <code>git</code>
-            and extends it with peer-to-peer replication and discovery.
+            Work with friends privately from your computer to their computer. No in-betweens.
           </p>
         </div>
         <div>
-          <h2>Secure</h2>
+          {{> leaf }}
+          <h2>Local-first</h2>
           <p>
-            Your issues, comments and reviews are cryptographically signed
-            and live on your machine. Everything is always available&mdash;even
-            offline.
-          </p>
-        </div>
-        <div>
-          <h2>Trustless</h2>
-          <p>
-            Collectively manage your project assets&mdash;like access control,
-            funds, and project ownership&mdash;with multisignatures and smart
-            contracts.
-          </p>
-        </div>
-        <div>
-          <h2>Sustainable</h2>
-          <p>
-            Support the projects you love and depend on, and receive funding&mdash;on
-            your own terms.
+            Can’t lose access to your data if it was never on a large US corporation’s servers.
           </p>
         </div>
       </div>
+      <div class="get-app">
+        <p>sound interesting?</p>
+        <button>get the app</button>
+      </div>
+    </section>
+    <section id="tech">
+      <h2>The tech behind radicle</h2>
+      <p>Radicle is a sovereign stack for code collaboration</p>
+      <div class="container">
+        <div>
+          {{> leaf }}
+          <h2>registry</h2>
+          <p>
+            Radicle uses a decentralized identity layer called Registry.
+          </p>
+          <a href="">Learn more about Registry -></a>
+        </div>
+        <div>
+          {{> leaf }}
+          <h2>link</h2>
+          <p>
+            For collaboration, Radicle uses Link, a peer-to-peer replication protocol around git.
+          </p>
+          <a href="">Learn more about link -></a>
+        </div>
+      </div>
+      <button>build your own app</button>
     </section>
   </div>
   {{> footer }}
