@@ -27,3 +27,15 @@ header nav {
 #subtitle {
   padding: 32px 0 82px 0;
 }
+
+#get-the-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid var(--color-foreground-level-3)
+}
+
+#get-the-app img {
+  margin-top: 48px;
+  max-width: 934px;
+}
