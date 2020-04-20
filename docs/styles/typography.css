@@ -1,7 +1,15 @@
 @font-face {
-  font-family: "FutureMono";
-  font-weight: bold;
-  src: url("../fonts/TheFutureMono01-Regular.otf");
+  font-family: "Inter";
+  src: url('https://rsms.me/inter/inter.css');
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+}
+
+:root {
+  --font-stack: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 pre>code {
@@ -9,13 +17,54 @@ pre>code {
   line-height: .95em;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-stack);
+  font-weight: bold;
+}
+
+p {
+  font-family: var(--font-stack);
+}
+
+h1  {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+h2  {
+   font-size:24px;
+   line-height: 28px;
+}
+
+h3  {
+  font-size:20px;
+  line-height: 24px;
+}
+
+h4  {
+  font-size:16px;
+  line-height: 20px;
+}
+
+h5  {
+   font-size:13px;
+   line-height: 16px;
+}
+
+.all-caps {
+  text-transform: capitalize;
+}
+
+.mono {
+  font-family: 'Source Code Pro', monospace;
+}
 
 a {
   cursor: pointer;
-  text-decoration: none;
-  color: #5555FF;
+  text-decoration: underline;
+  color: var(--color-secondary);
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--color-secondary-level-6);
 }
