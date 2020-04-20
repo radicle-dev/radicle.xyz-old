@@ -1,10 +1,4 @@
 @font-face {
-  font-family: "FutureMono";
-  font-weight: bold;
-  src: url("../fonts/TheFutureMono01-Regular.otf");
-}
-
-@font-face {
   font-family: "Inter";
   src: url('https://rsms.me/inter/inter.css');
 }
@@ -14,13 +8,17 @@
   src: url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 }
 
+:root {
+  --font-stack: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
 pre>code {
   display: block;
   line-height: .95em;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: var(--font-stack);
   font-weight: bold;
 }
 
