@@ -1,0 +1,18 @@
+:root {
+  --color-foreground: #ffffff;
+  --color-foreground-level-6: #D3DEE8;
+  --color-foreground-level-5: #8594A1;
+  --color-foreground-level-4: #5E6D7A;
+  --color-foreground-level-3: #333E47;
+  --color-foreground-level-2: #29343D;
+  --color-foreground-level-1: #242E38;
+  --color-background: #182129;
+
+  --color-primary: #FF55FF;
+  --color-secondary: #5555FF;
+  --color-tertiary: #55FFFF;
+  --color-positive: #53DB53;
+  --color-caution: #FFC555;
+  --color-negative: #FF5555;
+
+}
