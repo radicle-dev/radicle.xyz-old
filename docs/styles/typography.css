@@ -1,76 +1,14 @@
 @font-face {
-  font-family: "FoundersGrotesk";
-  src: url("../fonts/FoundersGroteskTextWeb-Regular.woff2") format("woff2"), url("../fonts/FoundersGroteskTextWeb-Regular.woff") format("woff"), url("../fonts/FoundersGroteskTextWeb-Regular.eot?") format("eot");
-}
-
-@font-face {
-  font-family: "FoundersGroteskItalic";
-  src: url("../fonts/FoundersGroteskTextWeb-RegularItalic.woff2") format("woff2"), url("../fonts/FoundersGroteskTextWeb-RegularItalic.woff") format("woff"), url("../fonts/FoundersGroteskTextWeb-RegularItalic.eot?") format("eot");
-}
-
-@font-face {
-  font-family: "FoundersGroteskMedium";
-  src: url("../fonts/FoundersGroteskTextWeb-Medium.woff2") format("woff2"), url("../fonts/FoundersGroteskTextWeb-Medium.woff") format("woff"), url("../fonts/FoundersGroteskTextWeb-Medium.eot?") format("eot");
-}
-
-@font-face {
-  font-family: "FoundersGroteskMono";
-  src: url("../fonts/FoundersGroteskMonoWeb-Regular.woff2") format("woff2"), url("../fonts/FoundersGroteskMonoWeb-Regular.woff") format("woff"), url("../fonts/FoundersGroteskMonoWeb-Regular.eot?") format("eot");
-}
-
-@font-face {
   font-family: "FutureMono";
   font-weight: bold;
   src: url("../fonts/TheFutureMono01-Regular.otf");
 }
 
-h1 {
-  font-family: FutureMono, Arial, sans-serif;
-  font-size: 42px;
-  line-height: 52px;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@media (max-width: 640px) {
-  h1 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-h2 {
-  font-family: FutureMono, monospace;
-  font-size: 20px;
-  line-height: 22px;
-  font-weight: normal;
-  font-style: normal;
-}
-
-pre > code {
+pre>code {
   display: block;
   line-height: .95em;
 }
 
-code {
-  font-family: FoundersGroteskMono, monospace;
-}
-
-strong {
-  font-family: FoundersGroteskMedium, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-}
-
-em {
-  font-family: FoundersGroteskItalic, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-}
-
-strike {
-  text-decoration: line-through;
-}
 
 a {
   cursor: pointer;
