@@ -8,3 +8,11 @@ body {
   background: var(--color-background);
   color: var(--color-foreground);
 }
+
+header {
+  padding: 32px;
+}
+
+header nav {
+  padding-top: 12px;
+}
