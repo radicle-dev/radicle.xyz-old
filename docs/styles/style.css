@@ -1,20 +1,10 @@
 @charset "UTF-8";
 @import "reset.css";
 @import "typography.css";
-
-/*
- * $white: #FFFFFF;
- * $black: #000000;
- * $blue: #5555FF;
- * $green: #55FF55;
- * $teal: #55FFFF;
- * $red: #FF5555;
- * $pink: #FF55FF;
- * $yellow: #FFFF55;
- */
+@import "color.css";
 
 body {
   text-align: center;
-  background: #182129;
-  color:white;
+  background: var(--color-background);
+  color: var(--color-foreground);
 }
