@@ -39,3 +39,34 @@ header nav {
   margin-top: 48px;
   max-width: 934px;
 }
+
+#value-prop {
+  padding: 88px 0;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+#value-prop .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 32px;
+  margin: 32px 0 54px 0;
+}
+
+.value-prop-item {
+  border: 2px solid var(--color-foreground-level-1);
+  border-radius: 8px;
+  padding: 48px;
+  display: grid;
+  grid-template-rows: 48px 24px auto;
+  grid-row-gap: 24px;
+}
+
+.value-prop-item svg {
+  margin: 0 auto;
+}
+
+#get-app {
+  display: flex;
+  justify-content: center;
+}
