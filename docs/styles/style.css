@@ -16,3 +16,7 @@ header {
 header nav {
   padding-top: 12px;
 }
+
+#subtitle {
+  padding: 32px 0 82px 0;
+}
