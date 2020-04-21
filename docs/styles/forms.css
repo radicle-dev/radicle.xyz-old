@@ -1,5 +1,6 @@
 section#get-the-app p, section#get-the-app form {
     display: inline-block;
+    margin-left:8px;
   }
 
 input[type=text] {
@@ -7,6 +8,7 @@ border:1px solid var(--color-foreground-level-3);
 padding: 0 0 0 8px;
 height: 40px;
 border-radius: 4px;
+margin-right: 0;
 }
 
 button {
@@ -15,4 +17,5 @@ color: var(--color-background);
 height:40px;
 padding: 0 12px;
 border-radius: 4px;
+margin-left:8px;
 }
