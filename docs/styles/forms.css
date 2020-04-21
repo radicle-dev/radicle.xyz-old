@@ -9,12 +9,12 @@ input[type=text] {
 }
 
 input[type=text]::placeholder {
-    color:var(--color-foreground-level-4);
+    color: var(--color-foreground-level-4);
     transition: all .1s ease-in-out;
 }
 
 input[type=text]:focus::placeholder {
-    color:var(--color-foreground-level-6);
+    color: var(--color-foreground-level-6);
 }
 
 button {
