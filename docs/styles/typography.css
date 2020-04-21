@@ -13,7 +13,7 @@
   font-family: var(--font-stack);
 }
 
-pre>code {
+pre > code {
   display: block;
   line-height: .95em;
 }
