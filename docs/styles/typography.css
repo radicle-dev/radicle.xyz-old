@@ -31,6 +31,11 @@ h1  {
   line-height: 40px;
 }
 
+h1.xl {
+  font-size:64px;
+  font-weight: 900;
+}
+
 h2  {
    font-size:24px;
    line-height: 28px;
