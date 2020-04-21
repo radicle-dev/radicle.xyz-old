@@ -7,7 +7,6 @@
 body {
   text-align: center;
   background: var(--color-background);
-  color: var(--color-foreground);
   font-family: var(--font-stack);
 }
 
