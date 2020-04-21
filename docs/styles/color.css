@@ -9,8 +9,15 @@
   --color-background: #182129;
 
   --color-primary: #FF55FF;
+  --color-primary-level-6: #62326D;
+  --color-primary-level-2: #62326D;
+  --color-primary-level-1: #382847; 
+
   --color-secondary: #5555FF;
   --color-secondary-level-6: #E3E3FF;
+  --color-secondary-level-2: #2C326D;
+  --color-secondary-level-1: #212847;
+
   --color-tertiary: #55FFFF;
   --color-positive: #53DB53;
   --color-caution: #FFC555;
