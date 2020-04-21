@@ -2,18 +2,13 @@
 @import "reset.css";
 @import "typography.css";
 @import "color.css";
+@import "forms.css";
 
 body {
   text-align: center;
   background: var(--color-background);
   color: var(--color-foreground);
-}
-
-button {
-  background-color: var(--color-primary);
-  color: var(--color-background);
-  padding: 8px 12px;
-  border-radius: 4px;
+  font-family: var(--font-stack);
 }
 
 header {
@@ -38,6 +33,11 @@ header nav {
 #get-the-app img {
   margin-top: 48px;
   max-width: 934px;
+}
+
+#get-the-app p, #get-the-app form {
+  display: inline-block;
+  margin-left: 8px;
 }
 
 #value-prop {
@@ -82,7 +82,6 @@ header nav {
   max-width: 1040px;
   margin: 32px auto 54px auto;
 }
-
 
 .tech-item {
   background-color: var(--color-background);
