@@ -8,6 +8,7 @@ body {
   text-align: center;
   background: var(--color-background);
   color: var(--color-foreground);
+  font-family: var(--font-stack);
 }
 
 header {
@@ -32,6 +33,11 @@ header nav {
 #get-the-app img {
   margin-top: 48px;
   max-width: 934px;
+}
+
+#get-the-app p, #get-the-app form {
+  display: inline-block;
+  margin-left: 8px;
 }
 
 #value-prop {
