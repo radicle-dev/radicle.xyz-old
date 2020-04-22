@@ -73,6 +73,6 @@ a {
   color: var(--color-secondary);
 }
 
-a:hover {
-  color: var(--color-secondary-level-6);
+a:hover, a:focus {
+  color: var(--color-secondary-level-2);
 }
