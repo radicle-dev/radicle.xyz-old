@@ -3,6 +3,18 @@ input[type=text] {
     padding: 0 0 0 8px;
     height: 40px;
     border-radius: 4px;
+    margin-right: 0;
+    color: var(--color-foreground-level-6);
+    width: 250px;
+}
+
+input[type=text]::placeholder {
+    color: var(--color-foreground-level-4);
+    transition: all .1s ease-in-out;
+}
+
+input[type=text]:focus::placeholder {
+    color: var(--color-foreground-level-6);
     margin: 0 1px;
     transition: .2s background ease-in-out;
 }

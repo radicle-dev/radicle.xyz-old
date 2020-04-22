@@ -20,10 +20,12 @@ pre > code {
 
 h1, h2, h3, h4, h5, button {
   font-weight: bold;
+  color: var(--color-foreground);
 }
 
 p {
   font-family: var(--font-stack);
+  color: var(--color-foreground-level-6);
 }
 
 h1  {
