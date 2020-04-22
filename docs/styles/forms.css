@@ -22,8 +22,6 @@ input[type=text]:focus::placeholder {
 input[type=text]:hover,
 input[type=text]:focus {
     background: var(--color-foreground-level-1);
-    border-width: 2px;
-    margin: 0;
 }
 
 button {
