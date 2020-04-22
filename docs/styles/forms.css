@@ -15,6 +15,15 @@ input[type=text]::placeholder {
 
 input[type=text]:focus::placeholder {
     color: var(--color-foreground-level-6);
+    margin: 0 1px;
+    transition: .2s background ease-in-out;
+}
+
+input[type=text]:hover,
+input[type=text]:focus {
+    background: var(--color-foreground-level-1);
+    border-width: 2px;
+    margin: 0;
 }
 
 button {
@@ -24,4 +33,22 @@ button {
     padding: 0 12px;
     border-radius: 4px;
     margin-left: 8px;
+    transition: .2s background ease-in-out;
+    cursor: pointer;
 }
+
+button:hover, button:focus {
+    background:var(--color-primary-level-2);
+}
+
+button:active {
+    transition: none;
+    color:var(--color-primary-level-1);
+}
+
+/*
+commenting out because it looks bad but we need focus states still
+button:focus {
+    box-shadow: 0 0 0 2px var(--color-primary-level-6);
+}
+*/
