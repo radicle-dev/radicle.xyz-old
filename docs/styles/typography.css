@@ -32,10 +32,10 @@ h1  {
 }
 
 h1.xl {
-  font-size: 64px;
-  line-height: 64px;
+  font-size: 8vw;
+  line-height: 7.5vw;
   font-weight: 900;
-  max-width: 840px;
+  max-width: 90vw;
   margin: 0 auto;
 }
 
