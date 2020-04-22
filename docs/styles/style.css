@@ -16,6 +16,27 @@ header {
 
 header nav {
   padding-top: 12px;
+  position: absolute;
+  top:32px;
+  right:40px;
+}
+
+header nav a {
+  color:var(--color-foreground-level-4);
+  margin-right:24px;
+  text-decoration: none;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header nav a span {
+  text-decoration: underline;
+}
+
+a#logo {
+  text-decoration: none;
 }
 
 #subtitle {
