@@ -14,7 +14,7 @@ input[type=text]::placeholder {
 }
 
 input[type=text]:focus::placeholder {
-    color: var(--color-foreground-level-6);
+    color: var(--color-foreground-level-4);
     margin: 0 1px;
     transition: .2s background ease-in-out;
 }
@@ -22,8 +22,6 @@ input[type=text]:focus::placeholder {
 input[type=text]:hover,
 input[type=text]:focus {
     background: var(--color-foreground-level-1);
-    border-width: 2px;
-    margin: 0;
 }
 
 button {
