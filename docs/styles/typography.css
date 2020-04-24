@@ -41,9 +41,31 @@ h1.xl {
   margin: 0 auto;
 }
 
+span.magic:hover {
+  background: linear-gradient(90deg, #5555ff, #55ffff, #55ff55, #ffff55, #ff5555, #ff55ff, #5555ff);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: shine .75s linear infinite;
+          animation: shine .75s linear infinite;
+  }
+  @-webkit-keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+}
+
 h2  {
-   font-size: 24px;
-   line-height: 28px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 h3  {
@@ -57,8 +79,8 @@ h4  {
 }
 
 h5  {
-   font-size: 13px;
-   line-height: 16px;
+  font-size: 13px;
+  line-height: 16px;
 }
 
 .all-caps {
