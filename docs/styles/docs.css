@@ -1,7 +1,7 @@
 .docs-page {
-  padding: 32px;
+  padding: 48px;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 240px auto;
   text-align: left;
 }
 
@@ -16,4 +16,71 @@ aside nav a {
 
 aside nav a:nth-child(4) {
   padding-bottom: 32px;
+}
+
+article {
+  max-width: 1040px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.35em;
+}
+
+article h1 {
+  margin-bottom: .5em;
+}
+
+article h2 {
+  margin: 2em 0 1em;
+  font-size: 1.2em;
+}
+
+article h3 {
+  margin: 1em 0;
+  font-size: 1em;
+}
+
+article p {
+  margin-bottom: 1em;
+}
+
+article hr {
+  border: none;
+  border-top: 1px solid var(--color-background);
+  margin: 1.5em 0;
+}
+
+article blockquote {
+  border-left: 6px solid var(--color-foreground-level-3);
+  color: var(--color-foreground-level-3);
+  padding-left: 1em;
+  margin-top: 1em;
+}
+
+article cite {
+  text-align: right;
+}
+
+article dt {
+  font-style: italic;
+  margin-bottom: .5em;
+}
+
+article dd {
+  margin-bottom: 1em;
+  margin-left: 1.2em;
+}
+
+article dd blockquote {
+  font-size: 1em;
+  margin-top: .5em;
+}
+
+article figure {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+article figure svg {
+  width: 100%;
 }

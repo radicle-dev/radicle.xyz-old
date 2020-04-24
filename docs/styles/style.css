@@ -83,8 +83,7 @@ a#logo {
 #tech {
   padding: 88px 0;
   display: grid;
-  grid-template-rows: 48px 24px auto;
-  grid-row-gap: 24px;
+  grid-row-gap: 12px;
 }
 
 #value-prop .container {
