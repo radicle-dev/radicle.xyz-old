@@ -26,16 +26,19 @@ header nav {
 }
 
 header nav a {
-  color:var(--color-foreground-level-4);
   margin-right:24px;
-  text-decoration: none;
 }
 
 header nav a:last-child {
   margin-right: 0;
 }
 
-header nav a span {
+a {
+  color:var(--color-foreground-level-4);
+  text-decoration: none;
+}
+
+a span {
   text-decoration: underline;
 }
 
@@ -73,14 +76,20 @@ a#logo {
   margin: 0 0 16px 8px;
 }
 
-#value-prop, #tech {
+img#main-illustration {
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+#value-prop, #tech, #dogfooding, #footer {
   padding: 88px 0;
   display: grid;
-  grid-template-rows: 48px 24px auto;
+  grid-template-rows: 48px 32px auto;
   grid-row-gap: 24px;
 }
 
-#value-prop .container {
+#value-prop .container, #dogfooding .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 32px;
@@ -132,6 +141,31 @@ a#logo {
   margin: 0 auto;
 }
 
+#email-signup form button {
+  margin-left: 8px;
+}
+
+#tech button  {
+  justify-self: center;
+}
+
+#dogfooding {
+  margin: 0 auto;
+}
+
+#dogfooding p {
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
+#dogfooding svg {
+  margin: 0 auto;
+}
+
+#dogfooding .value-prop-item h5 {
+  color: var(--color-foreground-level-4);
+}
+
 /* MOBILE STYLES
 
 I wanted to put these in a mobile.css file and @import it at the top, but
@@ -172,10 +206,6 @@ for now. Plz help.
       line-height: 9.5vw;
     }
 
-    #value-prop, #tech {
-      grid-template-rows: 16px 24px auto;
-    }
-
     #value-prop .container {
       margin-bottom: 0;
     }
@@ -189,7 +219,7 @@ for now. Plz help.
   /* TABLET */
   @media only screen and (max-width: 960px) {
 
-    #value-prop .container, #tech .container {
+    #value-prop .container, #tech .container, #dogfooding .container {
       grid-template-columns: 1fr;
     }
 
@@ -197,9 +227,13 @@ for now. Plz help.
       margin-bottom: 32px;
     }
 
-    #value-prop, #tech {
+    #value-prop, #tech, #dogfooding {
       padding-right: 5vw;
       padding-left: 5vw;
+    }
+
+    #dogfooding p {
+      max-width: 90vw;
     }
 
     header {

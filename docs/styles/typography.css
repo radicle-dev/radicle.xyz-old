@@ -65,7 +65,8 @@ h5  {
 }
 
 .all-caps {
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .mono {
