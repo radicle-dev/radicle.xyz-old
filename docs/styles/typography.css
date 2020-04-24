@@ -21,11 +21,14 @@ pre > code {
 h1, h2, h3, h4, h5, button {
   font-weight: bold;
   color: var(--color-foreground);
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
   font-family: var(--font-stack);
   color: var(--color-foreground-level-6);
+  line-height: 150%;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1  {
@@ -38,7 +41,7 @@ h1.xl {
   line-height: 7.5vw;
   font-weight: 900;
   max-width: 90vw;
-  margin: 0 auto;
+  margin: 0 auto 24px;
 }
 
 h2  {
