@@ -8,6 +8,7 @@ body {
   text-align: center;
   background: var(--color-background);
   font-family: var(--font-stack);
+  cursor:default;
 }
 
 ::selection {
