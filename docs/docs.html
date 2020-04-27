@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+<head>
+  <title key="title">radicle</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@radicle_xyz" />
+  <meta name="twitter:creator" content="@radicle_xyz" />
+  <meta property="og:title" content="Radicle" />
+  <meta property="og:description" content="Secure peer-to-peer code collaboration without intermediaries." />
+</head>
+<body id="index">
+  <header>
+    <div class="container">
+      <a href="/" id="logo">
+        <svg width="154" height="32" viewBox="0 0 154 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0)">
+        <path d="M46.7078 14.3225C46.7078 10.6698 46.7078 7.08153 46.7078 3.46425C48.2816 3.46425 49.7973 3.46425 51.3518 3.46425C51.3518 11.7425 51.3518 19.9992 51.3518 28.2913C49.8199 28.2913 48.3031 28.2913 46.7078 28.2913C46.7078 27.8457 46.7078 27.3948 46.7078 26.8891C46.5775 26.9524 46.5248 26.9642 46.4903 26.9964C44.7486 28.6123 42.6731 29.0182 40.4372 28.476C37.4887 27.762 35.7147 25.767 34.9859 22.9013C34.2463 19.9938 34.7437 17.2838 36.7384 14.9485C38.8365 12.4919 42.5375 11.7961 45.303 13.3369C45.7648 13.5935 46.176 13.9446 46.7078 14.3225ZM46.8617 20.8173C46.865 20.0238 46.7659 19.4215 46.5248 18.8589C45.9586 17.5372 44.9639 16.7298 43.5192 16.5741C42.1564 16.427 40.996 16.879 40.1735 17.9946C39.2046 19.3088 39.0916 20.7679 39.6439 22.2722C40.406 24.3476 42.8163 25.2785 44.7852 24.2617C46.2492 23.5069 46.7875 22.1992 46.8617 20.8173Z" fill="white"/>
+        <path d="M26.8823 14.3053C26.8823 13.8329 26.8823 13.3981 26.8823 12.9245C28.4604 12.9245 29.975 12.9245 31.4908 12.9245C31.6102 13.2982 31.6662 27.0254 31.5456 28.301C30.0246 28.3611 28.4949 28.3095 26.9071 28.3299C26.9071 27.8371 26.9071 27.3969 26.9071 26.8515C26.7154 27.0007 26.6067 27.0758 26.5088 27.1628C25.4635 28.0905 24.2266 28.5586 22.8454 28.6606C19.0735 28.9366 16.3176 26.4832 15.3854 23.596C14.3713 20.4533 14.7686 17.5071 16.9538 14.9324C19.0314 12.4865 22.7216 11.8026 25.4721 13.3218C25.95 13.5849 26.372 13.9457 26.8823 14.3053ZM19.4556 20.6251C19.4556 21.0667 19.6493 21.7546 19.8517 22.2797C20.3878 23.6637 21.4202 24.4883 22.91 24.6364C24.3644 24.7814 25.5442 24.2435 26.371 23.0173C27.385 21.5131 27.2666 19.2465 26.1126 17.8453C24.7046 16.1338 21.9724 16.107 20.5267 17.7884C19.8291 18.6001 19.4556 19.552 19.4556 20.6251Z" fill="white"/>
+        <path d="M98.9429 24.5849C100.835 24.5849 102.623 24.5849 104.447 24.5849C104.447 25.8336 104.447 27.0415 104.447 28.2881C99.229 28.2881 94.0186 28.2881 88.8088 28.2881C88.6858 27.908 88.6623 25.2087 88.789 24.5763C90.5782 24.5763 92.3802 24.5763 94.2159 24.5763C94.2159 18.7655 94.2159 13.0148 94.2159 7.20284C92.4 7.20284 90.598 7.20284 88.8142 7.20284C88.6923 6.76048 88.6613 4.25232 88.7527 3.52543C89.1307 3.4127 98.3001 3.38907 98.9429 3.51148C98.9429 10.5012 98.9429 17.505 98.9429 24.5849Z" fill="white"/>
+        <path d="M109.46 21.7997C109.559 22.9271 110.052 23.7592 110.904 24.3358C112.247 25.2452 113.7 25.2473 115.165 24.6525C115.732 24.4228 116.117 23.9664 116.389 23.4157C117.762 23.4157 119.118 23.4157 120.568 23.4157C120.409 23.8677 120.307 24.2853 120.121 24.6622C119.288 26.3683 117.947 27.5472 116.171 28.1818C114.065 28.9344 111.929 28.8872 109.852 28.083C107.537 27.1876 106.085 25.4739 105.431 23.0935C104.939 21.3037 104.962 19.5224 105.596 17.7648C106.708 14.6811 109.63 12.5939 112.914 12.5316C114.889 12.494 116.673 13.0148 118.173 14.3429C119.483 15.5036 120.222 16.9896 120.598 18.672C120.822 19.6717 120.903 20.6831 120.808 21.7793C120.057 21.8191 119.311 21.7933 118.567 21.7987C117.813 21.803 117.06 21.7997 116.306 21.7997C115.553 21.7997 114.799 21.7997 114.046 21.7997C113.292 21.7997 112.539 21.7997 111.785 21.7997C111.036 21.7997 110.284 21.7997 109.46 21.7997ZM116.296 18.8782C116.296 18.788 116.311 18.7161 116.294 18.6527C116.074 17.8185 115.624 17.1421 114.841 16.7501C113.592 16.1253 112.339 16.1747 111.148 16.8929C110.408 17.3385 109.909 18.0031 109.635 18.8793C111.879 18.8782 114.076 18.8782 116.296 18.8782Z" fill="white"/>
+        <path d="M87.7522 18.7118C86.1753 18.7118 84.6369 18.7118 83.0878 18.7118C83.0461 18.6484 82.9953 18.5936 82.9718 18.5303C82.3713 16.9251 80.4506 16.0716 78.5646 16.9015C77.5149 17.3632 76.8615 18.1932 76.5685 19.2905C76.1685 20.7958 76.346 22.2099 77.377 23.4307C78.6635 24.9532 81.0837 25.0401 82.382 23.6143C82.6648 23.3029 82.8563 22.9088 83.1226 22.5062C84.6187 22.5062 86.171 22.5062 87.7827 22.5062C87.7623 22.6791 87.7597 22.8337 87.7244 22.9819C87.1929 25.1743 85.848 26.7333 83.8824 27.7673C80.557 29.5174 76.3016 28.7326 73.7938 25.9388C70.3759 22.1315 71.3736 16.1295 75.8423 13.6214C79.2234 11.7231 83.414 12.3147 86.0234 15.0612C86.8827 15.9653 87.4404 17.0303 87.7287 18.2393C87.749 18.3263 87.7666 18.4143 87.7752 18.5035C87.7805 18.5528 87.7656 18.6055 87.7522 18.7118Z" fill="white"/>
+        <path d="M60.5856 16.6245C58.7718 16.6245 56.9837 16.6245 55.1571 16.6245C55.1571 15.3769 55.1571 14.1701 55.1571 12.9235C58.5307 12.9235 61.8946 12.9235 65.3297 12.9235C65.3372 13.1211 65.3537 13.3283 65.3537 13.5344C65.3548 16.9874 65.3548 20.4404 65.3548 23.8934C65.3548 24.1017 65.3548 24.31 65.3548 24.5581C67.2156 24.5581 69.0038 24.5581 70.778 24.5581C70.9149 24.9596 70.9469 27.5816 70.832 28.2913C65.6281 28.2913 60.4177 28.2913 55.2111 28.2913C55.0999 27.8951 55.0657 25.4546 55.1646 24.5945C55.7533 24.5495 56.3576 24.5795 56.9591 24.5742C57.5511 24.5688 58.143 24.5731 58.7355 24.5731C59.3435 24.5731 59.953 24.5731 60.5514 24.5731C60.684 24.1823 60.7172 17.3493 60.5856 16.6245Z" fill="white"/>
+        <path d="M12.5207 12.9213C12.5207 14.1658 12.5207 15.3597 12.5207 16.6299C11.6508 16.6449 10.7972 16.6352 9.9446 16.6363C9.06622 16.6385 8.18777 16.6363 7.30939 16.6363C6.45249 16.6363 5.5956 16.6363 4.67843 16.6363C4.67843 20.536 4.67843 24.3884 4.67843 28.2237C4.23707 28.3482 0.626518 28.3708 0 28.2645C0 23.1665 0 18.0622 0 12.9213C4.16818 12.9213 8.31589 12.9213 12.5207 12.9213Z" fill="white"/>
+        <path d="M62.5496 9.26325C60.8155 9.2665 59.4621 7.93296 59.4653 6.22578C59.4685 4.54974 60.8134 3.21406 62.5116 3.20011C64.2441 3.18615 65.6109 4.51323 65.6184 6.21504C65.6269 7.93081 64.288 9.26005 62.5496 9.26325Z" fill="white"/>
+        <path d="M148.385 3.2H147.583V4H148.385V3.2Z" fill="#00B81E"/>
+        <path d="M149.187 3.2H148.385V4H149.187V3.2Z" fill="#00B81E"/>
+        <path d="M149.99 3.2H149.188V4H149.99V3.2Z" fill="#55FF55"/>
+        <path d="M150.792 3.2H149.99V4H150.792V3.2Z" fill="#55FF55"/>
+        <path d="M151.594 3.2H150.792V4H151.594V3.2Z" fill="#55FF55"/>
+        <path d="M152.396 3.2H151.594V4H152.396V3.2Z" fill="#55FF55"/>
+        <path d="M153.198 3.2H152.396V4H153.198V3.2Z" fill="#00B81E"/>
+        <path d="M154 3.2H153.198V4H154V3.2Z" fill="#00B81E"/>
+        <path d="M148.385 4H147.583V4.8H148.385V4Z" fill="#00B81E"/>
+        <path d="M149.187 4H148.385V4.8H149.187V4Z" fill="#00B81E"/>
+        <path d="M149.99 4H149.188V4.8H149.99V4Z" fill="#55FF55"/>
+        <path d="M150.792 4H149.99V4.8H150.792V4Z" fill="#55FF55"/>
+        <path d="M151.594 4H150.792V4.8H151.594V4Z" fill="#55FF55"/>
+        <path d="M152.396 4H151.594V4.8H152.396V4Z" fill="#55FF55"/>
+        <path d="M153.198 4H152.396V4.8H153.198V4Z" fill="#00B81E"/>
+        <path d="M154 4H153.198V4.8H154V4Z" fill="#00B81E"/>
+        <path d="M145.177 4.79999H144.375V5.59999H145.177V4.79999Z" fill="#55FF55"/>
+        <path d="M145.979 4.79999H145.177V5.59999H145.979V4.79999Z" fill="#55FF55"/>
+        <path d="M146.781 4.79999H145.979V5.59999H146.781V4.79999Z" fill="#55FF55"/>
+        <path d="M147.583 4.79999H146.781V5.59999H147.583V4.79999Z" fill="#55FF55"/>
+        <path d="M148.385 4.79999H147.583V5.59999H148.385V4.79999Z" fill="#55FF55"/>
+        <path d="M149.187 4.79999H148.385V5.59999H149.187V4.79999Z" fill="#55FF55"/>
+        <path d="M149.99 4.79999H149.188V5.59999H149.99V4.79999Z" fill="#00B81E"/>
+        <path d="M150.792 4.79999H149.99V5.59999H150.792V4.79999Z" fill="#00B81E"/>
+        <path d="M151.594 4.79999H150.792V5.59999H151.594V4.79999Z" fill="#00B81E"/>
+        <path d="M152.396 4.79999H151.594V5.59999H152.396V4.79999Z" fill="#00B81E"/>
+        <path d="M145.177 5.59999H144.375V6.39999H145.177V5.59999Z" fill="#55FF55"/>
+        <path d="M145.979 5.59999H145.177V6.39999H145.979V5.59999Z" fill="#55FF55"/>
+        <path d="M146.781 5.59999H145.979V6.39999H146.781V5.59999Z" fill="#55FF55"/>
+        <path d="M147.583 5.59999H146.781V6.39999H147.583V5.59999Z" fill="#55FF55"/>
+        <path d="M148.385 5.59999H147.583V6.39999H148.385V5.59999Z" fill="#55FF55"/>
+        <path d="M149.187 5.59999H148.385V6.39999H149.187V5.59999Z" fill="#55FF55"/>
+        <path d="M149.99 5.59999H149.188V6.39999H149.99V5.59999Z" fill="#00B81E"/>
+        <path d="M150.792 5.59999H149.99V6.39999H150.792V5.59999Z" fill="#00B81E"/>
+        <path d="M151.594 5.59999H150.792V6.39999H151.594V5.59999Z" fill="#00B81E"/>
+        <path d="M152.396 5.59999H151.594V6.39999H152.396V5.59999Z" fill="#00B81E"/>
+        <path d="M143.573 6.39999H142.771V7.19999H143.573V6.39999Z" fill="#55FF55"/>
+        <path d="M144.375 6.39999H143.573V7.19999H144.375V6.39999Z" fill="#55FF55"/>
+        <path d="M145.177 6.39999H144.375V7.19999H145.177V6.39999Z" fill="#55FF55"/>
+        <path d="M145.979 6.39999H145.177V7.19999H145.979V6.39999Z" fill="#55FF55"/>
+        <path d="M146.781 6.39999H145.979V7.19999H146.781V6.39999Z" fill="#00B81E"/>
+        <path d="M147.583 6.39999H146.781V7.19999H147.583V6.39999Z" fill="#00B81E"/>
+        <path d="M148.385 6.39999H147.583V7.19999H148.385V6.39999Z" fill="#00B81E"/>
+        <path d="M149.187 6.39999H148.385V7.19999H149.187V6.39999Z" fill="#00B81E"/>
+        <path d="M149.99 6.39999H149.188V7.19999H149.99V6.39999Z" fill="#55FF55"/>
+        <path d="M150.792 6.39999H149.99V7.19999H150.792V6.39999Z" fill="#55FF55"/>
+        <path d="M143.573 7.2H142.771V8H143.573V7.2Z" fill="#55FF55"/>
+        <path d="M144.375 7.2H143.573V8H144.375V7.2Z" fill="#55FF55"/>
+        <path d="M145.177 7.2H144.375V8H145.177V7.2Z" fill="#55FF55"/>
+        <path d="M145.979 7.2H145.177V8H145.979V7.2Z" fill="#55FF55"/>
+        <path d="M146.781 7.2H145.979V8H146.781V7.2Z" fill="#00B81E"/>
+        <path d="M147.583 7.2H146.781V8H147.583V7.2Z" fill="#00B81E"/>
+        <path d="M148.385 7.2H147.583V8H148.385V7.2Z" fill="#00B81E"/>
+        <path d="M149.187 7.2H148.385V8H149.187V7.2Z" fill="#00B81E"/>
+        <path d="M149.99 7.2H149.188V8H149.99V7.2Z" fill="#55FF55"/>
+        <path d="M150.792 7.2H149.99V8H150.792V7.2Z" fill="#55FF55"/>
+        <path d="M129.135 8H128.333V8.8H129.135V8Z" fill="#55FF55"/>
+        <path d="M129.937 8H129.135V8.8H129.937V8Z" fill="#55FF55"/>
+        <path d="M130.74 8H129.938V8.8H130.74V8Z" fill="#55FF55"/>
+        <path d="M131.542 8H130.74V8.8H131.542V8Z" fill="#55FF55"/>
+        <path d="M132.344 8H131.542V8.8H132.344V8Z" fill="#55FF55"/>
+        <path d="M133.146 8H132.344V8.8H133.146V8Z" fill="#55FF55"/>
+        <path d="M133.948 8H133.146V8.8H133.948V8Z" fill="#55FF55"/>
+        <path d="M134.75 8H133.948V8.8H134.75V8Z" fill="#55FF55"/>
+        <path d="M143.573 8H142.771V8.8H143.573V8Z" fill="#55FF55"/>
+        <path d="M144.375 8H143.573V8.8H144.375V8Z" fill="#55FF55"/>
+        <path d="M145.177 8H144.375V8.8H145.177V8Z" fill="#00B81E"/>
+        <path d="M145.979 8H145.177V8.8H145.979V8Z" fill="#00B81E"/>
+        <path d="M146.781 8H145.979V8.8H146.781V8Z" fill="#00B81E"/>
+        <path d="M147.583 8H146.781V8.8H147.583V8Z" fill="#00B81E"/>
+        <path d="M148.385 8H147.583V8.8H148.385V8Z" fill="#55FF55"/>
+        <path d="M149.187 8H148.385V8.8H149.187V8Z" fill="#55FF55"/>
+        <path d="M149.99 8H149.188V8.8H149.99V8Z" fill="#00B81E"/>
+        <path d="M150.792 8H149.99V8.8H150.792V8Z" fill="#00B81E"/>
+        <path d="M129.135 8.79999H128.333V9.59999H129.135V8.79999Z" fill="#55FF55"/>
+        <path d="M129.937 8.79999H129.135V9.59999H129.937V8.79999Z" fill="#55FF55"/>
+        <path d="M130.74 8.79999H129.938V9.59999H130.74V8.79999Z" fill="#55FF55"/>
+        <path d="M131.542 8.79999H130.74V9.59999H131.542V8.79999Z" fill="#55FF55"/>
+        <path d="M132.344 8.79999H131.542V9.59999H132.344V8.79999Z" fill="#55FF55"/>
+        <path d="M133.146 8.79999H132.344V9.59999H133.146V8.79999Z" fill="#55FF55"/>
+        <path d="M133.948 8.79999H133.146V9.59999H133.948V8.79999Z" fill="#55FF55"/>
+        <path d="M134.75 8.79999H133.948V9.59999H134.75V8.79999Z" fill="#55FF55"/>
+        <path d="M143.573 8.79999H142.771V9.59999H143.573V8.79999Z" fill="#55FF55"/>
+        <path d="M144.375 8.79999H143.573V9.59999H144.375V8.79999Z" fill="#55FF55"/>
+        <path d="M145.177 8.79999H144.375V9.59999H145.177V8.79999Z" fill="#00B81E"/>
+        <path d="M145.979 8.79999H145.177V9.59999H145.979V8.79999Z" fill="#00B81E"/>
+        <path d="M146.781 8.79999H145.979V9.59999H146.781V8.79999Z" fill="#00B81E"/>
+        <path d="M147.583 8.79999H146.781V9.59999H147.583V8.79999Z" fill="#00B81E"/>
+        <path d="M148.385 8.79999H147.583V9.59999H148.385V8.79999Z" fill="#55FF55"/>
+        <path d="M149.187 8.79999H148.385V9.59999H149.187V8.79999Z" fill="#55FF55"/>
+        <path d="M149.99 8.79999H149.188V9.59999H149.99V8.79999Z" fill="#00B81E"/>
+        <path d="M150.792 8.79999H149.99V9.59999H150.792V8.79999Z" fill="#00B81E"/>
+        <path d="M130.74 9.60001H129.938V10.4H130.74V9.60001Z" fill="#00B81E"/>
+        <path d="M131.542 9.60001H130.74V10.4H131.542V9.60001Z" fill="#00B81E"/>
+        <path d="M132.344 9.60001H131.542V10.4H132.344V9.60001Z" fill="#55FF55"/>
+        <path d="M133.146 9.60001H132.344V10.4H133.146V9.60001Z" fill="#55FF55"/>
+        <path d="M133.948 9.60001H133.146V10.4H133.948V9.60001Z" fill="#00B81E"/>
+        <path d="M134.75 9.60001H133.948V10.4H134.75V9.60001Z" fill="#00B81E"/>
+        <path d="M135.552 9.60001H134.75V10.4H135.552V9.60001Z" fill="#55FF55"/>
+        <path d="M136.354 9.60001H135.552V10.4H136.354V9.60001Z" fill="#55FF55"/>
+        <path d="M141.969 9.60001H141.167V10.4H141.969V9.60001Z" fill="#55FF55"/>
+        <path d="M142.771 9.60001H141.969V10.4H142.771V9.60001Z" fill="#55FF55"/>
+        <path d="M143.573 9.60001H142.771V10.4H143.573V9.60001Z" fill="#00B81E"/>
+        <path d="M144.375 9.60001H143.573V10.4H144.375V9.60001Z" fill="#00B81E"/>
+        <path d="M145.177 9.60001H144.375V10.4H145.177V9.60001Z" fill="#00B81E"/>
+        <path d="M145.979 9.60001H145.177V10.4H145.979V9.60001Z" fill="#00B81E"/>
+        <path d="M146.781 9.60001H145.979V10.4H146.781V9.60001Z" fill="#55FF55"/>
+        <path d="M147.583 9.60001H146.781V10.4H147.583V9.60001Z" fill="#55FF55"/>
+        <path d="M148.385 9.60001H147.583V10.4H148.385V9.60001Z" fill="#00B81E"/>
+        <path d="M149.187 9.60001H148.385V10.4H149.187V9.60001Z" fill="#00B81E"/>
+        <path d="M130.74 10.4H129.938V11.2H130.74V10.4Z" fill="#00B81E"/>
+        <path d="M131.542 10.4H130.74V11.2H131.542V10.4Z" fill="#00B81E"/>
+        <path d="M132.344 10.4H131.542V11.2H132.344V10.4Z" fill="#55FF55"/>
+        <path d="M133.146 10.4H132.344V11.2H133.146V10.4Z" fill="#55FF55"/>
+        <path d="M133.948 10.4H133.146V11.2H133.948V10.4Z" fill="#00B81E"/>
+        <path d="M134.75 10.4H133.948V11.2H134.75V10.4Z" fill="#00B81E"/>
+        <path d="M135.552 10.4H134.75V11.2H135.552V10.4Z" fill="#55FF55"/>
+        <path d="M136.354 10.4H135.552V11.2H136.354V10.4Z" fill="#55FF55"/>
+        <path d="M141.969 10.4H141.167V11.2H141.969V10.4Z" fill="#55FF55"/>
+        <path d="M142.771 10.4H141.969V11.2H142.771V10.4Z" fill="#55FF55"/>
+        <path d="M143.573 10.4H142.771V11.2H143.573V10.4Z" fill="#00B81E"/>
+        <path d="M144.375 10.4H143.573V11.2H144.375V10.4Z" fill="#00B81E"/>
+        <path d="M145.177 10.4H144.375V11.2H145.177V10.4Z" fill="#00B81E"/>
+        <path d="M145.979 10.4H145.177V11.2H145.979V10.4Z" fill="#00B81E"/>
+        <path d="M146.781 10.4H145.979V11.2H146.781V10.4Z" fill="#55FF55"/>
+        <path d="M147.583 10.4H146.781V11.2H147.583V10.4Z" fill="#55FF55"/>
+        <path d="M148.385 10.4H147.583V11.2H148.385V10.4Z" fill="#00B81E"/>
+        <path d="M149.187 10.4H148.385V11.2H149.187V10.4Z" fill="#00B81E"/>
+        <path d="M132.344 11.2H131.542V12H132.344V11.2Z" fill="#00B81E"/>
+        <path d="M133.146 11.2H132.344V12H133.146V11.2Z" fill="#00B81E"/>
+        <path d="M133.948 11.2H133.146V12H133.948V11.2Z" fill="#55FF55"/>
+        <path d="M134.75 11.2H133.948V12H134.75V11.2Z" fill="#55FF55"/>
+        <path d="M135.552 11.2H134.75V12H135.552V11.2Z" fill="#00B81E"/>
+        <path d="M136.354 11.2H135.552V12H136.354V11.2Z" fill="#00B81E"/>
+        <path d="M137.156 11.2H136.354V12H137.156V11.2Z" fill="#55FF55"/>
+        <path d="M137.958 11.2H137.156V12H137.958V11.2Z" fill="#55FF55"/>
+        <path d="M141.969 11.2H141.167V12H141.969V11.2Z" fill="#00B81E"/>
+        <path d="M142.771 11.2H141.969V12H142.771V11.2Z" fill="#00B81E"/>
+        <path d="M143.573 11.2H142.771V12H143.573V11.2Z" fill="#00B81E"/>
+        <path d="M144.375 11.2H143.573V12H144.375V11.2Z" fill="#00B81E"/>
+        <path d="M145.177 11.2H144.375V12H145.177V11.2Z" fill="#00B81E"/>
+        <path d="M145.979 11.2H145.177V12H145.979V11.2Z" fill="#00B81E"/>
+        <path d="M132.344 12H131.542V12.8H132.344V12Z" fill="#00B81E"/>
+        <path d="M133.146 12H132.344V12.8H133.146V12Z" fill="#00B81E"/>
+        <path d="M133.948 12H133.146V12.8H133.948V12Z" fill="#55FF55"/>
+        <path d="M134.75 12H133.948V12.8H134.75V12Z" fill="#55FF55"/>
+        <path d="M135.552 12H134.75V12.8H135.552V12Z" fill="#00B81E"/>
+        <path d="M136.354 12H135.552V12.8H136.354V12Z" fill="#00B81E"/>
+        <path d="M137.156 12H136.354V12.8H137.156V12Z" fill="#55FF55"/>
+        <path d="M137.958 12H137.156V12.8H137.958V12Z" fill="#55FF55"/>
+        <path d="M141.969 12H141.167V12.8H141.969V12Z" fill="#00B81E"/>
+        <path d="M142.771 12H141.969V12.8H142.771V12Z" fill="#00B81E"/>
+        <path d="M143.573 12H142.771V12.8H143.573V12Z" fill="#00B81E"/>
+        <path d="M144.375 12H143.573V12.8H144.375V12Z" fill="#00B81E"/>
+        <path d="M145.177 12H144.375V12.8H145.177V12Z" fill="#00B81E"/>
+        <path d="M145.979 12H145.177V12.8H145.979V12Z" fill="#00B81E"/>
+        <path d="M133.948 12.8H133.146V13.6H133.948V12.8Z" fill="#00B81E"/>
+        <path d="M134.75 12.8H133.948V13.6H134.75V12.8Z" fill="#00B81E"/>
+        <path d="M135.552 12.8H134.75V13.6H135.552V12.8Z" fill="#00B81E"/>
+        <path d="M136.354 12.8H135.552V13.6H136.354V12.8Z" fill="#00B81E"/>
+        <path d="M137.156 12.8H136.354V13.6H137.156V12.8Z" fill="#00B81E"/>
+        <path d="M137.958 12.8H137.156V13.6H137.958V12.8Z" fill="#00B81E"/>
+        <path d="M138.76 12.8H137.958V13.6H138.76V12.8Z" fill="#55FF55"/>
+        <path d="M139.562 12.8H138.76V13.6H139.562V12.8Z" fill="#55FF55"/>
+        <path d="M141.969 12.8H141.167V13.6H141.969V12.8Z" fill="#00B81E"/>
+        <path d="M142.771 12.8H141.969V13.6H142.771V12.8Z" fill="#00B81E"/>
+        <path d="M133.948 13.6H133.146V14.4H133.948V13.6Z" fill="#00B81E"/>
+        <path d="M134.75 13.6H133.948V14.4H134.75V13.6Z" fill="#00B81E"/>
+        <path d="M135.552 13.6H134.75V14.4H135.552V13.6Z" fill="#00B81E"/>
+        <path d="M136.354 13.6H135.552V14.4H136.354V13.6Z" fill="#00B81E"/>
+        <path d="M137.156 13.6H136.354V14.4H137.156V13.6Z" fill="#00B81E"/>
+        <path d="M137.958 13.6H137.156V14.4H137.958V13.6Z" fill="#00B81E"/>
+        <path d="M138.76 13.6H137.958V14.4H138.76V13.6Z" fill="#55FF55"/>
+        <path d="M139.562 13.6H138.76V14.4H139.562V13.6Z" fill="#55FF55"/>
+        <path d="M141.969 13.6H141.167V14.4H141.969V13.6Z" fill="#00B81E"/>
+        <path d="M142.771 13.6H141.969V14.4H142.771V13.6Z" fill="#00B81E"/>
+        <path d="M135.552 14.4H134.75V15.2H135.552V14.4Z" fill="#00B81E"/>
+        <path d="M136.354 14.4H135.552V15.2H136.354V14.4Z" fill="#00B81E"/>
+        <path d="M137.156 14.4H136.354V15.2H137.156V14.4Z" fill="#00B81E"/>
+        <path d="M137.958 14.4H137.156V15.2H137.958V14.4Z" fill="#00B81E"/>
+        <path d="M138.76 14.4H137.958V15.2H138.76V14.4Z" fill="#55FF55"/>
+        <path d="M139.562 14.4H138.76V15.2H139.562V14.4Z" fill="#55FF55"/>
+        <path d="M140.365 14.4H139.562V15.2H140.365V14.4Z" fill="#00B81E"/>
+        <path d="M141.167 14.4H140.365V15.2H141.167V14.4Z" fill="#00B81E"/>
+        <path d="M135.552 15.2H134.75V16H135.552V15.2Z" fill="#00B81E"/>
+        <path d="M136.354 15.2H135.552V16H136.354V15.2Z" fill="#00B81E"/>
+        <path d="M137.156 15.2H136.354V16H137.156V15.2Z" fill="#00B81E"/>
+        <path d="M137.958 15.2H137.156V16H137.958V15.2Z" fill="#00B81E"/>
+        <path d="M138.76 15.2H137.958V16H138.76V15.2Z" fill="#55FF55"/>
+        <path d="M139.562 15.2H138.76V16H139.562V15.2Z" fill="#55FF55"/>
+        <path d="M140.365 15.2H139.562V16H140.365V15.2Z" fill="#00B81E"/>
+        <path d="M141.167 15.2H140.365V16H141.167V15.2Z" fill="#00B81E"/>
+        <path d="M140.365 16H139.562V16.8H140.365V16Z" fill="#00B81E"/>
+        <path d="M141.167 16H140.365V16.8H141.167V16Z" fill="#00B81E"/>
+        <path d="M141.969 16H141.167V16.8H141.969V16Z" fill="#00B81E"/>
+        <path d="M142.771 16H141.969V16.8H142.771V16Z" fill="#00B81E"/>
+        <path d="M140.365 16.8H139.562V17.6H140.365V16.8Z" fill="#00B81E"/>
+        <path d="M141.167 16.8H140.365V17.6H141.167V16.8Z" fill="#00B81E"/>
+        <path d="M141.969 16.8H141.167V17.6H141.969V16.8Z" fill="#00B81E"/>
+        <path d="M142.771 16.8H141.969V17.6H142.771V16.8Z" fill="#00B81E"/>
+        <path d="M141.969 17.6H141.167V18.4H141.969V17.6Z" fill="#00B81E"/>
+        <path d="M142.771 17.6H141.969V18.4H142.771V17.6Z" fill="#00B81E"/>
+        <path d="M141.969 18.4H141.167V19.2H141.969V18.4Z" fill="#00B81E"/>
+        <path d="M142.771 18.4H141.969V19.2H142.771V18.4Z" fill="#00B81E"/>
+        <path d="M143.573 19.2H142.771V20H143.573V19.2Z" fill="#00B81E"/>
+        <path d="M144.375 19.2H143.573V20H144.375V19.2Z" fill="#00B81E"/>
+        <path d="M143.573 20H142.771V20.8H143.573V20Z" fill="#00B81E"/>
+        <path d="M144.375 20H143.573V20.8H144.375V20Z" fill="#00B81E"/>
+        <path d="M143.573 20.8H142.771V21.6H143.573V20.8Z" fill="#00B81E"/>
+        <path d="M144.375 20.8H143.573V21.6H144.375V20.8Z" fill="#00B81E"/>
+        <path d="M143.573 21.6H142.771V22.4H143.573V21.6Z" fill="#00B81E"/>
+        <path d="M144.375 21.6H143.573V22.4H144.375V21.6Z" fill="#00B81E"/>
+        <path d="M143.573 22.4H142.771V23.2H143.573V22.4Z" fill="#00B81E"/>
+        <path d="M144.375 22.4H143.573V23.2H144.375V22.4Z" fill="#00B81E"/>
+        <path d="M143.573 23.2H142.771V24H143.573V23.2Z" fill="#00B81E"/>
+        <path d="M144.375 23.2H143.573V24H144.375V23.2Z" fill="#00B81E"/>
+        <path d="M143.573 24H142.771V24.8H143.573V24Z" fill="#00B81E"/>
+        <path d="M144.375 24H143.573V24.8H144.375V24Z" fill="#00B81E"/>
+        <path d="M143.573 24.8H142.771V25.6H143.573V24.8Z" fill="#00B81E"/>
+        <path d="M144.375 24.8H143.573V25.6H144.375V24.8Z" fill="#00B81E"/>
+        <path d="M141.969 25.6H141.167V26.4H141.969V25.6Z" fill="#55FF55"/>
+        <path d="M142.771 25.6H141.969V26.4H142.771V25.6Z" fill="#55FF55"/>
+        <path d="M143.573 25.6H142.771V26.4H143.573V25.6Z" fill="#00B81E"/>
+        <path d="M144.375 25.6H143.573V26.4H144.375V25.6Z" fill="#00B81E"/>
+        <path d="M141.969 26.4H141.167V27.2H141.969V26.4Z" fill="#55FF55"/>
+        <path d="M142.771 26.4H141.969V27.2H142.771V26.4Z" fill="#55FF55"/>
+        <path d="M143.573 26.4H142.771V27.2H143.573V26.4Z" fill="#00B81E"/>
+        <path d="M144.375 26.4H143.573V27.2H144.375V26.4Z" fill="#00B81E"/>
+        <path d="M141.969 27.2H141.167V28H141.969V27.2Z" fill="#00B81E"/>
+        <path d="M142.771 27.2H141.969V28H142.771V27.2Z" fill="#00B81E"/>
+        <path d="M143.573 27.2H142.771V28H143.573V27.2Z" fill="#00B81E"/>
+        <path d="M144.375 27.2H143.573V28H144.375V27.2Z" fill="#00B81E"/>
+        <path d="M141.969 28H141.167V28.8H141.969V28Z" fill="#00B81E"/>
+        <path d="M142.771 28H141.969V28.8H142.771V28Z" fill="#00B81E"/>
+        <path d="M143.573 28H142.771V28.8H143.573V28Z" fill="#00B81E"/>
+        <path d="M144.375 28H143.573V28.8H144.375V28Z" fill="#00B81E"/>
+        </g>
+        <defs>
+        <clipPath id="clip0">
+        <path d="M0 0H154V32H0V0Z" fill="white"/>
+        </clipPath>
+        </defs>
+        </svg>
+      </a>
+      <nav>
+        <a href="https://radicle.community" target=”_blank”><span>Community</span> ↗</a>
+        <a href="/docs.html"><span>Docs</span></a>
+        <a href="https://github.com/radicle-dev" target=”_blank”><span>Code</span> ↗</a>
+      </nav>
+    </div>
+  </header>
+  <div class="docs-page">
+    <aside class="side-bar">
+      <nav>
+        <a href="/"><span>Introduction</span></a>
+        <a href="/"><span>Radicle Link</span></a>
+        <a href="/"><span>Radicle Registry</span></a>
+        <a href="/"><span>Why Radicle</span></a>
+        <a href="/"><span>Try it</span></a>
+        <a href="/"><span>Developers</span></a>
+      </nav>
+    </aside>
+    <article>
+        <h1>
+          How it Works &mdash; Radicle Link
+        </h1>
+
+        <p class="subtitle">
+          This article dives into the architecture and design of Radicle Link&mdash;the peer-to-peer replication
+          protocol that powers Radicle. We discuss our decision to build on Git, how we ensure data availability,
+          and how we replicate data across the network.
+        </p>
+        <p>
+          Behind every repository is a version control system&mdash;the most popular of these being Git, created in
+          2005 by Linus Torvalds for the development of the Linux kernel. Git marked the rise of distributed version
+          control systems as developers realized the centralized model of SVN and CVS didn&#x27;t scale well with the
+          number of contributors. In fact, Git was only created when Linus’ free <a
+          href="http://www.bitkeeper.org/">Bitkeeper</a> license was revoked after a Linux kernel contributor tried to
+          <a href="https://www.linuxjournal.com/content/git-origin-story">reverse engineer its networking protocols</a>.
+          Git brought distributed version control to the forefront and changed the way software is developed today.
+        </p>
+        <p>
+          Code collaboration platforms, or <q>forges</q>, started building on top of Git: they introduced
+          search and discovery, canonicity, and social collaboration (issues &amp; code review) to Git-based workflows,
+          albeit not always following the same distributed model that Git was designed for.
+        </p>
+        <p>
+          Radicle was designed to provide this same functionality while retaining Git’s peer-to-peer nature, building on
+          what made distributed version control so powerful in the first place.
+        </p>
+
+        <h2>
+          Git gossips well
+        </h2>
+        <p>
+          The earliest version of Radicle adopted a generalized approach to replication&mdash;it wasn’t tailored to
+          replicating collaboration artifacts or source code and as we discovered, was ill-suited to the demands of
+          real-world code collaboration.
+        </p>
+        <p>
+          On the other hand, the current iteration is specifically designed for this use case. The most outstanding
+          difference is the decision to <strong>use Git as our storage and replication layer</strong>, instead of a
+          decentralized storage network such as IPFS. In our experimentation with decentralized storage, we realized
+          that replicating Git repos on the storage layer didn&#x27;t permit the use of <a
+          href="https://git-scm.com/book/en/v2/Git-Internals-Packfiles">packfiles</a>, one of the key protocols that
+          makes Git useable at scale.  Essentially, this approach would make source code a second-class citizen&mdash;
+          making it impractical to store repositories with large histories. The reason is simple: <a
+          href="https://git-scm.com/book/en/v2/Git-Internals-Transfer-Protocols">the packfile protocol is
+          interactive</a>, which means before data is transferred between two parties, they determine exactly what needs
+          to be sent over the wire, and the server puts together a packfile on the fly, before sending it downstream.
+          This incredibly efficient approach isn&#x27;t compatible with simple file storage protocols such as IPFS,
+          which operate on the premise that content is usually <em>static</em>, unlike active code repositories that are
+          constantly updated.
+        </p>
+
+        <blockquote>
+          <p>
+            The dumb protocol is simple but a bit inefficient, and it can&#x27;t handle writing of data from the client
+            to the server.  The smart protocol is a more common method of transferring data, but it requires a process
+            on the remote end that is intelligent about Git&mdash;it can read local data, figure out what the client has and
+            needs, and generate a custom packfile for it.
+          </p>
+          <p><cite>
+            &mdash;&nbsp;<a href="https://git-scm.com/book/en/v2/Git-Internals-Transfer-Protocols">Git Internals</a>
+          </cite></p>
+        </blockquote>
+
+        <p>
+          In order to keep Git&#x27;s efficiency when it comes to data replication, while offering global decentralized
+          repository storage, we chose to design Radicle as a peer-to-peer networking layer on top of Git&#x27;s smart
+          transfer protocol. Radicle would take care of discovering peers, offloading the actual data transfer to Git.
+        </p>
+
+        <h2>
+          radicle-link
+        </h2>
+        <p>
+          <a href="https://github.com/radicle-dev/radicle-link">Radicle Link</a> is a peer-to-peer protocol with a
+          generic distributed version control backend. It aims to be general enough to be used on top of systems such as
+          <a href="https://pijul.org/">pijul</a> or <a href="https://www.mercurial-scm.org/">mercurial</a>, though
+          it&#x27;s initial implementation is focused on supporting Git.
+        </p>
+        <p>
+          Radicle Link extends Git with <strong>peer-to-peer network discovery</strong>. Taking inspiration from <a
+          href="https://scuttlebutt.nz/">Secure Scuttlebutt</a>, a peer-to-peer protocol for social networking, data is
+          disseminated via a process called <strong>gossip</strong>. That is, participants in the network share and
+          spread data they are "interested" in by keeping redundant copies locally and sharing deltas with peers. With
+          Radicle, we replicate data across connected repositories according to a “social graph” of contributors and
+          maintainers, enabling source code and changesets to be disseminated according to use and value: the more peers
+          who are interested in a certain project, the more available this project is made to the network.
+        </p>
+
+        <h3>
+          How it works
+        </h3>
+        <p>
+          Repositories are the base <em>unit of replication</em> in Radicle. To publish a repository to the network, it
+          must first be initialized as a <em>project</em>. Projects combine source code, issues and proposed changes
+          under a single umbrella, and carry a unique, shareable peer-to-peer identifier. The entirety of the project
+          data and metadata, including social artefacts such as comments, are stored within the repository. To create a
+          project, the owner of a repository defines a <em>project identity</em>. In the background, a
+          <em>project.json</em> file is created in a predetermined disjoint branch of the repository, by convention
+          <code>rad/id</code>. This file contains important metadata such as the project name, list of maintainers, as
+          well as any related links.
+        </p>
+        <p>
+          The owner of the repository thus becomes the founder of the project and signs the initial version of the
+          project metadata file (<em>project.json</em>) with their private key. The digest of the initial version,
+          becomes the <em>Project ID</em>.
+        </p>
+        <p>
+          In addition to the repository, a Radicle <em>project</em> includes the <em>identities</em> of all its
+          maintainers: peers with designated rights over the project&#x27;s identity. Initially, the only
+          maintainer is the <em>founder</em>. By adding other maintainers to the project metadata, additional layers of
+          trust can be introduced around the project. Any update to the project metadata <strong>must</strong> be signed
+          by a quorum of maintainers, providing a cryptographically secure way to manage project state &amp; metadata,
+          for example in the case of transferring ownership. The history of the metadata file is backed by the
+          underlying DVCS, and is verified upon replication,  ensuring it was&#x27;t tampered with.
+        </p>
+
+        <h3>Replication and validation</h3>
+        <p>
+          To ensure data integrity and authenticity in the peer-to-peer network, we adopt an algorithm similar to the
+          root file update process from <a href="https://theupdateframework.io/">The Update Framework</a> (TUF). In this
+          process, peers can fetch and verify the project metadata before replicating the latest changesets and
+          revisions. This is important, since it effectively allows data to be served by <em>any peer</em>, in a secure
+          manner. The physical location from which project data is fetched becomes irrelevant to the user.
+        </p>
+
+        <h3>Tracking and discovery</h3>
+        <p>
+          When a project is published to the network the specific repository or <em>source tree</em> becomes
+          identifiable by the maintainer of this tree. This allows repositories to be addressed by a shareable URL,
+          which is then resolved to a physical location on the network, for the purpose of replication. This URL has the
+          following form:
+        </p>
+        <p><pre class="code">rad://&lt;project-id&gt;/&lt;maintainer-id&gt;</pre></p>
+        <p>
+          Peers decide what data to replicate through the <strong>tracking</strong> of projects. Tracking a project
+          signals interest, and means to impliestracking its maintainers, therefore replicating the data within their
+          social graphs. In the context of a project, maintainers of a repository may choose to <strong>track</strong>
+          the repositories of other owners (this is called a <strong>remote</strong> in Git terminology: a named
+              reference to a remote repository). If the remote repository is found to track other remotes, the tracking
+          repository shall also transitively track those, up to a configurable <em>N</em> degrees out.
+        </p>
+
+        <h3>Availability</h3>
+        <p>
+          To improve data availability, participants in the network can choose to act as <strong>seeds</strong>. This is
+          similar in concept to a <em>pub</em> in <a href="https://scuttlebutt.nz/">Secure Scuttlebutt</a>: seeds
+          are <q>always-on</q> nodes that automatically track discovered projects, thereby increasing the availability of
+          these projects on the network. Since seeds may track a large number of repositories for a given project,
+          replicating a project from a seed will greatly increase the connectedness of the tracking graph. Tracking a
+          seed will also increase the number of paths leading back to the original upstream, ensuring that contributions
+          can flow back up to the project maintainers even if they come from participants not within the set of tracked
+          repositories of the maintainer.
+        </p>
+
+        <h2>Offline and local-first</h2>
+        <p>
+          With the introduction of hosted platforms came new ‘enhanced’ workflows like pull requests, issue tracking,
+          and code reviews. These workflows were unique because they were non-Git native but still tied to source code
+          through rich user interfaces and features. As a result, they have further defined the common developer
+          experience by making collaboration more than just code&mdash;the social interactions captured in issues,
+          code reviews and discussions are just as important as the source code itself. However, they&#x27;ve also
+          locked-in developers to the platforms that host these workflows and their artifacts. If you lost access to
+          your GitHub account you&#x27;d have access to your source code, but wouldn&#x27;t have access to any of your
+          issues, reviews, or pull requests. Even worse, access to valuable conversations could be completely
+          lost.
+        </p>
+        <p>
+          With Radicle, central servers are unnecessary for ensuring the discoverability and availability of changesets
+          and social artifacts.  In addition, by returning to a fully distributed model, it enables a more complete
+          offline experience. Not only is the source code available offline, but so is everything else. Radicle is built
+          to provide a convenient collaboration experience <em>without intermediaries or vendor lock-in</em>.
+        </p>
+
+        <p>
+          Having Git as the nexus of replication builds on its strengths and decentralized nature. Having issues, pull
+          requests, comments, and reviews <em>locally</em> gives developers the tools to manage and design their
+          workflows as they see fit.  By existing as an open source protocol instead of a platform, Radicle gives
+          developers the freedom to collaborate without reliance on third parties.
+        </p>
+
+        <p>
+          You can follow the development of Radicle Link in the <a
+          href="https://radicle.community/c/development-discussion/9">#development</a> category of our <a
+          href="https://radicle.community">radicle.community</a> forum or sign up to our mailing list.
+        </p>
+      </article>
+  </div>
+  <footer>
+    <p>footer</p>
+  </footer>
+</body>
+</html>

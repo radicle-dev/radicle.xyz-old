@@ -3,16 +3,17 @@
 @import "typography.css";
 @import "color.css";
 @import "forms.css";
+@import "docs.css";
 
 body {
   text-align: center;
   background: var(--color-background);
   font-family: var(--font-stack);
-  cursor:default;
+  cursor: default;
 }
 
 ::selection {
-  background-color:var(--color-caution);
+  background-color: var(--color-caution);
 }
 
 header {
@@ -22,12 +23,12 @@ header {
 header nav {
   padding-top: 12px;
   position: absolute;
-  top:32px;
-  right:40px;
+  top: 32px;
+  right: 40px;
 }
 
 header nav a {
-  margin-right:24px;
+  margin-right: 24px;
 }
 
 header nav a:last-child {
@@ -35,7 +36,7 @@ header nav a:last-child {
 }
 
 a {
-  color:var(--color-foreground-level-4);
+  color: var(--color-foreground-level-4);
   text-decoration: none;
 }
 
@@ -65,14 +66,15 @@ a#logo {
 #get-the-app img {
   margin-top: 48px;
   max-width: 90%;
-  border:2px solid var(--color-foreground-level-3);
-  border-bottom:0;
+  border: 2px solid var(--color-foreground-level-3);
+  border-bottom: 0;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  box-shadow: 0 -16px 32px rgba(0,0,0,.15);
+  box-shadow: 0 -16px 32px rgba(0, 0, 0, .15);
 }
 
-#get-the-app p, #get-the-app form {
+#get-the-app p,
+#get-the-app form {
   display: inline-block;
   margin: 0 0 16px 8px;
 }
@@ -83,14 +85,18 @@ img#main-illustration {
   border-radius: 8px;
 }
 
-#value-prop, #tech, #dogfooding, #footer {
+#value-prop,
+#tech,
+#dogfooding,
+#footer {
   padding: 88px 0;
   display: grid;
   grid-template-rows: 48px 32px auto;
   grid-row-gap: 24px;
 }
 
-#value-prop .container, #dogfooding .container {
+#value-prop .container,
+#dogfooding .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 32px;
@@ -146,7 +152,7 @@ img#main-illustration {
   margin-left: 8px;
 }
 
-#tech button  {
+#tech button {
   justify-self: center;
 }
 
@@ -175,78 +181,84 @@ end, but I couldn't get that to work. So the mobile styles are living here
 for now. Plz help.
 */
 
-  /* MOBILE */
-  @media only screen and (max-width: 480px) {
-    
-    #get-the-app p, #get-the-app form {
-      margin:0;
-    }
+/* MOBILE */
+@media only screen and (max-width: 480px) {
 
-    #email-signup input[type=text],
-    #email-signup form button,
-    #email-signup p {
-      width:80vw;
-      margin-left:0;
-    }
-
-    #email-signup form button,
-    #email-signup p {
-      margin-bottom: 16px;
-    }
-
-    #email-signup input[type=text] {
-      margin-bottom: 8px;
-    }
-
-    a#logo {
-      width:300px;
-    }
-
-    h1.xl {
-      font-size:9.5vw;
-      line-height: 9.5vw;
-    }
-
-    #value-prop .container {
-      margin-bottom: 0;
-    }
-
-    .value-prop-item, .tech-item {
-      padding:48px 24px;
-    }
-  
+  #get-the-app p,
+  #get-the-app form {
+    margin: 0;
   }
 
-  /* TABLET */
-  @media only screen and (max-width: 960px) {
-
-    #value-prop .container, #tech .container, #dogfooding .container {
-      grid-template-columns: 1fr;
-    }
-
-    .value-prop-item, .tech-item {
-      margin-bottom: 32px;
-    }
-
-    #value-prop, #tech, #dogfooding {
-      padding-right: 5vw;
-      padding-left: 5vw;
-    }
-
-    #dogfooding p {
-      max-width: 90vw;
-    }
-
-    header {
-      padding-bottom:0;
-    }
-
-    header nav {
-      padding-top: 16px;
-      position: static;
-      top: unset;
-      right:unset;
-    }
-
+  #email-signup input[type=text],
+  #email-signup form button,
+  #email-signup p {
+    width: 80vw;
+    margin-left: 0;
   }
-  
+
+  #email-signup form button,
+  #email-signup p {
+    margin-bottom: 16px;
+  }
+
+  #email-signup input[type=text] {
+    margin-bottom: 8px;
+  }
+
+  a#logo {
+    width: 300px;
+  }
+
+  h1.xl {
+    font-size: 9.5vw;
+    line-height: 9.5vw;
+  }
+
+  #value-prop .container {
+    margin-bottom: 0;
+  }
+
+  .value-prop-item,
+  .tech-item {
+    padding: 48px 24px;
+  }
+
+}
+
+/* TABLET */
+@media only screen and (max-width: 960px) {
+
+  #value-prop .container,
+  #tech .container,
+  #dogfooding .container {
+    grid-template-columns: 1fr;
+  }
+
+  .value-prop-item,
+  .tech-item {
+    margin-bottom: 32px;
+  }
+
+  #value-prop,
+  #tech,
+  #dogfooding {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  #dogfooding p {
+    max-width: 90vw;
+  }
+
+  header {
+    padding-bottom: 0;
+  }
+
+  header nav {
+    padding-top: 16px;
+    position: static;
+    top: unset;
+    right: unset;
+  }
+
+}
