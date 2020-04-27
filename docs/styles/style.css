@@ -85,11 +85,13 @@ img#main-illustration {
   border-radius: 8px;
 }
 
-#value-prop, #tech, #dogfooding, footer {
+#value-prop,
+#tech,
+#dogfooding,
+footer {
   padding: 88px 0;
   display: grid;
-  grid-template-rows: 48px 32px auto;
-  grid-row-gap: 24px;
+  grid-row-gap: 1em;
 }
 
 footer {
@@ -98,7 +100,8 @@ footer {
   margin: 0 auto;
 }
 
-#value-prop .container, #dogfooding .container {
+#value-prop .container,
+#dogfooding .container {
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -112,8 +115,7 @@ footer {
   border-radius: 8px;
   padding: 48px;
   display: grid;
-  grid-template-rows: 48px 24px auto;
-  grid-row-gap: 24px;
+  grid-row-gap: 1em;
 }
 
 .value-prop-item svg {
@@ -143,8 +145,7 @@ footer {
   border-radius: 8px;
   padding: 48px;
   display: grid;
-  grid-template-rows: 48px 24px auto 24px;
-  grid-row-gap: 24px;
+  grid-row-gap: 1em;
 }
 
 .tech-item svg {
