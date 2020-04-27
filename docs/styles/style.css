@@ -82,11 +82,17 @@ img#main-illustration {
   border-radius: 8px;
 }
 
-#value-prop, #tech, #dogfooding, #footer {
+#value-prop, #tech, #dogfooding, footer {
   padding: 88px 0;
   display: grid;
   grid-template-rows: 48px 32px auto;
   grid-row-gap: 24px;
+}
+
+footer {
+  max-width: 90vw;
+  padding: 0 0 48px;
+  margin: 0 auto;
 }
 
 #value-prop .container, #dogfooding .container {
