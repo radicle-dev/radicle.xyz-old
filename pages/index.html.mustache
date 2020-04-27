@@ -6,71 +6,82 @@
   <div class="content">
     <section id="subtitle">
       <h1 class="xl">Offline magic code collaboration.</h1>
+      <p>A free and open-source way to host, share, and build software together.</p>
     </section>
     <section id="get-the-app">
       <div id="email-signup">
-        <p>Sign up to get early access.</p>
-        <form action="email">
-          <input type="text" placeholder="Your email"><button>Sign up</button>
+        <p>Interested in using Radicle?</p>
+        <form>
+          <input type="text" placeholder="Enter your email"><button>Sign up</button>
         </form>
       </div>
       <img src="/img/org-project-page.png" alt="app image">
     </section>
     <section id="value-prop">
-      <h2>Why radicle</h2>
-      <p>It's not easy to switch to something new, but here's why you should</p>
+      <h1>Why Radicle?</h1>
+      <p>It’s not easy to switch to something new, but here’s why you should.</p>
       <div class="container">
-        <div class="value-prop-item">
-          {{> svg-easy-to-use }}
-          <h2>Easy to use</h2>
-          <p>
-            The best interface for collaborating on code, period. Trust us, we’ve tried them all.
-          </p>
-        </div>
         <div class="value-prop-item">
           {{> svg-p2p }}
           <h2>Peer-to-peer</h2>
-          <p>
-            Work with friends privately from your computer to their computer. No in-betweens.
-          </p>
+          <p>No servers. No platforms. No in-betweens. Share your code without relying on a third party.</p>
         </div>
         <div class="value-prop-item">
           {{> svg-local-first }}
           <h2>Local-first</h2>
-          <p>
-            Can’t lose access to your data if it was never on a large US corporation’s servers.
-          </p>
+          <p>All of your issues, revisions, and reviews exist on your computer. You own your data — nobody else.</p>
         </div>
-      </div>
-      <div id="get-app">
-        <p>Sound interesting?</p>
-        <button>Get the app</button>
-      </div>
-    </section>
+        <div class="value-prop-item">
+          {{> svg-easy-to-use }}
+          <h2>Secure</h2>
+          <p>No need to trust anyone to keep your work safe. Everything is signed and backed by public key cryptography.</p>
+        </div>
+      </div>{{! closes container }}
+      <img id="main-illustration" src="/img/garden1.png" alt="A beautiful garden.">
+    </section>{{! closes value prop section }}
     <section id="tech">
-      <h2>The tech behind radicle</h2>
-      <p>Radicle is a sovereign stack for code collaboration</p>
+      <h1>No more walled gardens.</h1>
+      <p>Radicle is an open-source stack for code collaboration. Anyone can build on it.</p>
+      <button>How Radicle Works</button>
       <div class="container">
         <div class="tech-item">
           {{> svg-registry }}
-          <h2>registry</h2>
-          <p>
-            Radicle uses a decentralized identity layer called Registry.
-          </p>
-          <a href="">Learn more about Registry -></a>
+          <h2>Registry</h2>
+          <p>For hosting & collaboration, we built Radicle Link, a peer-to-peer replication protocol built on git.</p>
         </div>
         <div class="tech-item">
           {{> svg-link }}
-          <h2>link</h2>
-          <p>
-            For collaboration, Radicle uses Link, a peer-to-peer replication protocol around git.
-          </p>
-          <a href="">Learn more about link -></a>
+          <h2>Link</h2>
+          <p>For decentralized identity & project organization, we built the Radicle Registry.</p>
         </div>
       </div>
-      <button>Build your own app</button>
     </section>
-  </div>
+    <section id="dogfooding">
+      {{> svg-dogfooding }}
+      <h1>We’re dogfooding</h1>
+      <p>To build a great product, we have to use it ourselves. We're building Radicle with our own tech. Help us out and try out our alpha <a href="https://github.com/radicle-dev/radicle-upstream" target="_blank">here</a>.</p>
+      <div class="container">
+        <div class="value-prop-item">
+          {{> svg-beta1 }}
+          <h5 class="all-caps">June 2020</h5>
+          <h2>1st Beta Release</h2>
+          <p>The core feature-set on top of a peer-to-peer stack. This is when we'll start using it ourselves.</p>
+        </div>
+        <div class="value-prop-item">
+          {{> svg-beta2 }}
+          <h5 class="all-caps">September 2020</h5>
+          <h2>2nd Beta Release</h2>
+          <p>Everything a code collaboration tool needs including notifications, search, and discovery.</p>
+        </div>
+        <div class="value-prop-item">
+          {{> svg-beta3 }}
+          <h5 class="all-caps">December 2020</h5>
+          <h2>2nd Beta Release</h2>
+          <p>The app will be hooked up with real money and the public registry and we’ll launch our native coin.</p>
+        </div>
+      </div>{{! closes container }}
+    </section>{{! closes value prop section }}
+  </div>{{! closes content }}
   {{> footer }}
 </body>
 </html>
