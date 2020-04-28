@@ -98,9 +98,10 @@ h5  {
 a {
   cursor: pointer;
   text-decoration: underline;
-  color: var(--color-secondary);
+  color: var(--color-foreground-level-4);
+  text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: var(--color-secondary-level-2);
+  color: var(--color-foreground-level-6);
 }

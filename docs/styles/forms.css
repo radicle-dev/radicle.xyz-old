@@ -23,15 +23,24 @@ input[type=text]:focus {
 }
 
 button {
-    background-color: var(--color-primary);
-    color: var(--color-background);
-    height: 40px;
-    padding: 0 12px;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: var(--color-foreground-level-2);
+  color: var(--color-foreground);
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 button:hover, button:focus {
+  background-color: var(--color-foreground-level-3);
+}
+
+button.main-cta {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+}
+
+button.main-cta:hover, button.main-cta:focus {
     box-shadow: 0 4px 8px black;
     box-shadow: inset 0 0 2px rgba(255,255,255,0.5);
     background: linear-gradient(90deg, #5555ff, #55ffff, #55ff55, #ffff55, #ff5555, #ff55ff, #5555ff);
