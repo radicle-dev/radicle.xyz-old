@@ -12,7 +12,7 @@
       <div id="email-signup">
         <p>Interested in using Radicle?</p>
         <form>
-          <input type="text" placeholder="Enter your email"><button>Sign up</button>
+          <input type="text" placeholder="Enter your email"><button class="main-cta">Sign up</button>
         </form>
       </div>
       <img src="/img/org-project-page.png" alt="app image">
@@ -42,7 +42,7 @@
     <section id="tech">
       <h1>No more walled gardens.</h1>
       <p>Radicle is an open-source stack for code collaboration. Anyone can build on it.</p>
-      <button>How Radicle Works</button>
+      <form action="http://registry.radicle.xyz"><button type="submit">How Radicle Works</button></form>
       <div class="container">
         <div class="tech-item">
           {{> svg-registry }}
@@ -64,19 +64,19 @@
         <div class="value-prop-item">
           {{> svg-beta1 }}
           <h5 class="all-caps">June 2020</h5>
-          <h2>1st Beta Release</h2>
+          <h2>Friends and Family Beta</h2>
           <p>The core feature-set on top of a peer-to-peer stack. This is when we'll start using it ourselves.</p>
         </div>
         <div class="value-prop-item">
           {{> svg-beta2 }}
           <h5 class="all-caps">September 2020</h5>
-          <h2>2nd Beta Release</h2>
+          <h2>Public Beta</h2>
           <p>Everything a code collaboration tool needs including notifications, search, and discovery.</p>
         </div>
         <div class="value-prop-item">
           {{> svg-beta3 }}
           <h5 class="all-caps">December 2020</h5>
-          <h2>2nd Beta Release</h2>
+          <h2>Version 1.0</h2>
           <p>The app will be hooked up with real money and the public registry and we’ll launch our native coin.</p>
         </div>
       </div>{{! closes container }}

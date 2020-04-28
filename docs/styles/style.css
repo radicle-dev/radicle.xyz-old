@@ -35,11 +35,6 @@ header nav a:last-child {
   margin-right: 0;
 }
 
-a {
-  color: var(--color-foreground-level-4);
-  text-decoration: none;
-}
-
 a span {
   text-decoration: underline;
 }
