@@ -155,6 +155,10 @@ footer .two-column-item>* {
 
 /* TIMELINE SECTION */
 
+#timeline .container {
+  width: 90vw;
+}
+
 #timeline {
   padding: 96px 0 120px;
 }
@@ -196,7 +200,7 @@ footer .two-column-item>* {
 
 .icon::after {
   position: absolute;
-  width: 27.3vw;
+  width: 30.5vw;
   top: 11px;
   left: 11px;
   display: block;
@@ -206,7 +210,7 @@ footer .two-column-item>* {
   transform: translateZ(-1px);
 }
 
-@media only screen and (min-width: 1820px) {
+@media only screen and (min-width: 1600px) {
   .icon::after {
     width: 488px;
   }
@@ -227,7 +231,7 @@ footer .two-column-item>* {
   color: var(--color-primary);
 }
 
-.not-here {
+.not-active .not-here {
   color: var(--color-background);
 }
 
