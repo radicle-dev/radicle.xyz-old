@@ -2,6 +2,7 @@
 @import "reset.css";
 @import "typography.css";
 @import "color.css";
+@import "mobile.css";
 @import "forms.css";
 @import "docs.css";
 
@@ -14,8 +15,8 @@ body {
 
 .container {
   max-width: 1440px;
-  margin: 32px auto 54px auto;
-  width: 90vw;
+  margin: 32px auto 54px;
+  width: 80vw;
 }
 
 ::selection {
@@ -113,6 +114,20 @@ footer .container {
 
 /* GARDEN SECTION */
 
+#garden {
+  background: url(../img/garden-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 12vw;
+}
+
+#garden-subtitle {
+  max-width: 360px;
+  margin: 18px auto 32px;
+  color: var(--color-foreground-level-6);
+}
+
 .two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -125,68 +140,10 @@ footer .container {
   padding: 24px;
 }
 
-.two-column-item >* {
+#garden .two-column-item>h2 {
+  margin: 24px 0
+}
+
+footer .two-column-item>* {
   margin: 16px 0;
-}
-
-
-
-/* MOBILE STYLES
-
-I wanted to put these in a mobile.css file and @import it at the top, but
-then all the styles overwrite. mobile.css would need to be imported at the
-end, but I couldn't get that to work. So the mobile styles are living here
-for now. Plz help.
-*/
-
-/* MOBILE */
-@media only screen and (max-width: 480px) {
-
-  #get-the-app p,
-  #get-the-app form {
-    margin: 0;
-  }
-
-  #email-signup input[type=text],
-  #email-signup form button,
-  #email-signup p {
-    width: 80vw;
-    margin-left: 0;
-  }
-
-  #email-signup form button,
-  #email-signup p {
-    margin-bottom: 16px;
-  }
-
-  #email-signup input[type=text] {
-    margin-bottom: 8px;
-  }
-
-  a#logo {
-    width: 300px;
-  }
-
-  h1.xl {
-    font-size: 9.5vw;
-    line-height: 9.5vw;
-  }
-
-
-}
-
-/* TABLET */
-@media only screen and (max-width: 960px) {
-
-  header {
-    padding-bottom: 0;
-  }
-
-  header nav {
-    padding-top: 16px;
-    position: static;
-    top: unset;
-    right: unset;
-  }
-
 }

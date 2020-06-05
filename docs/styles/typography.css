@@ -13,12 +13,17 @@
   font-family: var(--font-stack);
 }
 
-pre > code {
+pre>code {
   display: block;
   line-height: .95em;
 }
 
-h1, h2, h3, h4, h5, button {
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
   font-weight: bold;
   color: var(--color-foreground);
   -webkit-font-smoothing: antialiased;
@@ -31,9 +36,8 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
-h1  {
-  font-size: 36px;
-  line-height: 40px;
+h1 {
+  font-size: 48px;
 }
 
 h1.xl {
@@ -53,35 +57,37 @@ span.magic:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: shine .75s linear infinite;
-          animation: shine .75s linear infinite;
-  }
-  @-webkit-keyframes shine {
-    to {
-      background-position: 200% center;
-    }
-  }
-  @keyframes shine {
-    to {
-      background-position: 200% center;
-    }
+  animation: shine .75s linear infinite;
 }
 
-h2  {
+@-webkit-keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+h2 {
   font-size: 24px;
   line-height: 28px;
 }
 
-h3  {
+h3 {
   font-size: 20px;
   line-height: 24px;
 }
 
-h4  {
+h4 {
   font-size: 16px;
   line-height: 20px;
 }
 
-h5  {
+h5 {
   font-size: 13px;
   line-height: 16px;
 }
@@ -102,7 +108,8 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: var(--color-foreground-level-6);
   text-decoration: underline;
 }
