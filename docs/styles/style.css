@@ -97,12 +97,12 @@ footer {
 
 #value-prop .container,
 #dogfooding .container {
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 32px;
-  max-width: 90vw;
+  max-width: 1440px;
   margin: 32px auto 54px auto;
+  width: 90vw;
 }
 
 .value-prop-item {
