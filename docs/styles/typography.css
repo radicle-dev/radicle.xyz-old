@@ -104,4 +104,5 @@ a {
 
 a:hover, a:focus {
   color: var(--color-foreground-level-6);
+  text-decoration: underline;
 }
