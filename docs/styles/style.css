@@ -86,11 +86,12 @@ img#main-illustration {
   border-radius: 8px;
 }
 
-
 footer {
-  max-width: 90vw;
-  padding: 0 0 48px;
   margin: 0 auto;
+}
+
+footer img {
+  width: 100vw;
 }
 
 #get-app {
