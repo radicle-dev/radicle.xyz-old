@@ -117,6 +117,39 @@ footer form button {
   margin-left: 8px;
 }
 
+/* PROTOCOLS SECTION */
+
+#protocols .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 96px;
+  padding: 128px 0 96px;
+}
+
+.left {
+  background-color: var(--color-primary);
+}
+
+.right {
+  text-align: left;
+}
+
+.right h1 {
+  margin-top: 64px;
+}
+
+.right h2 {
+  padding: 32px 0 8px;
+}
+
+.right p {
+  max-width: 340px;
+}
+
+.right p:last-child {
+  margin: 48px 0;
+}
+
 /* GARDEN SECTION */
 
 #garden {
