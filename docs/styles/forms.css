@@ -31,8 +31,19 @@ button {
   cursor: pointer;
 }
 
-button:hover, button:focus {
+button.outline {
+  background: none;
+  border: 1px solid var(--color-foreground-level-2);
+}
+
+button:hover,
+button:focus {
   background-color: var(--color-foreground-level-3);
+}
+
+button.outline:hover,
+button.outline:hover {
+  background-color: var(--color-foreground-level-2);
 }
 
 button.main-cta {
@@ -48,6 +59,7 @@ button.main-cta:hover, button.main-cta:focus {
     -webkit-animation: shine 1s linear infinite;
             animation: shine 1s linear infinite;
     }
+
     @-webkit-keyframes shine {
       to {
         background-position: 200% center;
@@ -58,16 +70,8 @@ button.main-cta:hover, button.main-cta:focus {
         background-position: 200% center;
       }
   }
-}
 
 button:active {
     transition: none;
     opacity: .5;
 }
-
-/*
-commenting out because it looks bad but we need focus states still
-button:focus {
-    box-shadow: 0 0 0 2px var(--color-primary-level-6);
-}
-*/

@@ -24,7 +24,11 @@ body {
 }
 
 header {
-  padding: 32px;
+  padding: 32px 32px 0;
+}
+
+header .container {
+  margin-top: 10px;
 }
 
 header nav {
@@ -42,7 +46,11 @@ header nav a:last-child {
   margin-right: 0;
 }
 
-a span {
+nav a:hover {
+  text-decoration: none;
+}
+
+nav a:hover span {
   text-decoration: underline;
 }
 
@@ -51,7 +59,7 @@ a#logo {
 }
 
 #subtitle {
-  padding: 32px 0 48px 0;
+  padding: 0 0 48px 0;
 }
 
 #get-the-app {
@@ -98,17 +106,14 @@ footer img {
   width: 100vw;
 }
 
-footer .container {
-  max-width: ;
-}
-
 #get-app {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#email-signup form button {
+#email-signup form button,
+footer form button {
   margin-left: 8px;
 }
 
