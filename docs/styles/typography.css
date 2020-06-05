@@ -38,6 +38,7 @@ p {
 
 h1 {
   font-size: 48px;
+  font-weight: 900;
 }
 
 h1.xl {
@@ -48,7 +49,7 @@ h1.xl {
   margin: 0 auto 24px;
 }
 
-span.magic:hover {
+span.magic {
   background: linear-gradient(90deg, #5555ff, #55ffff, #55ff55, #ffff55, #ff5555, #ff55ff, #5555ff);
   background-size: 200% auto;
   color: #000;
@@ -104,7 +105,7 @@ h5 {
 a {
   cursor: pointer;
   text-decoration: underline;
-  color: var(--color-foreground-level-4);
+  color: var(--color-foreground-level-5);
   text-decoration: none;
 }
 
