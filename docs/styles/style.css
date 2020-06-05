@@ -105,13 +105,13 @@ footer {
 
 /* GARDEN SECTION */
 
-#join-us {
+.two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 16px;
 }
 
-#join-us>div {
+.garden-item {
   max-width: 460px;
   margin: 0 auto;
   padding: 24px;
