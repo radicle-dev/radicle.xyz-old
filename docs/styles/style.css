@@ -14,7 +14,7 @@ body {
 
 .container {
   max-width: 1440px;
-  margin: 32px auto 54px auto;
+  margin: 32px auto 54px;
   width: 90vw;
 }
 
@@ -105,16 +105,38 @@ footer {
 
 /* GARDEN SECTION */
 
+#garden {
+  background: url(../img/garden-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 12vw;
+}
+
+#garden .container {
+  width: 70vw;
+}
+
+#garden-subtitle {
+  max-width: 360px;
+  margin: 18px auto 32px;
+  color: var(--color-foreground-level-6);
+}
+
 .two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 16px;
 }
 
-.garden-item {
+.two-column-item {
   max-width: 460px;
   margin: 0 auto;
   padding: 24px;
+}
+
+.two-column-item>h2 {
+  padding: 24px 0;
 }
 
 
