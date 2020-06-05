@@ -147,3 +147,85 @@ footer .container {
 footer .two-column-item>* {
   margin: 16px 0;
 }
+
+/* TIMELINE SECTION */
+
+#timeline {
+  padding: 96px 0 120px;
+}
+
+#timeline-subtitle {
+  max-width: 580px;
+  margin: 18px auto 32px;
+  color: var(--color-foreground-level-6);
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 24px;
+}
+
+.timeline-item>h2 {
+  padding: 24px 0;
+}
+
+.not-active>h2 {
+  color: var(--color-foreground-level-5);
+}
+
+.not-active>p {
+  color: var(--color-foreground-level-4);
+}
+
+
+
+.icon {
+  margin: 8px auto 16px;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-clip: padding-box;
+  transform-style: preserve-3d;
+}
+
+.icon::after {
+  position: absolute;
+  width: 27.3vw;
+  top: 11px;
+  left: 11px;
+  display: block;
+  height: 2px;
+  content: "";
+  background-color: var(--color-foreground-level-2);
+  transform: translateZ(-1px);
+}
+
+@media only screen and (min-width: 1820px) {
+  .icon::after {
+    width: 488px;
+  }
+}
+
+.last::after {
+  width: 0vw;
+}
+
+.here,
+.not-here,
+.date {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.here {
+  color: var(--color-primary);
+}
+
+.not-here {
+  color: var(--color-background);
+}
+
+.date {
+  color: var(--color-foreground-level-4);
+}
