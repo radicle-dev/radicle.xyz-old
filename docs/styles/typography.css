@@ -24,7 +24,7 @@ h3,
 h4,
 h5,
 button {
-  font-weight: bold;
+  font-weight: 600;
   color: var(--color-foreground);
   -webkit-font-smoothing: antialiased;
 }
