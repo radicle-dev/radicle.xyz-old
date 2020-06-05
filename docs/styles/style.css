@@ -12,6 +12,12 @@ body {
   cursor: default;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 32px auto 54px auto;
+  width: 90vw;
+}
+
 ::selection {
   background-color: var(--color-caution);
 }
@@ -80,40 +86,10 @@ img#main-illustration {
   border-radius: 8px;
 }
 
-#value-prop,
-#tech,
-#dogfooding,
-footer {
-  padding: 88px 0;
-  display: grid;
-  grid-row-gap: 1em;
-}
 
 footer {
   max-width: 90vw;
   padding: 0 0 48px;
-  margin: 0 auto;
-}
-
-#value-prop .container,
-#dogfooding .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 32px;
-  max-width: 1440px;
-  margin: 32px auto 54px auto;
-  width: 90vw;
-}
-
-.value-prop-item {
-  border: 2px solid var(--color-foreground-level-1);
-  border-radius: 8px;
-  padding: 48px;
-  display: grid;
-  grid-row-gap: 1em;
-}
-
-.value-prop-item svg {
   margin: 0 auto;
 }
 
@@ -123,54 +99,25 @@ footer {
   align-items: center;
 }
 
-#tech {
-  background-color: var(--color-foreground-level-1);
-}
-
-#tech .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 32px;
-  max-width: 90vw;
-  margin: 32px auto 54px auto;
-}
-
-.tech-item {
-  background-color: var(--color-background);
-  border-radius: 8px;
-  padding: 48px;
-  display: grid;
-  grid-row-gap: 1em;
-}
-
-.tech-item svg {
-  margin: 0 auto;
-}
-
 #email-signup form button {
   margin-left: 8px;
 }
 
-#tech button {
-  justify-self: center;
+/* GARDEN SECTION */
+
+#join-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
 }
 
-#dogfooding {
+#join-us>div {
+  max-width: 460px;
   margin: 0 auto;
+  padding: 24px;
 }
 
-#dogfooding p {
-  max-width: 50vw;
-  margin: 0 auto;
-}
 
-#dogfooding svg {
-  margin: 0 auto;
-}
-
-#dogfooding .value-prop-item h5 {
-  color: var(--color-foreground-level-4);
-}
 
 /* MOBILE STYLES
 
@@ -213,41 +160,11 @@ for now. Plz help.
     line-height: 9.5vw;
   }
 
-  #value-prop .container {
-    margin-bottom: 0;
-  }
-
-  .value-prop-item,
-  .tech-item {
-    padding: 48px 24px;
-  }
 
 }
 
 /* TABLET */
 @media only screen and (max-width: 960px) {
-
-  #value-prop .container,
-  #tech .container,
-  #dogfooding .container {
-    grid-template-columns: 1fr;
-  }
-
-  .value-prop-item,
-  .tech-item {
-    margin-bottom: 32px;
-  }
-
-  #value-prop,
-  #tech,
-  #dogfooding {
-    padding-right: 5vw;
-    padding-left: 5vw;
-  }
-
-  #dogfooding p {
-    max-width: 90vw;
-  }
 
   header {
     padding-bottom: 0;
