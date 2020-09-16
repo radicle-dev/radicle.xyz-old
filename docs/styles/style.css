@@ -66,7 +66,6 @@ a#logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 2px solid var(--color-foreground-level-3)
 }
 
 #get-the-app #email-signup {
@@ -80,19 +79,13 @@ a#logo {
   border-bottom: 0;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  box-shadow: 0 -16px 32px rgba(0, 0, 0, .15);
+  box-shadow: 0 -16px 32px rgba(0, 0, 0, 0.15);
 }
 
 #get-the-app p,
 #get-the-app form {
   display: inline-block;
   margin: 0 0 16px 8px;
-}
-
-img#main-illustration {
-  width: 90vw;
-  margin: 0 auto;
-  border-radius: 8px;
 }
 
 footer {
@@ -115,6 +108,28 @@ footer img {
 #email-signup form button,
 footer form button {
   margin-left: 8px;
+}
+
+/* SCROLLING UI IMAGE */
+
+#horizontal-scroll-wrapper {
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+}
+.horizontal-scroll-content {
+  display: inline-block;
+  background: url(../img/UI-collage-dark@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  min-height: 720px;
+  min-width: 4667px;
+  margin: 2em 1em;
 }
 
 /* PROTOCOLS SECTION */
@@ -178,11 +193,11 @@ footer form button {
   padding: 24px;
 }
 
-#garden .two-column-item>h2 {
-  margin: 24px 0
+#garden .two-column-item > h2 {
+  margin: 24px 0;
 }
 
-footer .two-column-item>* {
+footer .two-column-item > * {
   margin: 16px 0;
 }
 
@@ -208,19 +223,17 @@ footer .two-column-item>* {
   grid-column-gap: 24px;
 }
 
-.timeline-item>h2 {
+.timeline-item > h2 {
   padding: 24px 0;
 }
 
-.not-active>h2 {
+.not-active > h2 {
   color: var(--color-foreground-level-5);
 }
 
-.not-active>p {
+.not-active > p {
   color: var(--color-foreground-level-4);
 }
-
-
 
 .icon {
   margin: 8px auto 16px;
