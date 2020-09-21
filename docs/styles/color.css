@@ -1,26 +1,25 @@
 :root {
-  --color-foreground: #ffffff;
-  --color-foreground-level-6: #D3DEE8;
-  --color-foreground-level-5: #8594A1;
-  --color-foreground-level-4: #5E6D7A;
-  --color-foreground-level-3: #333E47;
-  --color-foreground-level-2: #29343D;
+  --color-foreground: #0e171f;
+  --color-foreground-level-6: #d3dee8;
+  --color-foreground-level-5: #8594a1;
+  --color-foreground-level-4: #5e6d7a;
+  --color-foreground-level-3: #333e47;
+  --color-foreground-level-2: #29343d;
   --color-foreground-level-1: #162029;
-  --color-background: #0E171F;
+  --color-background: #ffffff;
 
-  --color-primary: #FF55FF;
-  --color-primary-level-6: #62326D;
-  --color-primary-level-2: #62326D;
-  --color-primary-level-1: #382847; 
+  --color-primary: #ff55ff;
+  --color-primary-level-6: #62326d;
+  --color-primary-level-2: #62326d;
+  --color-primary-level-1: #382847;
 
-  --color-secondary: #5555FF;
-  --color-secondary-level-6: #E3E3FF;
-  --color-secondary-level-2: #2C326D;
+  --color-secondary: #5555ff;
+  --color-secondary-level-6: #e3e3ff;
+  --color-secondary-level-2: #2c326d;
   --color-secondary-level-1: #212847;
 
-  --color-tertiary: #55FFFF;
-  --color-positive: #53DB53;
-  --color-caution: #FFC555;
-  --color-negative: #FF5555;
-
+  --color-tertiary: #55ffff;
+  --color-positive: #53db53;
+  --color-caution: #ffc555;
+  --color-negative: #ff5555;
 }

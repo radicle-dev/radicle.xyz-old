@@ -1,21 +1,22 @@
 @font-face {
   font-family: "Inter";
-  src: url('https://rsms.me/inter/inter.css');
+  src: url("https://rsms.me/inter/inter.css");
 }
 
 @font-face {
   font-family: "Source Code Pro";
-  src: url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+  src: url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 }
 
 :root {
-  --font-stack: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-stack: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-family: var(--font-stack);
 }
 
-pre>code {
+pre > code {
   display: block;
-  line-height: .95em;
+  line-height: 0.95em;
 }
 
 h1,
@@ -50,15 +51,24 @@ h1.xl {
 }
 
 span.magic {
-  background: linear-gradient(90deg, #5555ff, #55ffff, #55ff55, #ffff55, #ff5555, #ff55ff, #5555ff);
+  background: linear-gradient(
+    90deg,
+    #5555ff,
+    #55ffff,
+    #55ff55,
+    #ffff55,
+    #ff5555,
+    #ff55ff,
+    #5555ff
+  );
   background-size: 200% auto;
   color: #000;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: shine .75s linear infinite;
-  animation: shine .75s linear infinite;
+  -webkit-animation: shine 0.75s linear infinite;
+  animation: shine 0.75s linear infinite;
 }
 
 @-webkit-keyframes shine {
@@ -99,7 +109,7 @@ h5 {
 }
 
 .mono {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 a {
