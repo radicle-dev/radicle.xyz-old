@@ -6,6 +6,8 @@
 @import "forms.css";
 @import "docs.css";
 
+/* GENERAL */
+
 body {
   text-align: center;
   background: var(--color-background);
@@ -14,28 +16,25 @@ body {
 }
 
 .container {
-  max-width: 1440px;
-  margin: 32px auto 54px;
-  width: 80vw;
+  max-width: 90rem;
+  margin: 2rem auto 4rem;
+  padding: 0 2rem;
 }
 
 ::selection {
   background-color: var(--color-caution);
 }
 
+/* HEADER */
+
 header {
   padding: 32px 32px 0;
+  text-align: left;
 }
 
 header .container {
-  margin-top: 10px;
-}
-
-header nav {
-  padding-top: 12px;
-  position: absolute;
-  top: 32px;
-  right: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 header nav a {
@@ -57,6 +56,8 @@ nav a:hover span {
 a#logo {
   text-decoration: none;
 }
+
+/* SUBTITLE */
 
 #subtitle {
   padding: 0 0 48px 0;
