@@ -32,7 +32,7 @@ button {
 
 p {
   font-family: var(--font-stack);
-  color: var(--color-foreground-level-6);
+  color: var(--color-foreground-level-1);
   line-height: 150%;
   -webkit-font-smoothing: antialiased;
 }

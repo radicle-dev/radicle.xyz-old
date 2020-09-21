@@ -28,7 +28,6 @@ body {
 /* HEADER */
 
 header {
-  padding: 32px 32px 0;
   text-align: left;
 }
 
@@ -63,6 +62,8 @@ a#logo {
   padding: 0 0 48px 0;
 }
 
+/* GET THE APP */
+
 #get-the-app {
   display: flex;
   flex-direction: column;
@@ -73,42 +74,10 @@ a#logo {
   max-width: 90vw;
 }
 
-#get-the-app img {
-  margin-top: 48px;
-  max-width: 90%;
-  border: 2px solid var(--color-foreground-level-3);
-  border-bottom: 0;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  box-shadow: 0 -16px 32px rgba(0, 0, 0, 0.15);
-}
-
 #get-the-app p,
 #get-the-app form {
   display: inline-block;
   margin: 0 0 16px 8px;
-}
-
-footer {
-  margin: 0 auto;
-  padding-top: 2vw;
-  text-align: left;
-  background-color: var(--color-foreground-level-1);
-}
-
-footer img {
-  width: 100vw;
-}
-
-#get-app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#email-signup form button,
-footer form button {
-  margin-left: 8px;
 }
 
 /* SCROLLING UI IMAGE */
@@ -133,54 +102,34 @@ footer form button {
   margin: 2em 1em;
 }
 
+/* FEATURES */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.features p {
+  padding: 2rem;
+  background-color: var(--color-foreground-level-6);
+  border-radius: 10rem;
+}
+
 /* PROTOCOLS SECTION */
 
-#protocols .container {
+.protocols {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 96px;
-  padding: 128px 0 96px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-.left {
-  background-color: var(--color-primary);
+.protocols div {
+  background-color: var(--color-foreground-level-6);
+  padding: 4rem;
 }
 
-.right {
-  text-align: left;
-}
-
-.right h1 {
-  margin-top: 64px;
-}
-
-.right h2 {
-  padding: 32px 0 8px;
-}
-
-.right p {
-  max-width: 340px;
-}
-
-.right p:last-child {
-  margin: 48px 0;
-}
-
-/* GARDEN SECTION */
-
-#garden {
-  background: url(../img/garden-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-  padding-top: 12vw;
-}
-
-#garden-subtitle {
-  max-width: 360px;
-  margin: 18px auto 32px;
-  color: var(--color-foreground-level-6);
-}
+/* CODELANDS SECTION */
 
 .two-column {
   display: grid;
@@ -194,14 +143,6 @@ footer form button {
   padding: 24px;
 }
 
-#garden .two-column-item > h2 {
-  margin: 24px 0;
-}
-
-footer .two-column-item > * {
-  margin: 16px 0;
-}
-
 /* TIMELINE SECTION */
 
 #timeline .container {
@@ -210,12 +151,6 @@ footer .two-column-item > * {
 
 #timeline {
   padding: 96px 0 120px;
-}
-
-#timeline-subtitle {
-  max-width: 580px;
-  margin: 18px auto 32px;
-  color: var(--color-foreground-level-6);
 }
 
 .timeline {
@@ -284,4 +219,27 @@ footer .two-column-item > * {
 
 .date {
   color: var(--color-foreground-level-4);
+}
+
+/* FOOTER */
+
+footer {
+  margin: 0 auto;
+  padding-top: 2vw;
+  text-align: left;
+}
+
+footer img {
+  width: 100vw;
+}
+
+#get-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#email-signup form button,
+footer form button {
+  margin-left: 8px;
 }
