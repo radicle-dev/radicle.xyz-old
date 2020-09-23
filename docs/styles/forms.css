@@ -1,77 +1,72 @@
-input[type=text] {
-    border: 1px solid var(--color-foreground-level-3);
-    padding: 0 0 0 8px;
-    height: 40px;
-    border-radius: 4px;
-    margin-right: 0;
-    color: var(--color-foreground-level-6);
-    width: 250px;
+input[type="text"] {
+  border: 1px solid var(--color-foreground-level-3);
+  padding: 0 0 0 8px;
+  height: 40px;
+  border-radius: 4px;
+  margin-right: 0;
+  color: var(--color-foreground-level-6);
+  width: 250px;
 }
 
-input[type=text]::placeholder {
-    color: var(--color-foreground-level-4);
+input[type="text"]::placeholder {
+  color: var(--color-foreground-level-4);
 }
 
-input[type=text]:focus::placeholder {
-    color: var(--color-foreground-level-4);
-    margin: 0 1px;
+input[type="text"]:focus::placeholder {
+  color: var(--color-foreground-level-4);
+  margin: 0 1px;
 }
 
-input[type=text]:hover,
-input[type=text]:focus {
-    background: var(--color-foreground-level-1);
+input[type="text"]:hover,
+input[type="text"]:focus {
+  background: var(--color-foreground-level-1);
 }
 
 button {
-  background-color: var(--color-foreground-level-2);
   color: var(--color-foreground);
   height: 40px;
   padding: 0 12px;
   border-radius: 4px;
   cursor: pointer;
-}
-
-button.outline {
   background: none;
   border: 1px solid var(--color-foreground-level-2);
 }
 
-button:hover,
-button:focus {
-  background-color: var(--color-foreground-level-3);
-}
-
-button.outline:hover,
-button.outline:hover {
+button:hover {
   background-color: var(--color-foreground-level-2);
 }
 
-button.main-cta {
-    background-color: var(--color-primary);
-    color: var(--color-background);
+button:active {
+  transition: none;
+  opacity: 0.5;
 }
 
-button.main-cta:hover, button.main-cta:focus {
-    box-shadow: 0 4px 8px black;
-    box-shadow: inset 0 0 2px rgba(255,255,255,0.5);
-    background: linear-gradient(90deg, #5555ff, #55ffff, #55ff55, #ffff55, #ff5555, #ff55ff, #5555ff);
-    background-size: 200% auto;
-    -webkit-animation: shine 1s linear infinite;
-            animation: shine 1s linear infinite;
-    }
+/* main cta */
 
-    @-webkit-keyframes shine {
-      to {
-        background-position: 200% center;
-      }
-    }
-    @keyframes shine {
-      to {
-        background-position: 200% center;
-      }
-  }
+.main-cta > input[type="text"],
+.main-cta > button {
+  font-size: 1.5rem;
+  height: 3.25rem;
+  color: var(--color-background);
+  margin-left: 1rem;
+  border: 1px solid var(--color-background);
+}
 
-button:active {
-    transition: none;
-    opacity: .5;
+.main-cta > input[type="text"]::placeholder {
+  color: var(--color-background);
+}
+
+.main-cta > input[type="text"]:focus::placeholder {
+  color: var(--color-background);
+}
+
+.main-cta > input[type="text"]:hover,
+.main-cta > input[type="text"]:focus {
+  background: var(--color-foreground);
+}
+
+.main-cta > button:hover {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: var(--color-background);
 }

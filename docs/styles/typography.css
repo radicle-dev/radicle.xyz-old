@@ -8,6 +8,11 @@
   src: url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 }
 
+@font-face {
+  font-family: "Druk X";
+  src: url("../fonts/Druk-XCondSuper.otf");
+}
+
 :root {
   --font-stack: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -25,62 +30,22 @@ h3,
 h4,
 h5,
 button {
-  font-weight: 600;
   color: var(--color-foreground);
-  -webkit-font-smoothing: antialiased;
 }
 
 p {
   font-family: var(--font-stack);
   color: var(--color-foreground-level-1);
   line-height: 150%;
-  -webkit-font-smoothing: antialiased;
+}
+
+strong {
+  font-weight: 600;
 }
 
 h1 {
   font-size: 48px;
   font-weight: 900;
-}
-
-h1.xl {
-  font-size: 8vw;
-  line-height: 7.5vw;
-  font-weight: 900;
-  max-width: 90vw;
-  margin: 0 auto 24px;
-}
-
-span.magic {
-  background: linear-gradient(
-    90deg,
-    #5555ff,
-    #55ffff,
-    #55ff55,
-    #ffff55,
-    #ff5555,
-    #ff55ff,
-    #5555ff
-  );
-  background-size: 200% auto;
-  color: #000;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: shine 0.75s linear infinite;
-  animation: shine 0.75s linear infinite;
-}
-
-@-webkit-keyframes shine {
-  to {
-    background-position: 200% center;
-  }
-}
-
-@keyframes shine {
-  to {
-    background-position: 200% center;
-  }
 }
 
 h2 {
@@ -93,23 +58,17 @@ h3 {
   line-height: 24px;
 }
 
-h4 {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-h5 {
-  font-size: 13px;
-  line-height: 16px;
-}
-
 .all-caps {
   text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .mono {
   font-family: "Source Code Pro", monospace;
+}
+
+.druk {
+  font-family: Druk X;
+  font-weight: 400;
 }
 
 a {
