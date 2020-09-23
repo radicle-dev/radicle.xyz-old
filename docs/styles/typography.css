@@ -74,12 +74,9 @@ h3 {
 a {
   cursor: pointer;
   text-decoration: underline;
-  color: var(--color-foreground-level-5);
-  text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: var(--color-foreground-level-6);
-  text-decoration: underline;
+  color: var(--color-secondary);
 }
