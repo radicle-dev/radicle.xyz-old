@@ -4,54 +4,105 @@
 <body id="index">
   {{> header }}
   <div class="content">
-    <section id="subtitle">
-      <h1 class="xl">Secure <span class="magic">serverless</span> code collaboration.</h1>
-      {{! <p>A free and open-source way to host, share, and build software together.</p> }}
+
+    <section id="headline">
+      <h1 class="headline">Locally sourced.</h1>
+      <h2 class="blend">A peer-to-peer stack for building software together.</h2>
+      <img class="headline-gif" src="../img/lan-party.gif" alt="">
     </section>
+
     <section id="get-the-app">
-      <div id="email-signup">
-        <p>Interested? Join our mailing list for updates.</p>
-        <form>
-          <input type="text" placeholder="Enter your email"><button class="main-cta">Sign up</button>
-        </form>
+      <div class="container">
+        <div class="email-signup">
+          <p><strong>Sound fun?</strong> Join the mailing list to find out about future releases.</p>
+          <form class="main-cta">
+            <input type="text" placeholder="Enter your email"><button>Join</button>
+          </form>
+        </div>
       </div>
-      <img src="/img/org-project-page.png" alt="app image">
     </section>
+
+    <section id="horizontal-scroll-wrapper">
+      <div class="horizontal-scroll-content"></div>
+    </section>
+
+    <section id="organic">
+      <div class="container">
+        <h1 class="druk"><span>Organic</span><br/>collaboration</h1>
+        <h2>A new way to build software</h2>
+        <img class="organic-gif" src="../img/extending-hands.gif" alt="">
+        <div class="attributes">
+          <div class="attribute">
+            <div class="attribute-title">
+              <div>
+                <a href="/"><h4 class="active">No down-time.</h4></a>
+                <a href="/"><h4>Everything is local</h4></a>
+                <a href="/"><h4>Sustain open source</h4></a>
+              </div>
+            </div>
+            <div class="attribute-features">
+              <div>
+                <p>{{> svg-feat-offline }} Offline-first collaboration</p>
+                <p>{{> svg-feat-offline }} Available in every country</p>
+                <p>{{> svg-feat-offline }} Peer-to-peer code sharing and hosting</p>
+                <p>{{> svg-feat-offline }} Censorship-resistant</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="protocols">
       <div class="container">
-        <div class="left"></div>
-        <div class="right">
-          <h1>Built on protocols, not platforms</h1>
-          <h2>Radicle Link</h2>
-          <p>A peer-to-peer replication protocol for hosting & collaboration, built on Git.</p>
-          <h2>Radicle Registry</h2>
-          <p>A blockchain for decentralized identity & project organization.</p>
-          <p><a href="/">Learn more with our intro guide</a> →</p>
+        <h1>No more walled gardens.</h1>
+        <h2>Built on open protocols, not platforms.</h2>
+        <div class="image-links">
+          <img class="protocol-gif" src="../img/garden.gif">
+          <div class="links">
+            <a href="/">source code</a>
+            <a href="/">documentation</a>
+          </div>
+        </div>
+        <div class="protocols">
+          <div>
+            <h3>git</h3>
+            <p>something about git</p>
+          </div>
+          <div>
+            <h3>Radicle Link</h3>
+            <p>A peer-to-peer replication protocol for hosting & collaboration, built on Git.</p>
+          </div>
+          <div>
+            <h3>ethereum</h3>
+            <p>something about ethereum</p>
+          </div>
         </div>
       </div>
     </section>
-    <section id="garden">
+
+    <section id="codelands">
       <div class="container">
-        <h1>Come on into the garden</h1>
-        <p id="garden-subtitle">Radicle is completely open-source. You can build your <em>own</em> code collaboration experience.</p>
+        <h1>Explore the codelands.</h1>
         <div class="two-column">
           <div class="two-column-item">
-            {{> svg-build }}
-            <h2>Start building with Radicle</h2>
+            <h3>Join the  Community</h3>
             <p>Everything is open-source and <a href="/">public by default</a>. Dive into <a href="/">our code</a> or check out <a href="/">radicle.community</a>.</p>
+            <p>Drop in the #radicle channel on freenode</p>
           </div>
           <div class="two-column-item">
-            {{> svg-developer }}
-            <h2>Join the Developer Program</h2>
-            <p>Interested in building Radicle into your code collaboration experience? Join our <a href="/">developer program</a>.</p>
+            <h3>Try out the beta</h3>
+            <p>Interested in building Radicle into your code collaboration experience?</p>
+            <a href="/">Download the beta</a>
           </div>
         </div>
       </div>
     </section>
+
      <section id="timeline">
       <div class="container">
-        <h1>Where we’re headed</h1>
-        <p id="timeline-subtitle">To build a great product, we have to use it ourselves. We're building Radicle with our own tech. Read about our public by default strategy <a href="/">here</a>.</p>
+        <h1>Where we’re headed →</h1>
+        <h2>To build a great product, we have to use it ourselves. We're building Radicle with our own tech. Read about our public by default strategy <a href="/">here</a>.</h2>
         <div class="timeline">
           <div class="timeline-item">
             <p class="here">We're here</p>
@@ -59,7 +110,7 @@
               {{> svg-here }}
             </div>
             <p class="date">July 2020</p>
-            <h2>Friends & Family</h2>
+            <h3>Friends & Family</h3>
             <p>The core feature-set on top of a peer-to-peer stack. This is when we'll start using it ourselves.</p>
           </div>
           <div class="timeline-item not-active">
@@ -68,7 +119,7 @@
               {{> svg-date-square }}
             </div>
             <p class="date">Late 2020</p>
-            <h2>Public Beta</h2>
+            <h3>Public Beta</h3>
             <p>Everything a code collaboration tool needs including notifications, search, and discovery.</p>
           </div>
           <div class="timeline-item not-active">
@@ -77,7 +128,7 @@
               {{> svg-date-square }}
             </div>
             <p class="date">Early 2021</p>
-            <h2>Functional Release</h2>
+            <h3>Functional Release</h3>
             <p>The app will be hooked up with real money and the public registry and we’ll launch our native coin.</p>
           </div>
         </div>
