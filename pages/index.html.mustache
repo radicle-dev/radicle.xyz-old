@@ -6,7 +6,7 @@
   <div class="content">
 
     <section id="headline">
-      <h1 class="headline">Locally sourced.</h1>
+      <h1 class="headline druk">Locally sourced.</h1>
       <h2 class="blend">A peer-to-peer stack for building software together.</h2>
       <img class="headline-gif" src="../img/lan-party.gif" alt="">
     </section>
@@ -55,27 +55,31 @@
 
     <section id="protocols">
       <div class="container">
-        <h1>No more walled gardens.</h1>
-        <h2>Built on open protocols, not platforms.</h2>
-        <div class="image-links">
-          <img class="protocol-gif" src="../img/garden.gif">
-          <div class="links">
-            <a href="/">source code</a>
-            <a href="/">documentation</a>
-          </div>
+        <div class="links">
+          <a href="/"><span>source code</span> ↗</a>
+          <a href="/"><span>documentation</span> ↗</a>
         </div>
+        <h1 class="druk">No more walled gardens.</h1>
+        <div class="subtitle-container">
+          <h2>Built on open protocols, not platforms.</h2>
+        </div>
+        <img class="protocol-gif" src="../img/garden.gif">
         <div class="protocols">
           <div>
-            <h3>git</h3>
-            <p>something about git</p>
+            <h3 class="druk">git</h3>
+            <p>No need to change the way you work. Radicle extends Git with peer-to-peer networking, giving distributed version control a new superpower.</p>
+            {{> svg-proto-git }}
           </div>
           <div>
-            <h3>Radicle Link</h3>
-            <p>A peer-to-peer replication protocol for hosting & collaboration, built on Git.</p>
+            <h3 class="druk rad-link">radicle<br/>link</h3>
+            <p>The new standard for code collaboration. Link is the peer-to-peer protocol that powers the Radicle Network. A network that everyone can use and no one can take down.</p>
+            {{> svg-proto-link }}
           </div>
           <div>
-            <h3>ethereum</h3>
-            <p>something about ethereum</p>
+            <h3 class="druk">eth<span>(opt-in)</span></h3>
+            <p>Harness the power of global identities and digital money. Fund and sustain your open source work without relying on intermediaries. </p>
+            {{> svg-proto-eth }}
+            <img class="eth-gif" src="../img/pool-of-money.gif" alt="">
           </div>
         </div>
       </div>

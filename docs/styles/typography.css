@@ -35,7 +35,7 @@ button {
 
 p {
   font-family: var(--font-stack);
-  color: var(--color-foreground-level-1);
+  color: var(--color-foreground);
   line-height: 150%;
 }
 

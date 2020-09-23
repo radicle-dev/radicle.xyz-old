@@ -10,10 +10,12 @@
 
 body {
   text-align: center;
-  background: var(--color-background);
+  background: var(--color-foreground-level-1);
   font-family: var(--font-stack);
   cursor: default;
   -webkit-font-smoothing: antialiased;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -91,20 +93,15 @@ nav a:hover span {
 }
 
 .headline {
-  font-family: Druk X;
-  font-weight: 400;
   text-transform: uppercase;
   font-size: 30vw;
   line-height: 28vw;
   background: linear-gradient(
     90deg,
-    #5555ff,
-    #55ffff,
-    #55ff55,
-    #ffff55,
-    #ff5555,
-    #ff55ff,
-    #5555ff
+    #ff5555 -8.25%,
+    #0000ff 2.57%,
+    #00bf66 33.08%,
+    #b0b305 51.57%
   );
   color: #000;
   mix-blend-mode: exclusion;
@@ -135,13 +132,14 @@ nav a:hover span {
   display: flex;
   align-items: center;
 
-  background-color: var(--color-foreground);
+  background-color: black;
   padding: 1rem;
 }
 
 .email-signup p {
   font-size: 1.5rem;
   padding-left: 1rem;
+  color: var(--color-background);
 }
 
 /* SCROLLING UI IMAGE */
@@ -190,10 +188,10 @@ nav a:hover span {
   text-transform: uppercase;
   line-height: 0.8;
   mix-blend-mode: difference;
-  color: var(--color-negative);
+  color: var(--color-secondary);
 }
 #organic h1 span {
-  color: var(--color-primary);
+  color: var(--color-positive-level-6);
 }
 
 .organic-gif {
@@ -213,13 +211,17 @@ nav a:hover span {
 .attribute {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
   height: 100%;
 }
 
 .attribute-title {
   background-color: var(--color-caution-level-1);
 }
+
+.attribute-features {
+  background-color: var(--color-background);
+}
+
 .attribute-title,
 .attribute-features {
   display: flex;
@@ -262,21 +264,126 @@ nav a:hover span {
   position: relative;
 }
 
+#protocols .links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2rem;
+  position: relative;
+  left: 50%;
+  padding: 2rem 0 0 2rem;
+}
+
+#protocols .links a {
+  font-weight: 600;
+  color: var(--color-foreground);
+  margin-bottom: 0.75rem;
+}
+
+#protocols .links span {
+  text-decoration: underline;
+}
+
+#protocols .links a:hover {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+#protocols h1 {
+  padding-top: 1.5rem;
+  font-size: 20vw;
+  background: linear-gradient(
+    89.97deg,
+    #000aff 0.02%,
+    #00b187 31.47%,
+    #00c40a 63.06%,
+    #ffb800 100.88%
+  );
+  color: #000;
+  mix-blend-mode: exclusion;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 90rem) {
+  #protocols h1 {
+    font-size: 19rem;
+  }
+}
+
+.subtitle-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 6rem 0 8rem;
+}
+
+.subtitle-container h2 {
+  background-color: var(--color-background);
+  padding: 0.625rem;
+}
+
 .protocol-gif {
   width: 30rem;
   position: absolute;
+  top: 0;
+  z-index: -2;
   right: 50%;
 }
 
 .protocols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 23rem;
   gap: 2rem;
 }
 
 .protocols div {
-  background-color: var(--color-foreground-level-6);
-  padding: 4rem;
+  position: relative;
+  background-color: var(--color-background);
+  text-align: left;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.protocols h3 {
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  font-size: 15rem;
+  line-height: 1;
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.protocols h3 span {
+  font-family: var(--font-stack);
+  font-size: 1rem;
+  color: var(--color-primary);
+  text-transform: lowercase;
+  padding: 0.5rem 0 0 0.25rem;
+}
+
+.protocols h3.rad-link {
+  font-size: 7.35rem;
+  line-height: 0.78;
+  padding-top: 1.25rem;
+}
+.protocols svg {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.protocols .eth-gif {
+  position: absolute;
+  width: 23.4rem;
+  mix-blend-mode: exclusion;
+  top: 4rem;
+  left: 7rem;
 }
 
 /* CODELANDS SECTION */
