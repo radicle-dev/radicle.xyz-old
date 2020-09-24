@@ -81,9 +81,10 @@ h3 {
   font-weight: 400;
 }
 
-a {
+a span {
   cursor: pointer;
-  text-decoration: underline;
+  border-bottom: 1px solid;
+  text-decoration: none;
 }
 
 a:hover,

@@ -68,8 +68,12 @@ nav a:hover {
   color: var(--color-secondary);
 }
 
+nav a span {
+  border: none;
+}
+
 nav a:hover span {
-  text-decoration: underline;
+  border-bottom: 2px solid;
 }
 
 /* SUBTITLE */
@@ -275,10 +279,6 @@ nav a:hover span {
   margin-bottom: 0.75rem;
 }
 
-#protocols .links span {
-  text-decoration: underline;
-}
-
 #protocols .links a:hover {
   text-decoration: none;
   color: var(--color-secondary);
@@ -400,7 +400,8 @@ nav a:hover span {
   position: absolute;
   left: 0;
   top: 1rem;
-  width: 30rem;
+  width: 40vw;
+  z-index: 0;
 }
 
 #codelands h1 {
@@ -417,7 +418,6 @@ nav a:hover span {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 16px;
-
   margin-top: -4rem;
 }
 
@@ -425,6 +425,7 @@ nav a:hover span {
   padding-top: 8rem;
   background-color: var(--color-background);
   height: 30rem;
+  position: relative;
 }
 
 .two-column-item h3 {
@@ -491,10 +492,10 @@ nav a:hover span {
 }
 
 #timeline .timeline-gif {
-  width: 42rem;
+  width: 50vw;
   position: absolute;
-  top: 7.9rem;
-  right: 0;
+  top: 0;
+  right: -3vw;
 }
 
 .timeline {
@@ -574,8 +575,8 @@ footer {
 
 footer .footer-gif {
   position: absolute;
-  width: 80rem;
-  top:-10rem;
+  width: 40rem;
+  left:20vw;
 }
 
 footer .text {
@@ -583,6 +584,7 @@ footer .text {
   position: relative;
   left: 50%;
   top: 6rem;
+  mix-blend-mode: difference;
 }
 
 footer h1 {
@@ -598,7 +600,7 @@ footer h1 span {
 }
 
 footer p {
-  color: var(--color-foreground);
+  color: var(--color-background);
 }
 
 footer form {
@@ -607,7 +609,7 @@ footer form {
 
 footer form input[type="text"] {
   border-radius: 0.5rem;
-  border: 1px solid var(--color-foreground);
+  border: 1px solid var(--color-background);
 }
 
 footer form input[type="text"] {
@@ -616,14 +618,19 @@ footer form input[type="text"] {
 }
 
 footer form input[type="text"]:hover,
-footer form input[type="text"]:active {
-  background-color: transparent;
-  color: var(--color-foreground);
+footer form input[type="text"]:active,
+footer form input[type="text"]:focus {
+  background-color: var(--color-foreground);
+  color: var(--color-background);
 }
 
 footer form button {
   margin-left: 0.5rem;
   border-radius: 0.5rem;
+  color: var(--color-background);
+  border-color: var(--color-background);
+}
+
+footer form button:hover {
   color: var(--color-foreground);
-  border-color: var(--color-foreground);
 }
