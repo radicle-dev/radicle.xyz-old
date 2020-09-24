@@ -257,6 +257,7 @@ nav a:hover span {
 #protocols {
   margin-top: 12rem;
   position: relative;
+  background: var(--color-foreground-level-1);
 }
 
 #protocols .links {
@@ -300,6 +301,8 @@ nav a:hover span {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 @media only screen and (min-width: 90rem) {
@@ -312,6 +315,8 @@ nav a:hover span {
   display: flex;
   justify-content: space-around;
   margin: 6rem 0 8rem;
+  position: relative;
+  z-index: 1;
 }
 
 .subtitle-container h2 {
@@ -323,7 +328,6 @@ nav a:hover span {
   width: 30rem;
   position: absolute;
   top: 0;
-  z-index: -2;
   right: 50%;
 }
 
