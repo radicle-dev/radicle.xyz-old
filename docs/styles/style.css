@@ -390,13 +390,13 @@ nav a:hover span {
 #codelands {
   margin-top: 16rem;
   position: relative;
+  background: var(--color-foreground-level-1);
 }
 
 #codelands .codelands-gif {
   position: absolute;
   left: 0;
   top: 1rem;
-  z-index: -2;
   width: 30rem;
 }
 
@@ -406,6 +406,8 @@ nav a:hover span {
   color: #009900;
   mix-blend-mode: difference;
   line-height: 0.77;
+  position: relative;
+  z-index: 1;
 }
 
 .two-column {
