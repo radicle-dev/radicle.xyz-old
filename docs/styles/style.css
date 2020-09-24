@@ -348,6 +348,10 @@ nav a:hover span {
   justify-content: space-between;
 }
 
+.protocols div:hover {
+  mix-blend-mode: exclusion;
+}
+
 .protocols h3 {
   text-transform: uppercase;
   color: var(--color-secondary);
@@ -430,12 +434,8 @@ nav a:hover span {
   padding-bottom: 2.5rem;
 }
 
-.two-column-item.community:hover {
-  background-color: var(--color-caution);
-}
-
-.two-column-item.beta:hover {
-  background-color: var(--color-tertiary);
+.two-column-item.community:hover, .two-column-item.beta:hover {
+  mix-blend-mode: difference;
 }
 
 .two-column-item.community h3 {
@@ -561,7 +561,7 @@ nav a:hover span {
 }
 
 .date {
-  color: var(--color-foreground);
+  color: var(--color-background);
 }
 
 /* FOOTER */
@@ -570,13 +570,13 @@ footer {
   position: relative;
   margin: 16rem 0;
   text-align: left;
+  background: var(--color-foreground-level-1);
 }
 
 footer .footer-gif {
   position: absolute;
-  width: 42rem;
-  z-index: -2;
-  right: 35%;
+  width: 80rem;
+  top:-10rem;
 }
 
 footer .text {
@@ -589,8 +589,8 @@ footer .text {
 footer h1 {
   font-size: 17.5rem;
   color: #cc0000;
-  mix-blend-mode: difference;
   line-height: 0.765;
+  mix-blend-mode: difference;
 }
 
 footer h1 span {
@@ -599,18 +599,16 @@ footer h1 span {
 }
 
 footer p {
-  color: var(--color-background);
-  mix-blend-mode: exclusion;
+  color: var(--color-foreground);
 }
 
 footer form {
   margin: 2rem 0;
-  mix-blend-mode: exclusion;
 }
 
 footer form input[type="text"] {
   border-radius: 0.5rem;
-  border: 1px solid var(--color-background);
+  border: 1px solid var(--color-foreground);
 }
 
 footer form input[type="text"] {
@@ -621,11 +619,12 @@ footer form input[type="text"] {
 footer form input[type="text"]:hover,
 footer form input[type="text"]:active {
   background-color: transparent;
-  color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 footer form button {
   margin-left: 0.5rem;
   border-radius: 0.5rem;
-  color: var(--color-background);
+  color: var(--color-foreground);
+  border-color: var(--color-foreground);
 }
