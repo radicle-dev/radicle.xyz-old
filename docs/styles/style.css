@@ -568,7 +568,7 @@ nav a:hover span {
 
 footer {
   position: relative;
-  margin-top: 16rem;
+  margin: 16rem 0;
   text-align: left;
 }
 
