@@ -476,7 +476,7 @@ nav a:hover span {
 }
 
 .italic {
-  font-style:italic;
+  font-style: italic;
 }
 
 #timeline .subtitle-container {
@@ -567,22 +567,65 @@ nav a:hover span {
 /* FOOTER */
 
 footer {
-  margin: 0 auto;
-  padding-top: 2vw;
+  position: relative;
+  margin-top: 16rem;
   text-align: left;
 }
 
-footer img {
-  width: 100vw;
+footer .footer-gif {
+  position: absolute;
+  width: 42rem;
+  z-index: -2;
+  right: 35%;
 }
 
-#get-app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer .text {
+  max-width: 27.5rem;
+  position: relative;
+  left: 50%;
+  top: 6rem;
 }
 
-#email-signup form button,
+footer h1 {
+  font-size: 17.5rem;
+  color: #cc0000;
+  mix-blend-mode: difference;
+  line-height: 0.765;
+}
+
+footer h1 span {
+  position: relative;
+  left: 5.6rem;
+}
+
+footer p {
+  color: var(--color-background);
+  mix-blend-mode: exclusion;
+}
+
+footer form {
+  margin: 2rem 0;
+  mix-blend-mode: exclusion;
+}
+
+footer form input[type="text"] {
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-background);
+}
+
+footer form input[type="text"] {
+  border-radius: 0.5rem;
+  width: 20rem;
+}
+
+footer form input[type="text"]:hover,
+footer form input[type="text"]:active {
+  background-color: transparent;
+  color: var(--color-background);
+}
+
 footer form button {
-  margin-left: 8px;
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--color-background);
 }
