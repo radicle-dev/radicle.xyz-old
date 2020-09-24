@@ -43,13 +43,12 @@ header {
 }
 
 header #logo {
-  position: fixed;
   text-decoration: none;
 }
 
-header nav {
+header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 header nav a {
