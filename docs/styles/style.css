@@ -447,12 +447,50 @@ nav a:hover span {
 
 /* TIMELINE SECTION */
 
-#timeline .container {
-  width: 90vw;
+#timeline {
+  position: relative;
+  margin-top: 16rem;
 }
 
-#timeline {
-  padding: 96px 0 120px;
+#timeline h1 {
+  text-transform: uppercase;
+  font-size: 19vw;
+  line-height: 1;
+  background: linear-gradient(
+    90deg,
+    #cc7a00 0%,
+    #850f00 16.13%,
+    #aa00e6 33.26%,
+    #0011ff 50.21%,
+    #00ba69 76.04%
+  );
+  color: #000;
+  mix-blend-mode: difference;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#timeline .subtitle-container {
+  position: relative;
+  max-width: 41rem;
+  text-align: left;
+  margin: 0 auto 3.5rem;
+  right: 10rem;
+}
+
+#timeline .subtitle-container h2 {
+  padding: 1rem 1.5rem;
+  line-height: 1.5;
+}
+
+#timeline .timeline-gif {
+  width: 42rem;
+  position: absolute;
+  top: 7rem;
+  right: 0;
+  z-index: -2;
 }
 
 .timeline {

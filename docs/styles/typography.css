@@ -13,6 +13,11 @@
   src: url("../fonts/Druk-XCondSuper.otf");
 }
 
+@font-face {
+  font-family: "DrukXItalic";
+  src: url("../fonts/Druk-XCondSuperItalic.otf");
+}
+
 :root {
   --font-stack: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -68,6 +73,11 @@ h3 {
 
 .druk {
   font-family: Druk X;
+  font-weight: 400;
+}
+
+.druk-italic {
+  font-family: DrukXItalic;
   font-weight: 400;
 }
 
