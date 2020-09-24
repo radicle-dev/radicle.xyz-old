@@ -450,6 +450,7 @@ nav a:hover span {
 #timeline {
   position: relative;
   margin-top: 16rem;
+  background: var(--color-foreground-level-1);
 }
 
 #timeline h1 {
@@ -470,6 +471,12 @@ nav a:hover span {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.italic {
+  font-style:italic;
 }
 
 #timeline .subtitle-container {
@@ -489,7 +496,6 @@ nav a:hover span {
   position: absolute;
   top: 7.9rem;
   right: 0;
-  z-index: -2;
 }
 
 .timeline {
