@@ -39,7 +39,6 @@ header {
   max-width: 90rem;
   margin: 2rem auto;
   padding: 0 2rem;
-
   text-align: left;
 }
 
@@ -79,6 +78,7 @@ nav a:hover span {
 #headline {
   position: relative;
   padding-bottom: 2rem;
+  background: var(--color-foreground-level-1);
 }
 
 #headline h2 {
@@ -87,10 +87,10 @@ nav a:hover span {
 
 .headline-gif {
   position: absolute;
-  top: 22vw;
+  top: 14vw;
   left: 22vw;
-  width: 32vw;
-  z-index: -2;
+  width: 40vw;
+  z-index: 0;
 }
 
 .headline {
@@ -127,6 +127,8 @@ nav a:hover span {
 
 #get-the-app {
   display: flex;
+  position: relative;
+  z-index: 1;
 }
 
 #get-the-app .email-signup {
@@ -173,7 +175,7 @@ nav a:hover span {
   height: 100%;
   width: 4000%;
   z-index: 1;
-  animation: scrollGood 35s linear infinite;
+  animation: scrollGood 60s linear infinite;
 }
 
 /* ORGANIC COLLABORATION */
@@ -193,14 +195,6 @@ nav a:hover span {
 }
 #organic h1 span {
   color: var(--color-positive-level-6);
-}
-
-.organic-gif {
-  position: absolute;
-  width: 691px;
-  top: 0;
-  left: 0;
-  z-index: -2;
 }
 
 .attributes {
@@ -263,6 +257,7 @@ nav a:hover span {
 #protocols {
   margin-top: 12rem;
   position: relative;
+  background: var(--color-foreground-level-1);
 }
 
 #protocols .links {
@@ -306,6 +301,8 @@ nav a:hover span {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 @media only screen and (min-width: 90rem) {
@@ -318,6 +315,8 @@ nav a:hover span {
   display: flex;
   justify-content: space-around;
   margin: 6rem 0 8rem;
+  position: relative;
+  z-index: 1;
 }
 
 .subtitle-container h2 {
@@ -329,7 +328,6 @@ nav a:hover span {
   width: 30rem;
   position: absolute;
   top: 0;
-  z-index: -2;
   right: 50%;
 }
 
@@ -392,13 +390,13 @@ nav a:hover span {
 #codelands {
   margin-top: 16rem;
   position: relative;
+  background: var(--color-foreground-level-1);
 }
 
 #codelands .codelands-gif {
   position: absolute;
   left: 0;
   top: 1rem;
-  z-index: -2;
   width: 30rem;
 }
 
@@ -408,6 +406,8 @@ nav a:hover span {
   color: #009900;
   mix-blend-mode: difference;
   line-height: 0.77;
+  position: relative;
+  z-index: 1;
 }
 
 .two-column {
@@ -450,6 +450,7 @@ nav a:hover span {
 #timeline {
   position: relative;
   margin-top: 16rem;
+  background: var(--color-foreground-level-1);
 }
 
 #timeline h1 {
@@ -470,6 +471,12 @@ nav a:hover span {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.italic {
+  font-style:italic;
 }
 
 #timeline .subtitle-container {
@@ -489,7 +496,6 @@ nav a:hover span {
   position: absolute;
   top: 7.9rem;
   right: 0;
-  z-index: -2;
 }
 
 .timeline {
