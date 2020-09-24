@@ -175,7 +175,7 @@ nav a:hover span {
   height: 100%;
   width: 4000%;
   z-index: 1;
-  animation: scrollGood 35s linear infinite;
+  animation: scrollGood 60s linear infinite;
 }
 
 /* ORGANIC COLLABORATION */
