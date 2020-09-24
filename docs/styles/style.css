@@ -454,7 +454,7 @@ nav a:hover span {
 
 #timeline h1 {
   text-transform: uppercase;
-  font-size: 19vw;
+  font-size: 16rem;
   line-height: 1;
   background: linear-gradient(
     90deg,
@@ -476,8 +476,7 @@ nav a:hover span {
   position: relative;
   max-width: 41rem;
   text-align: left;
-  margin: 0 auto 3.5rem;
-  right: 10rem;
+  margin: 0 0 3.5rem 11rem;
 }
 
 #timeline .subtitle-container h2 {
@@ -488,7 +487,7 @@ nav a:hover span {
 #timeline .timeline-gif {
   width: 42rem;
   position: absolute;
-  top: 7rem;
+  top: 7.9rem;
   right: 0;
   z-index: -2;
 }
@@ -497,49 +496,47 @@ nav a:hover span {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 24px;
+  text-align: left;
+  margin-left: 11rem;
+  position: relative;
 }
 
-.timeline-item > h2 {
-  padding: 24px 0;
+.line {
+  position: absolute;
+  height: 1px;
+  width: calc(100vw - 11rem);
+  background: linear-gradient(
+    90deg,
+    #5555ff,
+    #55ffff,
+    #55ff55,
+    #ffff55,
+    #ff5555,
+    #ff55ff,
+    #5555ff
+  );
+  top: 40.5px;
 }
 
-.not-active > h2 {
-  color: var(--color-foreground-level-5);
+.timeline-item > h3 {
+  color: var(--color-foreground);
+  text-transform: uppercase;
+  font-size: 3.75rem;
+  padding: 1.5rem 0;
+  line-height: 0.7;
 }
 
-.not-active > p {
-  color: var(--color-foreground-level-4);
+.timeline-item > p {
+  max-width: 16rem;
 }
 
 .icon {
-  margin: 8px auto 16px;
+  margin: 0.5rem 0 2rem;
   position: relative;
   width: 24px;
   height: 24px;
   background-clip: padding-box;
   transform-style: preserve-3d;
-}
-
-.icon::after {
-  position: absolute;
-  width: 30.5vw;
-  top: 11px;
-  left: 11px;
-  display: block;
-  height: 2px;
-  content: "";
-  background-color: var(--color-foreground-level-2);
-  transform: translateZ(-1px);
-}
-
-@media only screen and (min-width: 1600px) {
-  .icon::after {
-    width: 488px;
-  }
-}
-
-.last::after {
-  width: 0vw;
 }
 
 .here,
@@ -554,11 +551,11 @@ nav a:hover span {
 }
 
 .not-active .not-here {
-  color: var(--color-background);
+  opacity: 0;
 }
 
 .date {
-  color: var(--color-foreground-level-4);
+  color: var(--color-foreground);
 }
 
 /* FOOTER */
