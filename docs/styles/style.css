@@ -162,15 +162,14 @@ nav a:hover span {
 #horizontal-scroll-wrapper {
   position: relative;
   width: 100%;
-  height: 720px;
+  height: 971px;
   overflow: hidden;
 }
 
 .horizontal-scroll-content {
-  position: absolute;
-  background-image: url(../img/UI-collage-light@2x.png);
+  background-image: url(../img/ui@2x.jpg);
   background-position: left top;
-  background-size: 5093px 720px;
+  background-size: 8514px 971px;
   background-repeat: repeat;
   position: absolute;
   top: 0px;
@@ -178,7 +177,7 @@ nav a:hover span {
   height: 100%;
   width: 4000%;
   z-index: 1;
-  animation: scrollGood 60s linear infinite;
+  animation: scrollGood 70s linear infinite;
 }
 
 /* ORGANIC COLLABORATION */
