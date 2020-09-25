@@ -742,6 +742,7 @@ footer p {
 
 footer form {
   margin: 2rem 0;
+  mix-blend-mode: difference;
 }
 
 footer form input[type="text"] {
