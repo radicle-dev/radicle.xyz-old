@@ -550,6 +550,10 @@ nav a:hover span {
   z-index: 1;
 }
 
+#codelands a:hover span, #codelands a:hover {
+  color: rgb(163,163,0);
+}
+
 .two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -721,7 +725,6 @@ footer .text {
   position: relative;
   left: 50%;
   top: 6rem;
-  mix-blend-mode: difference;
 }
 
 footer h1 {
@@ -737,7 +740,7 @@ footer h1 span {
 }
 
 footer p {
-  color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 footer form {
@@ -747,7 +750,7 @@ footer form {
 
 footer form input[type="text"] {
   border-radius: 0.5rem;
-  border: 1px solid var(--color-background);
+  border: 1px solid var(--color-foreground);
 }
 
 footer form input[type="text"] {
@@ -758,17 +761,19 @@ footer form input[type="text"] {
 footer form input[type="text"]:hover,
 footer form input[type="text"]:active,
 footer form input[type="text"]:focus {
-  background-color: var(--color-foreground);
-  color: var(--color-background);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 footer form button {
   margin-left: 0.5rem;
   border-radius: 0.5rem;
-  color: var(--color-background);
-  border-color: var(--color-background);
+  color: var(--color-foreground);
+  border-color: var(--color-foreground);
 }
 
 footer form button:hover {
-  color: var(--color-foreground);
+  color: var(--color-background);
+  background: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
