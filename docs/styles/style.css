@@ -155,7 +155,7 @@ nav a:hover span {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-5093px, 0, 0);
+    transform: translate3d(-8514px, 0, 0);
   }
 }
 
@@ -433,7 +433,8 @@ nav a:hover span {
   padding-bottom: 2.5rem;
 }
 
-.two-column-item.community:hover, .two-column-item.beta:hover {
+.two-column-item.community:hover,
+.two-column-item.beta:hover {
   mix-blend-mode: difference;
 }
 
@@ -575,7 +576,7 @@ footer {
 footer .footer-gif {
   position: absolute;
   width: 40rem;
-  left:20vw;
+  left: 20vw;
 }
 
 footer .text {
