@@ -350,10 +350,14 @@ nav a:hover span {
 
 .attribute-title {
   background-color: var(--color-caution-level-1);
+  padding: 3rem;
 }
 
 .attribute-features {
   background-color: var(--color-background);
+}
+.attribute-features.hidden {
+  display: none;
 }
 
 .attribute-title,
@@ -365,14 +369,17 @@ nav a:hover span {
 }
 
 .attribute-title h4 {
-  font-family: Druk X;
-  font-size: 3rem;
+  font-size: 1rem;
+  text-decoration: underline;
   color: var(--color-primary);
+  padding-bottom: 1.5rem;
 }
 
 .attribute-title h4.active {
+  font-family: Druk X;
   font-size: 12rem;
-  text-decoration: underline;
+  line-height: 0.77;
+  text-decoration: none;
 }
 
 .attribute-features p {

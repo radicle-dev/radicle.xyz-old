@@ -53,17 +53,31 @@
           <div class="attribute">
             <div class="attribute-title">
               <div>
-                <a href="/"><h4 class="active">No down-time.</h4></a>
-                <a href="/"><h4>Everything is local</h4></a>
-                <a href="/"><h4>Sustain open source</h4></a>
+                <a href="/"><h4 class="att-title att-down active">No down-time.</h4></a>
+                <a href="/"><h4 class="att-title att-local ">Everything is local</h4></a>
+                <a href="/"><h4 class="att-title att-sustain ">Sustain open source</h4></a>
               </div>
             </div>
-            <div class="attribute-features">
+            <div class="attribute-features feat1">
               <div>
-                <p>{{> svg-feat-offline }} Offline-first collaboration</p>
-                <p>{{> svg-feat-offline }} Available in every country</p>
-                <p>{{> svg-feat-offline }} Peer-to-peer code sharing and hosting</p>
-                <p>{{> svg-feat-offline }} Censorship-resistant</p>
+                <p>{{> svg-feat1-offline }} Offline-first collaboration</p>
+                <p>{{> svg-feat1-country }} Available in every country</p>
+                <p>{{> svg-feat1-peer }} Peer-to-peer code sharing and hosting</p>
+                <p>{{> svg-feat1-censor }} Censorship-resistant</p>
+              </div>
+            </div>
+            <div class="attribute-features feat2 hidden">
+              <div>
+                <p>{{> svg-feat2-crypto }} Everything is cryptographically signed</p>
+                <p>{{> svg-feat2-local }} All of your issues, patches, and comments<br>are stored right on your computer</p>
+                <p>{{> svg-feat2-data }} You own your data - nobody else</p>
+              </div>
+            </div>
+            <div class="attribute-features feat3 hidden">
+              <div>
+                <p>{{> svg-feat3-paid }} Get paid for your work</p>
+                <p>{{> svg-feat3-capitalize }} Capitalize off your following</p>
+                <p>{{> svg-feat3-support }} Support your favorite projects</p>
               </div>
             </div>
           </div>
@@ -166,5 +180,6 @@
       </section>
   </div>{{! closes content }}
   {{> footer }}
+  <script src="js/script.js"></script>
 </body>
 </html>
