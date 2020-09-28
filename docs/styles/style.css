@@ -152,16 +152,16 @@ nav a:hover span {
 
 @keyframes scrollGood {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(100vw, 0, 0);
   }
   100% {
-    transform: translate3d(-8514px, 0, 0);
+    transform: translate3d(calc(-7200px - 100vw), 0, 0);
   }
 }
 
 #horizontal-scroll-wrapper {
   position: relative;
-  width: 100%;
+  width: 3000px;
   height: 971px;
   overflow: hidden;
 }
@@ -189,7 +189,7 @@ nav a:hover span {
 }
 
 .horizontal-scroll-gif {
-  top: 800px;
+  bottom: 0;
   position: absolute;
 }
 
