@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  max-width: 90rem;
+  /* max-width: 90rem; */
   margin: 2rem auto 4rem;
   padding: 0 2rem;
 }
@@ -187,6 +187,13 @@ nav a:hover span {
   margin-top: 10rem;
 }
 
+@media only screen and (max-width:1024px) {
+  #organic {
+    max-width: 70vw;
+    margin: 0 auto;
+  }
+}
+
 #organic h1 {
   padding-top: 6rem;
   font-size: 16rem;
@@ -209,6 +216,12 @@ nav a:hover span {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .attribute {
+    grid-template-columns: 1fr;
+  }
 }
 
 .attribute-title {
@@ -234,7 +247,7 @@ nav a:hover span {
 }
 
 .attribute-title h4.active {
-  font-size: 12rem;
+  font-size: 12vw;
   text-decoration: underline;
 }
 
@@ -263,19 +276,23 @@ nav a:hover span {
 }
 
 #protocols .links {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 2rem;
   position: relative;
   left: 50%;
-  padding: 2rem 0 0 2rem;
+  padding: 2rem 0 0 2rem; */
+  display: inline-block;
+  position: absolute;
+  right: 0;
 }
 
 #protocols .links a {
   font-weight: 600;
   color: var(--color-foreground);
-  margin-bottom: 0.75rem;
+  /* margin-bottom: 0.75rem; */
+  display: flex;
+  right: 0;
 }
 
 #protocols .links a:hover {
@@ -284,7 +301,7 @@ nav a:hover span {
 }
 
 #protocols h1 {
-  padding-top: 1.5rem;
+  padding-top: 4rem;
   font-size: 20vw;
   background: linear-gradient(
     89.97deg,
@@ -301,18 +318,20 @@ nav a:hover span {
   -webkit-text-fill-color: transparent;
   position: relative;
   z-index: 1;
+  white-space: nowrap;
 }
 
-@media only screen and (min-width: 90rem) {
+/* Stops h1 from getting too big */
+@media only screen and (min-width: 1680px) {
   #protocols h1 {
-    font-size: 19rem;
+    font-size: 23rem;
   }
 }
 
 .subtitle-container {
   display: flex;
   justify-content: space-around;
-  margin: 6rem 0 8rem;
+  margin: 4rem 0 6rem;
   position: relative;
   z-index: 1;
 }
@@ -334,20 +353,30 @@ nav a:hover span {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 23rem;
   gap: 2rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width:1024px) {
+  .protocols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .protocols {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .protocols div {
   position: relative;
   background-color: var(--color-background);
   text-align: left;
-  padding: 0.5rem;
+  padding: .5rem 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.protocols div:hover {
-  mix-blend-mode: exclusion;
 }
 
 .protocols h3 {
@@ -355,9 +384,9 @@ nav a:hover span {
   color: var(--color-secondary);
   font-size: 15rem;
   line-height: 1;
-  padding-left: 0.5rem;
   display: flex;
   align-items: flex-start;
+  white-space: nowrap;
 }
 
 .protocols h3 span {
@@ -373,6 +402,11 @@ nav a:hover span {
   line-height: 0.78;
   padding-top: 1.25rem;
 }
+
+.protocols p {
+
+}
+
 .protocols svg {
   position: absolute;
   top: 0.5rem;
@@ -405,7 +439,7 @@ nav a:hover span {
 
 #codelands h1 {
   text-transform: uppercase;
-  font-size: 25rem;
+  font-size: 35vw;
   color: #009900;
   mix-blend-mode: difference;
   line-height: 0.77;
@@ -417,25 +451,47 @@ nav a:hover span {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 16px;
+  grid-row-gap: 16px;
   margin-top: -4rem;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 1080px) {
+  .two-column {
+    grid-template-columns: 1fr;
+    max-width: 70vw;
+  }
 }
 
 .two-column-item {
-  padding-top: 8rem;
+  padding: 10vw 2vw 8vw;
   background-color: var(--color-background);
-  height: 30rem;
   position: relative;
 }
 
 .two-column-item h3 {
-  font-size: 9.5rem;
+  font-size: 10vw;
   line-height: 0.78;
   padding-bottom: 2.5rem;
 }
 
-.two-column-item.community:hover,
-.two-column-item.beta:hover {
-  mix-blend-mode: difference;
+@media only screen and (max-width: 1024px) {
+  .two-column-item h3 {
+    font-size: 15vw;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .two-column-item h3 {
+    font-size: 128px;
+  }
+}
+
+@media only screen and (min-width: 1760px) {
+  .two-column-item h3 {
+    font-size: 160px;
+  }
 }
 
 .two-column-item.community h3 {
@@ -455,7 +511,7 @@ nav a:hover span {
 
 #timeline h1 {
   text-transform: uppercase;
-  font-size: 16rem;
+  font-size: 18vw;
   line-height: 1;
   background: linear-gradient(
     90deg,
@@ -484,18 +540,6 @@ nav a:hover span {
   max-width: 41rem;
   text-align: left;
   margin: 0 0 3.5rem 11rem;
-}
-
-#timeline .subtitle-container h2 {
-  padding: 1rem 1.5rem;
-  line-height: 1.5;
-}
-
-#timeline .timeline-gif {
-  width: 50vw;
-  position: absolute;
-  top: 0;
-  right: -3vw;
 }
 
 .timeline {
@@ -536,6 +580,36 @@ nav a:hover span {
   max-width: 16rem;
 }
 
+@media screen and (max-width: 768px) {
+  #timeline .subtitle-container, .timeline {
+    margin-left: 1rem;
+  }
+  
+  .line {
+    width: 100vw;
+  }
+
+  #timeline .subtitle-container h2 {
+  font-size: 100%;
+  }
+
+  .timeline-item > h3 {
+    font-size: 2rem;
+  }
+}
+
+#timeline .subtitle-container h2 {
+  padding: 1rem 1.5rem;
+  line-height: 1.5;
+}
+
+#timeline .timeline-gif {
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  right: -3vw;
+}
+
 .icon {
   margin: 0.5rem 0 2rem;
   position: relative;
@@ -561,7 +635,7 @@ nav a:hover span {
 }
 
 .date {
-  color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 /* FOOTER */
