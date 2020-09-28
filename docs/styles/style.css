@@ -189,7 +189,7 @@ nav a:hover span {
 }
 
 .horizontal-scroll-gif {
-  top: 800px;
+  bottom: 0px;
   position: absolute;
 }
 
