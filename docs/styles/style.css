@@ -207,11 +207,13 @@ span.break {
 }
 
 @media only screen and (max-width: 1280px) {
-  .email-signup p, .email-signup button, .email-signup .main-cta > input[type="text"] {
+  .email-signup p, .email-signup button,
+  .email-signup .main-cta > input[type="text"] {
     font-size: 1rem;
   }
 
-  .email-signup .main-cta > input[type="text"], .email-signup button {
+  .email-signup .main-cta > input[type="text"],
+  .email-signup button {
     height:2rem;
   }
 }
@@ -263,32 +265,6 @@ span.break {
   }
 }
 
-/* SCROLLING UI */
-
-@keyframes scrollGood {
-  0% {
-    transform: translate3d(100vw, 0, 0);
-  }
-  100% {
-    transform: translate3d(calc(-7200px - 100vw), 0, 0);
-  }
-}
-
-#horizontal-scroll-wrapper {
-  position: relative;
-  width: 3000px;
-  height: 971px;
-  overflow: hidden;
-}
-
-.horizontal-scroll-content {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
-  animation: scrollGood 70s linear infinite;
-}
-
 .float {
   box-shadow: 
   0px 41.7776px 41.7776px rgba(10, 11, 18, 0.287542), 
@@ -299,87 +275,216 @@ span.break {
   border-radius: 8px;
 }
 
-.horizontal-scroll-content img {
+.horizontal-scroll-gif {
+  bottom: -70vh;
   position: absolute;
 }
 
-.horizontal-scroll-gif {
-  bottom: 0;
+.horizontal-scroll-content {
+  position: relative;
+  height:90vh;
+}
+
+.horizontal-scroll-content img {
+  animation-duration:30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
   position: absolute;
 }
 
   img.project-source {
-    left: 66px;
-    top: 40px;
-    width: 1440px;
+    left: 5vw;
+    width: 90vw;
+    animation-name: project-source;
+  }
+
+  @keyframes project-source {
+    0% {opacity:0; top:10rem; transform: scale(.9); transform: rotate(300deg)}
+    2% {opacity:1; top:0rem; transform: scale(1);}
+    11% {opacity:1; top:0rem; transform: scale(1);}
+    12% {opacity:0; top:10rem; transform: scale(.9);}
+    100% {opacity:0; top:10rem; transform: scale(.9);}
   }
 
   img.sidebar1 {
-    width: 320px;
-    left: 1323px;
-    top: 458px;
+    width: 30vw;
+    left:10vw;
+    top:65vh;
     opacity: 0.5;
-  }
-
-  img.sidebar2 {
-    width: 320px;
-    left: 1459px;
-    top: 520px;
-    opacity: 0.8;
-  }
-
-  img.sidebar3 {
-    width: 320px;
-    left: 1597px;
-    top: 360px;
-  }
-
-  img.issue-list {
-    width: 1238px;
-    left: 2000px;
-    top: 160px;
-  }
-
-  img.issue {
-    width: 1440px;
-    left: 2670px;
-    top: 40px;
-  }
-
-  img.revision-timeline {
-    width: 1150px;
-    left: 4200px;
-    top: 140px;
-  }
-
-  img.revision-status {
-    width: 285px;
-    left: 4486px;
-    top: 285px;
-  }
-
-  img.keyboard-shortcuts {
-    width: 600px;
-    left: 5164px;
-    top: 155px;
-  }
-
-  img.checkout {
-    width: 358px;
-    left: 5709px;
-    top: 500px;
+    animation-name: sidebar1;
     z-index: 1;
   }
 
+  @keyframes sidebar1 {
+    0% {opacity:0; margin-top:-10rem; transform: scale(.9); transform: rotate(-5deg);}
+    10% {opacity:0; margin-top:-10rem; transform: scale(.9); transform: rotate(-5deg);}
+    11% {opacity:1; margin-top:-15rem; transform: scale(1); transform: rotate(-10deg); animation-timing-function: linear;}
+    30% {opacity:1; margin-top:-15rem; transform: scale(1); transform: rotate(-15deg);}
+    31% {opacity:0; margin-top:-10rem; transform: scale(.9); transform: rotate(-20deg);}
+    100% {opacity:0; margin-top:-10rem; transform: scale(.9); transform: rotate(-20deg);}
+  }
+
+  img.sidebar2 {
+    width: 30vw;
+    left: 30vw;
+    top:65vh;
+    opacity: 0.8;
+    animation-name: sidebar2;
+    z-index: 2;
+  }
+
+  @keyframes sidebar2 {
+    0% {opacity:0; margin-top:-5rem; transform: scale(.9);}
+    11% {opacity:0; margin-top:-5rem; transform: scale(.9);}
+    12% {opacity:1; margin-top:-10rem; transform: scale(1); transform: rotate(7deg); animation-timing-function: linear;}
+    31% {opacity:1; margin-top:-10rem; transform: scale(1);}
+    32% {opacity:0; margin-top:-5rem; transform: scale(.9);}
+    100% {opacity:0; margin-top:-5rem; transform: scale(.9);}
+  }
+
+  img.sidebar3 {
+    width: 30vw;
+    left: 55vw;
+    top: 63vh;
+    animation-name: sidebar3;
+    z-index: 3;
+    transform: rotate(10deg);
+  }
+
+  @keyframes sidebar3 {
+    0% {opacity:0; margin-top:-5rem; transform: scale(.9);}
+    12% {opacity:0; margin-top:-5rem; transform: scale(.9); transform: rotate(15deg);}
+    13% {opacity:1; margin-top:-20rem; transform: scale(1); transform: rotate(15deg); animation-timing-function: linear;}
+    32% {opacity:1; margin-top:-20rem; transform: scale(1); transform: rotate(20deg);}
+    33% {opacity:0; margin-top:-5rem; transform: scale(.9);}
+    100% {opacity:0; margin-top:-5rem; transform: scale(.9);}
+  }
+
+  img.issue-list {
+    width: 90vw;
+    top: 10vh;
+    left: 5vw;
+    animation-name: issue-list;
+    z-index: -1;
+    animation-timing-function: linear;
+  }
+
+  @keyframes issue-list {
+    0% {opacity:0; transform: scale(.8);}
+    10% {opacity:0; transform: scale(.8);}
+    30% {opacity:1;transform: scale(1);}
+    40% {opacity: 0; transform: scale(1.1);}
+    100% {opacity:0;}
+  }
+
+  img.issue {
+    width: 90vw;
+    left: 120vw;
+    animation-name: issue;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes issue {
+    0% {opacity:0; left: 120vw;}
+    32.8%  {opacity:0; left: 120vw; transform: rotate(-10deg);}
+    33.8%  {opacity:1; left: 15vw; transform: rotate(0deg);}
+    40% {opacity:1; left: 5vw; transform: rotate(5deg);}
+    41% {opacity:1; left: -120vw; transform: rotate(50deg);}
+    100% {opacity:0; left: -120vw; top:-400rem; transform: rotate(50deg);}
+  }
+
+  img.revision-timeline {
+    width: 90vw;
+    left: 5vw;
+    top: 10vh;
+    animation-name: revision-timeline;
+    animation-timing-function: linear;
+    z-index: -1;
+  }
+
+  @keyframes revision-timeline {
+    0% {opacity:0; transform: scale(.8);}
+    36% {opacity:0; transform: scale(.8);}
+    50% {opacity:1;transform: scale(1);}
+    60% {opacity: 0; transform: scale(1.1);}
+    100% {opacity:0;}
+  }
+
+  img.revision-status {
+    width: 28vw;
+    left: 60vw;
+    top: 20vh;
+    animation-name: revision-status;
+  }
+
+  @keyframes revision-status {
+    0% {opacity:0; margin-top:10rem; transform: scale(.9);}
+    43%  {opacity:0; margin-top:10rem; transform: scale(.9);}
+    44% {opacity:1; margin-top:5rem; transform: scale(1);}
+    57% {opacity:1; margin-top:5rem; transform: scale(1);}
+    58% {opacity:0; margin-top:5rem; transform: scale(1);}
+    100% {opacity:0; margin-top:10rem; transform: scale(.9);}
+  }
+
+  img.keyboard-shortcuts {
+    width: 44vw;
+    left: 8vw;
+    top: 14vh;
+    animation-name: keyboard-shortcuts;
+    animation-timing-function: ease;
+    background-color: var(--color-positive-level-1);
+  }
+
+  @keyframes keyboard-shortcuts {
+    0% {opacity:0; margin-top:10rem; transform: scale(.9);}
+    59%  {opacity:0; margin-top:10rem; transform: scale(.9);}
+    60% {opacity:1; margin-top:10rem; transform: scale(1);}
+    68% {opacity:1; margin-top:5rem; transform: scale(1);}
+    69% {opacity:0; margin-top:-20rem; transform: scale(.9);}
+    100% {opacity:0; margin-top:-20rem; transform: scale(.9);}
+  }
+
+  img.checkout {
+    opacity: 0;
+    width: 30vw;
+    right: 10vw;
+    top: 23vh;
+    z-index: 1;
+    animation-name: checkout;
+    animation-timing-function: linear;
+    background-color: var(--color-positive-level-1);
+  }
+
+  @keyframes checkout {
+    0% {opacity:0; margin-top:-20rem; transform: scale(.9);}
+    61%  {opacity:0; margin-top:-20rem; transform: scale(.9);}
+    62% {opacity:1; margin-top:-20rem; transform: scale(1);}
+    69% {opacity:1; margin-top:-10rem; transform: scale(1);}
+    70% {opacity:0; margin-top:10rem; transform: scale(.9);}
+    100% {opacity:0; margin-top:10rem; transform: scale(.9);}
+  }
+
   img.profile {
-    width: 1440px;
-    left: 5986px;
-    top: 16px;
+    opacity: 0;
+    width: 90vw;
+    left: 5vw;
+    top: 0;
+    animation-name: profile;
+  }
+
+  @keyframes profile {
+    0% {opacity:0; margin-top:10rem; transform: scale(.9);}
+    71%  {opacity:0; margin-top:10rem; transform: scale(.9);}
+    72% {opacity:1; margin-top:5rem; transform: scale(1);}
+    85% {opacity:1; margin-top:5rem; transform: scale(1);}
+    86% {opacity:0; margin-top:5rem; transform: scale(1);}
+    100% {opacity:0; margin-top:10rem; transform: scale(.9);}
   }
 
   img.avatar {
-    width: 64px;
-    border-radius: 32px;
+    opacity: 0;
+    width: 6vw;
+    border-radius: 3vw;
     box-shadow: 0px 54px 103px rgba(0, 0, 0, 0.13),
     0px 22.5599px 43.0309px rgba(0, 0, 0, 0.0934511),
     0px 12.0616px 23.0064px rgba(0, 0, 0, 0.0774939),
@@ -390,49 +495,135 @@ span.break {
   }
 
   img.avatar.flamingo {
-    left: 7234px;
-    top: 757px;
+    opacity: 0;
+    left: 20vw;
+    top: 70vh;
+    animation-name: flamingo;
+  }
+
+  @keyframes flamingo {
+    0% {opacity:0; transform: scale(.9);}
+    76%  {opacity:0; transform: scale(.9);}
+    77% {opacity:1; transform: scale(1);}
+    83% {opacity:1; transform: scale(1);}
+    84% {opacity:0; transform: scale(1);}
+    100% {opacity:0; transform: scale(.9);}
   }
 
   img.avatar.confetti {
-    left: 7400px;
-    top: 680px;
+    opacity: 0;
+    left: 30vw;
+    top: 70vh;
+    animation-name: confetti;
+  }
+
+  @keyframes confetti {
+    0% {opacity:0; transform: scale(.9);}
+    77%  {opacity:0; transform: scale(.9);}
+    78% {opacity:1; transform: scale(1);}
+    84% {opacity:1; transform: scale(1);}
+    85% {opacity:0; transform: scale(1);}
+    100% {opacity:0; transform: scale(.9);}
   }
 
   img.avatar.poop {
-    left: 7490px;
-    top: 465px;
+    opacity: 0;
+    left: 40vw;
+    top: 72vh;
+    animation-name: poop;
+  }
+
+  @keyframes poop {
+    0% {opacity:0; transform: scale(.9);}
+    78%  {opacity:0; transform: scale(.9);}
+    79% {opacity:1; transform: scale(1);}
+    85% {opacity:1; transform: scale(1);}
+    86% {opacity:0; transform: scale(1);}
+    100% {opacity:0; transform: scale(.9);}
   }
 
   img.avatar.watermelon {
-    left: 7630px;
-    top: 590px;
+    opacity: 0;
+    left: 52vw;
+    top: 52vh;
+    animation-name: watermelon;
+  }
+
+  @keyframes watermelon {
+    0% {opacity:0; transform: scale(.9);}
+    79%  {opacity:0; transform: scale(.9);}
+    80% {opacity:1; transform: scale(1);}
+    86% {opacity:1; transform: scale(1);}
+    87% {opacity:0; transform: scale(1);}
+    100% {opacity:0; transform: scale(.9);}
   }
 
   img.avatar.donut {
-    left: 7750px;
-    top: 500px;
+    opacity: 0;
+    left: 58vw;
+    top: 67vh;
+    animation-name: donut;
+  }
+
+  @keyframes donut {
+    0% {opacity:0; transform: scale(.9);}
+    80%  {opacity:0; transform: scale(.9);}
+    81% {opacity:1; transform: scale(1);}
+    87% {opacity:1; transform: scale(1);}
+    88% {opacity:0; transform: scale(1);}
+    100% {opacity:0; transform: scale(.9);}
   }
 
   img.avatar.hotdog {
-    left: 7820px;
-    top: 660px;
+    opacity: 0;
+    left: 70vw;
+    top: 60vh;
+    animation-name: hotdog;
+  }
+
+  @keyframes hotdog {
+    0% {opacity:0; transform: scale(.9);}
+    81%  {opacity:0; transform: scale(.9);}
+    82% {opacity:1; transform: scale(1);}
+    88% {opacity:1; transform: scale(1);}
+    89% {opacity:0; transform: scale(1);}
+    100% {opacity:0; transform: scale(.9);}
   }
 
   img.avatar.cheese {
-    left: 7836px;
-    top: 445px;
+    opacity: 0;
+    left: 75vw;
+    top: 76vh;
+    animation-name: cheese;
+  }
+
+  @keyframes cheese {
+    0% {opacity:0; transform: scale(.9);}
+    82%  {opacity:0; transform: scale(.9);}
+    83% {opacity:1; transform: scale(1);}
+    89% {opacity:1; transform: scale(1);}
+    90% {opacity:0; transform: scale(1);}
+    100% {opacity:0; transform: scale(.9);}
   }
 
   img.new-project {
-    width: 600px;
-    left: 7843px;
-    top: 6px;
+    opacity: 0;
+    width: 44vw;
+    left: 28vw;
+    top: -7vh;
+    animation-name: new-project;
+    animation-timing-function: linear;
   }
 
-
-
-/* ORGANIC COLLABORATION */
+  @keyframes new-project {
+    0% {opacity:0; transform: scale(1.2);}
+    86%  {opacity:0; transform: scale(1);}
+    87% {opacity:1; transform: scale(1);}
+    99% {opacity:1; transform: scale(.7); transform: rotate(5deg);}
+    100% {opacity:0; transform: scale(.2); transform: rotate(900deg);}
+  }
+  
+/* FEATURES */
 
 #organic {
   position: relative;
