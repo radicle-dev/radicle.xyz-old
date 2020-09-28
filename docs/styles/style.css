@@ -45,9 +45,22 @@ header #logo {
   text-decoration: none;
 }
 
+/* MOBILE */
+@media only screen and (max-width: 480px) {
+  a#logo {
+    width: 300px;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+  position: relative;
+  top: 0.5rem
 }
 
 header nav a {
@@ -56,6 +69,27 @@ header nav a {
   font-weight: 600;
   color: var(--color-foreground);
   text-decoration: none;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 640px) {
+  header nav a {
+    font-size: 1rem;
+  }
+
+  a.try-it {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  a.try-it {
+    display: none;
+  }
+  
+  a.code {
+    margin-right: 0;
+  }
 }
 
 header nav a:last-child {
@@ -85,6 +119,22 @@ nav a:hover span {
 
 #headline h2 {
   font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  #headline h2 {
+    font-size: 1rem;
+  }
+}
+
+span.break {
+  display:inline-block;
+}
+
+@media only screen and (max-width: 640px) {
+  span.break {
+    display: block;
+  }
 }
 
 .headline-gif {
@@ -136,15 +186,81 @@ nav a:hover span {
 #get-the-app .email-signup {
   display: flex;
   align-items: center;
-
   background-color: black;
   padding: 1rem;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 480px) {
+
+  #get-the-app p,
+  #get-the-app form {
+    margin: 0;
+  }
+
 }
 
 .email-signup p {
   font-size: 1.5rem;
   padding-left: 1rem;
   color: var(--color-background);
+}
+
+@media only screen and (max-width: 1280px) {
+  .email-signup p, .email-signup button, .email-signup .main-cta > input[type="text"] {
+    font-size: 1rem;
+  }
+
+  .email-signup .main-cta > input[type="text"], .email-signup button {
+    height:2rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #get-the-app .email-signup {
+    flex-direction: column;
+    padding: 1.5rem 1.25rem;
+    row-gap: 1rem;
+  }
+
+  .email-signup .main-cta > input[type="text"] {
+    width:26rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .email-signup .main-cta > input[type="text"] {
+    width:16rem;
+  }
+
+  .email-signup p strong {
+    display:block;
+  }
+
+  #get-the-app p,
+  #get-the-app form {
+    margin: 0;
+  }
+
+  #email-signup input[type=text],
+  #email-signup form button,
+  #email-signup p {
+    width: 80vw;
+    margin-left: 0;
+  }
+
+  #email-signup form button,
+  #email-signup p {
+    margin-bottom: 16px;
+  }
+
+  #email-signup input[type=text] {
+    margin-bottom: 8px;
+  }
+
+  a#logo {
+    width: 300px;
+  }
 }
 
 /* SCROLLING UI */
@@ -388,15 +504,12 @@ nav a:hover span {
 }
 
 .attribute-title h4.active {
-<<<<<<< HEAD
   font-size: 12vw;
   text-decoration: underline;
-=======
   font-family: Druk X;
   font-size: 12rem;
   line-height: 0.77;
   text-decoration: none;
->>>>>>> brandon/image-optimizations
 }
 
 .attribute-features p {
@@ -585,15 +698,12 @@ nav a:hover span {
   z-index: 1;
 }
 
-<<<<<<< HEAD
 @media only screen and (min-width: 1080px) {
   #codelands h1 {
     font-size: 400px;
 }
-=======
 #codelands a:hover span, #codelands a:hover {
   color: rgb(163,163,0);
->>>>>>> brandon/image-optimizations
 }
 
 .two-column {

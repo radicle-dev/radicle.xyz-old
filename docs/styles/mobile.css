@@ -25,27 +25,5 @@
   a#logo {
     width: 300px;
   }
-
-  h1.xl {
-    font-size: 9.5vw;
-    line-height: 9.5vw;
-  }
-
-
 }
 
-/* TABLET */
-@media only screen and (max-width: 960px) {
-
-  header {
-    padding-bottom: 0;
-  }
-
-  header nav {
-    padding-top: 16px;
-    position: static;
-    top: unset;
-    right: unset;
-  }
-
-}
