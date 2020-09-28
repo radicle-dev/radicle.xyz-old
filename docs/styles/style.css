@@ -19,7 +19,6 @@ body {
 }
 
 .container {
-  /* max-width: 90rem; */
   margin: 2rem auto 4rem;
   padding: 0 2rem;
 }
@@ -117,7 +116,7 @@ nav a:hover span {
 
 @media only screen and (min-width: 90rem) {
   .headline {
-    font-size: 28rem;
+    font-size: 25rem;
   }
 }
 @media only screen and (max-width: 60rem) {
@@ -276,21 +275,15 @@ nav a:hover span {
 }
 
 #protocols .links {
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  left: 50%;
-  padding: 2rem 0 0 2rem; */
   display: inline-block;
   position: absolute;
-  right: 0;
+  right: 2vw;
 }
 
 #protocols .links a {
   font-weight: 600;
   color: var(--color-foreground);
-  /* margin-bottom: 0.75rem; */
+  margin-bottom: 0.75rem;
   display: flex;
   right: 0;
 }
@@ -321,7 +314,6 @@ nav a:hover span {
   white-space: nowrap;
 }
 
-/* Stops h1 from getting too big */
 @media only screen and (min-width: 1680px) {
   #protocols h1 {
     font-size: 23rem;
@@ -380,9 +372,8 @@ nav a:hover span {
 }
 
 .protocols h3 {
-  text-transform: uppercase;
   color: var(--color-secondary);
-  font-size: 15rem;
+  font-size: 8vw;
   line-height: 1;
   display: flex;
   align-items: flex-start;
@@ -395,9 +386,11 @@ nav a:hover span {
   color: var(--color-primary);
   text-transform: lowercase;
   padding: 0.5rem 0 0 0.25rem;
+  position: relative;
+  top: 7px;
 }
 
-.protocols h3.rad-link {
+.protocols h3 {
   font-size: 7.35rem;
   line-height: 0.78;
   padding-top: 1.25rem;
@@ -445,6 +438,12 @@ nav a:hover span {
   line-height: 0.77;
   position: relative;
   z-index: 1;
+}
+
+@media only screen and (min-width: 1080px) {
+  #codelands h1 {
+    font-size: 400px;
+}
 }
 
 .two-column {
@@ -539,7 +538,7 @@ nav a:hover span {
   position: relative;
   max-width: 41rem;
   text-align: left;
-  margin: 0 0 3.5rem 11rem;
+  margin: 1rem auto 3rem;
 }
 
 .timeline {
