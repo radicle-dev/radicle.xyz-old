@@ -182,45 +182,21 @@ nav a:hover span {
 
 /* ORGANIC COLLABORATION */
 
-#organic {
-  position: relative;
-  margin-top: 10rem;
-}
-
-#organic h1 {
-  padding-top: 6rem;
-  font-size: 16rem;
-  text-transform: uppercase;
-  line-height: 0.8;
-  mix-blend-mode: difference;
-  color: var(--color-secondary);
-}
-#organic h1 span {
-  color: var(--color-positive-level-6);
-}
-
-.attributes {
-  margin-top: 2rem;
-  height: 40rem;
-  text-align: left;
+#features {
+  margin-top: 6rem;
 }
 
 .attribute {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100%;
+  height: 40vw;
+  text-align: left;
 }
 
 .attribute-title {
   background-color: var(--color-caution-level-1);
-  padding: 3rem;
-}
-
-.attribute-features {
-  background-color: var(--color-background);
-}
-.attribute-features.hidden {
-  display: none;
+  padding: 4vw;
+  position: relative;
 }
 
 .attribute-title,
@@ -231,18 +207,56 @@ nav a:hover span {
   align-items: center;
 }
 
-.attribute-title h4 {
-  font-size: 1rem;
-  text-decoration: underline;
-  color: var(--color-primary);
-  padding-bottom: 1.5rem;
+.att-gif {
+  position: absolute;
+  right: -7vw;
+  top: 2vw;
+  width: 16vw;
 }
 
-.attribute-title h4.active {
+.att-gif.rotate {
+  transform: rotateZ(15deg);
+}
+
+.attribute-title h4 {
   font-family: Druk X;
-  font-size: 12rem;
+  font-size: 10vw;
   line-height: 0.77;
   text-decoration: none;
+  padding-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.attribute-title p {
+  color: var(--color-primary);
+  font-size: 1.125rem;
+}
+
+.secure .attribute-title {
+  background-color: var(--color-tertiary-level-1);
+}
+
+.secure .attribute-title h4,
+.secure .attribute-title p {
+  color: var(--color-negative);
+}
+
+.local .attribute-title {
+  background-color: var(--color-positive-level-2);
+}
+
+.local .attribute-title h4,
+.local .attribute-title p {
+  color: var(--color-secondary);
+}
+
+.sustain .attribute-title {
+  background-color: var(--color-positive-level-1);
+}
+
+.sustain .attribute-title h4,
+.sustain .attribute-title p {
+  color: var(--color-secondary-level-6);
 }
 
 .attribute-features p {
@@ -250,7 +264,7 @@ nav a:hover span {
   align-items: center;
   color: var(--color-foreground);
   font-size: 1.125rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .attribute-features p > svg {
