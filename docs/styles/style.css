@@ -148,37 +148,178 @@ nav a:hover span {
   color: var(--color-background);
 }
 
-/* SCROLLING UI IMAGE */
+/* SCROLLING UI */
 
 @keyframes scrollGood {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(100vw, 0, 0);
   }
   100% {
-    transform: translate3d(-8514px, 0, 0);
+    transform: translate3d(calc(-7500px - 100vw), 0, 0);
   }
 }
 
 #horizontal-scroll-wrapper {
   position: relative;
-  width: 100%;
+  width: 3000px;
   height: 971px;
   overflow: hidden;
 }
 
 .horizontal-scroll-content {
-  background-image: url(../img/ui@2x.jpg);
-  background-position: left top;
-  background-size: 8514px 971px;
-  background-repeat: repeat;
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 100%;
-  width: 4000%;
   z-index: 1;
   animation: scrollGood 70s linear infinite;
 }
+
+.float {
+  box-shadow: 
+  0px 41.7776px 41.7776px rgba(10, 11, 18, 0.287542), 
+  0px 22.3363px 22.3363px rgba(10, 11, 18, 0.238443), 
+  0px 12.5216px 12.5216px rgba(10, 11, 18, 0.2), 
+  0px 6.6501px 6.6501px rgba(10, 11, 18, 0.161557), 
+  0px 2.76726px 2.76726px rgba(10, 11, 18, 0.112458);
+  border-radius: 8px;
+}
+
+.horizontal-scroll-content img {
+  position: absolute;
+}
+
+.horizontal-scroll-gif {
+<<<<<<< HEAD
+  bottom: 0;
+=======
+  bottom: 0px;
+>>>>>>> ca621cff05a9bb10a9be62f1bb7126682c40923b
+  position: absolute;
+}
+
+  img.project-source {
+    left: 66px;
+    top: 40px;
+    width: 1440px;
+  }
+
+  img.sidebar1 {
+    width: 320px;
+    left: 1323px;
+    top: 458px;
+    opacity: 0.5;
+  }
+
+  img.sidebar2 {
+    width: 320px;
+    left: 1459px;
+    top: 520px;
+    opacity: 0.8;
+  }
+
+  img.sidebar3 {
+    width: 320px;
+    left: 1597px;
+    top: 360px;
+  }
+
+  img.issue-list {
+    width: 1238px;
+    left: 2000px;
+    top: 160px;
+  }
+
+  img.issue {
+    width: 1440px;
+    left: 2670px;
+    top: 40px;
+  }
+
+  img.revision-timeline {
+    width: 1150px;
+    left: 4200px;
+    top: 140px;
+  }
+
+  img.revision-status {
+    width: 285px;
+    left: 4486px;
+    top: 285px;
+  }
+
+  img.keyboard-shortcuts {
+    width: 600px;
+    left: 5164px;
+    top: 155px;
+  }
+
+  img.checkout {
+    width: 358px;
+    left: 5709px;
+    top: 500px;
+    z-index: 1;
+  }
+
+  img.profile {
+    width: 1440px;
+    left: 5986px;
+    top: 16px;
+  }
+
+  img.avatar {
+    width: 64px;
+    border-radius: 32px;
+    box-shadow: 0px 54px 103px rgba(0, 0, 0, 0.13),
+    0px 22.5599px 43.0309px rgba(0, 0, 0, 0.0934511),
+    0px 12.0616px 23.0064px rgba(0, 0, 0, 0.0774939),
+    0px 6.76164px 12.8972px rgba(0, 0, 0, 0.065),
+    0px 3.59106px 6.84961px rgba(0, 0, 0, 0.0525061),
+    0px 1.49432px 2.85027px rgba(0, 0, 0, 0.0365489);
+    z-index: 1;
+  }
+
+  img.avatar.flamingo {
+    left: 7234px;
+    top: 757px;
+  }
+
+  img.avatar.confetti {
+    left: 7400px;
+    top: 680px;
+  }
+
+  img.avatar.poop {
+    left: 7490px;
+    top: 465px;
+  }
+
+  img.avatar.watermelon {
+    left: 7630px;
+    top: 590px;
+  }
+
+  img.avatar.donut {
+    left: 7750px;
+    top: 500px;
+  }
+
+  img.avatar.hotdog {
+    left: 7820px;
+    top: 660px;
+  }
+
+  img.avatar.cheese {
+    left: 7836px;
+    top: 445px;
+  }
+
+  img.new-project {
+    width: 600px;
+    left: 7843px;
+    top: 6px;
+  }
+
+
 
 /* ORGANIC COLLABORATION */
 
@@ -434,6 +575,10 @@ nav a:hover span {
   z-index: 1;
 }
 
+#codelands a:hover span, #codelands a:hover {
+  color: rgb(163,163,0);
+}
+
 .two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -605,7 +750,6 @@ footer .text {
   position: relative;
   left: 50%;
   top: 6rem;
-  mix-blend-mode: difference;
 }
 
 footer h1 {
@@ -621,16 +765,17 @@ footer h1 span {
 }
 
 footer p {
-  color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 footer form {
   margin: 2rem 0;
+  mix-blend-mode: difference;
 }
 
 footer form input[type="text"] {
   border-radius: 0.5rem;
-  border: 1px solid var(--color-background);
+  border: 1px solid var(--color-foreground);
 }
 
 footer form input[type="text"] {
@@ -641,17 +786,19 @@ footer form input[type="text"] {
 footer form input[type="text"]:hover,
 footer form input[type="text"]:active,
 footer form input[type="text"]:focus {
-  background-color: var(--color-foreground);
-  color: var(--color-background);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 footer form button {
   margin-left: 0.5rem;
   border-radius: 0.5rem;
-  color: var(--color-background);
-  border-color: var(--color-background);
+  color: var(--color-foreground);
+  border-color: var(--color-foreground);
 }
 
 footer form button:hover {
-  color: var(--color-foreground);
+  color: var(--color-background);
+  background: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
