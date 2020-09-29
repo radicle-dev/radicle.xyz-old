@@ -155,7 +155,7 @@ nav a:hover span {
     transform: translate3d(100vw, 0, 0);
   }
   100% {
-    transform: translate3d(calc(-7200px - 100vw), 0, 0);
+    transform: translate3d(calc(-7500px - 100vw), 0, 0);
   }
 }
 
