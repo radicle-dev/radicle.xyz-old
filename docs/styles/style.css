@@ -189,7 +189,11 @@ nav a:hover span {
 }
 
 .horizontal-scroll-gif {
+<<<<<<< HEAD
   bottom: 0;
+=======
+  bottom: 0px;
+>>>>>>> ca621cff05a9bb10a9be62f1bb7126682c40923b
   position: absolute;
 }
 
