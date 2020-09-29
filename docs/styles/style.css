@@ -432,7 +432,7 @@ span.break {
     top: 14vh;
     animation-name: keyboard-shortcuts;
     animation-timing-function: ease;
-    background-color: var(--color-positive-level-1);
+    background-color: var(--color-positive-level-6);
   }
 
   @keyframes keyboard-shortcuts {
@@ -452,7 +452,7 @@ span.break {
     z-index: 1;
     animation-name: checkout;
     animation-timing-function: linear;
-    background-color: var(--color-positive-level-1);
+    background-color: var(--color-positive-level-6);
   }
 
   @keyframes checkout {
@@ -620,7 +620,7 @@ span.break {
     86%  {opacity:0; transform: scale(1);}
     87% {opacity:1; transform: scale(1);}
     99% {opacity:1; transform: scale(.7); transform: rotate(5deg);}
-    100% {opacity:0; transform: scale(.2); transform: rotate(900deg);}
+    100% {opacity:0; transform: scale(.2); transform: rotate(300deg);}
   }
   
 /* FEATURES */
