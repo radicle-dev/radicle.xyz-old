@@ -86,7 +86,7 @@ header nav a {
   a.try-it {
     display: none;
   }
-  
+
   a.code {
     margin-right: 0;
   }
@@ -270,7 +270,7 @@ span.break {
     transform: translate3d(100vw, 0, 0);
   }
   100% {
-    transform: translate3d(calc(-7200px - 100vw), 0, 0);
+    transform: translate3d(calc(-7500px - 100vw), 0, 0);
   }
 }
 
@@ -290,12 +290,11 @@ span.break {
 }
 
 .float {
-  box-shadow: 
-  0px 41.7776px 41.7776px rgba(10, 11, 18, 0.287542), 
-  0px 22.3363px 22.3363px rgba(10, 11, 18, 0.238443), 
-  0px 12.5216px 12.5216px rgba(10, 11, 18, 0.2), 
-  0px 6.6501px 6.6501px rgba(10, 11, 18, 0.161557), 
-  0px 2.76726px 2.76726px rgba(10, 11, 18, 0.112458);
+  box-shadow: 0px 41.7776px 41.7776px rgba(10, 11, 18, 0.287542),
+    0px 22.3363px 22.3363px rgba(10, 11, 18, 0.238443),
+    0px 12.5216px 12.5216px rgba(10, 11, 18, 0.2),
+    0px 6.6501px 6.6501px rgba(10, 11, 18, 0.161557),
+    0px 2.76726px 2.76726px rgba(10, 11, 18, 0.112458);
   border-radius: 8px;
 }
 
@@ -308,131 +307,129 @@ span.break {
   position: absolute;
 }
 
-  img.project-source {
-    left: 66px;
-    top: 40px;
-    width: 1440px;
-  }
+img.project-source {
+  left: 66px;
+  top: 40px;
+  width: 1440px;
+}
 
-  img.sidebar1 {
-    width: 320px;
-    left: 1323px;
-    top: 458px;
-    opacity: 0.5;
-  }
+img.sidebar1 {
+  width: 320px;
+  left: 1323px;
+  top: 458px;
+  opacity: 0.5;
+}
 
-  img.sidebar2 {
-    width: 320px;
-    left: 1459px;
-    top: 520px;
-    opacity: 0.8;
-  }
+img.sidebar2 {
+  width: 320px;
+  left: 1459px;
+  top: 520px;
+  opacity: 0.8;
+}
 
-  img.sidebar3 {
-    width: 320px;
-    left: 1597px;
-    top: 360px;
-  }
+img.sidebar3 {
+  width: 320px;
+  left: 1597px;
+  top: 360px;
+}
 
-  img.issue-list {
-    width: 1238px;
-    left: 2000px;
-    top: 160px;
-  }
+img.issue-list {
+  width: 1238px;
+  left: 2000px;
+  top: 160px;
+}
 
-  img.issue {
-    width: 1440px;
-    left: 2670px;
-    top: 40px;
-  }
+img.issue {
+  width: 1440px;
+  left: 2670px;
+  top: 40px;
+}
 
-  img.revision-timeline {
-    width: 1150px;
-    left: 4200px;
-    top: 140px;
-  }
+img.revision-timeline {
+  width: 1150px;
+  left: 4200px;
+  top: 140px;
+}
 
-  img.revision-status {
-    width: 285px;
-    left: 4486px;
-    top: 285px;
-  }
+img.revision-status {
+  width: 285px;
+  left: 4486px;
+  top: 285px;
+}
 
-  img.keyboard-shortcuts {
-    width: 600px;
-    left: 5164px;
-    top: 155px;
-  }
+img.keyboard-shortcuts {
+  width: 600px;
+  left: 5164px;
+  top: 155px;
+}
 
-  img.checkout {
-    width: 358px;
-    left: 5709px;
-    top: 500px;
-    z-index: 1;
-  }
+img.checkout {
+  width: 358px;
+  left: 5709px;
+  top: 500px;
+  z-index: 1;
+}
 
-  img.profile {
-    width: 1440px;
-    left: 5986px;
-    top: 16px;
-  }
+img.profile {
+  width: 1440px;
+  left: 5986px;
+  top: 16px;
+}
 
-  img.avatar {
-    width: 64px;
-    border-radius: 32px;
-    box-shadow: 0px 54px 103px rgba(0, 0, 0, 0.13),
+img.avatar {
+  width: 64px;
+  border-radius: 32px;
+  box-shadow: 0px 54px 103px rgba(0, 0, 0, 0.13),
     0px 22.5599px 43.0309px rgba(0, 0, 0, 0.0934511),
     0px 12.0616px 23.0064px rgba(0, 0, 0, 0.0774939),
     0px 6.76164px 12.8972px rgba(0, 0, 0, 0.065),
     0px 3.59106px 6.84961px rgba(0, 0, 0, 0.0525061),
     0px 1.49432px 2.85027px rgba(0, 0, 0, 0.0365489);
-    z-index: 1;
-  }
+  z-index: 1;
+}
 
-  img.avatar.flamingo {
-    left: 7234px;
-    top: 757px;
-  }
+img.avatar.flamingo {
+  left: 7234px;
+  top: 757px;
+}
 
-  img.avatar.confetti {
-    left: 7400px;
-    top: 680px;
-  }
+img.avatar.confetti {
+  left: 7400px;
+  top: 680px;
+}
 
-  img.avatar.poop {
-    left: 7490px;
-    top: 465px;
-  }
+img.avatar.poop {
+  left: 7490px;
+  top: 465px;
+}
 
-  img.avatar.watermelon {
-    left: 7630px;
-    top: 590px;
-  }
+img.avatar.watermelon {
+  left: 7630px;
+  top: 590px;
+}
 
-  img.avatar.donut {
-    left: 7750px;
-    top: 500px;
-  }
+img.avatar.donut {
+  left: 7750px;
+  top: 500px;
+}
 
-  img.avatar.hotdog {
-    left: 7820px;
-    top: 660px;
-  }
+img.avatar.hotdog {
+  left: 7820px;
+  top: 660px;
+}
 
-  img.avatar.cheese {
-    left: 7836px;
-    top: 445px;
-  }
+img.avatar.cheese {
+  left: 7836px;
+  top: 445px;
+}
 
-  img.new-project {
-    width: 600px;
-    left: 7843px;
-    top: 6px;
-  }
+img.new-project {
+  width: 600px;
+  left: 7843px;
+  top: 6px;
+}
 
-
-
-/* ORGANIC COLLABORATION */
+/* FEATURES */
 
 #organic {
   position: relative;
@@ -520,36 +517,52 @@ span.break {
   color: var(--color-primary);
 }
 
-.attribute-title p {
+.attribute-title * {
   color: var(--color-primary);
-  font-size: 1.125rem;
 }
 
-.secure .attribute-title {
+.attribute-title h2 {
+  max-width: 420px;
+}
+
+.attribute:nth-child(1) .attribute-features p svg path {
+  fill: var(--color-primary);
+}
+
+.attribute:nth-child(2) .attribute-title {
   background-color: var(--color-tertiary-level-1);
 }
 
-.secure .attribute-title h4,
-.secure .attribute-title p {
+.attribute:nth-child(2) .attribute-title * {
   color: var(--color-negative);
 }
 
-.local .attribute-title {
+.attribute:nth-child(2) .attribute-features p svg path {
+  fill: var(--color-negative);
+}
+
+.attribute:nth-child(3) .attribute-title {
   background-color: var(--color-positive-level-2);
 }
 
-.local .attribute-title h4,
-.local .attribute-title p {
+.attribute:nth-child(3) .attribute-title * {
   color: var(--color-secondary);
 }
 
-.sustain .attribute-title {
-  background-color: var(--color-positive-level-1);
+.attribute:nth-child(3) .attribute-features p svg path {
+  fill: var(--color-secondary);
 }
 
-.sustain .attribute-title h4,
-.sustain .attribute-title p {
-  color: var(--color-secondary-level-6);
+.attribute:nth-child(4) .attribute-title {
+  background-color: var(--color-primary-level-1);
+}
+
+.attribute:nth-child(4) .attribute-title * {
+  color: var(--color-tertiary-level-6);
+}
+
+.attribute:nth-child(4) .attribute-features p svg path {
+  fill: var(--color-tertiary-level-6);
 }
 
 .attribute-features p {
@@ -567,6 +580,7 @@ span.break {
 .attribute-features p:last-child {
   padding-bottom: 0;
 }
+
 
 /* PROTOCOLS SECTION */
 
@@ -839,7 +853,18 @@ span.break {
   position: relative;
   max-width: 41rem;
   text-align: left;
-  margin: 1rem auto 3rem;
+  margin: 0 0 3.5rem 11rem;
+}
+
+#timeline .subtitle-container h2 {
+  padding: 1rem 1.5rem;
+}
+
+#timeline .timeline-gif {
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  right: -3vw;
 }
 
 .timeline {
@@ -884,7 +909,7 @@ span.break {
   #timeline .subtitle-container, .timeline {
     margin-left: 1rem;
   }
-  
+
   .line {
     width: 100vw;
   }
