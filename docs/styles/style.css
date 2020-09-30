@@ -314,7 +314,7 @@ img.new-project {
   top: 6px;
 }
 
-/* ORGANIC COLLABORATION */
+/* FEATURES */
 
 #features {
   margin-top: 6rem;
@@ -385,12 +385,12 @@ img.new-project {
 }
 
 .sustain .attribute-title {
-  background-color: var(--color-positive-level-1);
+  background-color: var(--color-primary-level-1);
 }
 
 .sustain .attribute-title h4,
 .sustain .attribute-title p {
-  color: var(--color-secondary-level-6);
+  color: var(--color-tertiary-level-6);
 }
 
 .attribute-features p {
