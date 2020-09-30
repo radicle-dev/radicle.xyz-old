@@ -4,7 +4,6 @@
 @import "color.css";
 @import "mobile.css";
 @import "forms.css";
-@import "docs.css";
 
 /* GENERAL */
 
@@ -580,7 +579,6 @@ img.new-project {
 .attribute-features p:last-child {
   padding-bottom: 0;
 }
-
 
 /* PROTOCOLS SECTION */
 
