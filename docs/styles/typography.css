@@ -1,11 +1,8 @@
+@import url("https://rsms.me/inter/inter.css");
+
 @font-face {
   font-family: "Inter";
   src: url("https://rsms.me/inter/inter.css");
-}
-
-@font-face {
-  font-family: "Source Code Pro";
-  src: url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 }
 
 @font-face {
@@ -61,14 +58,6 @@ h2 {
 h3 {
   font-size: 20px;
   line-height: 24px;
-}
-
-.all-caps {
-  text-transform: uppercase;
-}
-
-.mono {
-  font-family: "Source Code Pro", monospace;
 }
 
 .druk {

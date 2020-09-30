@@ -5,6 +5,8 @@
 @import "mobile.css";
 @import "forms.css";
 
+
+
 /* GENERAL */
 
 body {
@@ -34,7 +36,7 @@ body {
 /* HEADER */
 
 header {
-  max-width: 90rem;
+  max-width: 105rem;
   margin: 2rem auto;
   padding: 0 2rem;
   text-align: left;
@@ -163,14 +165,14 @@ span.break {
   -webkit-text-fill-color: transparent;
 }
 
-@media only screen and (min-width: 90rem) {
+@media only screen and (min-width: 105rem) {
   .headline {
-    font-size: 25rem;
+    font-size: 32rem;
   }
 }
 @media only screen and (max-width: 60rem) {
   .headline {
-    font-size: 26vw;
+    font-size: 26.5vw;
   }
 }
 
@@ -430,19 +432,17 @@ img.new-project {
 
 /* FEATURES */
 
-#organic {
+#features {
   position: relative;
   margin-top: 10rem;
 }
 
-@media only screen and (max-width:1024px) {
-  #organic {
-    max-width: 70vw;
-    margin: 0 auto;
-  }
+#features {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-#organic h1 {
+#features h1 {
   padding-top: 6rem;
   font-size: 16rem;
   text-transform: uppercase;
@@ -450,7 +450,7 @@ img.new-project {
   mix-blend-mode: difference;
   color: var(--color-secondary);
 }
-#organic h1 span {
+#features h1 span {
   color: var(--color-positive-level-6);
 }
 
@@ -477,8 +477,16 @@ img.new-project {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .attribute {
+    height: 40rem;
+  }
+}
+
+
+
 .attribute-title {
-  background-color: var(--color-caution-level-1);
+  background-color: var(--color-caution-level-2);
   padding: 4vw;
   position: relative;
 }
@@ -626,6 +634,7 @@ img.new-project {
   position: relative;
   z-index: 1;
   white-space: nowrap;
+  pointer-events: none;
 }
 
 @media only screen and (min-width: 1680px) {
@@ -661,6 +670,10 @@ img.new-project {
   gap: 2rem;
   max-width: 80rem;
   margin: 0 auto;
+}
+
+.protocols > div:hover {
+  mix-blend-mode: exclusion;
 }
 
 @media only screen and (max-width:1024px) {
@@ -700,12 +713,13 @@ img.new-project {
   color: var(--color-primary);
   text-transform: lowercase;
   padding: 0.5rem 0 0 0.25rem;
-  position: relative;
-  top: 7px;
+  position: absolute;
+  top: 1rem;
+  left: 5.25rem;
 }
 
 .protocols h3 {
-  font-size: 7.35rem;
+  font-size: 9.5rem;
   line-height: 0.78;
   padding-top: 1.25rem;
 }
@@ -714,14 +728,6 @@ img.new-project {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-}
-
-.protocols .eth-gif {
-  position: absolute;
-  width: 23.4rem;
-  mix-blend-mode: exclusion;
-  top: 4rem;
-  left: 7rem;
 }
 
 /* CODELANDS SECTION */
@@ -763,10 +769,8 @@ img.new-project {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  margin-top: -4rem;
+  margin: -4rem auto 0;
   max-width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -782,7 +786,16 @@ img.new-project {
   position: relative;
 }
 
-.two-column-item h3 {
+.two-column-item:hover {
+  mix-blend-mode: exclusion;
+}
+
+/* .two-column-item:hover a:hover {
+  color: #A6AA00;
+} */
+
+
+  .two-column-item h3 {
   font-size: 10vw;
   line-height: 0.78;
   padding-bottom: 2.5rem;
