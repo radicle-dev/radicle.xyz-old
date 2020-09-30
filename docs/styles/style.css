@@ -5,6 +5,8 @@
 @import "mobile.css";
 @import "forms.css";
 
+
+
 /* GENERAL */
 
 body {
@@ -18,7 +20,6 @@ body {
 }
 
 .container {
-  max-width: 90rem;
   margin: 2rem auto 4rem;
   padding: 0 2rem;
 }
@@ -35,7 +36,7 @@ body {
 /* HEADER */
 
 header {
-  max-width: 90rem;
+  max-width: 105rem;
   margin: 2rem auto;
   padding: 0 2rem;
   text-align: left;
@@ -45,9 +46,22 @@ header #logo {
   text-decoration: none;
 }
 
+/* MOBILE */
+@media only screen and (max-width: 480px) {
+  a#logo {
+    width: 300px;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+  position: relative;
+  top: 0.5rem
 }
 
 header nav a {
@@ -56,6 +70,27 @@ header nav a {
   font-weight: 600;
   color: var(--color-foreground);
   text-decoration: none;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 640px) {
+  header nav a {
+    font-size: 1rem;
+  }
+
+  a.try-it {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  a.try-it {
+    display: none;
+  }
+
+  a.code {
+    margin-right: 0;
+  }
 }
 
 header nav a:last-child {
@@ -87,6 +122,22 @@ nav a:hover span {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 768px) {
+  #headline h2 {
+    font-size: 1rem;
+  }
+}
+
+span.break {
+  display:inline-block;
+}
+
+@media only screen and (max-width: 640px) {
+  span.break {
+    display: block;
+  }
+}
+
 .headline-gif {
   position: absolute;
   top: 14vw;
@@ -114,14 +165,14 @@ nav a:hover span {
   -webkit-text-fill-color: transparent;
 }
 
-@media only screen and (min-width: 90rem) {
+@media only screen and (min-width: 105rem) {
   .headline {
-    font-size: 28rem;
+    font-size: 32rem;
   }
 }
 @media only screen and (max-width: 60rem) {
   .headline {
-    font-size: 26vw;
+    font-size: 26.5vw;
   }
 }
 
@@ -136,15 +187,81 @@ nav a:hover span {
 #get-the-app .email-signup {
   display: flex;
   align-items: center;
-
   background-color: black;
   padding: 1rem;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 480px) {
+
+  #get-the-app p,
+  #get-the-app form {
+    margin: 0;
+  }
+
 }
 
 .email-signup p {
   font-size: 1.5rem;
   padding-left: 1rem;
   color: var(--color-background);
+}
+
+@media only screen and (max-width: 1280px) {
+  .email-signup p, .email-signup button, .email-signup .main-cta > input[type="text"] {
+    font-size: 1rem;
+  }
+
+  .email-signup .main-cta > input[type="text"], .email-signup button {
+    height:2rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #get-the-app .email-signup {
+    flex-direction: column;
+    padding: 1.5rem 1.25rem;
+    row-gap: 1rem;
+  }
+
+  .email-signup .main-cta > input[type="text"] {
+    width:26rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .email-signup .main-cta > input[type="text"] {
+    width:16rem;
+  }
+
+  .email-signup p strong {
+    display:block;
+  }
+
+  #get-the-app p,
+  #get-the-app form {
+    margin: 0;
+  }
+
+  #email-signup input[type=text],
+  #email-signup form button,
+  #email-signup p {
+    width: 80vw;
+    margin-left: 0;
+  }
+
+  #email-signup form button,
+  #email-signup p {
+    margin-bottom: 16px;
+  }
+
+  #email-signup input[type=text] {
+    margin-bottom: 8px;
+  }
+
+  a#logo {
+    width: 300px;
+  }
 }
 
 /* SCROLLING UI */
@@ -316,6 +433,34 @@ img.new-project {
 /* FEATURES */
 
 #features {
+  position: relative;
+  margin-top: 10rem;
+}
+
+#features {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#features h1 {
+  padding-top: 6rem;
+  font-size: 16rem;
+  text-transform: uppercase;
+  line-height: 0.8;
+  mix-blend-mode: difference;
+  color: var(--color-secondary);
+}
+#features h1 span {
+  color: var(--color-positive-level-6);
+}
+
+.attributes {
+  margin-top: 2rem;
+  height: 40rem;
+  text-align: left;
+}
+
+#features {
   margin-top: 6rem;
 }
 
@@ -326,8 +471,22 @@ img.new-project {
   text-align: left;
 }
 
+@media only screen and (max-width: 1024px) {
+  .attribute {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .attribute {
+    height: 40rem;
+  }
+}
+
+
+
 .attribute-title {
-  background-color: var(--color-caution-level-1);
+  background-color: var(--color-caution-level-2);
   padding: 4vw;
   position: relative;
 }
@@ -345,6 +504,11 @@ img.new-project {
   right: -7vw;
   top: 2vw;
   width: 16vw;
+}
+
+.attribute-title h4.active {
+  font-size: 12vw;
+  text-decoration: underline;
 }
 
 .att-gif.rotate {
@@ -433,19 +597,17 @@ img.new-project {
 }
 
 #protocols .links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 2rem;
-  position: relative;
-  left: 50%;
-  padding: 2rem 0 0 2rem;
+  display: inline-block;
+  position: absolute;
+  right: 2vw;
 }
 
 #protocols .links a {
   font-weight: 600;
   color: var(--color-foreground);
   margin-bottom: 0.75rem;
+  display: flex;
+  right: 0;
 }
 
 #protocols .links a:hover {
@@ -454,7 +616,7 @@ img.new-project {
 }
 
 #protocols h1 {
-  padding-top: 1.5rem;
+  padding-top: 4rem;
   font-size: 20vw;
   background: linear-gradient(
     89.97deg,
@@ -471,18 +633,20 @@ img.new-project {
   -webkit-text-fill-color: transparent;
   position: relative;
   z-index: 1;
+  white-space: nowrap;
+  pointer-events: none;
 }
 
-@media only screen and (min-width: 90rem) {
+@media only screen and (min-width: 1680px) {
   #protocols h1 {
-    font-size: 19rem;
+    font-size: 23rem;
   }
 }
 
 .subtitle-container {
   display: flex;
   justify-content: space-around;
-  margin: 6rem 0 8rem;
+  margin: 4rem 0 6rem;
   position: relative;
   z-index: 1;
 }
@@ -504,30 +668,43 @@ img.new-project {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 23rem;
   gap: 2rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.protocols > div:hover {
+  mix-blend-mode: exclusion;
+}
+
+@media only screen and (max-width:1024px) {
+  .protocols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .protocols {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .protocols div {
   position: relative;
   background-color: var(--color-background);
   text-align: left;
-  padding: 0.5rem;
+  padding: .5rem 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.protocols div:hover {
-  mix-blend-mode: exclusion;
-}
-
 .protocols h3 {
-  text-transform: uppercase;
   color: var(--color-secondary);
-  font-size: 15rem;
+  font-size: 8vw;
   line-height: 1;
-  padding-left: 0.5rem;
   display: flex;
   align-items: flex-start;
+  white-space: nowrap;
 }
 
 .protocols h3 span {
@@ -536,25 +713,21 @@ img.new-project {
   color: var(--color-primary);
   text-transform: lowercase;
   padding: 0.5rem 0 0 0.25rem;
+  position: absolute;
+  top: 1rem;
+  left: 5.25rem;
 }
 
-.protocols h3.rad-link {
-  font-size: 7.35rem;
+.protocols h3 {
+  font-size: 9.5rem;
   line-height: 0.78;
   padding-top: 1.25rem;
 }
+
 .protocols svg {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-}
-
-.protocols .eth-gif {
-  position: absolute;
-  width: 23.4rem;
-  mix-blend-mode: exclusion;
-  top: 4rem;
-  left: 7rem;
 }
 
 /* CODELANDS SECTION */
@@ -575,7 +748,7 @@ img.new-project {
 
 #codelands h1 {
   text-transform: uppercase;
-  font-size: 25rem;
+  font-size: 35vw;
   color: #009900;
   mix-blend-mode: difference;
   line-height: 0.77;
@@ -583,39 +756,72 @@ img.new-project {
   z-index: 1;
 }
 
-#codelands a:hover span,
-#codelands a:hover {
-  color: rgb(163, 163, 0);
+@media only screen and (min-width: 1080px) {
+  #codelands h1 {
+    font-size: 400px;
+}
+#codelands a:hover span, #codelands a:hover {
+  color: rgb(163,163,0);
 }
 
 .two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 16px;
-  margin-top: -4rem;
+  grid-row-gap: 16px;
+  margin: -4rem auto 0;
+  max-width: 1440px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .two-column {
+    grid-template-columns: 1fr;
+    max-width: 70vw;
+  }
 }
 
 .two-column-item {
-  padding-top: 8rem;
+  padding: 10vw 2vw 8vw;
   background-color: var(--color-background);
-  height: 30rem;
   position: relative;
 }
 
-.two-column-item h3 {
-  font-size: 9.5rem;
+.two-column-item:hover {
+  mix-blend-mode: exclusion;
+}
+
+/* .two-column-item:hover a:hover {
+  color: #A6AA00;
+} */
+
+
+  .two-column-item h3 {
+  font-size: 10vw;
   line-height: 0.78;
   padding-bottom: 2.5rem;
 }
 
-.two-column-item.community:hover,
-.two-column-item.beta:hover {
-  mix-blend-mode: difference;
+@media only screen and (max-width: 1024px) {
+  .two-column-item h3 {
+    font-size: 15vw;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .two-column-item h3 {
+    font-size: 128px;
+  }
+}
+
+@media only screen and (min-width: 1760px) {
+  .two-column-item h3 {
+    font-size: 160px;
+  }
 }
 
 .two-column-item.community h3 {
   color: var(--color-secondary);
 }
+
 .two-column-item.beta h3 {
   color: var(--color-negative);
 }
@@ -630,7 +836,7 @@ img.new-project {
 
 #timeline h1 {
   text-transform: uppercase;
-  font-size: 16rem;
+  font-size: 18vw;
   line-height: 1;
   background: linear-gradient(
     90deg,
@@ -710,6 +916,36 @@ img.new-project {
   max-width: 16rem;
 }
 
+@media screen and (max-width: 768px) {
+  #timeline .subtitle-container, .timeline {
+    margin-left: 1rem;
+  }
+
+  .line {
+    width: 100vw;
+  }
+
+  #timeline .subtitle-container h2 {
+  font-size: 100%;
+  }
+
+  .timeline-item > h3 {
+    font-size: 2rem;
+  }
+}
+
+#timeline .subtitle-container h2 {
+  padding: 1rem 1.5rem;
+  line-height: 1.5;
+}
+
+#timeline .timeline-gif {
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  right: -3vw;
+}
+
 .icon {
   margin: 0.5rem 0 2rem;
   position: relative;
@@ -735,7 +971,7 @@ img.new-project {
 }
 
 .date {
-  color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 /* FOOTER */
