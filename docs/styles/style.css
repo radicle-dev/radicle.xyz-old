@@ -314,7 +314,7 @@ img.new-project {
   top: 6px;
 }
 
-/* ORGANIC COLLABORATION */
+/* FEATURES */
 
 #features {
   margin-top: 6rem;
@@ -361,36 +361,52 @@ img.new-project {
   color: var(--color-primary);
 }
 
-.attribute-title p {
+.attribute-title * {
   color: var(--color-primary);
-  font-size: 1.125rem;
 }
 
-.secure .attribute-title {
+.attribute-title h2 {
+  max-width: 420px;
+}
+
+.attribute:nth-child(1) .attribute-features p svg path {
+  fill: var(--color-primary);
+}
+
+.attribute:nth-child(2) .attribute-title {
   background-color: var(--color-tertiary-level-1);
 }
 
-.secure .attribute-title h4,
-.secure .attribute-title p {
+.attribute:nth-child(2) .attribute-title * {
   color: var(--color-negative);
 }
 
-.local .attribute-title {
+.attribute:nth-child(2) .attribute-features p svg path {
+  fill: var(--color-negative);
+}
+
+.attribute:nth-child(3) .attribute-title {
   background-color: var(--color-positive-level-2);
 }
 
-.local .attribute-title h4,
-.local .attribute-title p {
+.attribute:nth-child(3) .attribute-title * {
   color: var(--color-secondary);
 }
 
-.sustain .attribute-title {
-  background-color: var(--color-positive-level-1);
+.attribute:nth-child(3) .attribute-features p svg path {
+  fill: var(--color-secondary);
 }
 
-.sustain .attribute-title h4,
-.sustain .attribute-title p {
-  color: var(--color-secondary-level-6);
+.attribute:nth-child(4) .attribute-title {
+  background-color: var(--color-primary-level-1);
+}
+
+.attribute:nth-child(4) .attribute-title * {
+  color: var(--color-tertiary-level-6);
+}
+
+.attribute:nth-child(4) .attribute-features p svg path {
+  fill: var(--color-tertiary-level-6);
 }
 
 .attribute-features p {
@@ -408,6 +424,7 @@ img.new-project {
 .attribute-features p:last-child {
   padding-bottom: 0;
 }
+
 
 /* PROTOCOLS SECTION */
 
@@ -648,7 +665,6 @@ img.new-project {
 
 #timeline .subtitle-container h2 {
   padding: 1rem 1.5rem;
-  line-height: 1.5;
 }
 
 #timeline .timeline-gif {
