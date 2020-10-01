@@ -318,23 +318,24 @@ img.project-source {
   top: 40px;
 }
 
+img.sidebar {
+  width: 20vw;
+}
+
 img.sidebar1 {
-  width: 320px;
-  left: 1323px;
+  left: 60vw;
   top: 458px;
   opacity: 0.5;
 }
 
 img.sidebar2 {
-  width: 320px;
-  left: 1459px;
+  left: 74vw;
   top: 520px;
   opacity: 0.8;
 }
 
 img.sidebar3 {
-  width: 320px;
-  left: 1597px;
+  left: 90vw;
   top: 360px;
 }
 
