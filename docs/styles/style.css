@@ -266,21 +266,20 @@ span.break {
 
 /* SCROLLING UI */
 
-/* @keyframes scrolling {
+@keyframes scrolling {
   0% {
     transform: translate3d(100vw, 0, 0);
   }
   100% {
     transform: translate3d(calc(-7500px - 100vw), 0, 0);
   }
-} */
+}
 
 #horizontal-scroll-wrapper {
   position: relative;
-  /* width: 2700px; */
-  height: 971px;
-  padding-right:100px;
-  overflow: scroll;
+  width: 100vw;
+  height: 64vw;
+  /* overflow-x: scroll; */
 }
 
 .horizontal-scroll-content {
@@ -288,7 +287,7 @@ span.break {
   top: 0px;
   left: 0px;
   z-index: 1;
-  /* animation: scrolling 70s linear infinite; */
+  animation: scrolling 70s linear infinite;
 }
 
 .float {
@@ -314,8 +313,8 @@ span.break {
 }
 
 img.project-source {
-  left: 66px;
-  top: 40px;
+  left: 5vw;
+  top: 2vw;
 }
 
 img.sidebar {
@@ -324,65 +323,64 @@ img.sidebar {
 
 img.sidebar1 {
   left: 60vw;
-  top: 458px;
+  top: 40vw;
   opacity: 0.5;
 }
 
 img.sidebar2 {
   left: 74vw;
-  top: 520px;
+  top: 45vw;
   opacity: 0.8;
 }
 
 img.sidebar3 {
-  left: 90vw;
-  top: 360px;
+  left: 87vw;
+  top: 36vw;
 }
 
 img.issue-list {
-  width: 1238px;
-  left: 2000px;
-  top: 160px;
+  width: 72vw;
+  left: 111vw;
+  top: 10vw;
 }
 
 img.issue {
-  left: 2670px;
-  top: 40px;
+  left: 157vw;
+  top: 2vw;
 }
 
 img.revision-timeline {
-  width: 1150px;
-  left: 4200px;
-  top: 140px;
+  width: 71vw;
+  left: 254vw;
+  top: 7vw;
 }
 
 img.revision-status {
-  width: 285px;
-  left: 4486px;
-  top: 285px;
+  width: 18vw;
+  left: 300vw;
+  top: 20vw;
 }
 
 img.keyboard-shortcuts {
-  width: 600px;
-  left: 5164px;
-  top: 155px;
+  width: 40vw;
+  left: 340vw;
+  top: 0vw;
 }
 
 img.checkout {
-  width: 358px;
-  left: 5709px;
-  top: 500px;
-  z-index: 1;
+  width: 24vw;
+  left: 370vw;
+  top: 25vw;
 }
 
 img.profile {
-  left: 5986px;
-  top: 16px;
+  left: 410vw;
+  top: 2vw;
 }
 
 img.avatar {
-  width: 64px;
-  border-radius: 32px;
+  width: 5vw;
+  border-radius: 2.5vw;
   box-shadow: 0px 54px 103px rgba(0, 0, 0, 0.13),
     0px 22.5599px 43.0309px rgba(0, 0, 0, 0.0934511),
     0px 12.0616px 23.0064px rgba(0, 0, 0, 0.0774939),
@@ -393,44 +391,49 @@ img.avatar {
 }
 
 img.avatar.flamingo {
-  left: 7234px;
-  top: 757px;
+  left: 460vw;
+  top: 50vw;
 }
 
 img.avatar.confetti {
-  left: 7400px;
-  top: 680px;
+  left: 480vw;
+  top: 40vw;
 }
 
 img.avatar.poop {
-  left: 7490px;
-  top: 465px;
+  left: 490vw;
+  top: 26vw;
 }
 
 img.avatar.watermelon {
-  left: 7630px;
-  top: 590px;
+  left: 486vw;
+  top: 48vw;
 }
 
 img.avatar.donut {
-  left: 7750px;
-  top: 500px;
+  left: 500vw;
+  top: 41vw;
 }
 
 img.avatar.hotdog {
-  left: 7820px;
-  top: 660px;
+  left: 510vw;
+  top: 53vw;
 }
 
 img.avatar.cheese {
-  left: 7836px;
-  top: 445px;
+  left: 518vw;
+  top: 35vw;
 }
 
 img.new-project {
-  width: 600px;
-  left: 7843px;
-  top: 6px;
+  width: 36vw;
+  left: 522vw;
+  top: .8vw;
+}
+
+img.spacer {
+  width: 1px;
+  left: 570vw;
 }
 
 /* FEATURES */
