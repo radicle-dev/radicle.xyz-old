@@ -266,20 +266,21 @@ span.break {
 
 /* SCROLLING UI */
 
-@keyframes scrollGood {
+/* @keyframes scrolling {
   0% {
     transform: translate3d(100vw, 0, 0);
   }
   100% {
     transform: translate3d(calc(-7500px - 100vw), 0, 0);
   }
-}
+} */
 
 #horizontal-scroll-wrapper {
   position: relative;
-  width: 3000px;
+  /* width: 2700px; */
   height: 971px;
-  overflow: hidden;
+  padding-right:100px;
+  overflow: scroll;
 }
 
 .horizontal-scroll-content {
@@ -287,7 +288,7 @@ span.break {
   top: 0px;
   left: 0px;
   z-index: 1;
-  animation: scrollGood 70s linear infinite;
+  /* animation: scrolling 70s linear infinite; */
 }
 
 .float {
@@ -297,6 +298,10 @@ span.break {
     0px 6.6501px 6.6501px rgba(10, 11, 18, 0.161557),
     0px 2.76726px 2.76726px rgba(10, 11, 18, 0.112458);
   border-radius: 8px;
+}
+
+.full-width {
+  width: 90vw;
 }
 
 .horizontal-scroll-content img {
@@ -311,7 +316,6 @@ span.break {
 img.project-source {
   left: 66px;
   top: 40px;
-  width: 1440px;
 }
 
 img.sidebar1 {
@@ -341,7 +345,6 @@ img.issue-list {
 }
 
 img.issue {
-  width: 1440px;
   left: 2670px;
   top: 40px;
 }
@@ -372,7 +375,6 @@ img.checkout {
 }
 
 img.profile {
-  width: 1440px;
   left: 5986px;
   top: 16px;
 }
