@@ -490,23 +490,34 @@ img.new-project {
   }
 
   .attribute .attribute-title h4 {
-    font-size: 5rem;
+    font-size: 7.5rem;
+    padding: 0 1.5rem 1rem;
   }
   .attribute .attribute-title p {
     font-size: 1.125rem;
+    padding: 0 1.5rem;
   }
 
   .attribute-features > div {
     width: 26rem;
+    padding: 0 1.5rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .attribute-title > p {
+  .attribute .attribute-title h4 {
+    font-size: 5rem;
+  }
+  .attribute .attribute-title p {
+    font-size: 1rem;
     width: 80vw;
   }
+
   .attribute-features > div {
     width: 80vw;
+  }
+  .attribute-features > div > p {
+    font-size: 1rem;
   }
 }
 
@@ -533,7 +544,6 @@ img.new-project {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4vw;
 }
 
 .attribute-title {
@@ -699,18 +709,6 @@ img.new-project {
   mix-blend-mode: exclusion;
 }
 
-@media only screen and (max-width:1024px) {
-  .protocols {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (max-width:768px) {
-  .protocols {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 .protocols div {
   position: relative;
   background-color: var(--color-background);
@@ -724,11 +722,12 @@ img.new-project {
 
 .protocols h3 {
   color: var(--color-secondary);
-  font-size: 8vw;
-  line-height: 1;
   display: flex;
   align-items: flex-start;
   white-space: nowrap;
+  font-size: 9.5rem;
+  line-height: 0.78;
+  padding: 1.25rem 3rem 0 0;
 }
 
 .protocols h3 span {
@@ -742,16 +741,31 @@ img.new-project {
   left: 5.25rem;
 }
 
-.protocols h3 {
-  font-size: 9.5rem;
-  line-height: 0.78;
-  padding-top: 1.25rem;
-}
-
 .protocols svg {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  .protocols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .protocols h3 {
+    font-size: 5rem;
+  }
+
+  .protocols h3 span {
+    left: 3.2rem;
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .protocols {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* CODELANDS SECTION */
