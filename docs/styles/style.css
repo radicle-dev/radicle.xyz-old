@@ -19,6 +19,10 @@ body {
   overflow-x: hidden;
 }
 
+svg {
+  flex-shrink: 0;
+}
+
 .container {
   margin: 2rem auto 4rem;
   padding: 0 2rem;
@@ -474,6 +478,35 @@ img.new-project {
 @media only screen and (max-width: 1024px) {
   .attribute {
     grid-template-columns: 1fr;
+    height: 40rem;
+  }
+
+  .attribute-title {
+    grid-row: 1 / 1;
+  }
+
+  .attribute-features {
+    grid-row: 2 / 2;
+  }
+
+  .attribute .attribute-title h4 {
+    font-size: 5rem;
+  }
+  .attribute .attribute-title p {
+    font-size: 1.125rem;
+  }
+
+  .attribute-features > div {
+    width: 26rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .attribute-title > p {
+    width: 80vw;
+  }
+  .attribute-features > div {
+    width: 80vw;
   }
 }
 
@@ -483,12 +516,15 @@ img.new-project {
   }
 }
 
+.att-gif {
+  position: absolute;
+  right: -7vw;
+  top: 2vw;
+  width: 16vw;
+}
 
-
-.attribute-title {
-  background-color: var(--color-caution-level-2);
-  padding: 4vw;
-  position: relative;
+.att-gif.rotate {
+  transform: rotateZ(15deg);
 }
 
 .attribute-title,
@@ -497,42 +533,45 @@ img.new-project {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 4vw;
 }
 
-.att-gif {
-  position: absolute;
-  right: -7vw;
-  top: 2vw;
-  width: 16vw;
-}
-
-.attribute-title h4.active {
-  font-size: 12vw;
-  text-decoration: underline;
-}
-
-.att-gif.rotate {
-  transform: rotateZ(15deg);
+.attribute-title {
+  background-color: var(--color-caution-level-2);
+  position: relative;
 }
 
 .attribute-title h4 {
   font-family: Druk X;
   font-size: 10vw;
   line-height: 0.77;
-  text-decoration: none;
   padding-bottom: 1rem;
   color: var(--color-primary);
 }
 
-.attribute-title * {
+.attribute-title p {
+  font-size: 1.5rem;
+  line-height: 1.5;
   color: var(--color-primary);
+  max-width: 26rem;
 }
 
-.attribute-title h2 {
-  max-width: 420px;
+.attribute-features p {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  padding-bottom: 1.5rem;
 }
 
-.attribute:nth-child(1) .attribute-features p svg path {
+.attribute-features p > svg {
+  margin-right: 1rem;
+}
+
+.attribute-features p:last-child {
+  padding-bottom: 0;
+}
+
+.attribute-features p svg path {
   fill: var(--color-primary);
 }
 
@@ -570,22 +609,6 @@ img.new-project {
 
 .attribute:nth-child(4) .attribute-features p svg path {
   fill: var(--color-tertiary-level-6);
-}
-
-.attribute-features p {
-  display: flex;
-  align-items: center;
-  color: var(--color-foreground);
-  font-size: 1.125rem;
-  padding-bottom: 1.5rem;
-}
-
-.attribute-features p > svg {
-  margin-right: 1rem;
-}
-
-.attribute-features p:last-child {
-  padding-bottom: 0;
 }
 
 /* PROTOCOLS SECTION */
@@ -666,7 +689,7 @@ img.new-project {
 .protocols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 23rem;
+  grid-template-rows: auto;
   gap: 2rem;
   max-width: 80rem;
   margin: 0 auto;
@@ -692,7 +715,8 @@ img.new-project {
   position: relative;
   background-color: var(--color-background);
   text-align: left;
-  padding: .5rem 1rem 1rem 1rem;
+  padding: .5rem 1rem 1rem;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
