@@ -581,6 +581,13 @@ img.new-project {
   padding-bottom: 0;
 }
 
+@media only screen and (max-width: 480px) {
+  .attribute-features p svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
 .attribute-features p svg path {
   fill: var(--color-primary);
 }
