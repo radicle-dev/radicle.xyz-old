@@ -534,6 +534,30 @@ img.new-project {
   width: 16vw;
 }
 
+@media only screen and (max-width: 480px) {
+  .att-gif {
+    width: 41vw;
+    top: -5vw;
+  }
+
+  .attribute:nth-child(2) .att-gif {
+    top: -4rem;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .att-gif {
+    width: 30vw;
+    top: -5vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .attribute:nth-child(2n+2) .att-gif {
+    left: -2vw;
+  }
+}
+
 .att-gif.rotate {
   transform: rotateZ(15deg);
 }
