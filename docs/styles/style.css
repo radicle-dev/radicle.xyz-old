@@ -5,8 +5,6 @@
 @import "mobile.css";
 @import "forms.css";
 
-
-
 /* GENERAL */
 
 body {
@@ -65,7 +63,7 @@ header {
 header nav {
   display: flex;
   position: relative;
-  top: 0.5rem
+  top: 0.5rem;
 }
 
 header nav a {
@@ -133,7 +131,7 @@ nav a:hover span {
 }
 
 span.break {
-  display:inline-block;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 640px) {
@@ -197,12 +195,10 @@ span.break {
 
 /* MOBILE */
 @media only screen and (max-width: 480px) {
-
   #get-the-app p,
   #get-the-app form {
     margin: 0;
   }
-
 }
 
 .email-signup p {
@@ -212,12 +208,15 @@ span.break {
 }
 
 @media only screen and (max-width: 1280px) {
-  .email-signup p, .email-signup button, .email-signup .main-cta > input[type="text"] {
+  .email-signup p,
+  .email-signup button,
+  .email-signup .main-cta > input[type="text"] {
     font-size: 1rem;
   }
 
-  .email-signup .main-cta > input[type="text"], .email-signup button {
-    height:2rem;
+  .email-signup .main-cta > input[type="text"],
+  .email-signup button {
+    height: 2rem;
   }
 }
 
@@ -229,17 +228,17 @@ span.break {
   }
 
   .email-signup .main-cta > input[type="text"] {
-    width:26rem;
+    width: 26rem;
   }
 }
 
 @media only screen and (max-width: 640px) {
   .email-signup .main-cta > input[type="text"] {
-    width:16rem;
+    width: 16rem;
   }
 
   .email-signup p strong {
-    display:block;
+    display: block;
   }
 
   #get-the-app p,
@@ -247,7 +246,7 @@ span.break {
     margin: 0;
   }
 
-  #email-signup input[type=text],
+  #email-signup input[type="text"],
   #email-signup form button,
   #email-signup p {
     width: 80vw;
@@ -259,7 +258,7 @@ span.break {
     margin-bottom: 16px;
   }
 
-  #email-signup input[type=text] {
+  #email-signup input[type="text"] {
     margin-bottom: 8px;
   }
 
@@ -310,11 +309,11 @@ span.break {
 .horizontal-scroll-content img {
   position: absolute;
   transform: scale(1);
-  transition: all .6s cubic-bezier(.2,1.86,.42,.98);
+  transition: all 0.6s cubic-bezier(0.2, 1.86, 0.42, 0.98);
 }
 
 .horizontal-scroll-content img:hover {
- transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .horizontal-scroll-gif {
@@ -438,7 +437,7 @@ img.avatar.cheese {
 img.new-project {
   width: 36vw;
   left: 522vw;
-  top: .8vw;
+  top: 0.8vw;
 }
 
 img.spacer {
@@ -565,7 +564,7 @@ img.spacer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .attribute:nth-child(2n+2) .att-gif {
+  .attribute:nth-child(2n + 2) .att-gif {
     left: -2vw;
   }
 }
@@ -756,7 +755,7 @@ img.spacer {
   position: relative;
   background-color: var(--color-background);
   text-align: left;
-  padding: .5rem 1rem 1rem;
+  padding: 0.5rem 1rem 1rem;
 
   display: flex;
   flex-direction: column;
@@ -801,11 +800,11 @@ img.spacer {
 
   .protocols h3 span {
     left: 3.2rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   .protocols {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -840,9 +839,11 @@ img.spacer {
 @media only screen and (min-width: 1080px) {
   #codelands h1 {
     font-size: 400px;
-}
-#codelands a:hover span, #codelands a:hover {
-  color: rgb(163,163,0);
+  }
+  #codelands a:hover span,
+  #codelands a:hover {
+    color: rgb(163, 163, 0);
+  }
 }
 
 .two-column {
@@ -875,8 +876,7 @@ img.spacer {
   color: #A6AA00;
 } */
 
-
-  .two-column-item h3 {
+.two-column-item h3 {
   font-size: 10vw;
   line-height: 0.78;
   padding-bottom: 2.5rem;
@@ -998,7 +998,8 @@ img.spacer {
 }
 
 @media screen and (max-width: 768px) {
-  #timeline .subtitle-container, .timeline {
+  #timeline .subtitle-container,
+  .timeline {
     margin-left: 1rem;
   }
 
@@ -1007,7 +1008,7 @@ img.spacer {
   }
 
   #timeline .subtitle-container h2 {
-  font-size: 100%;
+    font-size: 100%;
   }
 
   .timeline-item > h3 {
