@@ -5,8 +5,6 @@
 @import "mobile.css";
 @import "forms.css";
 
-
-
 /* GENERAL */
 
 body {
@@ -50,7 +48,6 @@ header #logo {
   text-decoration: none;
 }
 
-/* MOBILE */
 @media only screen and (max-width: 480px) {
   a#logo {
     width: 300px;
@@ -65,7 +62,7 @@ header {
 header nav {
   display: flex;
   position: relative;
-  top: 0.5rem
+  top: 0.5rem;
 }
 
 header nav a {
@@ -80,6 +77,7 @@ header nav a {
 @media only screen and (max-width: 640px) {
   header nav a {
     font-size: 1rem;
+    margin-right: 1rem;
   }
 
   a.try-it {
@@ -133,7 +131,7 @@ nav a:hover span {
 }
 
 span.break {
-  display:inline-block;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 640px) {
@@ -195,30 +193,17 @@ span.break {
   padding: 1rem;
 }
 
-/* MOBILE */
 @media only screen and (max-width: 480px) {
-
   #get-the-app p,
   #get-the-app form {
     margin: 0;
   }
-
 }
 
 .email-signup p {
   font-size: 1.5rem;
   padding-left: 1rem;
   color: var(--color-background);
-}
-
-@media only screen and (max-width: 1280px) {
-  .email-signup p, .email-signup button, .email-signup .main-cta > input[type="text"] {
-    font-size: 1rem;
-  }
-
-  .email-signup .main-cta > input[type="text"], .email-signup button {
-    height:2rem;
-  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -229,17 +214,36 @@ span.break {
   }
 
   .email-signup .main-cta > input[type="text"] {
-    width:26rem;
+    width: 26rem;
+  }
+}
+
+.main-cta input[type="text"],
+.main-cta button {
+  font-size: 1.5rem;
+  height: 3rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  .email-signup p,
+  .email-signup button,
+  .email-signup .main-cta > input[type="text"] {
+    font-size: 1rem;
+  }
+
+  .email-signup .main-cta > input[type="text"],
+  .email-signup button {
+    height: 2rem;
   }
 }
 
 @media only screen and (max-width: 640px) {
   .email-signup .main-cta > input[type="text"] {
-    width:16rem;
+    width: 16rem;
   }
 
   .email-signup p strong {
-    display:block;
+    display: block;
   }
 
   #get-the-app p,
@@ -247,7 +251,7 @@ span.break {
     margin: 0;
   }
 
-  #email-signup input[type=text],
+  #email-signup input[type="text"],
   #email-signup form button,
   #email-signup p {
     width: 80vw;
@@ -259,7 +263,7 @@ span.break {
     margin-bottom: 16px;
   }
 
-  #email-signup input[type=text] {
+  #email-signup input[type="text"] {
     margin-bottom: 8px;
   }
 
@@ -283,7 +287,7 @@ span.break {
   position: relative;
   width: 100vw;
   height: 64vw;
-  /* overflow-x: scroll; */
+  overflow: hidden;
 }
 
 .horizontal-scroll-content {
@@ -310,16 +314,22 @@ span.break {
 .horizontal-scroll-content img {
   position: absolute;
   transform: scale(1);
-  transition: all .6s cubic-bezier(.2,1.86,.42,.98);
+  transition: all 0.6s cubic-bezier(0.2, 1.86, 0.42, 0.98);
 }
 
 .horizontal-scroll-content img:hover {
- transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .horizontal-scroll-gif {
   bottom: 0;
   position: absolute;
+}
+
+@media only screen and (max-width: 640px) {
+  .horizontal-scroll-gif {
+    display: none;
+  }
 }
 
 img.project-source {
@@ -438,7 +448,7 @@ img.avatar.cheese {
 img.new-project {
   width: 36vw;
   left: 522vw;
-  top: .8vw;
+  top: 0.8vw;
 }
 
 img.spacer {
@@ -565,7 +575,7 @@ img.spacer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .attribute:nth-child(2n+2) .att-gif {
+  .attribute:nth-child(2n + 2) .att-gif {
     left: -2vw;
   }
 }
@@ -756,7 +766,7 @@ img.spacer {
   position: relative;
   background-color: var(--color-background);
   text-align: left;
-  padding: .5rem 1rem 1rem;
+  padding: 0.5rem 1rem 1rem;
 
   display: flex;
   flex-direction: column;
@@ -801,11 +811,11 @@ img.spacer {
 
   .protocols h3 span {
     left: 3.2rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   .protocols {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -840,9 +850,11 @@ img.spacer {
 @media only screen and (min-width: 1080px) {
   #codelands h1 {
     font-size: 400px;
-}
-#codelands a:hover span, #codelands a:hover {
-  color: rgb(163,163,0);
+  }
+  #codelands a:hover span,
+  #codelands a:hover {
+    color: rgb(163, 163, 0);
+  }
 }
 
 .two-column {
@@ -858,6 +870,7 @@ img.spacer {
   .two-column {
     grid-template-columns: 1fr;
     max-width: 70vw;
+    margin-top: 1rem;
   }
 }
 
@@ -871,12 +884,7 @@ img.spacer {
   mix-blend-mode: exclusion;
 }
 
-/* .two-column-item:hover a:hover {
-  color: #A6AA00;
-} */
-
-
-  .two-column-item h3 {
+.two-column-item h3 {
   font-size: 10vw;
   line-height: 0.78;
   padding-bottom: 2.5rem;
@@ -885,6 +893,7 @@ img.spacer {
 @media only screen and (max-width: 1024px) {
   .two-column-item h3 {
     font-size: 15vw;
+    padding-bottom: 1rem;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -971,7 +980,7 @@ img.spacer {
 .line {
   position: absolute;
   height: 1px;
-  width: calc(100vw - 11rem);
+  width: calc(100vw - 3rem);
   background: linear-gradient(
     90deg,
     #5555ff,
@@ -998,16 +1007,13 @@ img.spacer {
 }
 
 @media screen and (max-width: 768px) {
-  #timeline .subtitle-container, .timeline {
+  #timeline .subtitle-container,
+  .timeline {
     margin-left: 1rem;
   }
 
-  .line {
-    width: 100vw;
-  }
-
   #timeline .subtitle-container h2 {
-  font-size: 100%;
+    font-size: 100%;
   }
 
   .timeline-item > h3 {
@@ -1084,6 +1090,21 @@ footer h1 {
   mix-blend-mode: difference;
 }
 
+@media only screen and (max-width: 768px) {
+  footer h1 {
+    font-size: 3rem;
+  }
+
+  footer .footer-gif {
+    width: 40vw;
+  }
+
+  footer .text {
+    left: inherit;
+    top: 3rem;
+  }
+}
+
 footer h1 span {
   position: relative;
   left: 5.6rem;
@@ -1095,29 +1116,17 @@ footer p {
 
 footer form {
   margin: 2rem 0;
-  mix-blend-mode: difference;
 }
 
 footer form input[type="text"] {
-  border-radius: 0.5rem;
   border: 1px solid var(--color-foreground);
 }
 
 footer form input[type="text"] {
-  border-radius: 0.5rem;
   width: 20rem;
 }
 
-footer form input[type="text"]:hover,
-footer form input[type="text"]:active,
-footer form input[type="text"]:focus {
-  background-color: var(--color-background);
-  color: var(--color-foreground);
-}
-
 footer form button {
-  margin-left: 0.5rem;
-  border-radius: 0.5rem;
   color: var(--color-foreground);
   border-color: var(--color-foreground);
 }
@@ -1126,4 +1135,28 @@ footer form button:hover {
   color: var(--color-background);
   background: var(--color-secondary);
   border-color: var(--color-secondary);
+}
+
+input[type="text"] {
+  border: 1px solid var(--color-background);
+  padding: 0 0 0 8px;
+  border-radius: 0.25rem;
+  margin: 0 0.5rem;
+  color: var(--color-background);
+  width: 250px;
+  height: 2rem;
+}
+
+button {
+  padding: 0 12px;
+  border-radius: 4px;
+  height: 2rem;
+  color: var(--color-background);
+  cursor: pointer;
+  border: 1px solid var(--color-foreground-level-2);
+}
+
+button:active {
+  transition: none;
+  opacity: 0.5;
 }
