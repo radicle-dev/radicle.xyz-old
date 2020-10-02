@@ -324,6 +324,12 @@ span.break {
   position: absolute;
 }
 
+@media only screen and (max-width: 640px) {
+  .horizontal-scroll-gif {
+    display: none;
+  }
+}
+
 img.project-source {
   left: 5vw;
   top: 2vw;
@@ -1084,6 +1090,21 @@ footer h1 {
   color: #cc0000;
   line-height: 0.765;
   mix-blend-mode: difference;
+}
+
+@media only screen and (max-width: 768px) {
+  footer h1 {
+    font-size: 3rem;
+  }
+
+  footer .footer-gif {
+    width: 40vw;
+  }
+
+  footer .text {
+    left: inherit;
+    top: 3rem;
+  }
 }
 
 footer h1 span {
