@@ -271,27 +271,6 @@ span.break {
   }
 }
 
-.main-cta > input[type="text"],
-.main-cta > button {
-  color: var(--color-background);
-  margin-left: 0.5rem;
-  border: 1px solid var(--color-background);
-}
-
-.main-cta > input[type="text"]::placeholder {
-  color: var(--color-background);
-}
-
-.main-cta > input[type="text"]:focus::placeholder {
-  color: var(--color-background);
-}
-
-.main-cta > button:hover {
-  background-color: var(--color-primary);
-  border: 1px solid var(--color-primary);
-  color: var(--color-background);
-}
-
 /* SCROLLING UI */
 
 @keyframes scrolling {
