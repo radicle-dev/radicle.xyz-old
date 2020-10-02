@@ -48,7 +48,6 @@ header #logo {
   text-decoration: none;
 }
 
-/* MOBILE */
 @media only screen and (max-width: 480px) {
   a#logo {
     width: 300px;
@@ -193,7 +192,6 @@ span.break {
   padding: 1rem;
 }
 
-/* MOBILE */
 @media only screen and (max-width: 480px) {
   #get-the-app p,
   #get-the-app form {
@@ -207,6 +205,24 @@ span.break {
   color: var(--color-background);
 }
 
+@media only screen and (max-width: 960px) {
+  #get-the-app .email-signup {
+    flex-direction: column;
+    padding: 1.5rem 1.25rem;
+    row-gap: 1rem;
+  }
+
+  .email-signup .main-cta > input[type="text"] {
+    width: 26rem;
+  }
+}
+
+.main-cta input[type="text"],
+.main-cta button {
+  font-size: 1.5rem;
+  height: 3rem;
+}
+
 @media only screen and (max-width: 1280px) {
   .email-signup p,
   .email-signup button,
@@ -217,18 +233,6 @@ span.break {
   .email-signup .main-cta > input[type="text"],
   .email-signup button {
     height: 2rem;
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  #get-the-app .email-signup {
-    flex-direction: column;
-    padding: 1.5rem 1.25rem;
-    row-gap: 1rem;
-  }
-
-  .email-signup .main-cta > input[type="text"] {
-    width: 26rem;
   }
 }
 
@@ -267,6 +271,27 @@ span.break {
   }
 }
 
+.main-cta > input[type="text"],
+.main-cta > button {
+  color: var(--color-background);
+  margin-left: 0.5rem;
+  border: 1px solid var(--color-background);
+}
+
+.main-cta > input[type="text"]::placeholder {
+  color: var(--color-background);
+}
+
+.main-cta > input[type="text"]:focus::placeholder {
+  color: var(--color-background);
+}
+
+.main-cta > button:hover {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: var(--color-background);
+}
+
 /* SCROLLING UI */
 
 @keyframes scrolling {
@@ -282,7 +307,6 @@ span.break {
   position: relative;
   width: 100vw;
   height: 64vw;
-  /* overflow-x: scroll; */
 }
 
 .horizontal-scroll-content {
@@ -873,10 +897,6 @@ img.spacer {
   mix-blend-mode: exclusion;
 }
 
-/* .two-column-item:hover a:hover {
-  color: #A6AA00;
-} */
-
 .two-column-item h3 {
   font-size: 10vw;
   line-height: 0.78;
@@ -1102,25 +1122,15 @@ footer form {
 }
 
 footer form input[type="text"] {
-  border-radius: 0.5rem;
   border: 1px solid var(--color-foreground);
 }
 
 footer form input[type="text"] {
-  border-radius: 0.5rem;
   width: 20rem;
-}
-
-footer form input[type="text"]:hover,
-footer form input[type="text"]:active,
-footer form input[type="text"]:focus {
-  background-color: var(--color-background);
-  color: var(--color-foreground);
 }
 
 footer form button {
   margin-left: 0.5rem;
-  border-radius: 0.5rem;
   color: var(--color-foreground);
   border-color: var(--color-foreground);
 }
@@ -1129,4 +1139,27 @@ footer form button:hover {
   color: var(--color-background);
   background: var(--color-secondary);
   border-color: var(--color-secondary);
+}
+
+input[type="text"] {
+  border: 1px solid var(--color-foreground-level-3);
+  padding: 0 0 0 8px;
+  border-radius: 0.25rem;
+  margin-right: 0;
+  color: var(--color-foreground-level-6);
+  width: 250px;
+  height: 2rem;
+}
+
+button {
+  padding: 0 12px;
+  border-radius: 4px;
+  height: 2rem;
+  cursor: pointer;
+  border: 1px solid var(--color-foreground-level-2);
+}
+
+button:active {
+  transition: none;
+  opacity: 0.5;
 }
