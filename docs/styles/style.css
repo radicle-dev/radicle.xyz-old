@@ -287,7 +287,6 @@ span.break {
   position: relative;
   width: 100vw;
   height: 64vw;
-  overflow: hidden;
 }
 
 .horizontal-scroll-content {
@@ -597,6 +596,10 @@ img.spacer {
   position: relative;
 }
 
+.attribute-title div {
+  width: 80%;
+}
+
 .attribute-title h4 {
   font-family: Druk X;
   font-size: 10vw;
@@ -610,6 +613,15 @@ img.spacer {
   line-height: 1.5;
   color: var(--color-primary);
   max-width: 26rem;
+}
+
+.attribute-title:nth-child(1) p {
+  max-width: 27rem;
+}
+
+.attribute-title:nth-child(1) h4 {
+  line-height: 0.58;
+  padding-bottom: 3rem;
 }
 
 .attribute-features p {
