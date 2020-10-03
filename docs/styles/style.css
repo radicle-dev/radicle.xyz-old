@@ -148,6 +148,14 @@ span.break {
   z-index: 0;
 }
 
+@media only screen and (max-width: 640px) {
+  .headline-gif {
+    top: 70vw;
+    left: 12vw;
+    width: 60vw;
+  }
+}
+
 .headline {
   text-transform: uppercase;
   font-size: 30vw;
@@ -172,9 +180,18 @@ span.break {
     font-size: 32rem;
   }
 }
+
 @media only screen and (max-width: 60rem) {
   .headline {
     font-size: 26.5vw;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .headline {
+    font-size: 50vw;
+    line-height: 40vw;
+    padding-top: 4vw;
   }
 }
 
