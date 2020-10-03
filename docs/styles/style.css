@@ -758,6 +758,15 @@ img.spacer {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  #protocols h1 {
+    font-size: 30vw;
+    white-space: normal;
+    line-height: 24vw;
+    padding-top: 23vw;
+  }
+}
+
 .subtitle-container {
   display: flex;
   justify-content: space-around;
@@ -973,6 +982,14 @@ img.spacer {
   -webkit-text-fill-color: transparent;
   position: relative;
   z-index: 1;
+}
+
+@media only screen and (max-width: 480px) {
+  #timeline h1 {
+    font-size: 32vw;
+    line-height: 26vw;
+    padding-top: 16vw;
+  }
 }
 
 .italic {
