@@ -1076,6 +1076,7 @@ img.spacer {
   #timeline .subtitle-container,
   .timeline {
     margin-left: 1rem;
+    grid-template-columns: 1fr;
   }
 
   #timeline .subtitle-container h2 {
@@ -1194,12 +1195,12 @@ footer form {
 footer form input[type="text"] {
   border: 0.0625rem solid var(--color-foreground);
   width: 20rem;
+  margin-left: 0;
 }
 
 @media only screen and (max-width: 30rem) {
   footer form input[type="text"] {
     width: 12rem;
-    margin-left: 0;
   }
 }
 
