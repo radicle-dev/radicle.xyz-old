@@ -44,8 +44,12 @@
       <div class="container">
         <div class="email-signup">
           <p><strong>Sound fun?</strong> Join the mailing list to find out about future releases.</p>
-          <form class="main-cta">
-            <input type="text" placeholder="Enter your email"><button>Join</button>
+          <form class="main-cta" action="https://formspree.io/xrgbwygl" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required />
+            <button type="submit">Join</button>
+            <input type="hidden" name="_subject" value="Subscription" />
+            <input type="hidden" name="_format" value="plain" />
+            <input type="hidden" name="_next" value="/subscribed.html" />
           </form>
         </div>
       </div>
@@ -350,8 +354,12 @@
         <p>If you'd like to stay updated about product releases, project updates, and other announcements, hand us your e-mail and we'll keep you in the loop.</p>
         <br>
         <p>For periodic announcements, follow us on twitter.</p>
-        <form>
-            <input type="text" placeholder="Enter your email"><button>Sign up</button>
+        <form action="https://formspree.io/xrgbwygl" method="POST">
+          <input type="email" name="email" placeholder="Enter your email" required />
+          <button type="submit">Join</button>
+          <input type="hidden" name="_subject" value="Subscription" />
+          <input type="hidden" name="_format" value="plain" />
+          <input type="hidden" name="_next" value="/subscribed.html" />
         </form>
         <p>Radicle is a project supported by <a href="https://monadic.xyz/"><span>Monadic</span></a>.</p>
         <p class="small">GIF artwork credits: <a href="https://www.instagram.com/kotutohum.gif"><span>kotutohum</span></a>, <a href="https://youtube.com/user/DasBoSchitt"><span>DasBoSchitt</span></a>, <a href="https://giphy.com/simonfalk"><span>Simon Falk</span></a>, <a href="http://echinopsisfreak.com/"><span>Greg Krehel</span></a>, <a href="https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film)"><span>Ghost in the Shell (1995)</span></a>.</p>

@@ -15,8 +15,12 @@
       <div class="container">
         <div class="email-signup">
           <p><strong>Sound fun?</strong> Join the mailing list to find out about future releases.</p>
-          <form class="main-cta">
-            <input type="text" placeholder="Enter your email"><button>Join</button>
+          <form class="main-cta" action="https://formspree.io/xrgbwygl" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required />
+            <button type="submit">Join</button>
+            <input type="hidden" name="_subject" value="Subscription" />
+            <input type="hidden" name="_format" value="plain" />
+            <input type="hidden" name="_next" value="/subscribed.html" />
           </form>
         </div>
       </div>
