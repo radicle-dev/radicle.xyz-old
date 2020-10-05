@@ -727,11 +727,11 @@ img.spacer {
   padding-top: 4rem;
   font-size: 20vw;
   background: linear-gradient(
-    89.97deg,
-    #000aff 0.02%,
-    #00b187 31.47%,
-    #00c40a 63.06%,
-    #ffb800 100.88%
+    269.94deg,
+    #000aff 4.97%,
+    #00b187 23.26%,
+    #00c40a 31.97%,
+    #ff7a00 48.46%
   );
   color: #000;
   mix-blend-mode: exclusion;
@@ -756,7 +756,7 @@ img.spacer {
     font-size: 30vw;
     white-space: normal;
     line-height: 24vw;
-    padding-top: 23vw;
+    padding: 23vw 0 2vw 0;
   }
 }
 
@@ -778,6 +778,24 @@ img.spacer {
   position: absolute;
   top: 0;
   right: 50%;
+}
+
+@media only screen and (max-width: 80rem) {
+  .protocol-gif {
+    width: 38vw;
+  }
+}
+
+@media only screen and (max-width: 40rem) {
+  .protocol-gif {
+    width: 67vw;
+    top: 38vw;
+    left: -1vw;
+  }
+
+  .subtitle-container {
+    margin: 2rem 0 3rem;
+  }
 }
 
 .protocols {
