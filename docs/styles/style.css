@@ -130,16 +130,6 @@ nav a:hover span {
   }
 }
 
-span.break {
-  display: inline-block;
-}
-
-@media only screen and (max-width: 640px) {
-  span.break {
-    display: block;
-  }
-}
-
 .headline-gif {
   position: absolute;
   top: 14vw;
@@ -148,7 +138,7 @@ span.break {
   z-index: 0;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 480px) {
   .headline-gif {
     top: 70vw;
     left: 12vw;
@@ -256,11 +246,7 @@ span.break {
 
 @media only screen and (max-width: 640px) {
   .email-signup .main-cta > input[type="text"] {
-    width: 16rem;
-  }
-
-  .email-signup p strong {
-    display: block;
+    width: auto;
   }
 
   #get-the-app p,
