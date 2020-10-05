@@ -252,7 +252,7 @@ span.break {
     row-gap: 1rem;
   }
 
-  .email-signup .main-cta>input[type="email"] {
+  .email-signup .main-cta > input[type="email"] {
     width: 26rem;
   }
 }
@@ -267,18 +267,18 @@ span.break {
 
   .email-signup p,
   .email-signup button,
-  .email-signup .main-cta>input[type="email"] {
+  .email-signup .main-cta > input[type="email"] {
     font-size: 1rem;
   }
 
-  .email-signup .main-cta>input[type="email"],
+  .email-signup .main-cta > input[type="email"],
   .email-signup button {
     height: 2rem;
   }
 }
 
 @media only screen and (max-width: 640px) {
-  .email-signup .main-cta>input[type="email"] {
+  .email-signup .main-cta > input[type="email"] {
     width: 16rem;
   }
 
@@ -562,7 +562,7 @@ img.spacer {
     padding: 0 1.5rem;
   }
 
-  .attribute-features>div {
+  .attribute-features > div {
     width: 26rem;
     padding: 0 1.5rem;
   }
@@ -578,11 +578,11 @@ img.spacer {
     width: 80vw;
   }
 
-  .attribute-features>div {
+  .attribute-features > div {
     width: 80vw;
   }
 
-  .attribute-features>div>p {
+  .attribute-features > div > p {
     font-size: 1rem;
   }
 }
@@ -676,7 +676,7 @@ img.spacer {
   padding-bottom: 1.5rem;
 }
 
-.attribute-features p>svg {
+.attribute-features p > svg {
   margin-right: 1rem;
 }
 
@@ -822,7 +822,7 @@ img.spacer {
   margin: 0 auto;
 }
 
-.protocols>div:hover {
+.protocols > div:hover {
   mix-blend-mode: exclusion;
 }
 
@@ -1064,7 +1064,7 @@ img.spacer {
   top: 40.5px;
 }
 
-.timeline-item>h3 {
+.timeline-item > h3 {
   color: var(--color-foreground);
   text-transform: uppercase;
   font-size: 3.75rem;
@@ -1072,7 +1072,7 @@ img.spacer {
   line-height: 0.7;
 }
 
-.timeline-item>p {
+.timeline-item > p {
   max-width: 16rem;
 }
 
@@ -1087,7 +1087,7 @@ img.spacer {
     font-size: 100%;
   }
 
-  .timeline-item>h3 {
+  .timeline-item > h3 {
     font-size: 2rem;
   }
 }
