@@ -1045,6 +1045,7 @@ img.spacer {
   color: var(--color-foreground);
   text-transform: uppercase;
   font-size: 3.75rem;
+  white-space: nowrap;
   padding: 1.5rem 0;
   line-height: 0.7;
 }
