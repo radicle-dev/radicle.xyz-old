@@ -313,7 +313,7 @@ nav a:hover span {
     0px 12.5216px 12.5216px rgba(10, 11, 18, 0.2),
     0px 6.6501px 6.6501px rgba(10, 11, 18, 0.161557),
     0px 2.76726px 2.76726px rgba(10, 11, 18, 0.112458);
-  border-radius: 0.5rem;
+  border-radius: 1vw;
 }
 
 .full-width {
