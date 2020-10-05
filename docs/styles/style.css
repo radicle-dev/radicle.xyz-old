@@ -48,9 +48,13 @@ header #logo {
   text-decoration: none;
 }
 
+#logo svg {
+  width: 8rem;
+}
+
 @media only screen and (max-width: 30rem) {
-  a#logo {
-    width: 18.75rem;
+  #logo svg {
+    width: 6rem;
   }
 }
 
@@ -63,6 +67,12 @@ header nav {
   display: flex;
   position: relative;
   top: 0.5rem;
+}
+
+@media only screen and (max-width: 30rem) {
+  header nav {
+    top: 0.2rem;
+  }
 }
 
 header nav a {
@@ -269,10 +279,6 @@ nav a:hover span {
   #email-signup input[type="text"] {
     margin-bottom: 0.5rem;
   }
-
-  a#logo {
-    width: 18.75rem;
-  }
 }
 
 /* SCROLLING UI */
@@ -288,6 +294,7 @@ nav a:hover span {
 
 #horizontal-scroll-wrapper {
   position: relative;
+  overflow: hidden;
   width: 100vw;
   height: 64vw;
 }
@@ -1136,11 +1143,12 @@ footer h1 {
 
 @media only screen and (max-width: 48rem) {
   footer h1 {
-    font-size: 3rem;
+    font-size: 33vw;
   }
 
   footer .footer-gif {
-    width: 40vw;
+    width: 60vw;
+    top: -18vw;
   }
 
   footer .text {
@@ -1151,7 +1159,8 @@ footer h1 {
 
 footer h1 span {
   position: relative;
-  left: 5.6rem;
+  left: 12vw;
+  display: block;
 }
 
 footer p {
