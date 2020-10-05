@@ -1059,6 +1059,49 @@ img.spacer {
   top: 2.53125rem;
 }
 
+@media only screen and (max-width: 30rem) {
+  .line {
+    left: 0.7rem;
+    width: 0.0625rem;
+    height: 24.8rem;
+    top: 4rem;
+    background: linear-gradient(
+      0deg,
+      #5555ff,
+      #55ffff,
+      #55ff55,
+      #ffff55,
+      #ff5555,
+      #ff55ff,
+      #5555ff
+    );
+  }
+}
+
+@media only screen and (max-width: 29.625rem) {
+  .line {
+    height: 26rem;
+  }
+}
+
+@media only screen and (max-width: 23.0625rem) {
+  .line {
+    height: 27.5rem;
+  }
+}
+
+@media only screen and (max-width: 22.375rem) {
+  .line {
+    height: 29.3rem;
+  }
+}
+
+@media only screen and (max-width: 19.375rem) {
+  .line {
+    height: 30.5rem;
+  }
+}
+
 .timeline-item > h3 {
   color: var(--color-foreground);
   text-transform: uppercase;
@@ -1070,6 +1113,12 @@ img.spacer {
 
 .timeline-item > p {
   max-width: 16rem;
+}
+
+@media only screen and (max-width: 30rem) {
+  .timeline-item {
+    padding-top: 40px;
+  }
 }
 
 @media screen and (max-width: 48rem) {
@@ -1091,6 +1140,16 @@ img.spacer {
   #timeline .subtitle-container,
   .timeline {
     grid-template-columns: 1fr;
+  }
+
+  #timeline p,
+  #timeline h3 {
+    padding-left: 2rem;
+    max-width: inherit;
+  }
+
+  .not-here {
+    display: none;
   }
 }
 
@@ -1115,6 +1174,12 @@ img.spacer {
   transform-style: preserve-3d;
 }
 
+@media only screen and (max-width: 30rem) {
+  .icon {
+    margin: 0;
+  }
+}
+
 .here,
 .not-here,
 .date {
@@ -1132,6 +1197,12 @@ img.spacer {
 
 .date {
   color: var(--color-foreground);
+}
+
+@media only screen and (max-width: 30rem) {
+  .date {
+    margin-top: -1.4rem;
+  }
 }
 
 /* FOOTER */
