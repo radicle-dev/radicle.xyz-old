@@ -2,8 +2,6 @@
 @import "reset.css";
 @import "typography.css";
 @import "color.css";
-@import "mobile.css";
-@import "forms.css";
 
 /* GENERAL */
 
@@ -34,6 +32,31 @@ svg {
   mix-blend-mode: exclusion;
   color: var(--color-background);
 }
+
+input[type="email"] {
+  border: 1px solid var(--color-background);
+  padding: 0 0 0 8px;
+  border-radius: 0.25rem;
+  margin: 0 0.5rem;
+  color: var(--color-background);
+  width: 250px;
+  height: 2rem;
+}
+
+button {
+  padding: 0 12px;
+  border-radius: 4px;
+  height: 2rem;
+  color: var(--color-background);
+  cursor: pointer;
+  border: 1px solid var(--color-foreground-level-2);
+}
+
+button:active {
+  transition: none;
+  opacity: 0.5;
+}
+
 
 /* HEADER */
 
@@ -160,13 +183,11 @@ span.break {
   text-transform: uppercase;
   font-size: 30vw;
   line-height: 28vw;
-  background: linear-gradient(
-    90deg,
-    #ff5555 -8.25%,
-    #0000ff 2.57%,
-    #00bf66 33.08%,
-    #b0b305 51.57%
-  );
+  background: linear-gradient(90deg,
+      #ff5555 -8.25%,
+      #0000ff 2.57%,
+      #00bf66 33.08%,
+      #b0b305 51.57%);
   color: #000;
   mix-blend-mode: exclusion;
   background-clip: text;
@@ -211,6 +232,7 @@ span.break {
 }
 
 @media only screen and (max-width: 480px) {
+
   #get-the-app p,
   #get-the-app form {
     margin: 0;
@@ -230,32 +252,33 @@ span.break {
     row-gap: 1rem;
   }
 
-  .email-signup .main-cta > input[type="text"] {
+  .email-signup .main-cta>input[type="email"] {
     width: 26rem;
   }
 }
 
-.main-cta input[type="text"],
+.main-cta input[type="email"],
 .main-cta button {
   font-size: 1.5rem;
   height: 3rem;
 }
 
 @media only screen and (max-width: 1280px) {
+
   .email-signup p,
   .email-signup button,
-  .email-signup .main-cta > input[type="text"] {
+  .email-signup .main-cta>input[type="email"] {
     font-size: 1rem;
   }
 
-  .email-signup .main-cta > input[type="text"],
+  .email-signup .main-cta>input[type="email"],
   .email-signup button {
     height: 2rem;
   }
 }
 
 @media only screen and (max-width: 640px) {
-  .email-signup .main-cta > input[type="text"] {
+  .email-signup .main-cta>input[type="email"] {
     width: 16rem;
   }
 
@@ -268,7 +291,7 @@ span.break {
     margin: 0;
   }
 
-  #email-signup input[type="text"],
+  #email-signup input[type="email"],
   #email-signup form button,
   #email-signup p {
     width: 80vw;
@@ -280,7 +303,7 @@ span.break {
     margin-bottom: 16px;
   }
 
-  #email-signup input[type="text"] {
+  #email-signup input[type="email"] {
     margin-bottom: 8px;
   }
 
@@ -295,6 +318,7 @@ span.break {
   0% {
     transform: translate3d(100vw, 0, 0);
   }
+
   100% {
     transform: translate3d(calc(-7500px - 100vw), 0, 0);
   }
@@ -492,6 +516,7 @@ img.spacer {
   mix-blend-mode: difference;
   color: var(--color-secondary);
 }
+
 #features h1 span {
   color: var(--color-positive-level-6);
 }
@@ -531,12 +556,13 @@ img.spacer {
     font-size: 7.5rem;
     padding: 0 1.5rem 1rem;
   }
+
   .attribute .attribute-title p {
     font-size: 1.125rem;
     padding: 0 1.5rem;
   }
 
-  .attribute-features > div {
+  .attribute-features>div {
     width: 26rem;
     padding: 0 1.5rem;
   }
@@ -546,15 +572,17 @@ img.spacer {
   .attribute .attribute-title h4 {
     font-size: 5rem;
   }
+
   .attribute .attribute-title p {
     font-size: 1rem;
     width: 80vw;
   }
 
-  .attribute-features > div {
+  .attribute-features>div {
     width: 80vw;
   }
-  .attribute-features > div > p {
+
+  .attribute-features>div>p {
     font-size: 1rem;
   }
 }
@@ -648,7 +676,7 @@ img.spacer {
   padding-bottom: 1.5rem;
 }
 
-.attribute-features p > svg {
+.attribute-features p>svg {
   margin-right: 1rem;
 }
 
@@ -733,13 +761,11 @@ img.spacer {
 #protocols h1 {
   padding-top: 4rem;
   font-size: 20vw;
-  background: linear-gradient(
-    89.97deg,
-    #000aff 0.02%,
-    #00b187 31.47%,
-    #00c40a 63.06%,
-    #ffb800 100.88%
-  );
+  background: linear-gradient(89.97deg,
+      #000aff 0.02%,
+      #00b187 31.47%,
+      #00c40a 63.06%,
+      #ffb800 100.88%);
   color: #000;
   mix-blend-mode: exclusion;
   background-clip: text;
@@ -796,7 +822,7 @@ img.spacer {
   margin: 0 auto;
 }
 
-.protocols > div:hover {
+.protocols>div:hover {
   mix-blend-mode: exclusion;
 }
 
@@ -889,6 +915,7 @@ img.spacer {
   #codelands h1 {
     font-size: 400px;
   }
+
   #codelands a:hover span,
   #codelands a:hover {
     color: rgb(163, 163, 0);
@@ -934,6 +961,7 @@ img.spacer {
     padding-bottom: 1rem;
   }
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
   .two-column-item h3 {
     font-size: 128px;
@@ -966,14 +994,12 @@ img.spacer {
   text-transform: uppercase;
   font-size: 18vw;
   line-height: 1;
-  background: linear-gradient(
-    90deg,
-    #cc7a00 0%,
-    #850f00 16.13%,
-    #aa00e6 33.26%,
-    #0011ff 50.21%,
-    #00ba69 76.04%
-  );
+  background: linear-gradient(90deg,
+      #cc7a00 0%,
+      #850f00 16.13%,
+      #aa00e6 33.26%,
+      #0011ff 50.21%,
+      #00ba69 76.04%);
   color: #000;
   mix-blend-mode: difference;
   background-clip: text;
@@ -1027,20 +1053,18 @@ img.spacer {
   position: absolute;
   height: 1px;
   width: calc(100vw - 3rem);
-  background: linear-gradient(
-    90deg,
-    #5555ff,
-    #55ffff,
-    #55ff55,
-    #ffff55,
-    #ff5555,
-    #ff55ff,
-    #5555ff
-  );
+  background: linear-gradient(90deg,
+      #5555ff,
+      #55ffff,
+      #55ff55,
+      #ffff55,
+      #ff5555,
+      #ff55ff,
+      #5555ff);
   top: 40.5px;
 }
 
-.timeline-item > h3 {
+.timeline-item>h3 {
   color: var(--color-foreground);
   text-transform: uppercase;
   font-size: 3.75rem;
@@ -1048,11 +1072,12 @@ img.spacer {
   line-height: 0.7;
 }
 
-.timeline-item > p {
+.timeline-item>p {
   max-width: 16rem;
 }
 
 @media screen and (max-width: 768px) {
+
   #timeline .subtitle-container,
   .timeline {
     margin-left: 1rem;
@@ -1062,7 +1087,7 @@ img.spacer {
     font-size: 100%;
   }
 
-  .timeline-item > h3 {
+  .timeline-item>h3 {
     font-size: 2rem;
   }
 }
@@ -1164,11 +1189,9 @@ footer form {
   margin: 2rem 0;
 }
 
-footer form input[type="text"] {
+footer form input[type="email"] {
   border: 1px solid var(--color-foreground);
-}
-
-footer form input[type="text"] {
+  color: var(--color-foreground);
   width: 20rem;
 }
 
@@ -1183,26 +1206,10 @@ footer form button:hover {
   border-color: var(--color-secondary);
 }
 
-input[type="text"] {
-  border: 1px solid var(--color-background);
-  padding: 0 0 0 8px;
-  border-radius: 0.25rem;
-  margin: 0 0.5rem;
-  color: var(--color-background);
-  width: 250px;
-  height: 2rem;
-}
+/* subscribe page */
 
-button {
-  padding: 0 12px;
-  border-radius: 4px;
-  height: 2rem;
-  color: var(--color-background);
-  cursor: pointer;
-  border: 1px solid var(--color-foreground-level-2);
-}
-
-button:active {
-  transition: none;
-  opacity: 0.5;
+.subscribe-button {
+  margin-top: 2rem;
+  z-index: 2;
+  mix-blend-mode: exclusion;
 }
