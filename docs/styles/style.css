@@ -135,9 +135,9 @@ nav a:hover span {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 48rem) {
-  #headline h2 {
-    font-size: 1.25rem;
+@media only screen and (max-width: 40.5rem) {
+  #headline h2 span {
+    display: block;
   }
 }
 
@@ -542,7 +542,6 @@ img.spacer {
   }
   .attribute .attribute-title p {
     font-size: 1rem;
-    width: 80vw;
   }
 
   .attribute-features > div {
