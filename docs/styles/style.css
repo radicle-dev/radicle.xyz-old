@@ -295,7 +295,7 @@ nav a:hover span {
 
 #horizontal-scroll-wrapper {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100vw;
   height: 64vw;
 }
@@ -650,7 +650,7 @@ img.spacer {
   padding-bottom: 0;
 }
 
-@media only screen and (max-width: 30rem) {
+@media only screen and (max-width: 64rem) {
   .attribute-features p svg {
     width: 2rem;
     height: 2rem;
