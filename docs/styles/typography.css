@@ -41,6 +41,10 @@ p {
   line-height: 150%;
 }
 
+p.small {
+  font-size: 0.75rem;
+}
+
 strong {
   font-weight: 600;
 }

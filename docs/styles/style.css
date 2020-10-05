@@ -25,7 +25,8 @@ svg {
 }
 
 ::selection {
-  background-color: var(--color-caution);
+  background-color: var(--color-primary);
+  color: white;
 }
 
 .blend {
@@ -34,22 +35,22 @@ svg {
 }
 
 input[type="email"] {
-  border: 1px solid var(--color-background);
-  padding: 0 0 0 8px;
+  border: 0.0625rem solid var(--color-background);
+  padding: 0 0 0 0.5rem;
   border-radius: 0.25rem;
   margin: 0 0.5rem;
   color: var(--color-background);
-  width: 250px;
+  width: 15.625rem;
   height: 2rem;
 }
 
 button {
-  padding: 0 12px;
-  border-radius: 4px;
+  padding: 0 0.75rem;
+  border-radius: 0.25rem;
   height: 2rem;
   color: var(--color-background);
   cursor: pointer;
-  border: 1px solid var(--color-foreground-level-2);
+  border: 0.0625rem solid var(--color-foreground-level-2);
 }
 
 button:active {
@@ -71,9 +72,13 @@ header #logo {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 480px) {
-  a#logo {
-    width: 300px;
+#logo svg {
+  width: 8rem;
+}
+
+@media only screen and (max-width: 30rem) {
+  #logo svg {
+    width: 6rem;
   }
 }
 
@@ -88,6 +93,12 @@ header nav {
   top: 0.5rem;
 }
 
+@media only screen and (max-width: 30rem) {
+  header nav {
+    top: 0.2rem;
+  }
+}
+
 header nav a {
   margin-right: 3rem;
   font-size: 1.25rem;
@@ -97,7 +108,7 @@ header nav a {
   white-space: nowrap;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 40rem) {
   header nav a {
     font-size: 1rem;
     margin-right: 1rem;
@@ -108,7 +119,7 @@ header nav a {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48rem) {
   a.try-it {
     display: none;
   }
@@ -132,7 +143,7 @@ nav a span {
 }
 
 nav a:hover span {
-  border-bottom: 2px solid;
+  border-bottom: 0.125rem solid;
 }
 
 /* SUBTITLE */
@@ -147,18 +158,8 @@ nav a:hover span {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 768px) {
-  #headline h2 {
-    font-size: 1rem;
-  }
-}
-
-span.break {
-  display: inline-block;
-}
-
-@media only screen and (max-width: 640px) {
-  span.break {
+@media only screen and (max-width: 40.5rem) {
+  #headline h2 span {
     display: block;
   }
 }
@@ -171,7 +172,7 @@ span.break {
   z-index: 0;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 30rem) {
   .headline-gif {
     top: 70vw;
     left: 12vw;
@@ -231,8 +232,7 @@ span.break {
   padding: 1rem;
 }
 
-@media only screen and (max-width: 480px) {
-
+@media only screen and (max-width: 30rem) {
   #get-the-app p,
   #get-the-app form {
     margin: 0;
@@ -245,7 +245,7 @@ span.break {
   color: var(--color-background);
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 60rem) {
   #get-the-app .email-signup {
     flex-direction: column;
     padding: 1.5rem 1.25rem;
@@ -263,8 +263,8 @@ span.break {
   height: 3rem;
 }
 
-@media only screen and (max-width: 1280px) {
 
+@media only screen and (max-width: 80rem) {
   .email-signup p,
   .email-signup button,
   .email-signup .main-cta > input[type="email"] {
@@ -277,13 +277,10 @@ span.break {
   }
 }
 
-@media only screen and (max-width: 640px) {
-  .email-signup .main-cta > input[type="email"] {
-    width: 16rem;
-  }
 
-  .email-signup p strong {
-    display: block;
+@media only screen and (max-width: 40rem) {
+  .email-signup .main-cta > input[type="email"] {
+    width: auto;
   }
 
   #get-the-app p,
@@ -300,15 +297,12 @@ span.break {
 
   #email-signup form button,
   #email-signup p {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
+
 
   #email-signup input[type="email"] {
-    margin-bottom: 8px;
-  }
-
-  a#logo {
-    width: 300px;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -326,14 +320,15 @@ span.break {
 
 #horizontal-scroll-wrapper {
   position: relative;
+  overflow-x: hidden;
   width: 100vw;
   height: 64vw;
 }
 
 .horizontal-scroll-content {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 1;
   animation: scrolling 70s linear infinite;
 }
@@ -344,7 +339,7 @@ span.break {
     0px 12.5216px 12.5216px rgba(10, 11, 18, 0.2),
     0px 6.6501px 6.6501px rgba(10, 11, 18, 0.161557),
     0px 2.76726px 2.76726px rgba(10, 11, 18, 0.112458);
-  border-radius: 8px;
+  border-radius: 1vw;
 }
 
 .full-width {
@@ -366,7 +361,7 @@ span.break {
   position: absolute;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 40rem) {
   .horizontal-scroll-gif {
     display: none;
   }
@@ -492,7 +487,7 @@ img.new-project {
 }
 
 img.spacer {
-  width: 1px;
+  width: 0.0625rem;
   left: 570vw;
 }
 
@@ -504,7 +499,7 @@ img.spacer {
 }
 
 #features {
-  max-width: 1440px;
+  max-width: 90rem;
   margin: 0 auto;
 }
 
@@ -538,7 +533,7 @@ img.spacer {
   text-align: left;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 64rem) {
   .attribute {
     grid-template-columns: 1fr;
     height: 40rem;
@@ -568,14 +563,13 @@ img.spacer {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30rem) {
   .attribute .attribute-title h4 {
     font-size: 5rem;
   }
 
   .attribute .attribute-title p {
     font-size: 1rem;
-    width: 80vw;
   }
 
   .attribute-features > div {
@@ -587,7 +581,7 @@ img.spacer {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 90rem) {
   .attribute {
     height: 40rem;
   }
@@ -600,7 +594,7 @@ img.spacer {
   width: 16vw;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30rem) {
   .att-gif {
     width: 41vw;
     top: -5vw;
@@ -611,14 +605,14 @@ img.spacer {
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 1024px) {
+@media only screen and (min-width: 30rem) and (max-width: 64rem) {
   .att-gif {
     width: 30vw;
     top: -5vw;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 48rem) and (max-width: 64rem) {
   .attribute:nth-child(2n + 2) .att-gif {
     left: -2vw;
   }
@@ -684,7 +678,7 @@ img.spacer {
   padding-bottom: 0;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 64rem) {
   .attribute-features p svg {
     width: 2rem;
     height: 2rem;
@@ -761,11 +755,13 @@ img.spacer {
 #protocols h1 {
   padding-top: 4rem;
   font-size: 20vw;
-  background: linear-gradient(89.97deg,
-      #000aff 0.02%,
-      #00b187 31.47%,
-      #00c40a 63.06%,
-      #ffb800 100.88%);
+  background: linear-gradient(
+    269.94deg,
+    #000aff 4.97%,
+    #00b187 23.26%,
+    #00c40a 31.97%,
+    #ff7a00 48.46%
+  );
   color: #000;
   mix-blend-mode: exclusion;
   background-clip: text;
@@ -778,18 +774,18 @@ img.spacer {
   pointer-events: none;
 }
 
-@media only screen and (min-width: 1680px) {
+@media only screen and (min-width: 105rem) {
   #protocols h1 {
     font-size: 23rem;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30rem) {
   #protocols h1 {
     font-size: 30vw;
     white-space: normal;
     line-height: 24vw;
-    padding-top: 23vw;
+    padding: 23vw 0 2vw 0;
   }
 }
 
@@ -813,6 +809,24 @@ img.spacer {
   right: 50%;
 }
 
+@media only screen and (max-width: 80rem) {
+  .protocol-gif {
+    width: 38vw;
+  }
+}
+
+@media only screen and (max-width: 40rem) {
+  .protocol-gif {
+    width: 67vw;
+    top: 38vw;
+    left: -1vw;
+  }
+
+  .subtitle-container {
+    margin: 2rem 0 3rem;
+  }
+}
+
 .protocols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -824,6 +838,12 @@ img.spacer {
 
 .protocols > div:hover {
   mix-blend-mode: exclusion;
+}
+
+@media only screen and (max-width: 40rem) {
+  .protocols > div:hover {
+    mix-blend-mode: normal;
+  }
 }
 
 .protocols div {
@@ -864,11 +884,7 @@ img.spacer {
   right: 0.5rem;
 }
 
-@media only screen and (max-width: 1280px) {
-  .protocols {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+@media only screen and (max-width: 80rem) {
   .protocols h3 {
     font-size: 5rem;
   }
@@ -879,7 +895,7 @@ img.spacer {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48rem) {
   .protocols {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -911,9 +927,9 @@ img.spacer {
   z-index: 1;
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 67.5rem) {
   #codelands h1 {
-    font-size: 400px;
+    font-size: 25rem;
   }
 
   #codelands a:hover span,
@@ -925,13 +941,13 @@ img.spacer {
 .two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
   margin: -4rem auto 0;
-  max-width: 1440px;
+  max-width: 90rem;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 67.5rem) {
   .two-column {
     grid-template-columns: 1fr;
     max-width: 70vw;
@@ -949,28 +965,34 @@ img.spacer {
   mix-blend-mode: exclusion;
 }
 
+@media only screen and (max-width: 40rem) {
+  .two-column-item:hover {
+    mix-blend-mode: normal;
+  }
+}
+
 .two-column-item h3 {
   font-size: 10vw;
   line-height: 0.78;
   padding-bottom: 2.5rem;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 64rem) {
   .two-column-item h3 {
     font-size: 15vw;
     padding-bottom: 1rem;
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+@media only screen and (min-width: 64rem) and (max-width: 80rem) {
   .two-column-item h3 {
-    font-size: 128px;
+    font-size: 8rem;
   }
 }
 
-@media only screen and (min-width: 1760px) {
+@media only screen and (min-width: 110rem) {
   .two-column-item h3 {
-    font-size: 160px;
+    font-size: 10rem;
   }
 }
 
@@ -1010,7 +1032,7 @@ img.spacer {
   z-index: 1;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30rem) {
   #timeline h1 {
     font-size: 32vw;
     line-height: 26vw;
@@ -1043,7 +1065,7 @@ img.spacer {
 .timeline {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 24px;
+  grid-column-gap: 1.5rem;
   text-align: left;
   margin-left: 11rem;
   position: relative;
@@ -1051,23 +1073,26 @@ img.spacer {
 
 .line {
   position: absolute;
-  height: 1px;
+  height: 0.0625rem;
   width: calc(100vw - 3rem);
-  background: linear-gradient(90deg,
-      #5555ff,
-      #55ffff,
-      #55ff55,
-      #ffff55,
-      #ff5555,
-      #ff55ff,
-      #5555ff);
-  top: 40.5px;
+  background: linear-gradient(
+    90deg,
+    #5555ff,
+    #55ffff,
+    #55ff55,
+    #ffff55,
+    #ff5555,
+    #ff55ff,
+    #5555ff
+  );
+  top: 2.53125rem;
 }
 
 .timeline-item > h3 {
   color: var(--color-foreground);
   text-transform: uppercase;
   font-size: 3.75rem;
+  white-space: nowrap;
   padding: 1.5rem 0;
   line-height: 0.7;
 }
@@ -1076,8 +1101,7 @@ img.spacer {
   max-width: 16rem;
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 48rem) {
   #timeline .subtitle-container,
   .timeline {
     margin-left: 1rem;
@@ -1107,8 +1131,8 @@ img.spacer {
 .icon {
   margin: 0.5rem 0 2rem;
   position: relative;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background-clip: padding-box;
   transform-style: preserve-3d;
 }
@@ -1117,7 +1141,7 @@ img.spacer {
 .not-here,
 .date {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .here {
@@ -1161,13 +1185,14 @@ footer h1 {
   mix-blend-mode: difference;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48rem) {
   footer h1 {
-    font-size: 3rem;
+    font-size: 33vw;
   }
 
   footer .footer-gif {
-    width: 40vw;
+    width: 60vw;
+    top: -18vw;
   }
 
   footer .text {
@@ -1178,21 +1203,34 @@ footer h1 {
 
 footer h1 span {
   position: relative;
-  left: 5.6rem;
+  left: 12vw;
+  display: block;
 }
 
 footer p {
   color: var(--color-foreground);
 }
 
+footer p.small {
+  margin-top: 1rem;
+  color: var(--color-foreground-level-5);
+}
+
 footer form {
   margin: 2rem 0;
 }
 
+
 footer form input[type="email"] {
-  border: 1px solid var(--color-foreground);
-  color: var(--color-foreground);
+  border: 0.0625rem solid var(--color-foreground);
   width: 20rem;
+}
+
+@media only screen and (max-width: 30rem) {
+  footer form input[type="email"] {
+    width: 12rem;
+    margin-left: 0;
+  }
 }
 
 footer form button {
