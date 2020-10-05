@@ -1076,7 +1076,6 @@ img.spacer {
   #timeline .subtitle-container,
   .timeline {
     margin-left: 1rem;
-    grid-template-columns: 1fr;
   }
 
   #timeline .subtitle-container h2 {
@@ -1085,6 +1084,13 @@ img.spacer {
 
   .timeline-item > h3 {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  #timeline .subtitle-container,
+  .timeline {
+    grid-template-columns: 1fr;
   }
 }
 
