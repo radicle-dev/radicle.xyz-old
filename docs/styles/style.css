@@ -27,7 +27,8 @@ svg {
 }
 
 ::selection {
-  background-color: var(--color-caution);
+  background-color: var(--color-primary);
+  color: white;
 }
 
 .blend {
