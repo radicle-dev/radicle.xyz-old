@@ -1158,16 +1158,25 @@ footer p {
   color: var(--color-foreground);
 }
 
+footer p.small {
+  margin-top: 1rem;
+  color: var(--color-foreground-level-5);
+}
+
 footer form {
   margin: 2rem 0;
 }
 
 footer form input[type="text"] {
   border: 0.0625rem solid var(--color-foreground);
+  width: 20rem;
 }
 
-footer form input[type="text"] {
-  width: 20rem;
+@media only screen and (max-width: 30rem) {
+  footer form input[type="text"] {
+    width: 12rem;
+    margin-left: 0;
+  }
 }
 
 footer form button {
