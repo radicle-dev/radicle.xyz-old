@@ -233,6 +233,7 @@ nav a:hover span {
 }
 
 @media only screen and (max-width: 30rem) {
+
   #get-the-app p,
   #get-the-app form {
     margin: 0;
@@ -252,7 +253,7 @@ nav a:hover span {
     row-gap: 1rem;
   }
 
-  .email-signup .main-cta > input[type="email"] {
+  .email-signup .main-cta>input[type="email"] {
     width: 26rem;
   }
 }
@@ -265,13 +266,14 @@ nav a:hover span {
 
 
 @media only screen and (max-width: 80rem) {
+
   .email-signup p,
   .email-signup button,
-  .email-signup .main-cta > input[type="email"] {
+  .email-signup .main-cta>input[type="email"] {
     font-size: 1rem;
   }
 
-  .email-signup .main-cta > input[type="email"],
+  .email-signup .main-cta>input[type="email"],
   .email-signup button {
     height: 2rem;
   }
@@ -279,7 +281,7 @@ nav a:hover span {
 
 
 @media only screen and (max-width: 40rem) {
-  .email-signup .main-cta > input[type="email"] {
+  .email-signup .main-cta>input[type="email"] {
     width: auto;
   }
 
@@ -557,7 +559,7 @@ img.spacer {
     padding: 0 1.5rem;
   }
 
-  .attribute-features > div {
+  .attribute-features>div {
     width: 26rem;
     padding: 0 1.5rem;
   }
@@ -572,11 +574,11 @@ img.spacer {
     font-size: 1rem;
   }
 
-  .attribute-features > div {
+  .attribute-features>div {
     width: 80vw;
   }
 
-  .attribute-features > div > p {
+  .attribute-features>div>p {
     font-size: 1rem;
   }
 }
@@ -670,7 +672,7 @@ img.spacer {
   padding-bottom: 1.5rem;
 }
 
-.attribute-features p > svg {
+.attribute-features p>svg {
   margin-right: 1rem;
 }
 
@@ -755,13 +757,11 @@ img.spacer {
 #protocols h1 {
   padding-top: 4rem;
   font-size: 20vw;
-  background: linear-gradient(
-    269.94deg,
-    #000aff 4.97%,
-    #00b187 23.26%,
-    #00c40a 31.97%,
-    #ff7a00 48.46%
-  );
+  background: linear-gradient(269.94deg,
+      #000aff 4.97%,
+      #00b187 23.26%,
+      #00c40a 31.97%,
+      #ff7a00 48.46%);
   color: #000;
   mix-blend-mode: exclusion;
   background-clip: text;
@@ -836,12 +836,12 @@ img.spacer {
   margin: 0 auto;
 }
 
-.protocols > div:hover {
+.protocols>div:hover {
   mix-blend-mode: exclusion;
 }
 
 @media only screen and (max-width: 40rem) {
-  .protocols > div:hover {
+  .protocols>div:hover {
     mix-blend-mode: normal;
   }
 }
@@ -1075,20 +1075,18 @@ img.spacer {
   position: absolute;
   height: 0.0625rem;
   width: calc(100vw - 3rem);
-  background: linear-gradient(
-    90deg,
-    #5555ff,
-    #55ffff,
-    #55ff55,
-    #ffff55,
-    #ff5555,
-    #ff55ff,
-    #5555ff
-  );
+  background: linear-gradient(90deg,
+      #5555ff,
+      #55ffff,
+      #55ff55,
+      #ffff55,
+      #ff5555,
+      #ff55ff,
+      #5555ff);
   top: 2.53125rem;
 }
 
-.timeline-item > h3 {
+.timeline-item>h3 {
   color: var(--color-foreground);
   text-transform: uppercase;
   font-size: 3.75rem;
@@ -1097,11 +1095,12 @@ img.spacer {
   line-height: 0.7;
 }
 
-.timeline-item > p {
+.timeline-item>p {
   max-width: 16rem;
 }
 
 @media screen and (max-width: 48rem) {
+
   #timeline .subtitle-container,
   .timeline {
     margin-left: 1rem;
@@ -1111,7 +1110,7 @@ img.spacer {
     font-size: 100%;
   }
 
-  .timeline-item > h3 {
+  .timeline-item>h3 {
     font-size: 2rem;
   }
 }
@@ -1223,6 +1222,7 @@ footer form {
 
 footer form input[type="email"] {
   border: 0.0625rem solid var(--color-foreground);
+  color: var(--color-foreground);
   width: 20rem;
 }
 
