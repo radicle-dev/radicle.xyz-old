@@ -786,6 +786,12 @@ img.spacer {
   mix-blend-mode: exclusion;
 }
 
+@media only screen and (max-width: 40rem) {
+  .protocols > div:hover {
+    mix-blend-mode: normal;
+  }
+}
+
 .protocols div {
   position: relative;
   background-color: var(--color-background);
