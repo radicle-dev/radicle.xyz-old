@@ -914,6 +914,12 @@ img.spacer {
   mix-blend-mode: exclusion;
 }
 
+@media only screen and (max-width: 40rem) {
+  .two-column-item:hover {
+    mix-blend-mode: normal;
+  }
+}
+
 .two-column-item h3 {
   font-size: 10vw;
   line-height: 0.78;
