@@ -308,11 +308,11 @@ nav a:hover span {
 
 @keyframes scrolling {
   0% {
-    transform: translate3d(100vw, 0, 0);
+    transform: translateX(0vw);
   }
 
   100% {
-    transform: translate3d(-600vw, 0, 0);
+    transform: translateX(-560vw);
   }
 }
 
@@ -345,12 +345,6 @@ nav a:hover span {
 
 .horizontal-scroll-content img {
   position: absolute;
-  transform: scale(1);
-  transition: all 0.6s cubic-bezier(0.2, 1.86, 0.42, 0.98);
-}
-
-.horizontal-scroll-content img:hover {
-  transform: scale(1.02);
 }
 
 .horizontal-scroll-gif {
@@ -482,9 +476,26 @@ img.new-project {
   top: 0.8vw;
 }
 
-img.spacer {
-  width: 0.0625rem;
-  left: 570vw;
+img.project-source-end {
+  left: calc(560vw + 5vw);
+  top: 2vw;
+}
+
+img.sidebar1-end {
+  left: calc(560vw + 60vw);
+  top: 40vw;
+  opacity: 0.5;
+}
+
+img.sidebar2-end {
+  left: calc(560vw + 74vw);
+  top: 45vw;
+  opacity: 0.8;
+}
+
+img.sidebar3-end {
+  left: calc(560vw + 87vw);
+  top: 36vw;
 }
 
 /* FEATURES */
