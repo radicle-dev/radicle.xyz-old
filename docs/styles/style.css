@@ -1298,6 +1298,12 @@ footer h1 span {
   display: block;
 }
 
+@media only screen and (min-width: 50rem) {
+  footer h1 span {
+    left: 6rem;
+  }
+}
+
 footer p {
   color: var(--color-foreground);
 }
