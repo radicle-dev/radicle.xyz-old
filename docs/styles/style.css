@@ -12,6 +12,9 @@ body {
   cursor: default;
   -webkit-font-smoothing: antialiased;
   width: 100%;
+}
+
+.overflow-killer {
   overflow-x: hidden;
 }
 
