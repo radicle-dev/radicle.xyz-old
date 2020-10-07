@@ -312,7 +312,7 @@ nav a:hover span {
   }
 
   100% {
-    transform: translate3d(calc(-7500px - 100vw), 0, 0);
+    transform: translate3d(-600vw, 0, 0);
   }
 }
 
@@ -350,7 +350,7 @@ nav a:hover span {
 }
 
 .horizontal-scroll-content img:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
 .horizontal-scroll-gif {
