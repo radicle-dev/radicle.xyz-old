@@ -280,6 +280,7 @@ nav a:hover span {
 @media only screen and (max-width: 40rem) {
   .email-signup .main-cta > input[type="email"] {
     width: auto;
+    margin-left: 0;
   }
 
   #get-the-app p,
