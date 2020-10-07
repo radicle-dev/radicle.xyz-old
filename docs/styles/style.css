@@ -58,7 +58,6 @@ button:active {
   opacity: 0.5;
 }
 
-
 /* HEADER */
 
 header {
@@ -184,11 +183,13 @@ nav a:hover span {
   text-transform: uppercase;
   font-size: 30vw;
   line-height: 28vw;
-  background: linear-gradient(90deg,
-      #ff5555 -8.25%,
-      #0000ff 2.57%,
-      #00bf66 33.08%,
-      #b0b305 51.57%);
+  background: linear-gradient(
+    90deg,
+    #ff5555 -8.25%,
+    #0000ff 2.57%,
+    #00bf66 33.08%,
+    #b0b305 51.57%
+  );
   color: #000;
   mix-blend-mode: exclusion;
   background-clip: text;
@@ -233,7 +234,6 @@ nav a:hover span {
 }
 
 @media only screen and (max-width: 30rem) {
-
   #get-the-app p,
   #get-the-app form {
     margin: 0;
@@ -253,7 +253,7 @@ nav a:hover span {
     row-gap: 1rem;
   }
 
-  .email-signup .main-cta>input[type="email"] {
+  .email-signup .main-cta > input[type="email"] {
     width: 26rem;
   }
 }
@@ -264,24 +264,21 @@ nav a:hover span {
   height: 3rem;
 }
 
-
 @media only screen and (max-width: 80rem) {
-
   .email-signup p,
   .email-signup button,
-  .email-signup .main-cta>input[type="email"] {
+  .email-signup .main-cta > input[type="email"] {
     font-size: 1rem;
   }
 
-  .email-signup .main-cta>input[type="email"],
+  .email-signup .main-cta > input[type="email"],
   .email-signup button {
     height: 2rem;
   }
 }
 
-
 @media only screen and (max-width: 40rem) {
-  .email-signup .main-cta>input[type="email"] {
+  .email-signup .main-cta > input[type="email"] {
     width: auto;
   }
 
@@ -301,7 +298,6 @@ nav a:hover span {
   #email-signup p {
     margin-bottom: 1rem;
   }
-
 
   #email-signup input[type="email"] {
     margin-bottom: 0.5rem;
@@ -336,11 +332,10 @@ nav a:hover span {
 }
 
 .float {
-  box-shadow: 0px 41.7776px 41.7776px rgba(10, 11, 18, 0.287542),
-    0px 22.3363px 22.3363px rgba(10, 11, 18, 0.238443),
-    0px 12.5216px 12.5216px rgba(10, 11, 18, 0.2),
-    0px 6.6501px 6.6501px rgba(10, 11, 18, 0.161557),
-    0px 2.76726px 2.76726px rgba(10, 11, 18, 0.112458);
+  box-shadow: 0px 3vw 3vw rgba(10, 11, 18, 0.287542),
+    0px 1vw 1vw rgba(10, 11, 18, 0.238443), 0 0.5vw 0.5vw rgba(10, 11, 18, 0.2),
+    0px 0.25vw 0.25vw rgba(10, 11, 18, 0.161557),
+    0px 0.125vw 0.125vw rgba(10, 11, 18, 0.112458);
   border-radius: 1vw;
 }
 
@@ -438,12 +433,11 @@ img.profile {
 img.avatar {
   width: 5vw;
   border-radius: 2.5vw;
-  box-shadow: 0px 54px 103px rgba(0, 0, 0, 0.13),
-    0px 22.5599px 43.0309px rgba(0, 0, 0, 0.0934511),
-    0px 12.0616px 23.0064px rgba(0, 0, 0, 0.0774939),
-    0px 6.76164px 12.8972px rgba(0, 0, 0, 0.065),
-    0px 3.59106px 6.84961px rgba(0, 0, 0, 0.0525061),
-    0px 1.49432px 2.85027px rgba(0, 0, 0, 0.0365489);
+  box-shadow: 0px 1vw 1vw rgba(10, 11, 18, 0.187542),
+    0px 0.5vw 0.5vw rgba(10, 11, 18, 0.138443),
+    0 0.25vw 0.25vw rgba(10, 11, 18, 0.1),
+    0px 0.125vw 0.125vw rgba(10, 11, 18, 0.0161557),
+    0px 0.05vw 0.05vw rgba(10, 11, 18, 0.012458);
   z-index: 1;
 }
 
@@ -559,7 +553,7 @@ img.spacer {
     padding: 0 1.5rem;
   }
 
-  .attribute-features>div {
+  .attribute-features > div {
     width: 26rem;
     padding: 0 1.5rem;
   }
@@ -574,11 +568,11 @@ img.spacer {
     font-size: 1rem;
   }
 
-  .attribute-features>div {
+  .attribute-features > div {
     width: 80vw;
   }
 
-  .attribute-features>div>p {
+  .attribute-features > div > p {
     font-size: 1rem;
   }
 }
@@ -672,7 +666,7 @@ img.spacer {
   padding-bottom: 1.5rem;
 }
 
-.attribute-features p>svg {
+.attribute-features p > svg {
   margin-right: 1rem;
 }
 
@@ -757,11 +751,13 @@ img.spacer {
 #protocols h1 {
   padding-top: 4rem;
   font-size: 20vw;
-  background: linear-gradient(269.94deg,
-      #000aff 4.97%,
-      #00b187 23.26%,
-      #00c40a 31.97%,
-      #ff7a00 48.46%);
+  background: linear-gradient(
+    269.94deg,
+    #000aff 4.97%,
+    #00b187 23.26%,
+    #00c40a 31.97%,
+    #ff7a00 48.46%
+  );
   color: #000;
   mix-blend-mode: exclusion;
   background-clip: text;
@@ -836,12 +832,12 @@ img.spacer {
   margin: 0 auto;
 }
 
-.protocols>div:hover {
+.protocols > div:hover {
   mix-blend-mode: exclusion;
 }
 
 @media only screen and (max-width: 40rem) {
-  .protocols>div:hover {
+  .protocols > div:hover {
     mix-blend-mode: normal;
   }
 }
@@ -1016,12 +1012,14 @@ img.spacer {
   text-transform: uppercase;
   font-size: 18vw;
   line-height: 1;
-  background: linear-gradient(90deg,
-      #cc7a00 0%,
-      #850f00 16.13%,
-      #aa00e6 33.26%,
-      #0011ff 50.21%,
-      #00ba69 76.04%);
+  background: linear-gradient(
+    90deg,
+    #cc7a00 0%,
+    #850f00 16.13%,
+    #aa00e6 33.26%,
+    #0011ff 50.21%,
+    #00ba69 76.04%
+  );
   color: #000;
   mix-blend-mode: difference;
   background-clip: text;
@@ -1075,14 +1073,16 @@ img.spacer {
   position: absolute;
   height: 0.0625rem;
   width: calc(100vw - 3rem);
-  background: linear-gradient(90deg,
-      #5555ff,
-      #55ffff,
-      #55ff55,
-      #ffff55,
-      #ff5555,
-      #ff55ff,
-      #5555ff);
+  background: linear-gradient(
+    90deg,
+    #5555ff,
+    #55ffff,
+    #55ff55,
+    #ffff55,
+    #ff5555,
+    #ff55ff,
+    #5555ff
+  );
   top: 2.53125rem;
 }
 
@@ -1138,7 +1138,7 @@ img.spacer {
   line-height: 0.7;
 }
 
-.timeline-item>p {
+.timeline-item > p {
   max-width: 16rem;
 }
 
@@ -1149,7 +1149,6 @@ img.spacer {
 }
 
 @media screen and (max-width: 48rem) {
-
   #timeline .subtitle-container,
   .timeline {
     margin-left: 1rem;
@@ -1159,7 +1158,7 @@ img.spacer {
     font-size: 100%;
   }
 
-  .timeline-item>h3 {
+  .timeline-item > h3 {
     font-size: 2rem;
   }
 }
@@ -1296,7 +1295,6 @@ footer p.small {
 footer form {
   margin: 2rem 0;
 }
-
 
 footer form input[type="email"] {
   border: 0.0625rem solid var(--color-foreground);
