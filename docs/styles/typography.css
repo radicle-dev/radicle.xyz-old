@@ -37,8 +37,9 @@ button {
 
 p {
   font-family: var(--font-stack);
-  color: var(--color-foreground);
+  color: var(--color-foreground-level-6);
   line-height: 150%;
+  font-weight: 300;
 }
 
 p.small {
@@ -79,6 +80,10 @@ a span {
   cursor: pointer;
   border-bottom: 1px solid;
   text-decoration: none;
+}
+
+a {
+  color: var(--color-foreground-level-5);
 }
 
 a:hover,

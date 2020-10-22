@@ -929,49 +929,28 @@ img.sidebar3-end {
   padding: 10vw 2vw 8vw;
   background-color: var(--color-background);
   position: relative;
-}
-
-.two-column-item:hover {
-  mix-blend-mode: exclusion;
-}
-
-@media only screen and (max-width: 40rem) {
-  .two-column-item:hover {
-    mix-blend-mode: normal;
-  }
+  border-radius: 1rem;
 }
 
 .two-column-item h3 {
-  font-size: 10vw;
-  line-height: 0.78;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -1.125px;
+  line-height: 3.125rem;
   padding-bottom: 2.5rem;
 }
 
+.two-column-item span {
+  color: var(--color-foregroud-level-5);
+}
 @media only screen and (max-width: 64rem) {
+  .two-column-item {
+    padding: 2rem;
+  }
   .two-column-item h3 {
-    font-size: 15vw;
+    font-size: 2rem;
     padding-bottom: 1rem;
   }
-}
-
-@media only screen and (min-width: 64rem) and (max-width: 80rem) {
-  .two-column-item h3 {
-    font-size: 8rem;
-  }
-}
-
-@media only screen and (min-width: 110rem) {
-  .two-column-item h3 {
-    font-size: 10rem;
-  }
-}
-
-.two-column-item.community h3 {
-  color: var(--color-secondary);
-}
-
-.two-column-item.beta h3 {
-  color: var(--color-negative);
 }
 
 /* TIMELINE SECTION */
@@ -1101,11 +1080,11 @@ img.sidebar3-end {
 
 .timeline-item > h3 {
   color: var(--color-foreground);
-  text-transform: uppercase;
-  font-size: 3.75rem;
-  white-space: nowrap;
+  font-size: 2rem;
   padding: 1.5rem 0;
-  line-height: 0.7;
+  line-height: 96%;
+  letter-spacing: -1.125px;
+  font-weight: 700;
 }
 
 .timeline-item > p {
