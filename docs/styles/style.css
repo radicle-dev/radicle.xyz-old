@@ -865,12 +865,6 @@ img.sidebar3-end {
   right: 2rem;
 }
 
-/* @media only screen and (max-width: 80rem) {
-  .protocol h3 {
-    font-size: 5rem;
-  }
-} */
-
 @media only screen and (max-width: 64rem) {
   .protocols {
     grid-template-columns: repeat(1, 1fr);
