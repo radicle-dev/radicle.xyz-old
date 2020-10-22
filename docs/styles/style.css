@@ -38,7 +38,6 @@ svg {
 }
 
 input[type="email"] {
-  border: 0.0625rem solid var(--color-background);
   padding: 0 0 0 0.5rem;
   border-radius: 0.25rem;
   margin: 0 0.5rem;
@@ -54,6 +53,7 @@ button {
   color: var(--color-background);
   cursor: pointer;
   border: 0.0625rem solid var(--color-foreground-level-2);
+  font-weight: 600;
 }
 
 button:active {
@@ -242,6 +242,7 @@ nav a:hover span {
   align-items: center;
   background-color: black;
   padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 @media only screen and (max-width: 30rem) {
@@ -273,6 +274,12 @@ nav a:hover span {
 .main-cta button {
   font-size: 1.5rem;
   height: 3rem;
+}
+
+.main-cta button {
+  background-color: var(--color-primary);
+  border: none;
+  padding: 0 1rem;
 }
 
 @media only screen and (max-width: 80rem) {
