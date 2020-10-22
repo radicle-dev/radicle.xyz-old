@@ -740,25 +740,6 @@ img.sidebar3-end {
   background: var(--color-foreground-level-1);
 }
 
-#protocols .links {
-  display: inline-block;
-  position: absolute;
-  right: 2vw;
-}
-
-#protocols .links a {
-  font-weight: 600;
-  color: var(--color-foreground);
-  margin-bottom: 0.75rem;
-  display: flex;
-  right: 0;
-}
-
-#protocols .links a:hover {
-  text-decoration: none;
-  color: var(--color-secondary);
-}
-
 #protocols h1 {
   padding-top: 4rem;
   font-size: 20vw;
@@ -840,71 +821,57 @@ img.sidebar3-end {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  gap: 2rem;
+  gap: 1rem;
   max-width: 80rem;
   margin: 0 auto;
 }
 
-.protocols > div:hover {
-  mix-blend-mode: exclusion;
-}
-
-@media only screen and (max-width: 40rem) {
-  .protocols > div:hover {
-    mix-blend-mode: normal;
-  }
-}
-
-.protocols div {
+.protocol {
   position: relative;
   background-color: var(--color-background);
   text-align: left;
-  padding: 0.5rem 1rem 1rem;
+  padding: 2rem;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 22.5rem;
+  border-radius: 1rem;
 }
 
-.protocols h3 {
-  color: var(--color-secondary);
+.protocol h3 {
+  color: var(--color-foreground);
   display: flex;
   align-items: flex-start;
   white-space: nowrap;
-  font-size: 9.5rem;
-  line-height: 0.78;
-  padding: 1.25rem 3rem 0 0;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -1.125px;
+  line-height: 3.125rem;
+  padding: 0 3rem 1rem 0;
 }
 
-.protocols h3 span {
+.protocol > div > span {
   font-family: var(--font-stack);
   font-size: 1rem;
-  color: var(--color-primary);
+  color: var(--color-foreground-level-6);
   text-transform: lowercase;
-  padding: 0.5rem 0 0 0.25rem;
-  position: absolute;
-  top: 1rem;
-  left: 5.25rem;
+  font-weight: 600;
 }
 
-.protocols svg {
+.protocol svg {
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
+  top: 2rem;
+  right: 2rem;
 }
 
-@media only screen and (max-width: 80rem) {
-  .protocols h3 {
+/* @media only screen and (max-width: 80rem) {
+  .protocol h3 {
     font-size: 5rem;
   }
+} */
 
-  .protocols h3 span {
-    left: 3.2rem;
-    font-size: 0.8rem;
-  }
-}
-
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 64rem) {
   .protocols {
     grid-template-columns: repeat(1, 1fr);
   }
