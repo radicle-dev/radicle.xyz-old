@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "reset.css";
-@import "typography.css";
 @import "color.css";
+@import "typography.css";
 
 /* GENERAL */
 
@@ -38,7 +38,6 @@ svg {
 }
 
 input[type="email"] {
-  border: 0.0625rem solid var(--color-background);
   padding: 0 0 0 0.5rem;
   border-radius: 0.25rem;
   margin: 0 0.5rem;
@@ -54,6 +53,7 @@ button {
   color: var(--color-background);
   cursor: pointer;
   border: 0.0625rem solid var(--color-foreground-level-2);
+  font-weight: 600;
 }
 
 button:active {
@@ -89,16 +89,17 @@ header {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 30rem) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 header nav {
   display: flex;
   position: relative;
   top: 0.5rem;
-}
-
-@media only screen and (max-width: 30rem) {
-  header nav {
-    top: 0.2rem;
-  }
 }
 
 header nav a {
@@ -108,6 +109,7 @@ header nav a {
   color: var(--color-foreground);
   text-decoration: none;
   white-space: nowrap;
+  border: 0;
 }
 
 @media only screen and (max-width: 40rem) {
@@ -158,11 +160,25 @@ nav a:hover span {
 
 #headline h2 {
   font-weight: 600;
+  background-color: var(--color-background);
+  z-index: 2;
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  width: min-content;
+  white-space: nowrap;
 }
 
 @media only screen and (max-width: 40.5rem) {
   #headline h2 span {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  #headline h2 {
+    font-size: 1rem;
   }
 }
 
@@ -234,6 +250,7 @@ nav a:hover span {
   align-items: center;
   background-color: black;
   padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 @media only screen and (max-width: 30rem) {
@@ -267,6 +284,12 @@ nav a:hover span {
   height: 3rem;
 }
 
+.main-cta button {
+  background-color: var(--color-primary);
+  border: none;
+  padding: 0 1rem;
+}
+
 @media only screen and (max-width: 80rem) {
   .email-signup p,
   .email-signup button,
@@ -282,13 +305,14 @@ nav a:hover span {
 
 @media only screen and (max-width: 40rem) {
   .email-signup .main-cta > input[type="email"] {
-    width: auto;
+    width: 53vw;
     margin-left: 0;
   }
 
   #get-the-app p,
   #get-the-app form {
     margin: 0;
+    padding: 0;
   }
 
   #email-signup input[type="email"],
@@ -506,25 +530,8 @@ img.sidebar3-end {
 
 #features {
   position: relative;
-  margin-top: 10rem;
-}
-
-#features {
   max-width: 90rem;
-  margin: 0 auto;
-}
-
-#features h1 {
-  padding-top: 6rem;
-  font-size: 16rem;
-  text-transform: uppercase;
-  line-height: 0.8;
-  mix-blend-mode: difference;
-  color: var(--color-secondary);
-}
-
-#features h1 span {
-  color: var(--color-positive-level-6);
+  margin: 10rem auto 0;
 }
 
 .attributes {
@@ -542,6 +549,7 @@ img.sidebar3-end {
   grid-template-columns: 1fr 1fr;
   height: 40vw;
   text-align: left;
+  margin-bottom: 5.5rem;
 }
 
 @media only screen and (max-width: 64rem) {
@@ -559,7 +567,6 @@ img.sidebar3-end {
   }
 
   .attribute .attribute-title h4 {
-    font-size: 7.5rem;
     padding: 0 1.5rem 1rem;
   }
 
@@ -572,11 +579,28 @@ img.sidebar3-end {
     width: 26rem;
     padding: 0 1.5rem;
   }
+
+  .attribute:nth-child(1n) .attribute-title {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .attribute:nth-child(1n) .attribute-features {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .attribute:nth-child(2n) .attribute-title {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .attribute:nth-child(2n) .attribute-features {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 @media only screen and (max-width: 30rem) {
   .attribute .attribute-title h4 {
-    font-size: 5rem;
+    font-size: 2rem;
   }
 
   .attribute .attribute-title p {
@@ -589,6 +613,8 @@ img.sidebar3-end {
 
   .attribute-features > div > p {
     font-size: 1rem;
+    padding-bottom: 1rem;
+    align-items: flex-start;
   }
 }
 
@@ -623,12 +649,6 @@ img.sidebar3-end {
   }
 }
 
-@media only screen and (min-width: 48rem) and (max-width: 64rem) {
-  .attribute:nth-child(2n + 2) .att-gif {
-    left: -2vw;
-  }
-}
-
 .att-gif.rotate {
   transform: rotateZ(15deg);
 }
@@ -642,98 +662,90 @@ img.sidebar3-end {
 }
 
 .attribute-title {
-  background-color: var(--color-caution-level-2);
+  background-color: var(--color-background);
   position: relative;
+  border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important;
 }
 
 .attribute-title div {
   width: 80%;
 }
 
+@media only screen and (max-width: 64rem) {
+  .attribute-title div,
+  .attribute-features div {
+    width: 80%;
+  }
+}
+
 .attribute-title h4 {
-  font-family: Druk X;
-  font-size: 10vw;
-  line-height: 0.77;
-  padding-bottom: 1rem;
-  color: var(--color-primary);
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -1.125px;
+  padding-bottom: 1.5rem;
+  color: var(--color-foreground);
 }
 
 .attribute-title p {
   font-size: 1.5rem;
   line-height: 1.5;
-  color: var(--color-primary);
+  color: var(--color-foreground-level-6);
   max-width: 26rem;
 }
 
-.attribute-title:nth-child(1) p {
-  max-width: 27rem;
-}
-
-.attribute-title:nth-child(1) h4 {
-  line-height: 0.58;
-  padding-bottom: 3rem;
+.attribute-features {
+  background-color: var(--color-foreground-level-2);
+  border-bottom-left-radius: 1rem !important;
+  border-bottom-right-radius: 1rem !important;
 }
 
 .attribute-features p {
   display: flex;
   align-items: center;
   font-size: 1.125rem;
-  padding-bottom: 1.5rem;
-}
-
-.attribute-features p > svg {
-  margin-right: 1rem;
+  padding-bottom: 3rem;
 }
 
 .attribute-features p:last-child {
   padding-bottom: 0;
 }
 
-@media only screen and (max-width: 64rem) {
-  .attribute-features p svg {
-    width: 2rem;
-    height: 2rem;
-  }
+.attribute-features p > svg {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .attribute-features p svg path {
-  fill: var(--color-primary);
+  fill: var(--color-foreground);
 }
 
-.attribute:nth-child(2) .attribute-title {
-  background-color: var(--color-tertiary-level-1);
-}
-
-.attribute:nth-child(2) .attribute-title * {
-  color: var(--color-negative);
-}
-
-.attribute:nth-child(2) .attribute-features p svg path {
-  fill: var(--color-negative);
-}
-
-.attribute:nth-child(3) .attribute-title {
-  background-color: var(--color-positive-level-2);
-}
-
-.attribute:nth-child(3) .attribute-title * {
-  color: var(--color-secondary);
-}
-
-.attribute:nth-child(3) .attribute-features p svg path {
-  fill: var(--color-secondary);
-}
-
-.attribute:nth-child(4) .attribute-title {
-  background-color: var(--color-primary-level-1);
-}
-
-.attribute:nth-child(4) .attribute-title * {
-  color: var(--color-tertiary-level-6);
-}
-
-.attribute:nth-child(4) .attribute-features p svg path {
-  fill: var(--color-tertiary-level-6);
+@media only screen and (min-width: 64rem) {
+  .attribute:nth-child(1n) .attribute-title {
+    border-top-right-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+    border-top-left-radius: 0rem !important;
+    border-bottom-left-radius: 0rem !important;
+  }
+  .attribute:nth-child(1n) .attribute-features {
+    border-top-left-radius: 1rem !important;
+    border-bottom-left-radius: 1rem !important;
+    border-top-right-radius: 0rem !important;
+    border-bottom-right-radius: 0rem !important;
+  }
+  .attribute:nth-child(2n) .attribute-title {
+    border-top-left-radius: 1rem !important;
+    border-bottom-left-radius: 1rem !important;
+    border-top-right-radius: 0rem !important;
+    border-bottom-right-radius: 0rem !important;
+  }
+  .attribute:nth-child(2n) .attribute-features {
+    border-top-right-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+    border-top-left-radius: 0rem !important;
+    border-bottom-left-radius: 0rem !important;
+  }
 }
 
 /* PROTOCOLS SECTION */
@@ -742,25 +754,6 @@ img.sidebar3-end {
   margin-top: 12rem;
   position: relative;
   background: var(--color-foreground-level-1);
-}
-
-#protocols .links {
-  display: inline-block;
-  position: absolute;
-  right: 2vw;
-}
-
-#protocols .links a {
-  font-weight: 600;
-  color: var(--color-foreground);
-  margin-bottom: 0.75rem;
-  display: flex;
-  right: 0;
-}
-
-#protocols .links a:hover {
-  text-decoration: none;
-  color: var(--color-secondary);
 }
 
 #protocols h1 {
@@ -810,7 +803,9 @@ img.sidebar3-end {
 
 .subtitle-container h2 {
   background-color: var(--color-background);
-  padding: 0.625rem;
+  padding: 0.75rem;
+  max-width: 32rem;
+  border-radius: 0.5rem;
 }
 
 .protocol-gif {
@@ -842,74 +837,69 @@ img.sidebar3-end {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  gap: 2rem;
-  max-width: 80rem;
+  gap: 1rem;
+  max-width: 90rem;
   margin: 0 auto;
 }
 
-.protocols > div:hover {
-  mix-blend-mode: exclusion;
-}
-
-@media only screen and (max-width: 40rem) {
-  .protocols > div:hover {
-    mix-blend-mode: normal;
-  }
-}
-
-.protocols div {
+.protocol {
   position: relative;
   background-color: var(--color-background);
   text-align: left;
-  padding: 0.5rem 1rem 1rem;
+  padding: 2rem;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.protocols h3 {
-  color: var(--color-secondary);
-  display: flex;
-  align-items: flex-start;
-  white-space: nowrap;
-  font-size: 9.5rem;
-  line-height: 0.78;
-  padding: 1.25rem 3rem 0 0;
-}
-
-.protocols h3 span {
-  font-family: var(--font-stack);
-  font-size: 1rem;
-  color: var(--color-primary);
-  text-transform: lowercase;
-  padding: 0.5rem 0 0 0.25rem;
-  position: absolute;
-  top: 1rem;
-  left: 5.25rem;
-}
-
-.protocols svg {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-}
-
-@media only screen and (max-width: 80rem) {
-  .protocols h3 {
-    font-size: 5rem;
-  }
-
-  .protocols h3 span {
-    left: 3.2rem;
-    font-size: 0.8rem;
-  }
+  height: 22.5rem;
+  border-radius: 1rem;
 }
 
 @media only screen and (max-width: 48rem) {
   .protocols {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.protocol h3 {
+  color: var(--color-foreground);
+  display: flex;
+  align-items: flex-start;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -1.125px;
+  line-height: 90%;
+  padding: 0 3rem 1rem 0;
+}
+
+@media only screen and (max-width: 64rem) {
+  .protocol h3 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .protocol h3 {
+    font-size: 1.5rem;
+  }
+  .protocol svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.protocol > div > span {
+  font-family: var(--font-stack);
+  font-size: 1rem;
+  color: var(--color-foreground-level-6);
+  text-transform: lowercase;
+  font-weight: 600;
+}
+
+.protocol svg {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
 }
 
 /* CODELANDS SECTION */
@@ -942,11 +932,6 @@ img.sidebar3-end {
   #codelands h1 {
     font-size: 25rem;
   }
-
-  #codelands a:hover span,
-  #codelands a:hover {
-    color: rgb(163, 163, 0);
-  }
 }
 
 .two-column {
@@ -966,53 +951,35 @@ img.sidebar3-end {
   }
 }
 
+@media only screen and (max-width: 40rem) {
+  .two-column {
+    max-width: 100vw;
+  }
+}
+
 .two-column-item {
   padding: 10vw 2vw 8vw;
   background-color: var(--color-background);
   position: relative;
-}
-
-.two-column-item:hover {
-  mix-blend-mode: exclusion;
-}
-
-@media only screen and (max-width: 40rem) {
-  .two-column-item:hover {
-    mix-blend-mode: normal;
-  }
+  border-radius: 1rem;
 }
 
 .two-column-item h3 {
-  font-size: 10vw;
-  line-height: 0.78;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -1.125px;
+  line-height: 3.125rem;
   padding-bottom: 2.5rem;
 }
 
 @media only screen and (max-width: 64rem) {
+  .two-column-item {
+    padding: 2rem;
+  }
   .two-column-item h3 {
-    font-size: 15vw;
+    font-size: 2rem;
     padding-bottom: 1rem;
   }
-}
-
-@media only screen and (min-width: 64rem) and (max-width: 80rem) {
-  .two-column-item h3 {
-    font-size: 8rem;
-  }
-}
-
-@media only screen and (min-width: 110rem) {
-  .two-column-item h3 {
-    font-size: 10rem;
-  }
-}
-
-.two-column-item.community h3 {
-  color: var(--color-secondary);
-}
-
-.two-column-item.beta h3 {
-  color: var(--color-negative);
 }
 
 /* TIMELINE SECTION */
@@ -1064,8 +1031,10 @@ img.sidebar3-end {
   margin: 0 0 3.5rem 11rem;
 }
 
-#timeline .subtitle-container h2 {
-  padding: 1rem 1.5rem;
+@media only screen and (min-width: 90rem) {
+  #timeline .subtitle-container {
+    margin-left: calc((100vw - 70rem) / 2);
+  }
 }
 
 #timeline .timeline-gif {
@@ -1082,6 +1051,14 @@ img.sidebar3-end {
   text-align: left;
   margin-left: 11rem;
   position: relative;
+}
+
+@media only screen and (min-width: 116rem) {
+  .timeline {
+    margin-left: 0;
+    max-width: 90rem;
+    margin: 0 auto;
+  }
 }
 
 .line {
@@ -1105,7 +1082,7 @@ img.sidebar3-end {
   .line {
     left: 0.7rem;
     width: 0.0625rem;
-    height: 24.8rem;
+    height: 25.8rem;
     top: 4rem;
     background: linear-gradient(
       0deg,
@@ -1122,35 +1099,35 @@ img.sidebar3-end {
 
 @media only screen and (max-width: 29.625rem) {
   .line {
-    height: 26rem;
+    height: 27.4rem;
   }
 }
 
-@media only screen and (max-width: 23.0625rem) {
+@media only screen and (max-width: 24rem) {
   .line {
-    height: 27.5rem;
+    height: 29rem;
   }
 }
 
-@media only screen and (max-width: 22.375rem) {
-  .line {
-    height: 29.3rem;
-  }
-}
-
-@media only screen and (max-width: 19.375rem) {
+@media only screen and (max-width: 23rem) {
   .line {
     height: 30.5rem;
   }
 }
 
+@media only screen and (max-width: 22.375rem) {
+  .line {
+    height: 32rem;
+  }
+}
+
 .timeline-item > h3 {
   color: var(--color-foreground);
-  text-transform: uppercase;
-  font-size: 3.75rem;
-  white-space: nowrap;
+  font-size: 2rem;
   padding: 1.5rem 0;
-  line-height: 0.7;
+  line-height: 96%;
+  letter-spacing: -1.125px;
+  font-weight: 700;
 }
 
 .timeline-item > p {
@@ -1276,7 +1253,7 @@ footer h1 {
   mix-blend-mode: difference;
 }
 
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 60rem) {
   footer h1 {
     font-size: 33vw;
   }
@@ -1326,7 +1303,7 @@ footer form input[type="email"] {
 
 @media only screen and (max-width: 30rem) {
   footer form input[type="email"] {
-    width: 12rem;
+    width: 11.5rem;
   }
 }
 
