@@ -838,7 +838,7 @@ img.sidebar3-end {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 1rem;
-  max-width: 80rem;
+  max-width: 90rem;
   margin: 0 auto;
 }
 
@@ -855,6 +855,12 @@ img.sidebar3-end {
   border-radius: 1rem;
 }
 
+@media only screen and (max-width: 48rem) {
+  .protocols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .protocol h3 {
   color: var(--color-foreground);
   display: flex;
@@ -862,14 +868,19 @@ img.sidebar3-end {
   font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: -1.125px;
-  line-height: 3.125rem;
+  line-height: 90%;
   padding: 0 3rem 1rem 0;
+}
+
+@media only screen and (max-width: 64rem) {
+  .protocol h3 {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 30rem) {
   .protocol h3 {
     font-size: 1.5rem;
-    line-height: 1;
   }
   .protocol svg {
     width: 2rem;
@@ -889,12 +900,6 @@ img.sidebar3-end {
   position: absolute;
   top: 2rem;
   right: 2rem;
-}
-
-@media only screen and (max-width: 64rem) {
-  .protocols {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 
 /* CODELANDS SECTION */
@@ -1026,6 +1031,12 @@ img.sidebar3-end {
   margin: 0 0 3.5rem 11rem;
 }
 
+@media only screen and (min-width: 90rem) {
+  #timeline .subtitle-container {
+    margin-left: calc((100vw - 70rem) / 2);
+  }
+}
+
 #timeline .timeline-gif {
   width: 50vw;
   position: absolute;
@@ -1040,6 +1051,14 @@ img.sidebar3-end {
   text-align: left;
   margin-left: 11rem;
   position: relative;
+}
+
+@media only screen and (min-width: 116rem) {
+  .timeline {
+    margin-left: 0;
+    max-width: 90rem;
+    margin: 0 auto;
+  }
 }
 
 .line {
@@ -1234,7 +1253,7 @@ footer h1 {
   mix-blend-mode: difference;
 }
 
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 60rem) {
   footer h1 {
     font-size: 33vw;
   }
