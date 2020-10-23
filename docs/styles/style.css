@@ -72,6 +72,7 @@ header {
 
 header #logo {
   text-decoration: none;
+  border: 0;
 }
 
 #logo svg {
