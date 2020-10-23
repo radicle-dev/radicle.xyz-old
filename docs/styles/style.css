@@ -850,12 +850,22 @@ img.sidebar3-end {
   color: var(--color-foreground);
   display: flex;
   align-items: flex-start;
-  white-space: nowrap;
   font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: -1.125px;
   line-height: 3.125rem;
   padding: 0 3rem 1rem 0;
+}
+
+@media only screen and (max-width: 30rem) {
+  .protocol h3 {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .protocol svg {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 .protocol > div > span {
