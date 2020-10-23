@@ -89,16 +89,17 @@ header {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 30rem) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 header nav {
   display: flex;
   position: relative;
   top: 0.5rem;
-}
-
-@media only screen and (max-width: 30rem) {
-  header nav {
-    top: 0.2rem;
-  }
 }
 
 header nav a {
@@ -171,6 +172,12 @@ nav a:hover span {
 @media only screen and (max-width: 40.5rem) {
   #headline h2 span {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  #headline h2 {
+    font-size: 1rem;
   }
 }
 
@@ -297,13 +304,14 @@ nav a:hover span {
 
 @media only screen and (max-width: 40rem) {
   .email-signup .main-cta > input[type="email"] {
-    width: auto;
+    width: 53vw;
     margin-left: 0;
   }
 
   #get-the-app p,
   #get-the-app form {
     margin: 0;
+    padding: 0;
   }
 
   #email-signup input[type="email"],
@@ -944,6 +952,12 @@ img.sidebar3-end {
   }
 }
 
+@media only screen and (max-width: 40rem) {
+  .two-column {
+    max-width: 100vw;
+  }
+}
+
 .two-column-item {
   padding: 10vw 2vw 8vw;
   background-color: var(--color-background);
@@ -1058,7 +1072,7 @@ img.sidebar3-end {
   .line {
     left: 0.7rem;
     width: 0.0625rem;
-    height: 24.8rem;
+    height: 25.8rem;
     top: 4rem;
     background: linear-gradient(
       0deg,
@@ -1075,25 +1089,25 @@ img.sidebar3-end {
 
 @media only screen and (max-width: 29.625rem) {
   .line {
-    height: 26rem;
+    height: 27.4rem;
   }
 }
 
-@media only screen and (max-width: 23.0625rem) {
+@media only screen and (max-width: 24rem) {
   .line {
-    height: 27.5rem;
+    height: 29rem;
+  }
+}
+
+@media only screen and (max-width: 23rem) {
+  .line {
+    height: 30.5rem;
   }
 }
 
 @media only screen and (max-width: 22.375rem) {
   .line {
-    height: 29.3rem;
-  }
-}
-
-@media only screen and (max-width: 19.375rem) {
-  .line {
-    height: 30.5rem;
+    height: 32rem;
   }
 }
 
@@ -1279,7 +1293,7 @@ footer form input[type="email"] {
 
 @media only screen and (max-width: 30rem) {
   footer form input[type="email"] {
-    width: 12rem;
+    width: 11.5rem;
   }
 }
 
