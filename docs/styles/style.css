@@ -605,6 +605,7 @@ img.sidebar3-end {
   .attribute-features > div > p {
     font-size: 1rem;
     padding-bottom: 1rem;
+    align-items: flex-start;
   }
 }
 
@@ -662,6 +663,13 @@ img.sidebar3-end {
   width: 80%;
 }
 
+@media only screen and (max-width: 64rem) {
+  .attribute-title div,
+  .attribute-features div {
+    width: 80%;
+  }
+}
+
 .attribute-title h4 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -675,8 +683,8 @@ img.sidebar3-end {
   line-height: 1.5;
   color: var(--color-foreground-level-6);
   max-width: 26rem;
-  font-weight: 300;
 }
+
 .attribute-features {
   background-color: var(--color-foreground-level-2);
   border-bottom-left-radius: 1rem !important;
@@ -688,7 +696,6 @@ img.sidebar3-end {
   align-items: center;
   font-size: 1.125rem;
   padding-bottom: 3rem;
-  font-weight: 300;
 }
 
 .attribute-features p:last-child {
@@ -901,11 +908,13 @@ img.sidebar3-end {
   #codelands h1 {
     font-size: 25rem;
   }
+}
 
-  #codelands a:hover span,
-  #codelands a:hover {
-    color: rgb(163, 163, 0);
-  }
+#codelands a span {
+  color: var(--color-foreground-level-5);
+}
+#codelands a span:hover {
+  color: var(--color-secondary);
 }
 
 .two-column {
