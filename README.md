@@ -1,4 +1,6 @@
-The [radicle.xyz](https://radicle.xyz) website.
+# The [radicle.xyz](https://radicle.xyz) website.
+
+## Build
 
 Build with the `make` command.
 
