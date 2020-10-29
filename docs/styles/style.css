@@ -164,7 +164,7 @@ nav a:hover span {
   background-color: var(--color-background);
   z-index: 2;
   position: relative;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.5rem;
   margin: 0 auto;
   width: min-content;
@@ -808,7 +808,7 @@ img.sidebar3-end {
 
 .subtitle-container h2 {
   background-color: var(--color-background);
-  padding: 0.75rem 1rem;
+  padding: 1rem 1.5rem;
   max-width: 32rem;
   border-radius: 0.5rem;
 }
