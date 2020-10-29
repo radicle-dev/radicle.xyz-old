@@ -183,6 +183,10 @@ nav a:hover span {
   }
 }
 
+.gif {
+  border-radius: 0.25rem;
+}
+
 .headline-gif {
   position: absolute;
   top: 14vw;
@@ -913,7 +917,7 @@ img.sidebar3-end {
 
 #codelands .codelands-gif {
   position: absolute;
-  left: 0;
+  left: -0.5rem;
   top: 1rem;
   width: 40vw;
   z-index: 0;
