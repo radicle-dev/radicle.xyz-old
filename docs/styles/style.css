@@ -860,12 +860,6 @@ img.sidebar3-end {
   border-radius: 1rem;
 }
 
-@media only screen and (max-width: 48rem) {
-  .protocols {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 .protocol h3 {
   color: var(--color-foreground);
   display: flex;
@@ -883,10 +877,21 @@ img.sidebar3-end {
   }
 }
 
+@media only screen and (max-width: 48rem) {
+  .protocols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .protocol h3 {
+    font-size: 3.5rem;
+  }
+}
+
 @media only screen and (max-width: 30rem) {
   .protocol h3 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
+
   .protocol svg {
     width: 2rem;
     height: 2rem;
