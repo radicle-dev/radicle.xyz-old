@@ -808,7 +808,7 @@ img.sidebar3-end {
 
 .subtitle-container h2 {
   background-color: var(--color-background);
-  padding: 0.75rem;
+  padding: 0.75rem 1rem;
   max-width: 32rem;
   border-radius: 0.5rem;
 }
@@ -852,7 +852,6 @@ img.sidebar3-end {
   background-color: var(--color-background);
   text-align: left;
   padding: 2rem;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -869,6 +868,11 @@ img.sidebar3-end {
   letter-spacing: -1.125px;
   line-height: 90%;
   padding: 0 3rem 1rem 0;
+}
+
+.protocol .links {
+  display: block;
+  margin-top: 0.5rem;
 }
 
 @media only screen and (max-width: 64rem) {
