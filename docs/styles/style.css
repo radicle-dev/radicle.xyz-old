@@ -155,7 +155,6 @@ nav a:hover span {
 
 #headline {
   position: relative;
-  padding-bottom: 2rem;
   background: var(--color-foreground-level-1);
 }
 
@@ -255,7 +254,7 @@ nav a:hover span {
   align-items: center;
   background-color: black;
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 
 @media only screen and (max-width: 30rem) {
@@ -563,60 +562,43 @@ img.sidebar3-end {
     height: 40rem;
   }
 
-  .attribute-title {
+  .attribute {
     grid-row: 1 / 1;
   }
 
-  .attribute-features {
+  .attribute {
     grid-row: 2 / 2;
   }
 
-  .attribute .attribute-title h4 {
+  .attribute h4 {
     padding: 0 1.5rem 1rem;
   }
 
-  .attribute .attribute-title p {
+  .attribute p {
     font-size: 1.125rem;
     padding: 0 1.5rem;
   }
 
-  .attribute-features > div {
+  .attribute {
     width: 26rem;
     padding: 0 1.5rem;
-  }
-
-  .attribute:nth-child(1n) .attribute-title {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  .attribute:nth-child(1n) .attribute-features {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .attribute:nth-child(2n) .attribute-title {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .attribute:nth-child(2n) .attribute-features {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
   }
 }
 
 @media only screen and (max-width: 30rem) {
-  .attribute .attribute-title h4 {
+  .attribute h4 {
     font-size: 2rem;
   }
 
-  .attribute .attribute-title p {
+  .attribute p {
     font-size: 1rem;
   }
 
-  .attribute-features > div {
+  .attribute {
     width: 80vw;
   }
 
-  .attribute-features > div > p {
+  .attribute > p {
     font-size: 1rem;
     padding-bottom: 1rem;
     align-items: flex-start;
@@ -629,128 +611,42 @@ img.sidebar3-end {
   }
 }
 
-.att-gif {
-  position: absolute;
-  right: -7vw;
-  top: 2vw;
-  width: 16vw;
-}
-
-@media only screen and (max-width: 30rem) {
-  .att-gif {
-    width: 41vw;
-    top: -5vw;
-  }
-
-  .attribute:nth-child(2) .att-gif {
-    top: -4rem;
-  }
-}
-
-@media only screen and (min-width: 30rem) and (max-width: 64rem) {
-  .att-gif {
-    width: 30vw;
-    top: -5vw;
-  }
-}
-
-.att-gif.rotate {
-  transform: rotateZ(15deg);
-}
-
-.attribute-title,
-.attribute-features {
+.attribute {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
-.attribute-title {
+  align-items: left;
   background-color: var(--color-background);
   position: relative;
-  border-top-left-radius: 1rem !important;
-  border-top-right-radius: 1rem !important;
+  border-radius: 1rem;
+  width: 32rem;
+  padding: 5.25rem;
 }
 
-.attribute-title div {
-  width: 80%;
-}
-
-@media only screen and (max-width: 64rem) {
-  .attribute-title div,
-  .attribute-features div {
-    width: 80%;
-  }
-}
-
-.attribute-title h4 {
+.attribute h4 {
   font-size: 3.5rem;
+  line-height: 3rem;
   font-weight: 700;
   letter-spacing: -1.125px;
   padding-bottom: 1.5rem;
   color: var(--color-foreground);
 }
 
-.attribute-title p {
+.attribute p:first-of-type {
   font-size: 1.5rem;
   line-height: 1.5;
   color: var(--color-foreground-level-6);
   max-width: 26rem;
 }
 
-.attribute-features {
-  background-color: var(--color-foreground-level-2);
-  border-bottom-left-radius: 1rem !important;
-  border-bottom-right-radius: 1rem !important;
-}
-
-.attribute-features p {
-  display: flex;
-  align-items: center;
-  font-size: 1.125rem;
-  padding-bottom: 3rem;
-}
-
-.attribute-features p:last-child {
-  padding-bottom: 0;
-}
-
-.attribute-features p > svg {
+.attribute p svg {
   margin-right: 1rem;
   width: 2rem;
   height: 2rem;
 }
 
-.attribute-features p svg path {
+.attribute p svg path {
   fill: var(--color-foreground);
-}
-
-@media only screen and (min-width: 64rem) {
-  .attribute:nth-child(1n) .attribute-title {
-    border-top-right-radius: 1rem !important;
-    border-bottom-right-radius: 1rem !important;
-    border-top-left-radius: 0rem !important;
-    border-bottom-left-radius: 0rem !important;
-  }
-  .attribute:nth-child(1n) .attribute-features {
-    border-top-left-radius: 1rem !important;
-    border-bottom-left-radius: 1rem !important;
-    border-top-right-radius: 0rem !important;
-    border-bottom-right-radius: 0rem !important;
-  }
-  .attribute:nth-child(2n) .attribute-title {
-    border-top-left-radius: 1rem !important;
-    border-bottom-left-radius: 1rem !important;
-    border-top-right-radius: 0rem !important;
-    border-bottom-right-radius: 0rem !important;
-  }
-  .attribute:nth-child(2n) .attribute-features {
-    border-top-right-radius: 1rem !important;
-    border-bottom-right-radius: 1rem !important;
-    border-top-left-radius: 0rem !important;
-    border-bottom-left-radius: 0rem !important;
-  }
 }
 
 /* PROTOCOLS SECTION */
@@ -1054,7 +950,7 @@ img.sidebar3-end {
 #timeline .timeline-gif {
   width: 50vw;
   position: absolute;
-  top: 0;
+  top: -11rem;
   right: -3vw;
 }
 
