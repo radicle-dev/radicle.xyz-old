@@ -39,7 +39,7 @@ svg {
 
 input[type="email"] {
   padding: 0 0 0 0.5rem;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   margin: 0 0.5rem;
   color: var(--color-background);
   width: 15.625rem;
@@ -82,6 +82,10 @@ header #logo {
 @media only screen and (max-width: 30rem) {
   #logo svg {
     width: 6rem;
+  }
+
+  header nav {
+    margin-top: 1rem;
   }
 }
 
@@ -275,6 +279,7 @@ nav a:hover span {
     flex-direction: column;
     padding: 1.5rem 1.25rem;
     row-gap: 1rem;
+    width: 22rem;
   }
 
   .email-signup .main-cta > input[type="email"] {
@@ -343,7 +348,7 @@ nav a:hover span {
 #features {
   position: relative;
   max-width: 100rem;
-  margin: 10rem auto 0;
+  margin: 20vw auto 0;
 }
 
 .features-gif {
@@ -356,7 +361,14 @@ nav a:hover span {
 @media only screen and (max-width: 40rem) {
   .features-gif {
     width: 50vw;
-    top: 82vw;
+    top: 52vw;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .features-gif {
+    width: 70vw;
+    top: 62vw;
   }
 }
 
@@ -386,6 +398,22 @@ nav a:hover span {
   margin-top: 8rem;
 }
 
+@media only screen and (max-width: 30rem) {
+  #features h1.druk {
+    font-size: 28vw;
+    line-height: 80%;
+    padding-top: 5rem;
+    margin-top: 6rem;
+    white-space: normal;
+  }
+}
+
+@media only screen and (min-width: 70rem) {
+  #features h1.druk {
+    font-size: 11.5vw;
+  }
+}
+
 @media only screen and (min-width: 90rem) {
   #features h1.druk {
     font-size: 10.5vw;
@@ -411,8 +439,15 @@ nav a:hover span {
   flex-direction: row-reverse;
 }
 
+@media only screen and (max-width: 60rem) {
+  .attribute,
+  .attribute:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+}
+
 .attribute .screenshot {
-  width: 42rem;
+  width: 41vw;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -433,6 +468,20 @@ nav a:hover span {
   width: 32rem;
 }
 
+@media only screen and (max-width: 60rem) {
+  .attribute {
+    flex-direction: column-reverse;
+  }
+
+  .attribute .content {
+    margin: 0;
+  }
+
+  .attribute .content {
+    width: auto;
+  }
+}
+
 @media only screen and (max-width: 80rem) {
   .attribute .content {
     padding: 3rem;
@@ -451,6 +500,7 @@ nav a:hover span {
 @media only screen and (max-width: 30rem) {
   .attribute h4 {
     font-size: 2rem;
+    line-height: 1.75rem;
   }
 
   .attribute p {
@@ -489,13 +539,20 @@ nav a:hover span {
 @media only screen and (max-width: 80rem) {
   .attribute p:first-of-type {
     padding: 0 0 1.25rem;
+    font-size: 1.25rem;
   }
 }
 
 .attribute p:nth-child(n + 3) {
-  padding: 0 0 2rem;
+  padding-bottom: 2rem;
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 80rem) {
+  .attribute p:nth-child(n + 3) {
+    padding-bottom: 1rem;
+  }
 }
 
 .attribute p:nth-child(n + 3):last-child {
@@ -510,9 +567,19 @@ nav a:hover span {
 
 /* SPECIFIC FEATURE STYLES */
 
-img.remotes {
+.attribute:nth-child(1) .screenshot img {
   width: 75%;
   align-self: center;
+}
+
+@media only screen and (max-width: 60rem) {
+  .attribute .screenshot,
+  .attribute:nth-child(1) .screenshot img {
+    width: 94%;
+    margin-bottom: -4.5rem;
+    z-index: -1;
+    margin-right: -5.3vw;
+  }
 }
 
 .attribute:nth-child(2) .screenshot {
@@ -525,9 +592,18 @@ img.remotes {
   place-content: center;
 }
 
+@media only screen and (max-width: 60rem) {
+  .attribute:nth-child(2) .screenshot {
+    background-position: center;
+    height: 70vw;
+    width: 100%;
+  }
+}
+
 .attribute:nth-child(2) .screenshot img {
   width: 45%;
   align-self: center;
+  margin-right: -6vw;
 }
 
 .attribute:nth-child(2n) .content {
@@ -535,9 +611,18 @@ img.remotes {
 }
 
 .attribute:nth-child(3) .screenshot img {
-  margin-right: -35rem;
+  margin-right: -35vw;
   width: -webkit-fill-available;
   align-self: center;
+}
+
+@media only screen and (max-width: 60rem) {
+  .attribute:nth-child(3) .screenshot img {
+    width: 97%;
+    margin-bottom: 3rem;
+    z-index: -1;
+    margin-right: -5.4vw;
+  }
 }
 
 .attribute:nth-child(4) .screenshot {
@@ -553,6 +638,21 @@ img.remotes {
   margin-top: 1rem;
 }
 
+@media only screen and (max-width: 60rem) {
+  .attribute:nth-child(4) .screenshot {
+    background-position: center;
+    height: 70vw;
+    width: 100%;
+    background-size: 100%;
+  }
+
+  .attribute:nth-child(4) .screenshot img {
+    width: 45%;
+    align-self: center;
+    margin: 0 auto;
+  }
+}
+
 .float {
   box-shadow: 0px 3vw 3vw rgba(10, 11, 18, 0.287542),
     0px 1vw 1vw rgba(10, 11, 18, 0.238443), 0 0.5vw 0.5vw rgba(10, 11, 18, 0.2),
@@ -560,6 +660,12 @@ img.remotes {
     0px 0.125vw 0.125vw rgba(10, 11, 18, 0.112458);
   border-radius: 1rem;
   background-color: var(--color-dark-background);
+}
+
+@media only screen and (max-width: 40rem) {
+  .float {
+    border-radius: 0.5rem;
+  }
 }
 
 .full-width {
@@ -647,7 +753,8 @@ img.remotes {
   }
 
   .subtitle-container {
-    margin: 2rem 0 3rem;
+    margin: 2rem auto 3rem;
+    max-width: 90vw;
   }
 }
 
@@ -694,7 +801,7 @@ img.remotes {
   }
 }
 
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 52rem) {
   .protocols {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -920,19 +1027,19 @@ img.remotes {
 
 @media only screen and (max-width: 29.625rem) {
   .line {
-    height: 27.4rem;
+    height: 27.3rem;
   }
 }
 
 @media only screen and (max-width: 24rem) {
   .line {
-    height: 29rem;
+    height: 27rem;
   }
 }
 
 @media only screen and (max-width: 23rem) {
   .line {
-    height: 30.5rem;
+    height: 28.5rem;
   }
 }
 
@@ -1136,7 +1243,7 @@ footer form {
 }
 
 footer form input[type="email"] {
-  border: 0.0625rem solid var(--color-foreground);
+  border: 0.0625rem solid var(--color-foreground-level-4);
   color: var(--color-foreground);
   width: 20rem;
   margin-left: 0;
@@ -1149,14 +1256,19 @@ footer form input[type="email"] {
 }
 
 footer form button {
-  color: var(--color-foreground);
-  border-color: var(--color-foreground);
+  color: var(--color-foreground-level-6);
+  border-color: var(--color-foreground-level-4);
+}
+
+footer form input[type="email"]::placeholder {
+  color: var(--color-foreground-level-4);
+  opacity: 1;
 }
 
 footer form button:hover {
   color: var(--color-background);
-  background: var(--color-secondary);
-  border-color: var(--color-secondary);
+  background: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 /* subscribe page */
