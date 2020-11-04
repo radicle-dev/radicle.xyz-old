@@ -9,63 +9,79 @@
       <section id="headline">
         <img class="headline-gif gif" src="./img/header-flower.gif" alt="Animation of a flower growing.">
         <h1 class="headline druk">Locally sourced.</h1>
-      </section>
-
-      <section id="get-the-app">
-        <div class="container">
-          <div class="email-signup">
-            <p><strong>A peer-to-peer stack for building software together. Sound fun?</strong></p>
-            <form class="main-cta" action="https://formspree.io/xrgbwygl" method="POST" autocomplete="off">
-              <input type="email" name="email" placeholder="Enter your email here" required />
-              <button type="submit">Sign me up</button>
-              <input type="hidden" name="_subject" value="Subscription" />
-              <input type="hidden" name="_format" value="plain" />
-              <input type="hidden" name="_next" value="/subscribed.html" />
-            </form>
-          </div>
+        <div class="email-signup">
+          <p><strong>A peer-to-peer stack for building software together. Sound fun?</strong></p>
+          <form class="main-cta" action="https://formspree.io/xrgbwygl" method="POST" autocomplete="off">
+            <input type="email" name="email" placeholder="Enter your email here" required />
+            <button type="submit">Sign me up</button>
+            <input type="hidden" name="_subject" value="Subscription" />
+            <input type="hidden" name="_format" value="plain" />
+            <input type="hidden" name="_next" value="/subscribed.html" />
+          </form>
         </div>
       </section>
 
       <section id="features">
         <img class="ui full-width float project-source" src="./img/ui/project-source.png" alt="Screenshot of a README file on the project page." />
-        <img class="horizontal-scroll-gif gif" src="./img/extending-hands.gif" alt="Animation of a cartoon typing very fast. Each of his fingers split into 3 smaller cyborg fingers allowing him to type even faster.">
+        <img class="features-gif gif" src="./img/extending-hands.gif" alt="Animation of a cartoon typing very fast. Each of his fingers split into 3 smaller cyborg fingers allowing him to type even faster.">
 
-        <div class="container">
+        <h1 class="druk">Say hello to your new workspace</h1>
+        <div class="subtitle-container">
+          <h2>The first decentralized app for code collaboration.</h2>
+        </div>
+
+        <div class="container attributes">
         
           <div class="attribute">
-            <h4>For the collective</h4>
-            <p>Support and be supported. Designed for sustainability.</p>
-            <p>{{> svg-heart }} Fund projects and users</p>
-            <p>{{> svg-currency }} Get paid for your work</p>
-            <p>{{> svg-pen }} Form orgs independent of platforms</p>
-            <p>{{> svg-network }} Create and redistribute wealth</p>
+            <div class="content">
+              <h4>Collaborate peer-to-peer</h4>
+              <p>Forget platforms. Easily share your code without relying on a third party.</p>
+              <p>{{> svg-offline }} No central servers</p>
+              <p>{{> svg-no-downtime }} No censorship</p>
+              <p>{{> svg-network }} One network</p>
+            </div>
+            <div class="screenshot">
+              <img class="float remotes" src="./img/ui/manage-remotes.png" alt="">
+            </div>
           </div>
 
           <div class="attribute">
-            <h4>Local-first</h4>
-            <p>All of your issues, revisions, and reviews exist on your computer. You own your data — nobody else.</p>
-            <p>{{> svg-issues }} Manage issues locally</p>
-            <p>{{> svg-loading }} No load times</p>
-            <p>{{> svg-offline }} Work offline</p>
-            <p>{{> svg-desktop }} Own your data</p>
+            <div class="content">
+              <h4>Work securely offline</h4>
+              <p>No need to trust anyone to keep your work safe or online.</p>
+              <p>{{> svg-issues }} Local issues & patches</p>
+              <p>{{> svg-git }} Built on Git</p>
+              <p>{{> svg-key }} Backed by public-key cryptography</p>
+            </div>
+            <div class="screenshot">
+              <img class="float" src="./img/ui/revision-status.png" alt="">
+            </div>
           </div>
 
           <div class="attribute">
-            <h4>Secure by design</h4>
-            <p>No need to trust anyone to keep your work safe. Everything is backed by public key cryptography.</p>
-            <p>{{> svg-user }} Cryptographic peer identities</p>
-            <p>{{> svg-check }} Signed issues and code reviews</p>
-            <p>{{> svg-multi-device }} Multi-device support</p>
-            <p>{{> svg-key }} Verifable ownership proofs</p>
+            <div class="content">
+              <h4>Own your infrastructure</h4>
+              <p>Software as it should be. Take back control.</p>
+              <p>{{> svg-free }} Free forever</p>
+              <p>{{> svg-open-source }} Completely open source</p>
+              <p>{{> svg-everywhere }} Available everywhere</p>
+            </div>
+            <div class="screenshot">
+              <img class="float" src="./img/ui/profile.png" alt="">
+            </div>
           </div>
 
           <div class="attribute">
-            <h4>Peer-to-peer</h4>
-            <p>No servers. No platforms. Share your code without relying on a third party.</p>
-            <p>{{> svg-no-downtime }} No downtime</p>
-            <p>{{> svg-everywhere }} Available everywhere</p>
-            <p>{{> svg-eye }} Censorship-resistant</p>
-            <p>{{> svg-free }} Free forever</p>
+            <div class="content">
+              <h4>Create together</h4>
+              <p>Support and be supported — it’s designed for sustainability.</p>
+              <p>{{> svg-heart }} Reward projects and users</p>
+              <p>{{> svg-currency }} Get paid for your work</p>
+              <p>{{> svg-pen }} Create orgs and manage teams</p>
+            </div>
+            <div class="screenshot">
+              <img class="float" src="./img/ui/incoming-support.png" alt="">
+            </div>
           </div>
 
         </div>
