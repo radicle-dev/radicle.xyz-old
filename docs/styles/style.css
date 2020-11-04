@@ -190,8 +190,8 @@ nav a:hover span {
 
 .headline-gif {
   position: absolute;
-  top: 14vw;
-  left: 22vw;
+  top: 19vw;
+  left: 23vw;
   width: 40vw;
   z-index: 0;
 }
@@ -789,6 +789,7 @@ img.remotes {
   background-color: var(--color-background);
   position: relative;
   border-radius: 1rem;
+  z-index: 1;
 }
 
 .two-column-item h3 {
@@ -813,7 +814,7 @@ img.remotes {
 
 #timeline {
   position: relative;
-  margin-top: 16rem;
+  margin-top: 25vw;
   background: var(--color-foreground-level-1);
 }
 
@@ -862,13 +863,6 @@ img.remotes {
   #timeline .subtitle-container {
     margin-left: calc((100vw - 70rem) / 2);
   }
-}
-
-#timeline .timeline-gif {
-  width: 50vw;
-  position: absolute;
-  top: -11rem;
-  right: -3vw;
 }
 
 .timeline {
@@ -1005,10 +999,16 @@ img.remotes {
 }
 
 #timeline .timeline-gif {
-  width: 50vw;
+  width: 30vw;
   position: absolute;
-  top: 0;
-  right: -3vw;
+  top: -18rem;
+  right: -1vw;
+}
+
+@media only screen and (max-width: 75rem) {
+  #timeline .timeline-gif {
+    top: -5rem;
+  }
 }
 
 .icon {
@@ -1060,10 +1060,19 @@ footer {
   background: var(--color-foreground-level-1);
 }
 
-footer .footer-gif {
-  position: absolute;
-  width: 40rem;
+.footer-gif {
   left: 20vw;
+  position: absolute;
+  top: -15vw;
+  width: 40rem;
+}
+
+@media only screen and (min-width: 90rem) {
+  .footer-gif {
+    width: 36rem;
+    top: -5vw;
+    left: 34vw;
+  }
 }
 
 footer .text {
