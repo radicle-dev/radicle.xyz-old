@@ -68,14 +68,17 @@ h3 {
 
 a {
   cursor: pointer;
-  border-bottom: 1px solid;
   text-decoration: none;
-  color: var(--color-foreground-level-5);
+  color: var(--color-secondary);
+}
+
+a span {
+  border-bottom: 1px solid;
 }
 
 a:hover,
 a:focus {
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 a:active,

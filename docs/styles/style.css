@@ -676,7 +676,7 @@ img.remotes {
   color: var(--color-foreground);
   display: flex;
   align-items: flex-start;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
   letter-spacing: -1.125px;
   line-height: 90%;
@@ -700,7 +700,7 @@ img.remotes {
   }
 
   .protocol h3 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -793,7 +793,7 @@ img.remotes {
 }
 
 .two-column-item h3 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
   letter-spacing: -1.125px;
   line-height: 96%;
@@ -1124,6 +1124,11 @@ footer p {
 footer p.small {
   margin-top: 1rem;
   color: var(--color-foreground-level-5);
+}
+
+footer p.small a {
+  color: var(--color-foreground-level-5);
+  border-color: var(--color-foreground-level-3);
 }
 
 footer form {
