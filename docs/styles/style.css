@@ -1118,6 +1118,13 @@ nav a:hover span {
   }
 }
 
+@media only screen and (max-width: 28.75rem) {
+  #timeline .timeline-gif {
+    top: 8rem;
+    width: 50vw;
+  }
+}
+
 .icon {
   margin: 0.5rem 0 2rem;
   position: relative;
