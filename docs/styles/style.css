@@ -348,21 +348,15 @@ nav a:hover span {
 #features {
   position: relative;
   max-width: 100rem;
-  margin: 20vw auto 0;
+  margin: 10vw auto 0;
 }
 
 .features-gif {
   margin-bottom: -32rem;
   position: absolute;
-  top: 66vw;
+  top: 79vw;
   right: -3rem;
-}
-
-@media only screen and (max-width: 40rem) {
-  .features-gif {
-    width: 50vw;
-    top: 52vw;
-  }
+  z-index: -1;
 }
 
 @media only screen and (max-width: 30rem) {
@@ -372,10 +366,53 @@ nav a:hover span {
   }
 }
 
+@media only screen and (max-width: 40rem) {
+  .features-gif {
+    width: 50vw;
+    top: 20vw;
+  }
+}
+
+@media only screen and (max-width: 50rem) {
+  .features-gif {
+    top: 80vw;
+  }
+}
+
+@media only screen and (max-width: 60rem) {
+  .features-gif {
+    top: 88vw;
+  }
+}
+
 @media only screen and (min-width: 90rem) {
   .features-gif {
     width: 40vw;
-    top: 58vw;
+    top: 74vw;
+  }
+}
+
+@media only screen and (min-width: 100rem) {
+  .features-gif {
+    top: 74vw;
+  }
+}
+
+@media only screen and (min-width: 110rem) {
+  .features-gif {
+    top: 67vw;
+  }
+}
+
+@media only screen and (min-width: 120rem) {
+  .features-gif {
+    top: 62vw;
+  }
+}
+
+@media only screen and (min-width: 140rem) {
+  .features-gif {
+    top: 55vw;
   }
 }
 
@@ -433,6 +470,10 @@ nav a:hover span {
   justify-content: center;
   margin: 0 0 10rem;
   width: 90vw;
+}
+
+.attribute:last-child {
+  margin-bottom: 0;
 }
 
 .attribute:nth-child(2n) {
@@ -669,14 +710,16 @@ nav a:hover span {
 }
 
 .full-width {
-  width: 90vw;
+  width: 110vw;
   max-width: 100%;
+  left: -14vw;
+  position: relative;
 }
 
 /* PROTOCOLS */
 
 #protocols {
-  margin-top: 12rem;
+  margin-top: 12vw;
   position: relative;
   background: var(--color-foreground-level-1);
 }
