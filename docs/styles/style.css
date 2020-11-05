@@ -236,6 +236,9 @@ nav a:hover span {
     line-height: 40vw;
     padding-top: 4vw;
   }
+  h1.subscribed {
+    font-size: 38vw;
+  }
 }
 
 /* GET THE APP */
