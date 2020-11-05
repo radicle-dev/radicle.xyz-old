@@ -467,7 +467,7 @@ nav a:hover span {
 .attribute {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 0 10rem;
   width: 90vw;
 }
@@ -1283,7 +1283,7 @@ footer p.small {
   color: var(--color-foreground-level-5);
 }
 
-footer p.small a {
+footer p.small a span {
   color: var(--color-foreground-level-5);
   border-color: var(--color-foreground-level-3);
 }
