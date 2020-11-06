@@ -211,7 +211,6 @@ nav a:hover span {
 .headline {
   text-transform: uppercase;
   font-size: 30vw;
-  line-height: 28vw;
   background: linear-gradient(
     90deg,
     #ff5555 -8.25%,
@@ -1208,6 +1207,72 @@ nav a:hover span {
 @media only screen and (max-width: 30rem) {
   .date {
     margin-top: -1.4rem;
+  }
+}
+
+/* TERMS */
+
+#terms .content #terms-text {
+  width: 70vw;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#terms .content #terms-text * {
+  margin-bottom: 1rem;
+}
+
+#terms .content #terms-text ol {
+  margin-bottom: 4rem;
+}
+
+body#terms #terms-text ol:nth-child(2n) li {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--color-foreground-level-5);
+}
+
+body#terms #terms-text ol:nth-child(2n) li span {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--color-foreground);
+}
+
+#terms ol {
+  color: var(--color-foreground-level-4);
+}
+
+#terms ol li {
+  list-style-type: upper-roman;
+}
+
+#terms ol li a {
+  color: var(--color-foreground-level-6);
+  border-bottom: 1px solid;
+}
+
+#terms h1.headline.druk {
+  background: linear-gradient(90.12deg, #f81e00 32.21%, #0029ff 48.39%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+#disclaimer {
+  background: var(--color-background);
+  color: var(--color-foreground-level-6);
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  margin-top: 3vw;
+}
+
+@media only screen and (min-width: 107rem) {
+  #disclaimer {
+    margin-top: 15vw;
   }
 }
 
