@@ -1217,22 +1217,22 @@ nav a:hover span {
   width: auto;
 }
 
-#terms .content #terms-text {
+#terms .content #terms-container {
   width: 70vw;
   max-width: 60rem;
   margin: 0 auto;
   text-align: left;
 }
 
-#terms .content #terms-text * {
+#terms .content #terms-container * {
   margin-bottom: 1rem;
 }
 
-#terms .content #terms-text ol {
+#terms .content #terms-container ol {
   margin-bottom: 4rem;
 }
 
-body#terms #terms-text ol:nth-child(2n) li {
+body#terms #terms-container #terms-text li {
   font-size: 1.5rem;
   margin-top: 2.5rem;
   font-size: 48px;
