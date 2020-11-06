@@ -1328,10 +1328,20 @@ footer form button:focus {
 
 /* SUBSCRIBE PAGE */
 
+#subscribed .overflow-killer {
+  overflow-x: inherit;
+}
+
 .subscribe-button {
   margin-top: 2rem;
   z-index: 2;
-  mix-blend-mode: exclusion;
+  background: var(--color-primary);
+  color: var(--color-background);
+  height: 3rem;
+  font-size: 1.25rem;
+  border: none;
+  padding: 0 1rem;
+  position: relative;
 }
 
 /* DOWNLOAD PAGE */
