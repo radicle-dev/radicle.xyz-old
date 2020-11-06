@@ -1240,14 +1240,6 @@ body#terms #terms-text ol:nth-child(2n) li {
   color: var(--color-foreground-level-5);
 }
 
-body#terms #terms-text ol:nth-child(2n) li span {
-  font-size: 1.5rem;
-  margin-top: 2.5rem;
-  font-size: 48px;
-  font-weight: 900;
-  color: var(--color-foreground);
-}
-
 #terms ol {
   color: var(--color-foreground-level-4);
 }
