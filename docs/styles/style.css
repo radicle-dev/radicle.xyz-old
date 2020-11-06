@@ -1212,6 +1212,11 @@ nav a:hover span {
 
 /* TERMS */
 
+#terms .headline-gif {
+  height: 20rem;
+  width: auto;
+}
+
 #terms .content #terms-text {
   width: 70vw;
   max-width: 60rem;
@@ -1268,12 +1273,6 @@ body#terms #terms-text ol:nth-child(2n) li span {
   padding: 1rem 1.2rem;
   border-radius: 1rem;
   margin-top: 3vw;
-}
-
-@media only screen and (min-width: 107rem) {
-  #disclaimer {
-    margin-top: 15vw;
-  }
 }
 
 /* FOOTER */
