@@ -1,15 +1,29 @@
 <!doctype html>
 <html>
 {{> head }}
-<body id="index">
+<body id="download">
   <div class="overflow-killer">
     {{> header }}
+
+      <img class="headline-gif gif" src="./img/download-flower.gif" alt="Animation of a flower growing.">
+
     <div class="content">
-      <section id="headline">
-        <img class="headline-gif" src="./img/header-flower.gif" alt="Animation of a flower growing.">
-        <h1 class="headline druk">Downloads</h1>
+
+      <section>
+        <div id="text">
+          <h1>Upstream <span>Beta</span></h1>
+          <h2>A desktop client for Radicle.</h2>
+          <p>Check out our <a href="#" target="_blank"><span>Guide to Getting Started</span></a>.</p>
+          <button>Download the beta</button>
+        </div>
       </section>
+
+      <section class="screenshot">
+        <img class="float" id="download-screenshot" src="./img/ui/download-screenshot.png" alt="Screenshot of a README file on the project page.">
+      </section>
+      
     </div>
+
   </div>
 </body>
 </html>
