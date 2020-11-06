@@ -128,6 +128,17 @@ header nav a {
   }
 }
 
+#download button {
+  width: 100%;
+}
+
+#download button svg {
+  fill: var(--color-background);
+  box-sizing: unset;
+  margin-top: -0.2rem;
+  margin-right: 0.5rem;
+}
+
 @media only screen and (max-width: 48rem) {
   a.try-it,
   #download button {
@@ -1352,6 +1363,16 @@ body#download {
   overflow: hidden;
 }
 
+#download a.try-it,
+#download button {
+  display: none;
+}
+
+#download .headline-gif {
+  top: 9vw;
+  left: 13vw;
+}
+
 #download .content {
   max-width: 102rem;
   margin: 0 auto;
@@ -1371,7 +1392,7 @@ body#download {
   border-radius: 1rem;
   z-index: 1;
   text-align: left;
-  margin-top: 3rem;
+  margin-top: -6rem;
 }
 
 #download #text * {
@@ -1442,10 +1463,15 @@ body#download {
   border: none;
   margin-bottom: 0.5rem;
   padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #download .content section {
   z-index: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
