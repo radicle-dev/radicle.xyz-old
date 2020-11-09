@@ -1358,9 +1358,15 @@ footer form button:focus {
 /* DOWNLOAD PAGE */
 
 body#download {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  padding-bottom: 5rem;
+}
+
+#download .headline {
+  background: linear-gradient(90.23deg, #ff0000 35.8%, #0517b3 46.14%);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #download a.try-it,
@@ -1369,7 +1375,7 @@ body#download {
 }
 
 #download .headline-gif {
-  top: 9vw;
+  top: 13vw;
   left: 13vw;
 }
 
@@ -1379,20 +1385,15 @@ body#download {
   padding: 0 2rem;
 }
 
-#download-screenshot {
-  width: 74vw;
-  right: -20vw;
-  top: 37vh;
-  position: absolute;
-}
-
 #download #text {
   background: var(--color-background);
   padding: 2rem 2.5rem;
   border-radius: 1rem;
   z-index: 1;
   text-align: left;
-  margin-top: -6rem;
+  position: relative;
+  margin: 0 auto;
+  width: max-content;
 }
 
 #download #text * {
@@ -1416,6 +1417,29 @@ body#download {
 
 #download #text p {
   margin-bottom: 1rem;
+}
+
+#download #text button {
+  background: var(--color-primary);
+  color: var(--color-background);
+  height: 3rem;
+  font-size: 1.25rem;
+  border: none;
+  margin-bottom: 0.5rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#download #text button#email-me {
+  display: none;
+}
+
+#download .content {
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 30rem) {
@@ -1451,27 +1475,13 @@ body#download {
   #download #text p {
     font-size: 0.75rem;
     padding-bottom: 0;
-    margin-bottom: 0;
   }
-}
 
-#download #text button {
-  background: var(--color-primary);
-  color: var(--color-background);
-  height: 3rem;
-  font-size: 1.25rem;
-  border: none;
-  margin-bottom: 0.5rem;
-  padding: 0 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  #download #text button {
+    display: none;
+  }
 
-#download .content section {
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  #download #text button#email-me {
+    display: inherit;
+  }
 }
