@@ -1212,9 +1212,27 @@ nav a:hover span {
 
 /* TERMS */
 
+#terms h1 {
+  z-index: 1;
+}
+
 #terms .headline-gif {
   height: 20rem;
   width: auto;
+}
+
+@media only screen and (max-width: 30rem) {
+  #terms .headline-gif {
+    top: inherit;
+    left: inherit;
+    position: inherit;
+    margin-top: -4rem;
+    width: 90vw;
+  }
+
+  #terms h1 {
+    font-size: 46vw;
+  }
 }
 
 #terms .content #terms-container {
@@ -1232,12 +1250,13 @@ nav a:hover span {
   margin-bottom: 4rem;
 }
 
-#terms h2 {
+#terms h3 {
   font-size: 1.5rem;
   margin-top: 2.5rem;
   font-size: 48px;
   font-weight: 900;
   color: var(--color-foreground);
+  line-height: 2.5rem;
 }
 
 #terms ol {
@@ -1246,6 +1265,14 @@ nav a:hover span {
 
 #terms #terms-text li {
   font-size: 3rem;
+}
+
+@media only screen and (max-width: 30rem) {
+  #terms h3,
+  #terms #terms-text li {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
 }
 
 #terms ol li {
