@@ -1232,16 +1232,20 @@ nav a:hover span {
   margin-bottom: 4rem;
 }
 
-body#terms #terms-container #terms-text li {
+#terms h2 {
   font-size: 1.5rem;
   margin-top: 2.5rem;
   font-size: 48px;
   font-weight: 900;
-  color: var(--color-foreground-level-5);
+  color: var(--color-foreground);
 }
 
 #terms ol {
   color: var(--color-foreground-level-4);
+}
+
+#terms #terms-text li {
+  font-size: 3rem;
 }
 
 #terms ol li {
