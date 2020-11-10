@@ -128,8 +128,20 @@ header nav a {
   }
 }
 
+#download button {
+  width: 100%;
+}
+
+#download button svg {
+  fill: var(--color-background);
+  box-sizing: unset;
+  margin-top: -0.2rem;
+  margin-right: 0.5rem;
+}
+
 @media only screen and (max-width: 48rem) {
-  a.try-it {
+  a.try-it,
+  #download button {
     display: none;
   }
 
@@ -1412,10 +1424,151 @@ footer form button:focus {
   border-color: var(--color-primary);
 }
 
-/* subscribe page */
+/* SUBSCRIBE PAGE */
+
+#subscribed .overflow-killer {
+  overflow-x: inherit;
+}
 
 .subscribe-button {
   margin-top: 2rem;
   z-index: 2;
-  mix-blend-mode: exclusion;
+  background: var(--color-primary);
+  color: var(--color-background);
+  height: 3rem;
+  font-size: 1.25rem;
+  border: none;
+  padding: 0 1rem;
+  position: relative;
+}
+
+/* DOWNLOAD PAGE */
+
+body#download {
+  padding-bottom: 5rem;
+}
+
+#download .headline {
+  background: linear-gradient(90.23deg, #ff0000 35.8%, #0517b3 46.14%);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#download a.try-it,
+#download button {
+  display: none;
+}
+
+#download .headline-gif {
+  top: 13vw;
+  left: 13vw;
+}
+
+#download .content {
+  max-width: 102rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+#download #text {
+  background: var(--color-background);
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  z-index: 1;
+  text-align: left;
+  position: relative;
+  margin: 0 auto;
+  width: max-content;
+}
+
+#download #text * {
+  padding: 0.5rem 0;
+}
+
+#download #text h1 {
+  padding: 0;
+}
+
+#download #text h1 span {
+  font-size: 1rem;
+  text-transform: uppercase;
+  position: relative;
+  top: -1.5rem;
+}
+
+#download #text a span {
+  padding: 0;
+}
+
+#download #text p {
+  margin-bottom: 1rem;
+}
+
+#download #text button {
+  background: var(--color-primary);
+  color: var(--color-background);
+  height: 3rem;
+  font-size: 1.25rem;
+  border: none;
+  margin-bottom: 0.5rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#download #text button#email-me {
+  display: none;
+}
+
+#download .content {
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 30rem) {
+  #download #text h1 {
+    font-size: 2rem;
+  }
+
+  #download #text h1 span {
+    font-size: 0.75rem;
+    top: -1.25rem;
+  }
+
+  #download .headline-gif {
+    top: 99vw;
+    left: -2vw;
+  }
+
+  #download-screenshot {
+    top: 17vh;
+    width: 101vw;
+  }
+
+  #download #text {
+    margin-top: 8rem;
+    width: 100%;
+  }
+
+  #download #text h2 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  #download #text p {
+    font-size: 0.75rem;
+    padding-bottom: 0;
+  }
+
+  #download #text button {
+    display: none;
+  }
+
+  #download #text button#email-me {
+    display: inherit;
+  }
 }
