@@ -1386,9 +1386,9 @@ footer p.small {
   color: var(--color-foreground-level-5);
 }
 
-footer p.small a span {
+footer p.small a {
   color: var(--color-foreground-level-5);
-  border-color: var(--color-foreground-level-3);
+  border-bottom: 1px solid var(--color-foreground-level-3);
 }
 
 footer form {
