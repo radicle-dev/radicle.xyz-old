@@ -432,6 +432,7 @@ nav a:hover span {
 
 #features h1.druk {
   font-size: 14vw;
+  padding: 0.5rem 0;
   white-space: nowrap;
   background: linear-gradient(
     269.73deg,
@@ -739,7 +740,7 @@ nav a:hover span {
 }
 
 #protocols h1 {
-  padding-top: 4rem;
+  padding: 1rem 0;
   font-size: 20vw;
   background: linear-gradient(
     269.94deg,
