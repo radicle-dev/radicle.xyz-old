@@ -1280,6 +1280,16 @@ nav a:hover span {
   font-size: 3rem;
 }
 
+#terms #terms-text ol.little-list li {
+  font-size: 1rem;
+  color: var(--color-foreground-level-6);
+  list-style-type: decimal;
+}
+
+#terms #terms-text ol.little-list {
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 30rem) {
   #terms h3,
   #terms #terms-text li {
@@ -1299,6 +1309,17 @@ nav a:hover span {
 
 #terms h1.headline.druk {
   background: linear-gradient(90.12deg, #f81e00 32.21%, #0029ff 48.39%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+#terms h1.headline.druk.privacy {
+  background: linear-gradient(
+    90deg,
+    #ff33a1 27.5%,
+    #9ab305 61.03%,
+    #0593b3 87.46%
+  );
   background-clip: text;
   -webkit-background-clip: text;
 }
