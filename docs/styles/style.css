@@ -1111,7 +1111,7 @@ nav a:hover span {
   color: var(--color-foreground);
   font-size: 2rem;
   padding: 1.5rem 0;
-  line-height: 96%;
+  line-height: 100%;
   letter-spacing: -1.125px;
   font-weight: 700;
 }
