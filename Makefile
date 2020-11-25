@@ -1,4 +1,4 @@
-PAGES    := docs/index.html docs/subscribed.html docs/terms.html docs/privacy.html docs/downloads.html
+PAGES    := docs/index.html docs/subscribed.html docs/terms.html docs/privacy.html docs/downloads.html docs/404.html
 PARTIALS := $(shell ls partials/* | sed 's/^/-p /')
 
 build: $(PAGES)
