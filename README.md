@@ -11,3 +11,5 @@ Each file in `pages/` results in an output `.html` in `docs/`.
 The `partials/` folder includes things like headers, footers etc.
 
 Never edit `.html` files in `docs/`.
+
+Copyright © 2019-2020 The Radicle Foundation <hello@radicle.foundation>
