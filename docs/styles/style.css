@@ -482,7 +482,7 @@ nav a:hover span {
 .attribute {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 0 10rem;
   width: 90vw;
 }
@@ -668,7 +668,7 @@ nav a:hover span {
 
 .attribute:nth-child(3) .screenshot img {
   margin-right: -35vw;
-  width: -webkit-fill-available;
+  width: 180%;
   align-self: center;
 }
 
@@ -1464,9 +1464,28 @@ footer form button:focus {
   position: relative;
 }
 
+/* 404 PAGE */
+
+#not-found #headline {
+  height: 80vh;
+}
+
+#not-found .headline {
+  background: linear-gradient(
+    90deg,
+    #00ffa3 46.51%,
+    #028666 49.44%,
+    #0555b3 59.04%
+  );
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* DOWNLOAD PAGE */
 
-body#download {
+#download {
   padding-bottom: 5rem;
 }
 
