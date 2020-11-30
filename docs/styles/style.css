@@ -453,7 +453,6 @@ nav a:hover span {
 @media only screen and (max-width: 30rem) {
   #features h1.druk {
     font-size: 28vw;
-    line-height: 80%;
     padding-top: 5rem;
     margin-top: 6rem;
     white-space: normal;
@@ -469,7 +468,6 @@ nav a:hover span {
 @media only screen and (min-width: 90rem) {
   #features h1.druk {
     font-size: min(280px, 10.5vw);
-    line-height: 90%;
   }
 }
 
