@@ -1,127 +1,186 @@
 <!doctype html>
-<html>
+<html lang=“en”>
 {{> head }}
 <body id="index">
-  {{> header }}
-  <div class="content">
-    <section id="subtitle">
-      <div class="container">
-        <h1>Secure peer-to-peer code collaboration without intermediaries.</h1>
-      </div>
-    </section>
-    <section id="value-prop">
-      <div class="container">
-        <div>
-          <h2>Peer-to-peer</h2>
-          <p>
-            No hassle setting up your own hosting, and no need to trust
-            companies with your data. Radicle builds on <code>git</code>
-            and extends it with peer-to-peer replication and discovery.
-          </p>
+  <div class="overflow-killer">
+    {{> header }}
+    <div class="content">
+
+      <section id="headline">
+        <img class="headline-gif gif" src="./img/header-flower.gif" alt="Animation of a flower growing.">
+        <h1 class="headline druk">Free your code</h1>
+        <div class="email-signup">
+          <p><strong>A peer-to-peer stack for building software together. Sound fun?</strong></p>
+          <form class="main-cta" action="https://xyz.us2.list-manage.com/subscribe/post?u=6c7bba7ab992717860dcec6eb&amp;id=f960345a90" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" autocomplete="off" class="validate" target="_blank" novalidate>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email here" required />
+            <button type="submit">Sign me up</button>
+          </form>
         </div>
-        <div>
-          <h2>Secure</h2>
-          <p>
-            Your issues, comments and reviews are cryptographically signed
-            and live on your machine. Everything is always available&mdash;even
-            offline.
-          </p>
+      </section>
+
+      <section id="features">
+        <img class="ui full-width" src="./img/ui/project-source-laptop.png" alt="Screenshot of a README file on the project page." />
+        <img class="features-gif gif" src="./img/extending-hands.gif" alt="Animation of a cartoon typing very fast. Each of his fingers split into 3 smaller cyborg fingers allowing him to type even faster.">
+
+        <h1 class="druk">Say hello to your new workspace</h1>
+        <div class="subtitle-container">
+          <h2>A decentralized app for code collaboration</h2>
         </div>
-        <div>
-          <h2>Trustless</h2>
-          <p>
-            Collectively manage your project assets&mdash;like access control,
-            funds, and project ownership&mdash;with multisignatures and smart
-            contracts.
-          </p>
-        </div>
-        <div>
-          <h2>Sustainable</h2>
-          <p>
-            Support the projects you love and depend on, and receive funding&mdash;on
-            your own terms.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="how-it-works">
-      <div class="container">
-        <div class="left-box">
-          <div>
-            <h2>A <strike>new</strike> old collaboration model</h2>
-            <p>Read about <a href="/towards-decentralized-code-collaboration.html">our approach</a></p>
+
+        <div class="container attributes">
+
+          <div class="attribute">
+            <div class="content">
+              <h4>Collaborate peer-to-peer</h4>
+              <p>Forget platforms. Easily share your code without relying on a third party.</p>
+              <p>{{> svg-offline }} No central servers</p>
+              <p>{{> svg-no-downtime }} No censorship</p>
+              <p>{{> svg-network }} One network</p>
+            </div>
+            <div class="screenshot">
+              <img class="float remotes" src="./img/ui/manage-remotes.png" alt="">
+            </div>
           </div>
-          <section id="flowers">
-            <pre><code>                _(_)_     </code></pre>
-            <pre><code>    @@@@       (_)@(_)    </code></pre>
-            <pre><code>   @@()@@ wWWWw  (_)\     </code></pre>
-            <pre><code>    @@@@  (___)     \|/   </code></pre>
-            <pre><code>     /      Y       \|    </code></pre>
-            <pre><code>  \ |     \ |/       | /  </code></pre>
-            <pre><code>  \\|//   \\|///  \\\|//  </code></pre>
-            <pre><code>^^^^^^^^^^^^^^^^^^^^^^^^^^</code></pre>
-          </section>
+
+          <div class="attribute">
+            <div class="content">
+              <h4>Work securely offline</h4>
+              <p>No need to trust anyone to keep your work safe or online.</p>
+              <p>{{> svg-issues }} Local issues & patches</p>
+              <p>{{> svg-git }} Built on Git</p>
+              <p>{{> svg-key }} Backed by public-key cryptography</p>
+            </div>
+            <div class="screenshot">
+              <img class="float" src="./img/ui/revision-status.png" alt="">
+            </div>
+          </div>
+
+          <div class="attribute">
+            <div class="content">
+              <h4>Own your infrastructure</h4>
+              <p>Software as it should be. <br />Take back control.</p>
+              <p>{{> svg-free }} Free forever</p>
+              <p>{{> svg-open-source }} Completely open source</p>
+              <p>{{> svg-everywhere }} Available everywhere</p>
+            </div>
+            <div class="screenshot">
+              <img class="float" src="./img/ui/profile.png" alt="">
+            </div>
+          </div>
+
+          <div class="attribute">
+            <div class="content">
+              <h4>Create with your <br/> community</h4>
+              <p>Support and be supported — a fresh take on sustainability.</p>
+              <p>{{> svg-heart }} Collectively manage codebases</p>
+              <p>{{> svg-currency }} Get paid for your work</p>
+              <p>{{> svg-pen }} Build your own value flows</p>
+            </div>
+            <div class="screenshot">
+              <img class="float" src="./img/ui/incoming-support.png" alt="">
+            </div>
+          </div>
+
         </div>
-        <p>
-          Radicle is being built to provide a convenient collaboration workflow
-          <em>without intermedaries or central servers</em>.  Issues, patches and
-          code review items can be shared seamlessly between peers and interacted
-          with on the user's machine, just like one interacts with a
-          <code>git</code> repository.
-          <br />
-          <br />
-          Designed around peer-to-peer networking, it offers a new design space for
-          <a href="http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/">bazaar-style</a>
-          development. Login systems are replaced by public key cryptography,
-          hosted issue trackers are replaced by local peer replication, and the
-          idea of a single canonical upstream is replaced by a
-          <em>peer-to-peer</em> model familiar to the open source hackers of the
-          90s and early 2000s&mdash;updated with a new protocol for open &amp; trusted peer
-          collaboration.
-        </p>
-        <div class="left-box">
-          <h2>How it works</h2>
-          <div id="dev-links">
-            <p>
-              Read the protocol <a href="/radicle-link.html">overview</a>
-            </p>
-            <p>
-              Browse the protocol <a href="https://github.com/radicle-dev/radicle-link">source code</a>
-            </p>
+      </section>
+
+      <section id="protocols">
+        <div class="container">
+          <h1 class="druk">No more walled gardens</h1>
+          <div class="subtitle-container">
+            <h2>Built on open protocols, not platforms</h2>
+          </div>
+          <img class="protocol-gif gif" src="./img/garden.gif">
+          <div class="protocols">
+            <div class="protocol">
+              <h3>Git</h3>
+              <p>No need to change the way you work. Radicle extends Git with peer-to-peer discovery, giving distributed version control a new superpower.</p>
+              {{> svg-git }}
+            </div>
+            <div class="protocol">
+              <h3>Radicle<br>Link</h3>
+              <p>The new standard for code collaboration. Link is the peer-to-peer protocol that powers the Radicle network.
+                <span class="links">
+                  <a href="" target=><span>Documentation</span> ↗</a>
+                </span>
+              </p>
+              {{> svg-link }}
+            </div>
+            <div class="protocol">
+              <div>
+                <h3>Ethereum</h3>
+                <span>(opt-in)</span>
+              </div>
+              <p>Harness the power of decentralized organizations and digital money. Fund and sustain your open-source work without relying on intermediaries.</p>
+              {{> svg-eth }}
+            </div>
           </div>
         </div>
-        <p>
-          We adopt the <a href="https://scuttlebutt.nz/">SSB</a> <q>social
-           overlay</q> paradigm to establish a peer-to-peer replication layer on
-          top of distributed version control systems. We model this largely based
-          on an (unmodified) <code>git</code> backend, but strive for the protocol
-          to be general enough to allow implementations on top of different
-          paradigms, e.g <a href="https://pijul.org">pijul</a>.
-          <br/>
-          <br/>
-          To complement the replication layer we introduce a totally-ordered
-          consensus-backed registry which holds canonical project metadata.
-          This allows projects to anchor important information&mdash;such as
-          project state and repository head&mdash;with the guarantee of global
-          availability and immutability.
-        </p>
-      </div>
-    </section>
-    <section id="clouds">
-      <pre><code>                _                                                _                                                     _                                                _                                                    _                                                _                                                </code></pre>
-      <pre><code>              (`  ).                   _                       (`  ).                   _                            (`  ).                   _                       (`  ).                   _                           (`  ).                   _                       (`  ).                   _                         </code></pre>
-      <pre><code>             (     ).              .:(`  )`.                  (     ).              .:(`  )`.                       (     ).              .:(`  )`.                  (     ).              .:(`  )`.                      (     ).              .:(`  )`.                  (     ).              .:(`  )`.                     </code></pre>
-      <pre><code>)           _(       '`.          :(   .    )                _(       '`.          :(   .    )                     _(       '`.          :(   .    )                _(       '`.          :(   .    )                    _(       '`.          :(   .    )                _(       '`.          :(   .    )                    </code></pre>
-      <pre><code>        .=(`(      .   )     .--  `.  (    ) )           .=(`(      .   )     .--  `.  (    ) )                .=(`(      .   )     .--  `.  (    ) )           .=(`(      .   )     .--  `.  (    ) )               .=(`(      .   )     .--  `.  (    ) )           .=(`(      .   )     .--  `.  (    ) )                   </code></pre>
-      <pre><code>       ((    (..__.:'-'   .+(   )   ` _`  ) )           ((    (..__.:'-'   .+(   )   ` _`  ) )                ((    (..__.:'-'   .+(   )   ` _`  ) )           ((    (..__.:'-'   .+(   )   ` _`  ) )               ((    (..__.:'-'   .+(   )   ` _`  ) )           ((    (..__.:'-'   .+(   )   ` _`  ) )                    </code></pre>
-      <pre><code>`.     `(       ) )       (   .  )     (   )  ._        `(       ) )       (   .  )     (   )  ._             `(       ) )       (   .  )     (   )  ._        `(       ) )       (   .  )     (   )  ._            `(       ) )       (   .  )     (   )  ._        `(       ) )       (   .  )     (   )  ._                 </code></pre>
-      <pre><code>  )      ` __.:'   )     (   (   ))     `-'.-(`  )        ` __.:'   )     (   (   ))     `-'.-(`  )             ` __.:'   )     (   (   ))     `-'.-(`  )        ` __.:'   )     (   (   ))     `-'.-(`  )            ` __.:'   )     (   (   ))     `-'.-(`  )        ` __.:'   )     (   (   ))     `-'.-(`  )               </code></pre>
-      <pre><code>)  )  ( )       --'       `- __.'         :(      ))   ( )       --'       `- __.'         :(      ))        ( )       --'       `- __.'         :(      ))   ( )       --'       `- __.'         :(      ))       ( )       --'       `- __.'         :(      ))   ( )       --'       `- __.'         :(      ))             </code></pre>
-      <pre><code>.-'  (_.'          .')                    `(    )  )) (_.'          .')                    `(    )  ))      (_.'          .')                    `(    )  )) (_.'          .')                    `(    )  ))     (_.'          .')                    `(    )  )) (_.'          .')                    `(    )  ))            </code></pre>
-      <pre><code>                  (_  )                     ` __.:'                (_  )                     ` __.:'                     (_  )                     ` __.:'                (_  )                     ` __.:'                    (_  )                     ` __.:'                (_  )                     ` __.:'              </code></pre>
-      <pre><code>                                                                                                                                                                                                                                                                                                                               </code></pre>
-    </section>
+      </section>
+
+      <section id="codelands">
+        <div class="container">
+          <h1 class="druk">Explore the codelands</h1>
+          <img class="codelands-gif gif" src="./img/blue-screen-of-death-walk.gif" alt="">
+          <div class="two-column">
+            <div class="two-column-item">
+              <h3>Join the Community</h3>
+              <p>We're building everything publicly and open-source.</p>
+              <br>
+              <br>
+              <p>Join our <a target="_blank" href="https://radicle.community/"><span>community</span></a> or
+              <a target="_blank" href="https://matrix.radicle.community/"><span>chat with us</span></a></p>
+            </div>
+            <div id="download" class="two-column-item">
+              <h3>Try out the beta</h3>
+              <p>Join the network and give secure peer-to-peer code hosting a go with the first version of our desktop client.</p>
+              <br>
+              <a href="/downloads.html"><span>Download the beta</span> ↓</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline">
+        <div class="container">
+          <h1 class="druk"><span class="italic">Where we’re headed</span>→</h1>
+          <div class="subtitle-container">
+            <h2>We see Radicle being the first open-source, community-led, self-sustaining network for software collaboration. Here's what we have in store:</h2>
+          </div>
+          <img class="timeline-gif gif" src="./img/roadmap-flower.gif" alt="">
+          <div class="timeline">
+            <div class="line"></div>
+            <div class="timeline-item">
+              <p class="here">We're here</p>
+              <div class="icon">
+                {{> svg-here }}
+              </div>
+              <p class="date">Late 2020</p>
+              <h3>Starting with the basics</h3>
+              <p>The first release of our network and desktop client. Join the network and start securely hosting your code peer-to-peer.</p>
+            </div>
+            <div class="timeline-item not-active">
+              <p class="not-here">not here</p>
+              <div class="icon">
+                {{> svg-date-square }}
+              </div>
+              <p class="date">Early 2021</p>
+              <h3>Going further <br />with Ethereum</h3>
+              <p>Register global names, collectively manage orgs, and link crypto wallets with our Ethereum integration.</p>
+            </div>
+            <div class="timeline-item not-active">
+              <p class="not-here">not here</p>
+              <div class="icon last">
+                {{> svg-date-square }}
+              </div>
+              <p class="date">Mid 2021</p>
+              <h3>Leveling up with social coding</h3>
+              <p>Code collaboration as you know it. Work better together with bug reporting, code reviews, and discussions — all locally hosted.</p>
+            </div>
+          </div>
+        </section>
+    </div>{{! closes content }}
+    {{> footer }}
   </div>
-  {{> footer }}
 </body>
 </html>

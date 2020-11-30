@@ -1,83 +1,91 @@
-@font-face {
-  font-family: "FoundersGrotesk";
-  src: url("../fonts/FoundersGroteskTextWeb-Regular.woff2") format("woff2"), url("../fonts/FoundersGroteskTextWeb-Regular.woff") format("woff"), url("../fonts/FoundersGroteskTextWeb-Regular.eot?") format("eot");
-}
+@import url("https://rsms.me/inter/inter.css");
 
 @font-face {
-  font-family: "FoundersGroteskItalic";
-  src: url("../fonts/FoundersGroteskTextWeb-RegularItalic.woff2") format("woff2"), url("../fonts/FoundersGroteskTextWeb-RegularItalic.woff") format("woff"), url("../fonts/FoundersGroteskTextWeb-RegularItalic.eot?") format("eot");
+  font-family: "Inter";
+  src: url("https://rsms.me/inter/inter.css");
 }
 
 @font-face {
-  font-family: "FoundersGroteskMedium";
-  src: url("../fonts/FoundersGroteskTextWeb-Medium.woff2") format("woff2"), url("../fonts/FoundersGroteskTextWeb-Medium.woff") format("woff"), url("../fonts/FoundersGroteskTextWeb-Medium.eot?") format("eot");
+  font-family: "Druk X";
+  src: url("../fonts/Druk-XCondSuper.otf");
 }
 
-@font-face {
-  font-family: "FoundersGroteskMono";
-  src: url("../fonts/FoundersGroteskMonoWeb-Regular.woff2") format("woff2"), url("../fonts/FoundersGroteskMonoWeb-Regular.woff") format("woff"), url("../fonts/FoundersGroteskMonoWeb-Regular.eot?") format("eot");
-}
-
-@font-face {
-  font-family: "FutureMono";
-  font-weight: bold;
-  src: url("../fonts/TheFutureMono01-Regular.otf");
-}
-
-h1 {
-  font-family: FutureMono, Arial, sans-serif;
-  font-size: 42px;
-  line-height: 52px;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@media (max-width: 640px) {
-  h1 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-h2 {
-  font-family: FutureMono, monospace;
-  font-size: 20px;
-  line-height: 22px;
-  font-weight: normal;
-  font-style: normal;
+:root {
+  --font-stack: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: var(--font-stack);
+  font-feature-settings: "ss01", "ss02", "cv01";
 }
 
 pre > code {
   display: block;
-  line-height: .95em;
+  line-height: 0.95em;
 }
 
-code {
-  font-family: FoundersGroteskMono, monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+  color: var(--color-foreground);
+}
+
+p {
+  font-family: var(--font-stack);
+  color: var(--color-foreground-level-6);
+  line-height: 150%;
+}
+
+p.small {
+  font-size: 0.75rem;
 }
 
 strong {
-  font-family: FoundersGroteskMedium, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 600;
 }
 
-em {
-  font-family: FoundersGroteskItalic, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
+h1 {
+  font-size: 48px;
+  font-weight: 900;
 }
 
-strike {
-  text-decoration: line-through;
+h2 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.druk {
+  font-family: Druk X;
+  font-weight: 400;
+  letter-spacing: 0.03125rem;
+  line-height: 83%;
+  padding-top: 3rem;
 }
 
 a {
   cursor: pointer;
   text-decoration: none;
-  color: #5555FF;
+  color: var(--color-secondary);
 }
 
-a:hover {
-  text-decoration: underline;
+a span {
+  border-bottom: 1px solid;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-primary);
+}
+
+a:active,
+a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
 }

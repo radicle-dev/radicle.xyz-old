@@ -1,29 +1,19 @@
 <!doctype html>
 <html>
 {{> head }}
-<body>
-  <section id="subscribed">
-    <div class="container">
-      <h1>
-        Thank you!
-      </h1>
-      <section id="flowers-success">
-        <pre><code>                _(_)_                     _(_)_                     _(_)_     </code></pre>
-        <pre><code>    @@@@       (_)@(_)        @@@@       (_)@(_)        @@@@       (_)@(_)    </code></pre>
-        <pre><code>   @@()@@ wWWWw  (_)\        @@()@@ wWWWw  (_)\        @@()@@ wWWWw  (_)\     </code></pre>
-        <pre><code>    @@@@  (___)     \|/       @@@@  (___)     \|/       @@@@  (___)     \|/   </code></pre>
-        <pre><code>     /      Y       \|         /      Y       \|         /      Y       \|    </code></pre>
-        <pre><code>  \ |     \ |/       | /    \ |     \ |/       | /    \ |     \ |/       | /  </code></pre>
-        <pre><code>  \\|//   \\|///  \\\|//    \\|//   \\|///  \\\|//    \\|//   \\|///  \\\|//  </code></pre>
-        <pre><code>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</code></pre>
+<body id="index">
+  <div class="overflow-killer">
+    {{> header }}
+    <div class="content">
+      <section id="headline">
+        <img class="headline-gif" src="../img/header-flower.gif" alt="Animation of a flower growing.">
+        <h1 class="headline druk">Subscribed.</h1>
+        <h2>We’ve just sent you an email.</h2>
+        <a href="/">
+          <button class="subscribe-button">Back to the site</button>
+        </a>
       </section>
-      <br/>
-      <a href="/">
-        <button>
-          &larr; Back home
-        </button>
-      </a>
     </div>
-  </section>
+  </div>
 </body>
 </html>
