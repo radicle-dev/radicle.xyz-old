@@ -1613,3 +1613,72 @@ footer form button:focus {
     display: inherit;
   }
 }
+
+/* BLOGPOSTS */
+
+#post .content {
+  width: 70vw;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#post .headline {
+  font-size: 18vw;
+  text-align: center;
+}
+
+#post .content #post-container * {
+  margin-bottom: 1rem;
+}
+
+#post h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--color-foreground);
+  line-height: 3.2rem;
+  padding-top: 2rem;
+}
+
+#post h3,
+blockquote {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+#post blockquote {
+  color: var(--color-primary);
+  font-style: italic;
+}
+
+#post dl {
+  color: var(--color-foreground-level-6);
+}
+
+#post dl blockquote {
+  padding-top: inherit;
+  font-size: 1rem;
+  font-weight: inherit;
+  color: inherit;
+}
+
+#post dd {
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+#post .ascii {
+  font-family: monospace;
+  line-height: 1rem;
+  color: #5555ff;
+  margin: 1em 0;
+  overflow: hidden;
+}
+
+#post .ascii pre > code {
+  line-height: 0;
+}

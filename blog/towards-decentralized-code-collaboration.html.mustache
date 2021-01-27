@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+{{> head }}
+<body id="post">
+  <div class="overflow-killer">
+    {{> header }}
+    <div class="content">
+      <section id="headline">
+        <h1 class="headline druk">
+          Towards decentralized code collaboration
+        </h1>
+        <p class="subtitle">
+            An overview of Radicle, what we&#x27;re building and why.
+        </p>
+      </section>
+      <div id="post-container">
+        <p>
+          Throughout the last decade, open source has become a standard for software development. Sharing code freely
+          and publicly has made it drastically cheaper and easier to build software&mdash;and tech
+          innovation is surging as a result.
+        </p>
+        <p>
+          Code hosting and collaboration platforms like GitHub and GitLab have contributed heavily to the growth of open
+          source by bringing it to a mainstream audience. They defined standard vocabulary and behaviors, made git
+          accessible to a greater audience, empowered social coding, and created global communities of developers. It is
+          an undeniable fact that they have completely changed the way people write code.
+        </p>
+        <p>
+          As the status quo for code collaboration, these platforms also host the largest repositories of open source
+          development made up of not just code, but issues, pull requests, reviews, and comments. Even the social
+          relationships—stars, likes, follows—exist solely within these platforms.
+        </p>
+        <p>
+          These platforms, however, are owned by corporations. They are subject to corporate law and have the right to
+          define their terms of services. They can implement <a
+          href="https://techcrunch.com/2019/07/29/github-ban-sanctioned-countries/">user bans</a>&mdash;like those
+          currently in place against Iranian, Syrian, and Crimean GitHub accounts in response to pressure from the U.S.
+          government. They are vulnerable to <a
+          href="https://techcrunch.com/2019/10/30/github-removes-tsunami-democratics-apk-after-a-takedown-order-from-spain/">censorship</a>
+          as well as capitalist ends, which are often misaligned with the goals of free and open source communities.
+        </p>
+        <p>
+          In a world where <a
+          href="https://www.fordfoundation.org/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">nearly
+          all software relies on open source code</a>, maintaining the resilience and health of the free and open source
+          ecosystem is more important than ever. That&#x27;s why we believe that dependence on centrally hosted
+          platforms and corporations for the distribution of critical open source infrastructure is unsustainable.
+          Reliance on such centralized services contradicts the values of the free and open source ecosystem and
+          threatens its well-being.
+        </p>
+        <p>
+          Radicle was conceived as an alternative. Its goal is to eliminate intermediaries and create a peer-to-peer
+          ecosystem that is robust, functional, and secure. There must be an intentional shift in narrative to
+          prioritize the adoption of decentralized alternatives for code collaboration that abide by the principles of
+          free and open source software.
+        </p>
+        <blockquote>
+          &quot;At the core of the open source ethos is the idea of liberty. Open source is about inverting power
+          structures and creating access and opportunities for everyone.&quot;
+          <cite>
+            &mdash;&nbsp;GitHub employees' letter to GitHub
+          </cite>
+        </blockquote>
+        <h2>Exploring alternatives</h2>
+        <p>
+          Alternatives to GitHub exist ranging from platforms like <a href="https://sourceforge.net">SourceForge</a>
+          and <a href="https://about.gitlab.com">GitLab</a>, to more established methods
+          of collaboration such as mailing lists. Platforms like <a href="https://gitea.io/en-us/">Gitea</a> or <a
+          href="https://gogs.io/">Gogs</a> offer self-hosted and open source solutions for code collaboration that have
+          low platform risk but leave developers in isolated environments with no access to the global network of
+          developers. One proposed alternative is <em>federation</em>. Proposals such as ForgeFed and <a
+          href="https://gitlab.com/gitlab-org/gitlab/issues/6468">federated GitLab</a> are a step in the right
+          direction, but implementations are underdeveloped or lacking. In addition, federation is dependent on domain
+          names which can and <em>are</em> regularly seized by governments.
+        </p>
+        <p>
+          Other well-established open-source projects such as the Linux
+          kernel adopt more <a
+            href="http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/ar01s10.html">bazaar</a> and
+          accessible development environments that aren&#x27;t confined to single platforms, such as mailing lists. These
+          work, but they falter when held to the usability standard that platforms like GitHub have established.
+        </p>
+        <p>
+          Peer-to-peer protocols like <a href="https://ssbc.github.io/scuttlebutt-protocol-guide/">Scuttlebutt</a> have
+          provided us with alternative solutions to share and host information. These protocols are able to work offline
+          without reliance on servers, but applications built on them lack the ability for users to easily coordinate on
+          a global scale. This isn&#x27;t too much of an issue for a blogging or social networking use case, but when it
+          comes to software collaboration, a canonical global registry is necessary to meet the usability and
+          discoverability standards of centralized platforms today. The ability for anybody to contribute to any open
+          source project no matter where they are is necessary to cultivate a truly free and open network.
+        </p>
+        <h3>Designing by principles</h3>
+        <p>
+          As we set out to build an alternative, we started by thinking about the values that we recognize as integral
+          to free and open source code collaboration. With that said, we developed the following list of guiding
+          principles:
+        </p>
+        <dl>
+          <dt>1. It must prioritize user freedom</dt>
+          <dd>
+            In the words of the <a href="https://www.gnu.org/philosophy/free-sw.html">free software movement</a>:
+            <blockquote>
+              [&hellip;] users have the freedom to run, copy, distribute, study, change and improve the software. Thus,
+              <q>free software</q> is a matter of liberty, not price.
+            </blockquote>
+          </dd>
+          <dt>2. It must be accessible and uncensorable</dt>
+          <dd>
+            Anyone should have the freedom to use the software to collaborate with others. No single party should be
+            able to ban users from accessing the system, or content from being shared. It must be auditable and
+            transparent. In addition, users should have the freedom to control their interactions and the content they
+            see on an individual basis.
+          </dd>
+          <dt>3. It must be user-friendly</dt>
+          <dd>
+            The software must be easy to use and not expect tremendous change in behavior from the user. Responsiveness
+            and functionality must meet the standards established by current platforms.
+          </dd>
+          <dt>4. It must be offline-first</dt>
+          <dd>
+            It must not require internet connectivity, DNS or online portals to function. There must be no single point
+            of failure and it must be always available.
+          </dd>
+          <dt>5. It must not compromise on security</dt>
+          <dd>
+            Trust in a third party or intermediary must not be required for use. Every artefact of the system must be
+            attested with cryptographic signatures, and verified.
+          </dd>
+        </dl>
+        <p>
+          Let’s look at hosting platforms like GitHub or GitLab in the context of this framework: they succeed by being
+          user-friendly and accessible, but since they are centrally controlled, they are censorable, and do not
+          prioritize user freedoms. If we look at <em>self-hosted</em> solutions like Gitea, Phabricator or Gogs, they are free,
+          uncensorable, and user-friendly, however, they are not easily accessible due to gate-keeping and isolated
+          environments: users across Phabricator deployments cannot interact with each other. This is the case for all
+          currently available self-hosted solutions we've looked at. They also present single points of failure and
+          require internet connectivity for most interactions with the system.
+        </p>
+        <p>
+          Hypothetically, a federated GitLab <em>could</em> fill all the requirements, however, federated services
+          cannot be offline-first and don’t offer sovereignty over user&#x27;s identity. Users are tied to specific
+          instances and thus subject to some of the same drawbacks as centralized services.
+        </p>
+        <p>
+          Bazaar-style solutions like the <a href="https://lkml.org/">Linux Kernel mailing list</a> succeed at almost
+          all outlined principles, but are limited in terms of user friendliness. It&#x27;s hard to compare the
+          usability of email threads to the sophisticated workflows possible on platforms like GitHub and GitLab.
+        </p>
+        <h2>Radicle: A p2p protocol for code collaboration 🌱</h2>
+        <p>
+          Radicle adopts the <a href="https://scuttlebutt.nz/">Scuttlebutt</a> social overlay paradigm by establishing a
+          peer-to-peer replication layer on top of distributed version control systems, starting with <code>git</code>.
+          User accounts and login is replaced by public key cryptography, hosted issue trackers are replaced by local
+          peer replication, and the idea of a single canonical upstream is replaced by a patch-based peer-to-peer or
+          &quot;bazaar&quot; model.
+        </p>
+        <p>
+          To complement the replication layer we introduce a totally-ordered consensus-backed registry which holds
+          canonical project metadata. This allows projects to anchor important information—such as project state and
+          repository head—with the guarantee of global availability and immutability.
+        </p>
+        <p>
+          The three major themes to highlight are the decisions to focus on a peer-to-peer code collaboration model, to
+          build on the underlying distributed version control system for replication, and to adopt a protocol-first
+          approach.
+        </p>
+        <h3>Revisiting the Bazaar</strong></h3>
+        <p>
+          <a href="http://www.catb.org/~esr/writings/cathedral-bazaar/"><em>The Cathedral and the Bazaar</em></a>
+          describes two approaches to free software development. The cathedral model, exemplified by projects like <a
+          href="https://www.gnu.org/software/emacs/">Emacs</a>, makes releases open and available but keeps development
+          exclusive to so called &quot;individual wizards&quot;. On the other hand, the bazaar model—popularized by
+          <a href="http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/ar01s04.html">Linus Torvalds</a>
+          and validated by the massive success of Linux, calls for completely open development with
+          frequent and early releases, delegation throughout communities, and as many &quot;eyeballs&quot; on the code
+          as possible. The conclusion of the essay speaks to the success of bazaar development practices in open source
+          projects. In other words, <em>given enough eyeballs, all bugs are shallow</em>.
+        </p>
+        <p>
+          Peer-to-peer networking makes it far easier for developers and maintainers to develop not just a shared, but a
+          <strong>trusted</strong> representation of project state grounded in actual source code <em>and</em> secure
+          peer identities. With peer replication, patches become more comprehensive because they are tied to local
+          issues, comments, and reviews connected to the development process.  With more comprehensive patches,<a
+          href="https://begriffs.com/posts/2018-06-05-mailing-list-vs-github.html"> bazaar-style development can retain
+          its flexibility</a> while supporting more sophisticated workflows. This is why Radicle replaces the idea of a
+          single canonical upstream with a peer-to-peer model familiar to the open source hackers of the 90s and early
+          2000s. It makes bazaar-style development easier and better.
+        </p>
+        <p>
+          This potential is what caused Radicle to settle on a gossip-based &quot;social overlay&quot; built on
+          distributed version control systems that is free and always available without the hassle of self-hosting or
+          trusting companies with user data.
+        </p>
+        <h3>Git gossips well</strong></h3>
+        <p>
+          The next design decision came as a result of our experimentation with decentralized storage. After building
+          the first version of Radicle on IPFS, we ran into performance and functionality issues. A more detailed
+          analysis can be found<a href="https://github.com/radicle-dev/radicle/issues/689"> here</a>, but the major
+          realization was that replicating git repos peer-to-peer on the <em>storage layer</em> left us no choice but
+          losing the <a href="https://git-scm.com/book/en/v2/Git-Internals-Packfiles">packfile</a> protocol, one of the
+          things that makes git <em>fast</em>. This approach would make source code a second-class citizen—making it
+          impractical to store repositories with large histories.
+        </p>
+        <p>
+          When reflecting on the above, the almost obvious thought returned: why not use git itself to distribute data?
+          Storing <em>collaboration</em> artifacts (issues, pull requests, comments, ...) in git has been done before
+          and the data structures available in git satisfy all our needs. Paired with a gossip layer, git becomes
+          exactly what&#x27;s necessary to store, replicate and distribute code and collaboration artifacts.
+        </p>
+        <p>
+          By building a peer-to-peer overlay on top of git, we find not only a performant solution, but one that is
+          better adapted for code collaboration. Issues, comments and reviews become local artifacts that are
+          cryptographically signed and interacted with offline.
+        </p>
+        <h3>Protocols, not platforms</strong></h3>
+        <p>
+          The story of the big code hosting platforms coincides with the general shift of the internet from open
+          protocols to privately-owned platforms. Most social coding platforms today actually leverage open protocols
+          (git, mercurial, ssh) but have built up closed gardens.
+        </p>
+        <p>
+          Radicle&#x27;s approach is meant to return to the protocol-first philosophy by focusing on building code
+          collaboration <em>primitives</em> instead of user experiences, and to reject data collection and siloing by
+          intermediaries. This is reflected in the decision to build on and extend git. Having it as the nexus of
+          replication builds on its strengths and decentralized nature.  Having issues, pull requests, comments, and
+          reviews <em>locally</em> gives developers the tools to manage and design their workflows without locking them
+          into a new &quot;experience&quot;. Despite any front-end interface that will be built (😉), Radicle exists
+          foremost as an open protocol — not a platform.
+        </p>
+        <p>
+          To complement the <a href="https://en.wikipedia.org/wiki/Eventual_consistency">eventually-consistent</a>
+          peer-to-peer replication layer, a global registry that holds canonical project metadata is also desirable.
+          This can provide functionality that is difficult to address at the gossip level, such as globally unique human-readable
+          identifiers, as well as giving the ability for projects to anchor important information about their project in
+          an immutable and totally-ordered way&mdash;for example, the latest repository head. This can alleviate weaknesses at
+          the replication layer which is unable to prove to the user that the information shown is the latest available.
+          In essence, the registry can provide users with the trusted, auditable and shared view of the network that is
+          otherwise lacking, delivering the same connected &quot;social&quot; layer that attracted developers to
+          platforms like GitHub. Designing such a system as an open protocol is challenging, and requires a
+          consensus-based approach which we will discuss in more depth in the future.
+        </p>
+        <div class="ascii">
+          <pre><code>               _(_)_                     _(_)_                                      _(_)_     </code></pre>
+          <pre><code>   @@@@       (_)@(_)        @@@@       (_)@(_)        @@@@             @@@@       (_)@(_)    </code></pre>
+          <pre><code>  @@()@@ wWWWw  (_)\        @@()@@ wWWWw  (_)\        @@()@@ wWWWw     @@()@@ wWWWw  (_)\     </code></pre>
+          <pre><code>   @@@@  (___)     \|/       @@@@  (___)     \|/       @@@@  (___)      @@@@  (___)     \|/   </code></pre>
+          <pre><code>    /      Y       \|         /      Y       \|         /      Y         /      Y       \|    </code></pre>
+          <pre><code> \ |     \ |/       | /    \ |     \ |/       | /    \ |     \ |/     \ |     \ |/       | /  </code></pre>
+          <pre><code> \\|//   \\|///  \\\|//    \\|//   \\|///  \\\|//    \\|//   \\|///   \\|//   \\|///  \\\|//  </code></pre>
+          <pre><code>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</code></pre>
+        </div>
+        <p>
+          With all of these pieces in place, we see Radicle starting to take shape as a high-potential alternative to
+          code hosting platforms like GitHub. Our goal is to develop Radicle to support the resilience and health of the
+          free and open source ecosystem in a sustainable way. We have a lot to share over the coming months so please
+          stay in touch.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
