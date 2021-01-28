@@ -1614,7 +1614,16 @@ footer form button:focus {
   }
 }
 
-/* BLOGPOSTS */
+/* BLOG OVERVIEW */
+
+#blog .content {
+  width: 70vw;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* BLOG POSTS */
 
 #post .content {
   width: 70vw;
