@@ -1625,16 +1625,66 @@ footer form button:focus {
 /* BLOG OVERVIEW */
 
 #blog .content {
-  width: 70vw;
+  width: 80vw;
   max-width: 60rem;
   margin: 0 auto;
   text-align: left;
 }
 
+#blog .headline-gif {
+  top: 15vw;
+  left: 24vw;
+  width: 32vw;
+  max-width: 35rem;
+}
+
+#blog .overview {
+  margin-top: 2.5rem;
+}
+
+.post-item h2 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+.post-item .meta {
+  padding-bottom: 1rem;
+  color: var(--color-foreground-level-5);
+}
+
+.post-item .meta > span {
+  color: var(--color-foreground-level-6);
+}
+
+.post-item .read-more button {
+  background-color: var(--color-foreground-level-3);
+  color: var(--color-foreground-level-6);
+  border: none;
+  margin: 1rem 0 2rem;
+}
+
+.post-item .read-more button:hover {
+  background-color: var(--color-foreground-level-2);
+}
+
+.post-item .read-more button:active {
+  color: var(--color-foreground-level-5);
+}
+
+@media only screen and (max-width: 40rem) {
+  #blog .headline-gif {
+    top: 28vw;
+    left: 24vw;
+    width: 48vw;
+  }
+}
+
 /* BLOG POSTS */
 
 #post .content {
-  width: 70vw;
+  width: 80vw;
   max-width: 60rem;
   margin: 0 auto;
   text-align: left;
@@ -1650,12 +1700,11 @@ footer form button:focus {
 }
 
 #post h2 {
-  font-size: 1.5rem;
   margin-top: 2.5rem;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 900;
   color: var(--color-foreground);
-  line-height: 3.2rem;
+  line-height: 3rem;
   padding-top: 2rem;
 }
 
@@ -1698,4 +1747,15 @@ blockquote {
 
 #post .ascii pre > code {
   line-height: 0;
+}
+
+@media only screen and (max-width: 30rem) {
+  #post h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  #post h3,
+  blockquote {
+    font-size: 1rem;
+  }
 }
