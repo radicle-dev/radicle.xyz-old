@@ -1686,7 +1686,7 @@ footer form button:focus {
 #post .content {
   width: 80vw;
   max-width: 60rem;
-  margin: 0 auto;
+  margin: 0 auto 6rem;
   text-align: left;
 }
 
@@ -1695,22 +1695,35 @@ footer form button:focus {
   text-align: center;
 }
 
+#post .subtitle {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-foreground);
+  padding-bottom: 3rem;
+}
+
 #post .content #post-container * {
   margin-bottom: 1rem;
 }
 
+#post .content #post-container li {
+  margin-bottom: 0.25rem;
+}
+
 #post h2 {
-  margin-top: 2.5rem;
-  font-size: 3rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
   font-weight: 900;
   color: var(--color-foreground);
-  line-height: 3rem;
   padding-top: 2rem;
 }
 
 #post h3,
 blockquote {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5;
   font-weight: 700;
   padding-top: 1rem;
@@ -1721,7 +1734,9 @@ blockquote {
   font-style: italic;
 }
 
-#post dl {
+#post dl,
+ol,
+ul {
   color: var(--color-foreground-level-6);
 }
 
@@ -1737,12 +1752,17 @@ blockquote {
   padding-bottom: 0.5rem;
 }
 
-#post .ascii {
+#post .ascii,
+pre.code {
   font-family: monospace;
   line-height: 1rem;
   color: #5555ff;
   margin: 1em 0;
   overflow: hidden;
+}
+
+pre.code {
+  color: var(--color-foreground-level-6);
 }
 
 #post .ascii pre > code {
