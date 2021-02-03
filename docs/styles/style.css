@@ -1626,9 +1626,10 @@ footer form button:focus {
 
 #blog .content {
   width: 80vw;
-  max-width: 60rem;
+  max-width: 45rem;
   margin: 0 auto;
   text-align: left;
+  cursor: text;
 }
 
 #blog .headline-gif {
@@ -1675,9 +1676,14 @@ footer form button:focus {
 
 @media only screen and (max-width: 40rem) {
   #blog .headline-gif {
-    top: 28vw;
+    top: 25vw;
     left: 24vw;
     width: 48vw;
+  }
+}
+@media only screen and (min-width: 105rem) {
+  #blog .headline-gif {
+    top: 10vw;
   }
 }
 
@@ -1685,9 +1691,12 @@ footer form button:focus {
 
 #post .content {
   width: 80vw;
-  max-width: 60rem;
+  max-width: 45rem;
   margin: 0 auto 6rem;
   text-align: left;
+}
+#post .content > * {
+  cursor: text;
 }
 
 #post .headline {
@@ -1709,7 +1718,7 @@ footer form button:focus {
 }
 
 #post .content #post-container li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 #post h2 {

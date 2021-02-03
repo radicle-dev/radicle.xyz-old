@@ -1,5 +1,5 @@
 PAGES    := docs/index.html docs/subscribed.html docs/terms.html docs/privacy.html docs/downloads.html docs/404.html
-BLOG     := docs/blog/index.html docs/blog/towards-decentralized-code-collaboration.html docs/blog/radicle-link.html docs/blog/radicle-social-model.html
+BLOG     := docs/blog/index.html docs/blog/towards-decentralized-code-collaboration.html docs/blog/radicle-link.html docs/blog/collaborating-on-radicle.html
 PARTIALS := $(shell ls partials/* | sed 's/^/-p /')
 
 build: $(PAGES) $(BLOG)

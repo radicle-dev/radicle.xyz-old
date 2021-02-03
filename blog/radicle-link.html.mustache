@@ -15,6 +15,8 @@
           Behind every repository is a version control system&mdash;the most popular of these being Git, created in 2005 by Linus Torvalds for the development of the Linux kernel. Git marked the rise of distributed version control systems as developers realized the centralized model of SVN and CVS didn&#x27;t scale well with the number of contributors. In fact, Git was only created when Linus’ free <a
           href="http://www.bitkeeper.org/">Bitkeeper</a> license was revoked after a Linux kernel contributor tried to <a href="https://www.linuxjournal.com/content/git-origin-story">reverse engineer its networking protocols</a>. Git brought distributed version control to the forefront and changed the way software is developed today.
         </p>
+        <figure>{{> svg-link-git }}</figure>
+
         <p>
           Code collaboration platforms, or <q>forges</q>, started building on top of Git: they introduced
           search and discovery, canonicity, and social collaboration (issues &amp; code review) to Git-based workflows,
@@ -122,6 +124,8 @@
           revisions. This is important, since it effectively allows data to be served by <em>any peer</em>, in a secure
           manner. The physical location from which project data is fetched becomes irrelevant to the user.
         </p>
+        <figure>{{> svg-replication }}</figure>
+
         <h3>Tracking and discovery</h3>
         <p>
           When a project is published to the network the specific repository or <em>source tree</em> becomes
@@ -138,6 +142,8 @@
               reference to a remote repository). If the remote repository is found to track other remotes, the tracking
           repository shall also transitively track those, up to a configurable <em>N</em> degrees out.
         </p>
+        <figure>{{> svg-social-overlay }}</figure>
+
         <h3>Availability</h3>
         <p>
           To improve data availability, participants in the network can choose to act as <strong>seeds</strong>. This is
@@ -168,6 +174,8 @@
           offline experience. Not only is the source code available offline, but so is everything else. Radicle is built
           to provide a convenient collaboration experience <em>without intermediaries or vendor lock-in</em>.
         </p>
+        <figure>{{> svg-stack }}</figure>
+
         <p>
           Having Git as the nexus of replication builds on its strengths and decentralized nature. Having issues, pull
           requests, comments, and reviews <em>locally</em> gives developers the tools to manage and design their
