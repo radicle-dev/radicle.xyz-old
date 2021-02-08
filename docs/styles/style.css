@@ -1632,13 +1632,6 @@ footer form button:focus {
   cursor: text;
 }
 
-#blog .headline-gif {
-  top: 15vw;
-  left: 24vw;
-  width: 32vw;
-  max-width: 35rem;
-}
-
 #blog .overview {
   margin-top: 2.5rem;
 }
@@ -1672,19 +1665,6 @@ footer form button:focus {
 
 .post-item .read-more button:active {
   color: var(--color-foreground-level-5);
-}
-
-@media only screen and (max-width: 40rem) {
-  #blog .headline-gif {
-    top: 25vw;
-    left: 24vw;
-    width: 48vw;
-  }
-}
-@media only screen and (min-width: 105rem) {
-  #blog .headline-gif {
-    top: 10vw;
-  }
 }
 
 /* BLOG POSTS */
@@ -1747,6 +1727,10 @@ blockquote {
 ol,
 ul {
   color: var(--color-foreground-level-6);
+}
+
+#post dd {
+  line-height: 150%;
 }
 
 #post dl blockquote {
