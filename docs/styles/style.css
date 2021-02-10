@@ -1758,6 +1758,12 @@ footer form button:focus {
   margin-bottom: 0.5rem;
 }
 
+#post .content #post-container .meta {
+  text-align: center;
+  margin: 0 0 2.5rem;
+  display: block;
+}
+
 #post h2 {
   margin-top: 1rem;
   font-size: 1.5rem;
