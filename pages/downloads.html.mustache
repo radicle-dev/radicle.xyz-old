@@ -5,16 +5,18 @@
   {{> header }}
 
   <div class="content">
-    <img class="headline-gif gif" src="./img/download-flower.gif" alt="Animation of a flower growing.">
+    <video class="headline-gif gif" autoplay loop muted title="Animation of a flower growing.">
+      <source type="video/mp4" src="./img/download-flower.mp4">
+    </video>
     <h1 class="headline druk">Try the beta</h1>
     <div id="text">
       <h1>Upstream <span>Beta</span></h1>
       <h2>A desktop client for Radicle.</h2>
       <p>Check out our <a href="https://docs.radicle.xyz/docs/getting-started" target="_blank"><span>Guide to Getting Started</span></a>.</p>
-      <a href="https://releases.radicle.xyz/radicle-upstream-0.1.9.dmg">
+      <a href="https://releases.radicle.xyz/radicle-upstream-0.1.10.dmg">
         <button>{{> svg-mac }} Download for macOS</button>
       </a>
-      <a href="https://releases.radicle.xyz/radicle-upstream-0.1.9.AppImage">
+      <a href="https://releases.radicle.xyz/radicle-upstream-0.1.10.AppImage">
         <button>{{> svg-linux }} Download for Linux</button>
       </a>
       <form action="mailto:?subject=Download%20the%20Radicle%20app&amp;body=When%20you%20get%20back%20to%20your%20computer%20&#44;%20download%20the%20app%20here:%20www.radicle.xyz/downloads.html">
