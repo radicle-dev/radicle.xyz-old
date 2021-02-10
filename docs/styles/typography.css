@@ -60,6 +60,10 @@ h3 {
   line-height: 24px;
 }
 
+li {
+	line-height: 24px;
+}
+
 .druk {
   font-family: Druk X;
   font-weight: 400;

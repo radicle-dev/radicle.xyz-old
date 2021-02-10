@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+<head>
+  <title key="title">Collaborating on Radicle</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@radicle" />
+  <meta name="twitter:creator" content="@radicle" />
+  <meta property="og:title" content="Radicle - Peer-to-peer code collaboration" />
+  <meta property="og:image" content="https://radicle.xyz/img/social-share.jpg" />
+  <meta property="twitter:image" content="https://radicle.xyz/img/social-share.jpg" />
+  <meta property="og:description" content="Radicle is a peer-to-peer stack for building software together." />
+  <meta property="description" content="Radicle is a peer-to-peer stack for building software together." />
+</head>
+<body id="post">
+  <div class="overflow-killer">
+   <header>
+     <a href="/" id="logo">
+       <svg viewBox="0 0 114 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path d="M44.0616 10.4609C44.0616 7.02538 44.0616 3.65047 44.0616 0.248291C45.5462 0.248291 46.9761 0.248291 48.4424 0.248291C48.4424 8.03424 48.4424 15.7999 48.4424 23.599C46.9974 23.599 45.5666 23.599 44.0616 23.599C44.0616 23.1799 44.0616 22.7558 44.0616 22.2801C43.9387 22.3397 43.8889 22.3508 43.8565 22.3811C42.2134 23.9009 40.2555 24.2827 38.1463 23.7727C35.3649 23.1011 33.6913 21.2248 33.0039 18.5295C32.3062 15.7949 32.7753 13.2461 34.6571 11.0496C36.6363 8.73911 40.1275 8.0847 42.7364 9.53382C43.172 9.7752 43.56 10.1054 44.0616 10.4609ZM44.2068 16.5694C44.2099 15.8232 44.1164 15.2566 43.8889 14.7275C43.3548 13.4844 42.4165 12.725 41.0537 12.5785C39.7681 12.4402 38.6734 12.8653 37.8975 13.9146C36.9836 15.1506 36.8769 16.523 37.3979 17.9378C38.1169 19.8898 40.3905 20.7654 42.2479 19.809C43.629 19.0991 44.1368 17.8691 44.2068 16.5694Z" fill="#28333D"/>
+       <path d="M25.3593 10.4452C25.3593 10.0008 25.3593 9.59187 25.3593 9.14648C26.848 9.14648 28.2768 9.14648 29.7066 9.14648C29.8193 9.49792 29.8721 22.4088 29.7584 23.6085C28.3235 23.6651 26.8805 23.6166 25.3827 23.6358C25.3827 23.1723 25.3827 22.7583 25.3827 22.2452C25.2019 22.3856 25.0993 22.4563 25.0069 22.5381C24.0209 23.4106 22.854 23.8509 21.5512 23.9468C17.9929 24.2064 15.3932 21.8989 14.5138 19.1834C13.5572 16.2276 13.9319 13.4565 15.9934 11.0349C17.9532 8.7345 21.4344 8.09123 24.029 9.52014C24.4798 9.76754 24.8779 10.1069 25.3593 10.4452ZM18.3534 16.3892C18.3534 16.8044 18.5362 17.4515 18.7271 17.9453C19.2328 19.247 20.2067 20.0226 21.6121 20.1619C22.984 20.2983 24.097 19.7923 24.8769 18.6391C25.8335 17.2243 25.7218 15.0925 24.6332 13.7746C23.3049 12.1649 20.7276 12.1397 19.3638 13.7211C18.7057 14.4846 18.3534 15.3798 18.3534 16.3892Z" fill="#28333D"/>
+       <path d="M93.3366 20.1133C95.1218 20.1133 96.8086 20.1133 98.5287 20.1133C98.5287 21.2877 98.5287 22.4238 98.5287 23.5962C93.6065 23.5962 88.6914 23.5962 83.7768 23.5962C83.6608 23.2387 83.6386 20.6999 83.7581 20.1052C85.4459 20.1052 87.1458 20.1052 88.8775 20.1052C88.8775 14.6399 88.8775 9.23114 88.8775 3.76482C87.1645 3.76482 85.4646 3.76482 83.7818 3.76482C83.6668 3.34876 83.6376 0.989753 83.7238 0.306088C84.0804 0.200054 92.7303 0.177838 93.3366 0.292961C93.3366 6.86706 93.3366 13.4543 93.3366 20.1133Z" fill="#28333D"/>
+       <path d="M103.258 17.4937C103.351 18.554 103.816 19.3367 104.62 19.8789C105.887 20.7343 107.258 20.7363 108.64 20.1768C109.174 19.9607 109.537 19.5315 109.794 19.0135C111.089 19.0135 112.369 19.0135 113.737 19.0135C113.586 19.4386 113.49 19.8314 113.315 20.1859C112.529 21.7906 111.264 22.8994 109.588 23.4962C107.602 24.2041 105.587 24.1597 103.627 23.4033C101.444 22.5611 100.074 20.9494 99.4568 18.7105C98.9927 17.0271 99.0149 15.3518 99.6132 13.6987C100.662 10.7984 103.418 8.83522 106.516 8.77668C108.38 8.74132 110.062 9.2311 111.477 10.4803C112.713 11.5719 113.41 12.9696 113.765 14.552C113.976 15.4921 114.052 16.4434 113.963 17.4745C113.254 17.5119 112.551 17.4876 111.848 17.4927C111.138 17.4967 110.427 17.4937 109.716 17.4937C109.006 17.4937 108.294 17.4937 107.584 17.4937C106.873 17.4937 106.162 17.4937 105.451 17.4937C104.744 17.4937 104.035 17.4937 103.258 17.4937ZM109.706 14.7459C109.706 14.6611 109.72 14.5934 109.704 14.5338C109.497 13.7492 109.072 13.113 108.334 12.7443C107.156 12.1566 105.974 12.2031 104.85 12.8787C104.152 13.2978 103.682 13.9228 103.423 14.7469C105.54 14.7459 107.612 14.7459 109.706 14.7459Z" fill="#28333D"/>
+       <path d="M82.781 14.5894C81.2934 14.5894 79.8422 14.5894 78.3809 14.5894C78.3415 14.5298 78.2936 14.4783 78.2714 14.4187C77.705 12.909 75.8931 12.1062 74.114 12.8868C73.1238 13.321 72.5074 14.1017 72.2309 15.1337C71.8536 16.5496 72.0211 17.8795 72.9936 19.0277C74.2073 20.4597 76.4903 20.5415 77.7151 19.2004C77.9819 18.9075 78.1625 18.5369 78.4137 18.1582C79.8251 18.1582 81.2894 18.1582 82.8097 18.1582C82.7906 18.3208 82.7881 18.4663 82.7548 18.6056C82.2534 20.6677 80.9847 22.134 79.1305 23.1065C75.9935 24.7525 71.9792 24.0144 69.6135 21.3867C66.3892 17.8058 67.3305 12.1608 71.5459 9.80174C74.7354 8.01633 78.6886 8.57278 81.1502 11.156C81.9608 12.0063 82.4869 13.008 82.7588 14.1451C82.778 14.2269 82.7946 14.3097 82.8027 14.3935C82.8077 14.44 82.7936 14.4895 82.781 14.5894Z" fill="#28333D"/>
+       <path d="M57.1524 12.626C55.4413 12.626 53.7545 12.626 52.0314 12.626C52.0314 11.4525 52.0314 10.3175 52.0314 9.14502C55.2138 9.14502 58.3872 9.14502 61.6276 9.14502C61.6347 9.33082 61.6503 9.5257 61.6503 9.71962C61.6513 12.9673 61.6513 16.2149 61.6513 19.4626C61.6513 19.6585 61.6513 19.8544 61.6513 20.0877C63.4067 20.0877 65.0935 20.0877 66.7672 20.0877C66.8963 20.4654 66.9266 22.9315 66.8181 23.599C61.9091 23.599 56.994 23.599 52.0824 23.599C51.9775 23.2263 51.9452 20.9309 52.0385 20.122C52.5939 20.0796 53.1639 20.1079 53.7313 20.1029C54.2897 20.0978 54.8481 20.1019 55.407 20.1019C55.9806 20.1019 56.5556 20.1019 57.1201 20.1019C57.2452 19.7343 57.2764 13.3076 57.1524 12.626Z" fill="#28333D"/>
+       <path d="M11.8113 9.14331C11.8113 10.3137 11.8113 11.4367 11.8113 12.6314C10.9907 12.6455 10.1854 12.6364 9.38114 12.6374C8.55252 12.6394 7.72385 12.6374 6.89523 12.6374C6.08689 12.6374 5.27855 12.6374 4.41335 12.6374C4.41335 16.3052 4.41335 19.9285 4.41335 23.5357C3.997 23.6528 0.591019 23.674 0 23.5741C0 18.7793 0 13.9785 0 9.14331C3.93201 9.14331 7.84471 9.14331 11.8113 9.14331Z" fill="#28333D"/>
+       <path d="M59.0062 5.7027C57.3704 5.70576 56.0937 4.45151 56.0967 2.84585C56.0997 1.26948 57.3683 0.0132306 58.9704 0.000102609C60.6047 -0.0130254 61.894 1.23515 61.9011 2.83575C61.9092 4.44949 60.6461 5.69969 59.0062 5.7027Z" fill="#28333D"/>
+       </svg>
+     </a>
+     <nav>
+       <a href="/blog"><span>Blog</span> ↗</a>
+       <a href="https://docs.radicle.xyz" target="_blank"><span>Docs</span> ↗</a>
+       <a href="https://radicle.community" target="_blank"><span>Community</span> ↗</a>
+       <a href="https://github.com/radicle-dev" target="_blank"><span>Code</span> ↗</a>
+       <a class="try-it" href="/downloads.html"><span>Try it</span> ↓</a>
+     </nav>
+   </header>
+    <div class="content">
+      <section id="headline">
+        <h1 class="headline druk">
+          Collaborating on Radicle
+        </h1>
+        <p class="subtitle">
+            Understanding the Radicle social model
+        </p>
+      </section>
+      <div id="post-container">
+        <p>
+          When coming to Radicle from a centralized code collaboration network
+          like GitHub or Gitlab, users might be puzzled by Radicle’s unique
+          social model at first. In contrast to centralized code collaboration
+          platforms, on Radicle:
+        </p>
+        <ol>
+          <li>1. Peers are in control of their social interactions</li>
+          <li>2. Each peer effortlessly self hosts their own content and the
+          content of the peers they follow that they are interested in</li>
+          <li>3. Peers have subjective views over the projects they follow</li>
+        </ol>
+        <p>
+          This post attempts to contextualize the Radicle social model, the
+          trade-offs it makes, and how it differs from the models of well-known
+          centralized platforms.
+        </p>
+        <h2>The Web2 Social Model</h2>
+        <p>
+          In most Web2 social networks:
+        </p>
+        <ul>
+          <li>- Your content is global by default</li>
+          <li>- Your service provider is in control of your content (what you
+          post), your identity, and your access</li>
+          <li>- Your service provider is in control of your social interactions.
+          Practically, this means your service provider can determine what is
+          spam and who you are allowed to interact with.</li>
+        </ul>
+        <p>
+          In exchange you get:
+        </p>
+        <ul>
+          <li>- A “privately owned public space”, where you can discover &
+          interact with any public piece of content or user on the network, as
+          long as it is allowed by your service provider.</li>
+          <li>- Convenience, as spam filtering & content moderation is mostly done
+          for you (email and gmail are the best example of spam filtering, while
+          the global feeds of Facebook and Twitter are examples of content
+          moderation at scale)</li>
+        </ul>
+        <p>
+          When it comes to code collaboration, the former has proven to be
+          significant to the growth of free and open-source sofware, as any user
+          can a) consume any (public) project within centralized code
+          collaboration networks and b) interact with any project within the
+          network, by submitting patches or issues, creating branches or
+          participating in the discussion (commenting).
+        </p>
+        <h2>The Radicle Social Model </h2>
+        <p>
+          In contrast to the common Web2 model of collaboration described above, Radicle prioritizes different concerns:
+        </p>
+        <ul>
+          <li>- People being in control of their identity</li>
+          <li>- People being in control of their content</li>
+          <li>- People being in control of their social interactions</li>
+        </ul>
+        <p>
+          <em>You can read more about why we consider these concerns a priority
+          <a href = "https://radicle.xyz/blog/towards-decentralized-code-collaboration.html">here</a>.</em>
+        </p>
+        <p>
+          Designing our protocol, Radicle Link, to satisfy these constraints led
+          us to a new model for collaboration that might be familiar to the free
+          and open-source hackers of the 90s and early 2000s — one that is
+          radically different from that presented by well-known Web2 platforms.
+        </p>
+        <h2>Protocol design</h2>
+        <p>
+          Radicle Link is a peer-to-peer gossip protocol with a generic
+          distributed version control backend. It aims to be general enough to
+          be used on top of systems such as pijul or mercurial, though its
+          initial implementation is focused on supporting Git.
+        </p>
+        <p>
+          The protocol disseminates Git repositories via gossip-based
+          replication, enabling the hosting and sharing of repositories without
+          reliance on central servers.
+        </p>
+        <p>
+          In practice, Radicle Link distinguishes between two types of
+          identities: personal and project. The first describes an actor in the
+          system, while the second describes a (software) project on which one
+          or more actors collaborate.
+        </p>
+        <p>
+          In Radicle:
+        </p>
+        <ul>
+          <li>- Peers follow other peers.</li>
+          <li>- Peers track projects they are interested in.</li>
+          <li>- Peers gossip about projects. This means tracking and replicating
+          objects from the peers they follow, about the projects they are
+          interested in.</li>
+        </ul>
+        <p>
+          f you have already interacted with other decentralized social
+          networks, this model might remind you of <a href =
+          "https://scuttlebutt.nz/">Secure Scuttlebutt</a>. In fact, Radicle is
+          inspired by SSB's design but diverges from it in a few ways, mainly a)
+          Radicle is operating on
+          <a href =
+          "https://en.wikipedia.org/wiki/Directed_acyclic_graph">DAGs</a>, not a
+          single linear feed and b) the Radicle “identity” is not just the
+          public key associated with that feed, but a delegation scheme that
+          allows you to talk about N projects and M persons. To learn more about
+          how Radicle Link works, see <a
+          href="https://docs.radicle.xyz/docs/understanding-radicle/how-it-works">our
+          docs</a>.
+        </p>
+        <h2>Implications for end-user experience</h2>
+        <p>
+          The way Radicle Link disseminates data has certain implications for the end-user experience:
+        </p>
+        <dl>
+          <dt>- Your social graph determines what type of content you see,
+          interact with, and replicate</dt>
+          <dd>
+            Assuming you have discovered a project of interest within the
+            Radicle network, then the first thing you have to do in order to
+            interact with it is to track it. Tracking a project signals
+            interest, and by design implies tracking the project’s maintainers,
+            therefore replicating the data within their social graphs.
+          </dd>
+          <dd>
+            In the context of a project, maintainers of a repository may choose to
+            track the views of other owners (this is called a remote in Git
+            terminology: a named reference to a remote repository). If the remote
+            repository is found to track other remotes, the tracking repository
+            shall also transitively track those, up to a configurable N degrees
+            out (currently in the works).
+          </dd>
+          <dt>- Spam and content moderation is naturally handled by the peer’s social graph</dt>
+          <dd>
+            While this might appear confusing at first, self-moderation is a far
+            more natural model for moderation as it actually mimics real-life
+            communication. By design, it addresses the issues of Web2 content
+            moderation, which are currently handled by biased algorithms or
+            dependent on central hosting.
+          </dd>
+          <dd>
+            On Radicle, a spammer’s patches or issues will never be tracked by
+            the actual maintainers and as a result, they won’t be seen by the
+            rest of the network (unless explicitly tracked). Similarly, if you
+            are not interested in a peer’s views or contributions to a
+            project, you can simply un-follow them, which stops replication,
+            and ensures you (or your connected peers!) don’t have to view and
+            interact with their data.
+          </dd>
+          <dt>- Within the same project, two peers might have diverging views</dt>
+          <dd>
+            The above design also means that even within the same project, peers
+            have subjective (and often diverging) views.
+          </dd>
+          <dd>
+            At a minimum, your view of a project becomes the sum of the views
+            of the people you follow, plus the views of the maintainers of the
+            project. In addition, you can expand your perspective by
+            configuring your replication settings to also transitively track
+            other remotes N degrees out from the peers you follow (i.e. peers
+            of your peers / remotes of your remotes) (currently work in
+            progress).
+          </dd>
+          <dd>
+            This design also addresses the significant problem with
+            decentralized systems relying exclusively on distributed ledger
+            technology, sometimes referred to as “blockchain poisoning”. This
+            is when someone deliberately adds illegal content to an
+            append-only source in hopes to make the sole act of replicating
+            the project legally problematic, as correctly pointed out by
+            Konstantin Ryabitsev of the Linux foundation with regards to a
+            <a href="http://alpha.radicle.xyz/">previous version</a> of
+            Radicle that was relying on <a href="https://ipfs.io/">IPFS</a>.
+          </dd>
+        </dl>
+        <h2>But what about the “public square”?</h2>
+        <p>
+          While the above design addresses critical problems around user
+          sovereignty, censorship resistance, and spam & content moderation, new
+          challenges emerge.
+        </p>
+        <p>
+          Specifically, the main challenges that arise from the above design are
+          1) discoverability, and 2) the ability to contribute to any project
+          within the network. Both have proven to be very important to the
+          growth of free and open-source software, so it’s important to ensure
+          they are taken into account.
+        </p>
+        <h3>Discovery</h3>
+        <p>
+          While Radicle is not designed to be global by default for the
+          reasons explained above, we complemented Radicle Link’s design with
+          opt-in solutions that can enhance any peer’s ability to discover new
+          projects and other users within the network. In order to do so,
+          we’ve introduced two additional concepts:
+        </p>
+        <dl>
+          <dt>- Seed nodes</dt>
+            <dd>
+              Seed nodes are always-on nodes that ensure data-availability in
+              the network by serving content over the gossip protocol. Anyone
+              can run a seed node and have it serve the content they choose.
+              Seed nodes are just regular nodes without a user identity.
+            </dd>
+            <dd>
+              If they have a stable network address, they serve as entry nodes
+              to the network. Many models of running a seed are imaginable:
+              shared “home servers” (a la fediverse), commercial services,
+              pinning nodes and more.
+            </dd>
+          <dt>- An Ethereum-based registry</dt>
+            <dd>
+              To complement the replication layer we designed an opt-in registry
+              which holds canonical project metadata. This allows projects to
+              anchor important information—such as project state and repository
+              head—with the guarantee of global availability and immutability.
+            </dd>
+            <dd>
+              As a peer, you will be able to create an account within the
+              Radicle Registry, attest your Radicle Link identity and anchor
+              project information there. (Our Ethereum integration will be
+              covered in detail in an upcoming post, as it enables many more
+              things beyond project anchoring)
+            </dd>
+        </dl>
+        <h3>Contributing to projects within the network</h3>
+        <p>
+          As explained above, when you are contributing to another project
+          within Radicle, your contributions (patches, issues, branches etc.)
+          might not be visible to the project’s maintainers or other
+          contributors, if no-one in their network is following you.
+        </p>
+        <p>
+          While this model for collaboration is desirable for some — controlling
+          the visibility & interactivity of content is actually a growing trend
+          even within Web2 platforms (see recent changes on <a
+          href="https://blog.twitter.com/en_us/topics/product/2020/testing-new-conversation-settings.html">twitter</a>
+          and <a
+          href="https://www.wired.com/story/instagram-close-friends/">instagram</a>)
+          — we realize that it might be a limitation for others.
+        </p>
+        <p>
+          For maintainers of projects who are interested in allowing
+          contributions from peers outside their social graph, all they have to
+          do is to follow seed nodes that promote policies conducive to their
+          preferences. While it’s unclear what kind of seed node policies will
+          emerge over time, combining seed node functionality with the Ethereum
+          radicle registry (that has the benefit of sybil resistance) has the
+          potential to serve multiple models and needs for collaboration, all
+          within the same network.
+        </p>
+        <p>
+          Finally, it’s important to note that you will be able to see if a
+          project you’re interested in contributing to accepts contributions
+          from only the maintainers’ social graph or from other peers within the
+          network. This empowers maintainers to adjust the preference of their
+          projects accordingly to guide & support their contributors.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

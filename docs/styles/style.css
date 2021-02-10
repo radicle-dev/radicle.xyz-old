@@ -79,36 +79,19 @@ header #logo {
   width: 8rem;
 }
 
-@media only screen and (max-width: 30rem) {
-  #logo svg {
-    width: 6rem;
-  }
-
-  header nav {
-    margin-top: 1rem;
-  }
-}
-
 header {
   display: flex;
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 30rem) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 header nav {
   display: flex;
   position: relative;
-  top: 0.5rem;
+  align-items: flex-end;
 }
 
 header nav a {
-  margin-right: 3rem;
+  margin-right: 2rem;
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--color-foreground);
@@ -117,15 +100,12 @@ header nav a {
   border: 0;
 }
 
-@media only screen and (max-width: 40rem) {
-  header nav a {
-    font-size: 1rem;
-    margin-right: 1rem;
-  }
+header nav a:first-child {
+  margin-left: 2rem;
+}
 
-  a.try-it {
-    display: none;
-  }
+header nav a:last-child {
+  margin-right: 0;
 }
 
 #download button {
@@ -139,21 +119,6 @@ header nav a {
   margin-right: 0.5rem;
 }
 
-@media only screen and (max-width: 48rem) {
-  a.try-it,
-  #download button {
-    display: none;
-  }
-
-  a.code {
-    margin-right: 0;
-  }
-}
-
-header nav a:last-child {
-  margin-right: 0;
-}
-
 nav a:hover {
   text-decoration: none;
   color: var(--color-secondary);
@@ -165,6 +130,49 @@ nav a span {
 
 nav a:hover span {
   border-bottom: 0.125rem solid;
+}
+
+@media only screen and (max-width: 30rem) {
+  #logo svg {
+    width: 6rem;
+  }
+
+  header nav {
+    margin-top: 1rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav a:first-child {
+    margin-left: 0rem;
+  }
+}
+
+@media only screen and (max-width: 40rem) {
+  header nav {
+    align-items: center;
+  }
+  header nav a {
+    font-size: 0.875rem;
+    margin-right: 0.875rem;
+  }
+
+  a.try-it {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  a.try-it,
+  #download button {
+    display: none;
+  }
+
+  a.code {
+    margin-right: 0;
+  }
 }
 
 /* SUBTITLE */
@@ -1611,5 +1619,163 @@ footer form button:focus {
 
   #download #text button#email-me {
     display: inherit;
+  }
+}
+
+/* BLOG OVERVIEW */
+
+#blog .content {
+  width: 80vw;
+  max-width: 45rem;
+  margin: 0 auto;
+  text-align: left;
+  cursor: text;
+}
+
+#blog .overview {
+  margin-top: 2.5rem;
+}
+
+.post-item h2 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+.post-item .meta {
+  padding-bottom: 1rem;
+  color: var(--color-foreground-level-5);
+}
+
+.post-item .meta > span {
+  color: var(--color-foreground-level-6);
+}
+
+.post-item .read-more button {
+  background-color: var(--color-foreground-level-3);
+  color: var(--color-foreground-level-6);
+  border: none;
+  margin: 1rem 0 2rem;
+}
+
+.post-item .read-more button:hover {
+  background-color: var(--color-foreground-level-2);
+}
+
+.post-item .read-more button:active {
+  color: var(--color-foreground-level-5);
+}
+
+/* BLOG POSTS */
+
+#post .content {
+  width: 80vw;
+  max-width: 45rem;
+  margin: 0 auto 6rem;
+  text-align: left;
+}
+#post .content > * {
+  cursor: text;
+}
+
+#post .headline {
+  font-size: 18vw;
+  text-align: center;
+}
+
+#post .subtitle {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-foreground);
+  padding-bottom: 3rem;
+}
+
+#post .content #post-container * {
+  margin-bottom: 1rem;
+}
+
+#post .content #post-container li {
+  margin-bottom: 0.5rem;
+}
+
+#post h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+  color: var(--color-foreground);
+  padding-top: 2rem;
+}
+
+#post h3,
+blockquote {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+#post blockquote {
+  color: var(--color-primary);
+  font-style: italic;
+}
+
+#post dl,
+ol,
+ul {
+  color: var(--color-foreground-level-6);
+}
+
+#post dd {
+  line-height: 150%;
+}
+
+#post dl blockquote {
+  padding-top: inherit;
+  font-size: 1rem;
+  font-weight: inherit;
+  color: inherit;
+}
+
+#post dd {
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+#post .ascii,
+pre.code {
+  font-family: monospace;
+  line-height: 1rem;
+  color: #5555ff;
+  margin: 1em 0;
+  overflow: hidden;
+}
+
+pre.code {
+  color: var(--color-foreground-level-6);
+}
+
+#post .ascii pre > code {
+  line-height: 0;
+}
+
+@media only screen and (max-width: 30rem) {
+  #post h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  #post h3,
+  blockquote {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 90rem) {
+  #post .headline {
+    font-size: 12rem;
+    line-height: 0.85;
   }
 }
