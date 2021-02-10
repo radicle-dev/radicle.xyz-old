@@ -1660,27 +1660,27 @@ footer form button:focus {
   margin: -5rem 0rem -1rem 15rem;
 }
 
-.post-item:nth-child(3n-2) .headline {
+.collaborating .headline {
   background: linear-gradient(
     125deg,
     #bcb91d 0%,
-    #ff0c18 16.13%,
-    #00e895 51.09%
+    #ff0c18 46.13%,
+    #00e895 61.09%
   );
 }
 
-.post-item:nth-child(3n-1) .headline {
+.link .headline {
   background: linear-gradient(
-    90deg,
-    #cb0000 16.13%,
-    #0008b9 28.12%,
+    15deg,
+    #cb0000 36.13%,
+    #003bb9 48.12%,
     #00baba 67.24%
   );
 }
 
-.post-item:nth-child(3n) .headline {
+.codecollab .headline {
   background: linear-gradient(
-    90deg,
+    345deg,
     #a40fa4 53.26%,
     #06afaf 67.24%,
     #1a9809 84.02%,
@@ -1688,11 +1688,16 @@ footer form button:focus {
   );
 }
 
-.post-item:nth-child(n) .headline {
+.post-item:nth-child(n) .headline,
+#post .headline {
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.post-item:nth-child(n) .headline:hover {
+  opacity: 0.9;
 }
 
 .post-item-content {
@@ -1702,7 +1707,7 @@ footer form button:focus {
 }
 
 .post-item h2 {
-  font-size: 10rem;
+  font-size: 12rem;
   line-height: 0.8;
   font-weight: 700;
   padding-top: 1rem;
@@ -1732,6 +1737,7 @@ footer form button:focus {
 
 #post .headline {
   font-size: 18vw;
+  line-height: 80%;
   text-align: center;
 }
 
