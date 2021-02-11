@@ -1642,22 +1642,23 @@ footer form button:focus {
   margin: 8rem 0;
 }
 
-.post-item img {
+.post-item video {
   position: relative;
   z-index: -1;
   border-radius: 0.25rem;
+  width: 50vw;
 }
 
-.post-item:nth-child(3n-2) img {
+.collaborating video {
   margin: -3rem 0 -1rem -2rem;
 }
 
-.post-item:nth-child(3n-1) img {
+.link video {
   margin: -2rem 0 -1rem 5rem;
 }
 
-.post-item:nth-child(3n) img {
-  margin: -5rem 0rem -1rem 15rem;
+.codecollab video {
+  margin: -5rem 0rem -1rem 15vw;
 }
 
 .collaborating .headline {
@@ -1707,7 +1708,7 @@ footer form button:focus {
 }
 
 .post-item h2 {
-  font-size: 12rem;
+  font-size: 16vw;
   line-height: 0.8;
   font-weight: 700;
   padding-top: 1rem;
@@ -1722,7 +1723,6 @@ footer form button:focus {
 .post-item .meta > span {
   color: var(--color-foreground-level-6);
 }
-
 
 /* BLOG POSTS */
 
