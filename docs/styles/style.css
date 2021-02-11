@@ -1689,7 +1689,7 @@ footer form button:focus {
   );
 }
 
-.post-item:nth-child(n) .headline,
+.post-item .headline,
 #post .headline {
   background-clip: text;
   text-fill-color: transparent;
@@ -1697,7 +1697,7 @@ footer form button:focus {
   -webkit-text-fill-color: transparent;
 }
 
-.post-item:nth-child(n) .headline:hover {
+.post-item .headline:hover {
   opacity: 0.9;
 }
 
