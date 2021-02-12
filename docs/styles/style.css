@@ -1695,6 +1695,8 @@ footer form button:focus {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  mix-blend-mode: difference;
+  will-change: opacity;
 }
 
 .post-item .headline:hover {
