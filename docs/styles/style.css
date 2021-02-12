@@ -1710,7 +1710,6 @@ footer form button:focus {
 .post-item h2 {
   font-size: 16vw;
   line-height: 0.8;
-  font-weight: 700;
   padding-top: 1rem;
   text-align: center;
 }
@@ -1732,6 +1731,7 @@ footer form button:focus {
   margin: 0 auto 6rem;
   text-align: left;
 }
+
 #post .content > * {
   cursor: text;
 }
