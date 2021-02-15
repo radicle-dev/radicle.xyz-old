@@ -380,6 +380,7 @@ nav a.active span {
   position: relative;
   max-width: 100rem;
   margin: 10vw auto 0;
+  background: var(--color-foreground-level-1);
 }
 
 .features-gif {
