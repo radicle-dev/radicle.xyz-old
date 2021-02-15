@@ -1528,6 +1528,7 @@ footer form button:focus {
   max-width: 102rem;
   margin: 0 auto;
   padding: 0 2rem;
+  background: var(--color-foreground-level-1);
 }
 
 #download #text {
@@ -1639,6 +1640,7 @@ footer form button:focus {
   margin: 0 auto;
   text-align: left;
   cursor: text;
+  background: var(--color-foreground-level-1);
 }
 
 #blog .overview {
@@ -1650,8 +1652,6 @@ footer form button:focus {
 }
 
 .post-item video {
-  position: relative;
-  z-index: -1;
   border-radius: 0.25rem;
   width: 50vw;
 }
@@ -1702,8 +1702,6 @@ footer form button:focus {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  mix-blend-mode: difference;
-  will-change: opacity;
 }
 
 .post-item .headline:hover {
@@ -1711,6 +1709,8 @@ footer form button:focus {
 }
 
 .post-item-content {
+  position: relative;
+  z-index: 1;
   padding: 2rem 2rem;
   border-radius: 1rem;
   background: var(--color-background);
@@ -1740,7 +1740,6 @@ footer form button:focus {
   margin: 0 auto 6rem;
   text-align: left;
 }
-
 #post .content > * {
   cursor: text;
 }
