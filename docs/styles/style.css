@@ -1724,6 +1724,15 @@ footer form button:focus {
   text-align: center;
 }
 
+@media only screen and (min-width: 90rem) {
+  .post-item h2 {
+    font-size: 9vw;
+  }
+  .post-item video {
+    width: 35vw;
+  }
+}
+
 .post-item .meta {
   padding-bottom: 1rem;
   color: var(--color-foreground-level-5);
