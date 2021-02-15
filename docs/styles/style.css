@@ -1095,42 +1095,18 @@ nav a.active span {
   .line {
     left: 0.7rem;
     width: 0.0625rem;
-    height: 25.8rem;
+    height: 100%;
     top: 4rem;
     background: linear-gradient(
-      0deg,
       #5555ff,
       #55ffff,
       #55ff55,
       #ffff55,
       #ff5555,
       #ff55ff,
-      #5555ff
+      #5555ff,
+      #5555ff00 90%
     );
-  }
-}
-
-@media only screen and (max-width: 29.625rem) {
-  .line {
-    height: 27.3rem;
-  }
-}
-
-@media only screen and (max-width: 24rem) {
-  .line {
-    height: 27rem;
-  }
-}
-
-@media only screen and (max-width: 23rem) {
-  .line {
-    height: 28.5rem;
-  }
-}
-
-@media only screen and (max-width: 22.375rem) {
-  .line {
-    height: 32rem;
   }
 }
 
