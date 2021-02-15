@@ -37,6 +37,13 @@ svg {
   color: var(--color-background);
 }
 
+input[type="email"],
+input[type="text"] {
+  /*Remove the default browser styles*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 input[type="email"] {
   padding: 0 0 0 0.5rem;
   border-radius: 0.5rem;
