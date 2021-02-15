@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Druk X";
-  src: url("../fonts/Druk-XCondSuper.otf");
+  src: url("/fonts/Druk-XCondSuper.otf");
 }
 
 :root {
@@ -61,7 +61,7 @@ h3 {
 }
 
 li {
-	line-height: 24px;
+  line-height: 24px;
 }
 
 .druk {

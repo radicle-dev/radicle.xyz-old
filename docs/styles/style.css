@@ -657,7 +657,7 @@ nav a.active span {
 }
 
 .attribute:nth-child(2) .screenshot {
-  background-image: url(../img/ui/timeline.png);
+  background-image: url(/img/ui/timeline.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -700,7 +700,7 @@ nav a.active span {
 }
 
 .attribute:nth-child(4) .screenshot {
-  background-image: url(../img/ui/outgoing-support.png);
+  background-image: url(/img/ui/outgoing-support.png);
   background-position: 0rem 7rem;
   background-size: 90%;
 }
