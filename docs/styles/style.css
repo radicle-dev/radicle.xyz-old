@@ -1804,16 +1804,6 @@ blockquote {
   color: var(--color-foreground-level-6);
 }
 
-#post dl {
-  margin-left: -0.75em;
-}
-
-#post ol,
-#post ul {
-  list-style-position: inside;
-  text-indent: -0.75em;
-}
-
 #post dd {
   line-height: 150%;
 }
