@@ -90,5 +90,6 @@ a:active,
 a:focus {
   outline: 0;
   border: none;
+  outline-style: none;
   -moz-outline-style: none;
 }

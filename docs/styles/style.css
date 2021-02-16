@@ -250,7 +250,6 @@ nav a.active span {
   color: #000;
   mix-blend-mode: exclusion;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -462,7 +461,6 @@ nav a.active span {
   color: #000;
   mix-blend-mode: exclusion;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 8rem;
@@ -770,7 +768,6 @@ nav a.active span {
   color: #000;
   mix-blend-mode: exclusion;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
@@ -1016,7 +1013,6 @@ nav a.active span {
   color: #000;
   mix-blend-mode: difference;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
@@ -1496,7 +1492,6 @@ footer form button:focus {
     #0555b3 59.04%
   );
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1510,7 +1505,6 @@ footer form button:focus {
 #download .headline {
   background: linear-gradient(90.23deg, #ff0000 35.8%, #0517b3 46.14%);
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1700,7 +1694,6 @@ footer form button:focus {
 .post-item .headline,
 #post .headline {
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1806,9 +1799,19 @@ blockquote {
 }
 
 #post dl,
-ol,
-ul {
+#post ol,
+#post ul {
   color: var(--color-foreground-level-6);
+}
+
+#post dl {
+  margin-left: -0.75em;
+}
+
+#post ol,
+#post ul {
+  list-style-position: inside;
+  text-indent: -0.75em;
 }
 
 #post dd {
