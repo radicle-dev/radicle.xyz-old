@@ -126,7 +126,8 @@ header nav a:last-child {
   margin-right: 0.5rem;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   text-decoration: none;
   color: var(--color-secondary);
 }
@@ -135,7 +136,8 @@ nav a span {
   border: none;
 }
 
-nav a:hover span {
+nav a:hover span,
+nav a.active span {
   border-bottom: 0.125rem solid;
 }
 
@@ -248,7 +250,6 @@ nav a:hover span {
   color: #000;
   mix-blend-mode: exclusion;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -378,6 +379,7 @@ nav a:hover span {
   position: relative;
   max-width: 100rem;
   margin: 10vw auto 0;
+  background: var(--color-foreground-level-1);
 }
 
 .features-gif {
@@ -459,7 +461,6 @@ nav a:hover span {
   color: #000;
   mix-blend-mode: exclusion;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 8rem;
@@ -654,7 +655,7 @@ nav a:hover span {
 }
 
 .attribute:nth-child(2) .screenshot {
-  background-image: url(../img/ui/timeline.png);
+  background-image: url(/img/ui/timeline.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -697,7 +698,7 @@ nav a:hover span {
 }
 
 .attribute:nth-child(4) .screenshot {
-  background-image: url(../img/ui/outgoing-support.png);
+  background-image: url(/img/ui/outgoing-support.png);
   background-position: 0rem 7rem;
   background-size: 90%;
 }
@@ -767,7 +768,6 @@ nav a:hover span {
   color: #000;
   mix-blend-mode: exclusion;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
@@ -1013,7 +1013,6 @@ nav a:hover span {
   color: #000;
   mix-blend-mode: difference;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
@@ -1493,7 +1492,6 @@ footer form button:focus {
     #0555b3 59.04%
   );
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1507,7 +1505,6 @@ footer form button:focus {
 #download .headline {
   background: linear-gradient(90.23deg, #ff0000 35.8%, #0517b3 46.14%);
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1526,6 +1523,7 @@ footer form button:focus {
   max-width: 102rem;
   margin: 0 auto;
   padding: 0 2rem;
+  background: var(--color-foreground-level-1);
 }
 
 #download #text {
@@ -1637,17 +1635,95 @@ footer form button:focus {
   margin: 0 auto;
   text-align: left;
   cursor: text;
+  background: var(--color-foreground-level-1);
 }
 
 #blog .overview {
   margin-top: 2.5rem;
 }
 
+.post-item {
+  margin: 8rem 0;
+}
+
+.post-item video {
+  border-radius: 0.25rem;
+  width: 50vw;
+}
+
+.collaborating video {
+  margin: -3rem 0 -1rem -2rem;
+}
+
+.link video {
+  margin: -2rem 0 -1rem 5rem;
+}
+
+.codecollab video {
+  margin: -5rem 0rem -1rem 15vw;
+}
+
+.collaborating .headline {
+  background: linear-gradient(
+    125deg,
+    #bcb91d 0%,
+    #ff0c18 46.13%,
+    #00e895 61.09%
+  );
+}
+
+.link .headline {
+  background: linear-gradient(
+    15deg,
+    #cb0000 36.13%,
+    #003bb9 48.12%,
+    #00baba 67.24%
+  );
+}
+
+.codecollab .headline {
+  background: linear-gradient(
+    345deg,
+    #a40fa4 53.26%,
+    #06afaf 67.24%,
+    #1a9809 84.02%,
+    #9e9f1b 100%
+  );
+}
+
+.post-item .headline,
+#post .headline {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.post-item .headline:hover {
+  opacity: 0.9;
+}
+
+.post-item-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  background: var(--color-background);
+}
+
 .post-item h2 {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-weight: 700;
+  font-size: 16vw;
+  line-height: 0.8;
   padding-top: 1rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 90rem) {
+  .post-item h2 {
+    font-size: 9vw;
+  }
+  .post-item video {
+    width: 35vw;
+  }
 }
 
 .post-item .meta {
@@ -1657,21 +1733,6 @@ footer form button:focus {
 
 .post-item .meta > span {
   color: var(--color-foreground-level-6);
-}
-
-.post-item .read-more button {
-  background-color: var(--color-foreground-level-3);
-  color: var(--color-foreground-level-6);
-  border: none;
-  margin: 1rem 0 2rem;
-}
-
-.post-item .read-more button:hover {
-  background-color: var(--color-foreground-level-2);
-}
-
-.post-item .read-more button:active {
-  color: var(--color-foreground-level-5);
 }
 
 /* BLOG POSTS */
@@ -1688,6 +1749,7 @@ footer form button:focus {
 
 #post .headline {
   font-size: 18vw;
+  line-height: 80%;
   text-align: center;
 }
 
@@ -1706,6 +1768,12 @@ footer form button:focus {
 
 #post .content #post-container li {
   margin-bottom: 0.5rem;
+}
+
+#post .content #post-container .meta {
+  text-align: center;
+  margin: 0 0 2.5rem;
+  display: block;
 }
 
 #post h2 {
@@ -1731,9 +1799,19 @@ blockquote {
 }
 
 #post dl,
-ol,
-ul {
+#post ol,
+#post ul {
   color: var(--color-foreground-level-6);
+}
+
+#post dl {
+  margin-left: -0.75em;
+}
+
+#post ol,
+#post ul {
+  list-style-position: inside;
+  text-indent: -0.75em;
 }
 
 #post dd {

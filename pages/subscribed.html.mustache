@@ -1,13 +1,16 @@
 <!doctype html>
 <html>
-{{> head }}
+<head>
+  <title key="title">Radicle - Subscribed</title>
+  {{> headMeta }}
+</head>
 <body id="index">
   <div class="overflow-killer">
     {{> header }}
     <div class="content">
       <section id="headline">
-        <video class="headline-gif gif" autoplay loop muted title="Animation of a flower growing.">
-          <source type="video/mp4" src="./img/header-flower.mp4">
+        <video class="headline-gif gif" autoplay playsinline loop muted title="Animation of a flower growing.">
+          <source type="video/mp4" src="/img/header-flower.mp4">
         </video>
         <h1 class="headline druk">Subscribed.</h1>
         <h2>We’ve just sent you an email.</h2>

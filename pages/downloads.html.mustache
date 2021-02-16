@@ -1,12 +1,14 @@
 <!doctype html>
 <html>
-{{> head }}
+<head>
+  <title key="title">Radicle - Downloads</title>
+  {{> headMeta }}
+</head>
 <body id="download">
   {{> header }}
-
   <div class="content">
-    <video class="headline-gif gif" autoplay loop muted title="Animation of a flower growing.">
-      <source type="video/mp4" src="./img/download-flower.mp4">
+    <video class="headline-gif gif" autoplay playsinline loop muted title="Animation of a flower growing.">
+      <source type="video/mp4" src="/img/download-flower.mp4">
     </video>
     <h1 class="headline druk">Try the beta</h1>
     <div id="text">
@@ -19,7 +21,11 @@
       <a href="https://releases.radicle.xyz/radicle-upstream-0.1.10.AppImage">
         <button>{{> svg-linux }} Download for Linux</button>
       </a>
-      <form action="mailto:?subject=Download%20the%20Radicle%20app&amp;body=When%20you%20get%20back%20to%20your%20computer%20&#44;%20download%20the%20app%20here:%20www.radicle.xyz/downloads.html">
+      <form
+        action="mailto:?subject=Download the Radicle app&body=When you get back to your computer download the app here: www.radicle.xyz/downloads.html"
+        method="POST"
+        enctype="text/plain"
+      >
         <button id="email-me">{{> svg-email }} Email me a link</button>
       </form>
     </div>

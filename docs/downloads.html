@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
 <head>
-  <title key="title">radicle</title>
+  <title key="title">Radicle - Downloads</title>
   <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/style.css" />
   <meta http-equiv="content-type" content="text/html;charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" />
@@ -30,17 +30,16 @@
       </svg>
     </a>
     <nav>
-      <a href="/blog"><span>Blog</span> ↗</a>
+      <a href="/blog"><span>Blog</span></a>
       <a href="https://docs.radicle.xyz" target="_blank"><span>Docs</span> ↗</a>
       <a href="https://radicle.community" target="_blank"><span>Community</span> ↗</a>
       <a href="https://github.com/radicle-dev" target="_blank"><span>Code</span> ↗</a>
       <a class="try-it" href="/downloads.html"><span>Try it</span> ↓</a>
     </nav>
   </header>
-
   <div class="content">
-    <video class="headline-gif gif" autoplay loop muted title="Animation of a flower growing.">
-      <source type="video/mp4" src="./img/download-flower.mp4">
+    <video class="headline-gif gif" autoplay playsinline loop muted title="Animation of a flower growing.">
+      <source type="video/mp4" src="/img/download-flower.mp4">
     </video>
     <h1 class="headline druk">Try the beta</h1>
     <div id="text">
@@ -60,7 +59,11 @@
                 </svg>
  Download for Linux</button>
       </a>
-      <form action="mailto:?subject=Download%20the%20Radicle%20app&amp;body=When%20you%20get%20back%20to%20your%20computer%20&#44;%20download%20the%20app%20here:%20www.radicle.xyz/downloads.html">
+      <form
+        action="mailto:?subject=Download the Radicle app&body=When you get back to your computer download the app here: www.radicle.xyz/downloads.html"
+        method="POST"
+        enctype="text/plain"
+      >
         <button id="email-me"> Email me a link</button>
       </form>
     </div>
