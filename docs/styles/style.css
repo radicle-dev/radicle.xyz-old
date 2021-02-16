@@ -1717,7 +1717,7 @@ footer form button:focus {
   text-align: center;
 }
 
-@media only screen and (min-width: 90rem) {
+@media only screen and (min-width: 91rem) {
   .post-item h2 {
     font-size: 9vw;
   }
