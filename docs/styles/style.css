@@ -1802,6 +1802,18 @@ blockquote {
 #post ol,
 #post ul {
   color: var(--color-foreground-level-6);
+  margin-left: 2rem;
+}
+
+#post ul,
+#post dt {
+  display: list-item;
+  list-style-type: disc;
+}
+
+#post ol,
+#post dl.numbers > dt {
+  list-style-type: decimal;
 }
 
 #post dd {
@@ -1816,7 +1828,6 @@ blockquote {
 }
 
 #post dd {
-  padding-left: 1rem;
   padding-bottom: 0.5rem;
 }
 
