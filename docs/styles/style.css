@@ -1820,6 +1820,11 @@ blockquote {
   padding-bottom: 0.5rem;
 }
 
+#post img {
+  width: 80vw;
+  max-width: 45rem;
+}
+
 #post .ascii,
 pre.code {
   font-family: monospace;
