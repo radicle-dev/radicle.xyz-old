@@ -3,6 +3,11 @@
 <head>
   <title key="title">Collaborating on Radicle</title>
   {{> headMeta }}
+  <meta property="og:title" content="Radicle Blog - Collaborating on Radicle" />
+  <meta property="og:image" content="https://radicle.xyz/img/social-share.jpg" />
+  <meta property="twitter:image" content="https://radicle.xyz/img/social-share.jpg" />
+  <meta property="og:description" content="This is a post on Radicle, a peer-to-peer stack for code collaboration. When coming to Radicle from a centralized code collaboration network like GitHub or Gitlab, users might be puzzled by Radicle's unique social model at first. In contrast to centralized code collaboration platforms, on Radicle… " />
+  <meta property="description" content="This is a post on Radicle, a peer-to-peer stack for code collaboration. When coming to Radicle from a centralized code collaboration network like GitHub or Gitlab, users might be puzzled by Radicle's unique social model at first. In contrast to centralized code collaboration platforms, on Radicle… " />
 </head>
 <body id="post">
   <div class="overflow-killer">
@@ -13,7 +18,7 @@
           Collaborating on Radicle
         </h1>
         <p class="subtitle">
-            Understanding the Radicle social model
+          Understanding the Radicle social model
         </p>
       </section>
       <div id="post-container">
@@ -25,10 +30,10 @@
           platforms, on Radicle:
         </p>
         <ol>
-          <li>1. Peers are in control of their social interactions</li>
-          <li>2. Each peer effortlessly self hosts their own content and the
+          <li>Peers are in control of their social interactions</li>
+          <li>Each peer effortlessly self hosts their own content and the
           content of the peers they follow that they are interested in</li>
-          <li>3. Peers have subjective views over the projects they follow</li>
+          <li>Peers have subjective views over the projects they follow</li>
         </ol>
         <p>
           This post attempts to contextualize the Radicle social model, the
@@ -40,10 +45,10 @@
           In most Web2 social networks:
         </p>
         <ul>
-          <li>• Your content is global by default</li>
-          <li>• Your service provider is in control of your content (what you
+          <li>Your content is global by default</li>
+          <li>Your service provider is in control of your content (what you
           post), your identity, and your access</li>
-          <li>• Your service provider is in control of your social interactions.
+          <li>Your service provider is in control of your social interactions.
           Practically, this means your service provider can determine what is
           spam and who you are allowed to interact with.</li>
         </ul>
@@ -51,10 +56,10 @@
           In exchange you get:
         </p>
         <ul>
-          <li>• A “privately owned public space”, where you can discover &
+          <li>A “privately owned public space”, where you can discover &
           interact with any public piece of content or user on the network, as
           long as it is allowed by your service provider.</li>
-          <li>• Convenience, as spam filtering & content moderation is mostly done
+          <li>Convenience, as spam filtering & content moderation is mostly done
           for you (email and gmail are the best example of spam filtering, while
           the global feeds of Facebook and Twitter are examples of content
           moderation at scale)</li>
@@ -72,9 +77,9 @@
           In contrast to the common Web2 model of collaboration described above, Radicle prioritizes different concerns:
         </p>
         <ul>
-          <li>• People being in control of their identity</li>
-          <li>• People being in control of their content</li>
-          <li>• People being in control of their social interactions</li>
+          <li>People being in control of their identity</li>
+          <li>People being in control of their content</li>
+          <li>People being in control of their social interactions</li>
         </ul>
         <p>
           <em>You can read more about why we consider these concerns a priority
@@ -108,9 +113,9 @@
           In Radicle:
         </p>
         <ul>
-          <li>• Peers follow other peers.</li>
-          <li>• Peers track projects they are interested in.</li>
-          <li>• Peers gossip about projects. This means tracking and replicating
+          <li>Peers follow other peers.</li>
+          <li>Peers track projects they are interested in.</li>
+          <li>Peers gossip about projects. This means tracking and replicating
           objects from the peers they follow, about the projects they are
           interested in.</li>
         </ul>
@@ -134,7 +139,7 @@
           The way Radicle Link disseminates data has certain implications for the end-user experience:
         </p>
         <dl>
-          <dt>• Your social graph determines what type of content you see,
+          <dt>Your social graph determines what type of content you see,
           interact with, and replicate</dt>
           <dd>
             Assuming you have discovered a project of interest within the
@@ -151,7 +156,7 @@
             shall also transitively track those, up to a configurable N degrees
             out (currently in the works).
           </dd>
-          <dt>• Spam and content moderation is naturally handled by the peer’s social graph</dt>
+          <dt>Spam and content moderation is naturally handled by the peer’s social graph</dt>
           <dd>
             While this might appear confusing at first, self-moderation is a far
             more natural model for moderation as it actually mimics real-life
@@ -168,7 +173,7 @@
             and ensures you (or your connected peers!) don’t have to view and
             interact with their data.
           </dd>
-          <dt>• Within the same project, two peers might have diverging views</dt>
+          <dt>Within the same project, two peers might have diverging views</dt>
           <dd>
             The above design also means that even within the same project, peers
             have subjective (and often diverging) views.
@@ -216,7 +221,7 @@
           we’ve introduced two additional concepts:
         </p>
         <dl>
-          <dt>• Seed nodes</dt>
+          <dt>Seed nodes</dt>
             <dd>
               Seed nodes are always-on nodes that ensure data-availability in
               the network by serving content over the gossip protocol. Anyone
@@ -229,7 +234,7 @@
               shared “home servers” (a la fediverse), commercial services,
               pinning nodes and more.
             </dd>
-          <dt>• An Ethereum-based registry</dt>
+          <dt>An Ethereum-based registry</dt>
             <dd>
               To complement the replication layer we designed an opt-in registry
               which holds canonical project metadata. This allows projects to

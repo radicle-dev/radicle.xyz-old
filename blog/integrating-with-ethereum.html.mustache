@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+  <title key="title">Integrating with Ethereum</title>
+  {{> headMeta }}<meta property="og:title" content="Radicle Blog - Integrating with Ethereum" />
+  <meta property="og:image" content="https://radicle.xyz/img/social-share.jpg" />
+  <meta property="twitter:image" content="https://radicle.xyz/img/social-share.jpg" />
+  <meta property="og:description" content="Today, we've deployed the first part of our Ethereum integration, an opt-in layer that complements the Radicle peer-to-peer network. Our Ethereum integration is…" />
+  <meta property="description" content="Today, we've deployed the first part of our Ethereum integration, an opt-in layer that complements the Radicle peer-to-peer network. Our Ethereum integration is…" />
+</head>
+<body id="post">
+  <div class="overflow-killer">
+   {{> header }}
+    <div class="content">
+      <section id="headline" class="integrating">
+        <h1 class="headline druk">
+          Integrating with Ethereum
+        </h1>
+        <p class="subtitle"> </p>
+      </section>
+      <div id="post-container">
+        <p class="meta">by <a href="https://twitter.com/abbey_titcomb" target="_blank">@abbey_titcomb</a> • <span>February 17th, 2021</span></p>
+        <h3>
+         Today, we've deployed the first part of our Ethereum integration, an opt-in layer that complements the Radicle peer-to-peer network. Our Ethereum integration is a set of open protocols that enable unique global names, decentralized organizations, and experiences that help maintainers sustain their open-source work.
+        </h3>
+        <p>
+          The Web3 movement is about to transition from an internet controlled by centralized platforms to an internet powered by decentralized protocols. Yet, while the Web3 ecosystem continues to grow, most decentralized projects still maintain a strong reliance on centralized hosting platforms (e.g. GitHub or GitLab) for the production and distribution of their code. This subjects projects to censorship, introduces numerous security risks & attack vectors, forces centralized admin models on decentralized communities, and only increases our dependence on platform providers and corporations.
+        </p>
+        <p>
+          We think of Radicle as a fundamental part of the emerging Web3 stack. It enables protocols, applications, and organizations to build on truly decentralized infrastructure, further contributing to the resilience of Web3.
+        </p>
+        <p>
+          With our newly developed Ethereum integration — a set of open-source smart contracts — Radicle aims to harness the power of Ethereum and DeFi to give developers a way to own their collaboration infrastructure. It will give Radicle users the ability to link their Radicle identity to an Ethereum account through the Radicle Upstream client. 
+        </p>
+        <img src="/img/eth-post/attestation@2x.png" alt="An image that shows a peer linking it's wallet to it's peerID">
+        <p>
+          We’ve designed the integration to be opt-in, pluggable, and hackable. We believe it's important to give users who are not interested in Ethereum the option to use Radicle without it. Moreover, the users who do opt-in to the Ethereum integration are actually supporting the overall sustainability of the network, enabling it to remain a resilient, open-source, and decentralized network for all users, forever.
+        </p>
+        <h2>What’s coming with Ethereum</h2>
+        <p>
+          Building on Ethereum unlocks numerous features for Radicle users. Here are a couple that we’re releasing over the next couple of months:
+        </p>
+        <h3>🌐 Global names</h3>
+        <p>
+          Today's hosted platforms benefit from the network effects that come with centralized server-side data hosting. Peer-to-peer systems lack this global namespace and the discoverability that comes with it. In Radicle, you'll be able to register unique names with our ENS registrar, under the <b>radicle.eth</b> domain (e.g. cloudhead.radicle.eth) for your profile or organization. This will be a name that other users can use to recognize you not only within the Radicle network, but also the global Ethereum network. These names are interoperable and self-sovereign usernames that resolve to an Ethereum address.
+        </p>
+        <p>
+          <em>
+          The Radicle Registrar can be found at <a href="https://etherscan.io/address/0x37723287Ae6F34866d82EE623401f92Ec9013154">0x37723287Ae6F34866d82EE623401f92Ec9013154</a> on Ethereum Mainnet 🥳
+          </em>
+        </p>
+        <h3>💸 Radicle Funding</h3>
+        <p>
+          Today, we’ve deployed the first of our generalized funding protocols on testnet, designed to give developers new ways to sustain their open-source work. Using the decentralized financial infrastructure of Ethereum, it enables users to create and program continuous funding streams.
+        </p>
+        <p>
+          Behind the scenes, the protocol allows users to commit funds and stream payments in regular intervals to any number of Ethereum accounts using any ERC-20 token. This gives users a way to continuously support their favorite open-source projects by setting a <a href="https://colinhacks.com/essays/a-new-funding-model-for-open-source-software">recurring budget</a> or stream funds to <a href="https://github.com/sindresorhus/awesome">curated registries</a> of people and projects on the network.
+        </p>
+        <p>
+          <em>
+          Token streams can be found at <a href="https://etherscan.io/address/0xEc5bfca987C5FAA6d394044793f0aD6C9A85Da76">0xEc5bfca987C5FAA6d394044793f0aD6C9A85Da76</a> on Ropsten testnet  👀
+          </em>
+        </p>
+        <img src="/img/eth-post/stream@2x.png" alt="An image that shows a user confirming the people they want to stream funds to">
+        <img src="/img/eth-post/pools@2x.png" alt="An image that shows a users' pools they are sending money to">
+        <h3>🤝 Decentralized Orgs</h3>
+        <p>
+          Easily managing a group of repositories with organizations has become commonplace in our day-to-day code collaboration experience. Unfortunately, when restrained by the social model of centralized forges, organizations come with limitations. The admin model based on a single user with privileged access over the organization and its members is a significant limiting factor to projects and collectives that operate within non-hierarchical structures. It also poses challenges around security and trust, especially for communities organized over the internet.
+        </p>
+        <p>
+          On Radicle, organizations rely on smart contracts instead of admins. These contracts allow you to define the rules and permissions around codebases in a trustless manner. If you already have a DAO or multi-sig on Ethereum, you'll be able to link it to a Radicle Org. If you don't, you’ll be able to create one from within Radicle, leveraging the countless DAO models that exist on Ethereum today.
+        </p>
+        <p>
+          With Radicle Orgs, projects can maintain an auditable and transparent history of project state on-chain. This enables new workflows around your main branch that is now anchored and secured on Ethereum. These can be used to trigger off-chain actions like the distribution of developer rewards, software releases, or any job you’d like.
+        </p>
+        <p>
+          By framing DAOs and multi-sigs in the context of code collaboration, Radicle brings decentralized organizations to the mainstream developer, allowing anyone to decentralize control over their codebase in a trust-minimized way.
+        </p>
+        <p>
+          <em>
+            Radicle Orgs will be deployed on testnet soon ✨
+          </em>
+        </p>
+        <img src="/img/eth-post/orgs@2x.png" alt="An image that shows the org view in the upstream app">
+        <h2>Why Ethereum?</h2>
+        <p>
+          We chose Ethereum for a couple of reasons:
+        </p>
+        <ol>
+          <li>It has the largest and most engaged community of developers building decentralized technologies - who are also interested in Radicle!</li>
+          <li>It has the richest ecosystem around decentralized autonomous organizations and funding protocols, which is important for the adoption of Radicle Orgs and Radicle Funding.</li>
+          <li>It gives Radicle access to stablecoins and comes with the most mature wallet and decentralized exchange infrastructure.</li>
+        </ol>
+        <p>
+          While we acknowledge the current limitations of Ethereum due to gas fees and their impact on accessibility, we believe in the numerous L2 solutions that are in development in the ecosystem. We’re actively exploring solutions to ensure the accessibility and usability of our Ethereum features. Finally, building on Ethereum also puts us in the best place to integrate with other L1 protocols in the future.
+        </p>
+        <h2>Introducing the Radicle Token</h2>
+        <p>
+          With the release of Radicle's native governance token, ownership and control of Radicle’s Ethereum integration is now decentralized amongst it's community. The network’s code and treasury are now publicly managed, allowing any developer to contribute to and influence the direction of the project, making Radicle an experiment in collective governance. <a href="https://radicle.xyz/blog/introducing-rad.html">Read more about the Radicle token</a>.
+        </p>
+        <p>
+          Radicle is now the first open-source, community-led, and self-sustaining network for software collaboration 🌱
+        </p>
+
+        <p>
+          <em>
+          Drop in to our <a href="https://matrix.to/#/#general:radicle.community">Matrix channel</a> or Telegram channel (<a href="https://t.me/radicleworld">@radicleworld</a>) to discuss all things Ethereum.
+          </em>
+        </p>
+        <p>
+          <em>
+          Join our community forum, <a href="https://radicle.community/">radicle.community</a>, to discuss Radicle development.
+          </em>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
