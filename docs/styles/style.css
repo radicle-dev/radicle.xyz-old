@@ -1923,3 +1923,9 @@ pre.code {
   max-width: 13rem;
   height: auto;
 }
+
+@media only screen and (max-width: 80rem) {
+  .post-item video {
+    margin-top: -1rem;
+  }
+}
