@@ -1663,6 +1663,14 @@ footer form button:focus {
   margin: -5rem 0rem -1rem 15vw;
 }
 
+.rad video {
+  margin: -5rem 0rem -1rem 15vw;
+}
+
+.integrating video {
+  margin: -3rem 0 -1rem -2rem;
+}
+
 .collaborating .headline {
   background: linear-gradient(
     125deg,
@@ -1672,12 +1680,30 @@ footer form button:focus {
   );
 }
 
+.integrating .headline {
+  background: linear-gradient(
+    90deg,
+    #1115fc 0%,
+    #0cfff3 46.13%,
+    #42e800 61.09%
+  );
+}
+
 .link .headline {
   background: linear-gradient(
     15deg,
     #cb0000 36.13%,
     #003bb9 48.12%,
-    #00baba 67.24%
+    #00baba 87.24%
+  );
+}
+
+.rad .headline {
+  background: linear-gradient(
+    175deg,
+    #4acb00 0%,
+    #9400b9 48.12%,
+    #eeb805 67.24%
   );
 }
 
