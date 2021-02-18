@@ -1909,3 +1909,17 @@ pre.code {
     line-height: 0.85;
   }
 }
+
+#fireworks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fireworks svg {
+  position: absolute;
+  margin-top: -0.5rem;
+  width: 20%;
+  max-width: 13rem;
+  height: auto;
+}
