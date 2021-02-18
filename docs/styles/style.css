@@ -1666,6 +1666,7 @@ ul {
 
 #post-container video {
   border-radius: 0.25rem;
+  width: 100%;
 }
 
 .collaborating video {
