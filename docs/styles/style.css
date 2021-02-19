@@ -653,8 +653,11 @@ nav a.active span {
   .attribute:nth-child(1) .screenshot img {
     width: 94%;
     margin-bottom: -4.5rem;
-    z-index: -1;
     margin-right: -5.3vw;
+  }
+
+  .attribute .content {
+    z-index: 1;
   }
 }
 
@@ -696,8 +699,10 @@ nav a.active span {
   .attribute:nth-child(3) .screenshot img {
     width: 97%;
     margin-bottom: 3rem;
-    z-index: -1;
     margin-right: -5.4vw;
+  }
+  .attribute .content {
+    z-index: 1;
   }
 }
 
