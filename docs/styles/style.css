@@ -1660,6 +1660,13 @@ footer form button:focus {
   width: 50vw;
 }
 
+#post-container.xl-images img {
+  transform: scale(1.4);
+  padding: 5vw 0;
+  pointer-events: none;
+  margin-bottom: 0;
+}
+
 #post-container video {
   border-radius: 0.25rem;
   width: 100%;
@@ -1691,6 +1698,18 @@ footer form button:focus {
     #bcb91d 0%,
     #ff0c18 46.13%,
     #00e895 61.09%
+  );
+}
+
+.seeders .headline {
+  background: linear-gradient(
+    180deg,
+    #ffff00 0%,
+    #ff000d 19.27%,
+    #ab23ab 39.58%,
+    #004cff 60.42%,
+    #00a2a9 79.69%,
+    #00ff08 100%
   );
 }
 
