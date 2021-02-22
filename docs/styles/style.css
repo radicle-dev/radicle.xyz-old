@@ -1676,7 +1676,8 @@ footer form button:focus {
   margin: -3rem 0 -1rem -2rem;
 }
 
-.link video {
+.link video,
+.seeders video {
   margin: -2rem 0 -1rem 5rem;
 }
 
@@ -1953,7 +1954,6 @@ pre.code {
     margin-top: -1rem;
   }
 }
-
 #post .twitter-tweet {
   margin: 0 auto;
 }
