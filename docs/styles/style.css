@@ -1934,3 +1934,7 @@ pre.code {
     margin-top: -1rem;
   }
 }
+
+#post .twitter-tweet {
+  margin: 0 auto;
+}
