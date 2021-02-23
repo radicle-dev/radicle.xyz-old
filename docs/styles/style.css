@@ -1353,6 +1353,7 @@ nav a.active span {
   padding: 1rem 1.2rem;
   border-radius: 1rem;
   margin-top: 3vw;
+  position: relative;
 }
 
 /* FOOTER */
