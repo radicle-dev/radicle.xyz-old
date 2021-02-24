@@ -1347,6 +1347,10 @@ nav a.active span {
   -webkit-background-clip: text;
 }
 
+#terms br {
+  margin-bottom: 0 !important;
+}
+
 #disclaimer {
   background: var(--color-background);
   color: var(--color-foreground-level-6);
