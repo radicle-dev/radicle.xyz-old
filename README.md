@@ -1,6 +1,6 @@
 # The [radicle.xyz](https://radicle.xyz) website
 
-This is the repository of the radicle.xyz website.
+This is the repository of the [radicle.xyz](https://radicle.xyz) website.
 
 # Contribution Guide
 
