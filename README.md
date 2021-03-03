@@ -1,7 +1,6 @@
 # The [radicle.xyz](https://radicle.xyz) website
 
-This repository is where the source code for [radicle.xyz](https://radicle.xyz)
-has been stored.
+This is the repository of the radicle.xyz website.
 
 # Contribution Guide
 
