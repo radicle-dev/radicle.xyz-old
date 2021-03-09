@@ -1217,7 +1217,7 @@ nav a.active span {
 }
 
 .not-active .icon svg {
-  margin-left: -9px;
+  margin-left: -0.5625rem;
 }
 
 .date {
