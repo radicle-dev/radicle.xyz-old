@@ -1216,6 +1216,10 @@ nav a.active span {
   opacity: 0;
 }
 
+.not-active .icon svg {
+  margin-left: -9px;
+}
+
 .date {
   color: var(--color-foreground);
 }
