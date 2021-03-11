@@ -1096,7 +1096,7 @@ nav a.active span {
     left: 0.7rem;
     width: 0.0625rem;
     height: 100%;
-    top: 4rem;
+    top: 3.1rem;
     background: linear-gradient(
       #5555ff,
       #55ffff,
@@ -1218,6 +1218,12 @@ nav a.active span {
 
 .not-active .icon svg {
   margin-left: -0.5625rem;
+}
+
+@media only screen and (max-width: 30rem) {
+  .not-active .icon svg {
+    margin-left: 0;
+  }
 }
 
 .date {
