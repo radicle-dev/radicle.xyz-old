@@ -23,7 +23,7 @@ to set up Python's http server on your computer.
 - The website is to be served from the `docs/` directory.
 - `index.html` will serve as the entry point.
 
-Run the following commands to start the server and serve the website on your `locahost`:
+Run the following commands to start the server and serve the website on your `localhost`:
 
 ```bash
 # Assuming you are already in the project directory
