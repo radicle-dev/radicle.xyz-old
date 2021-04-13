@@ -340,8 +340,13 @@ nav a.active span {
   }
 
   .email-signup a.main-cta {
-    height: 2rem;
+    display: inline-block;
+    padding: .5rem;
     background: var(--color-primary);
+    font-weight: bold;
+    color: var(--color-background);
+    margin-left: .5rem;
+    border-radius: .5rem;
   }
 }
 
