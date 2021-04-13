@@ -341,7 +341,7 @@ nav a.active span {
 
   .email-signup a.main-cta {
     display: inline-block;
-    padding: .5rem;
+    padding: .5rem .75rem;
     background: var(--color-primary);
     font-weight: bold;
     color: var(--color-background);
