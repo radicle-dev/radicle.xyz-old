@@ -335,17 +335,13 @@ nav a.active span {
 
 @media only screen and (max-width: 80rem) {
   .email-signup p,
-  .email-signup button,
-  .email-signup .main-cta > input[type="email"] {
+  .email-signup a.main-cta {
     font-size: 1rem;
   }
 
-  .email-signup .main-cta > input[type="email"],
-  .email-signup button {
+  .email-signup a.main-cta {
     height: 2rem;
-  }
-  .email-signup .main-cta > input[type="email"] {
-    width: 10.75rem;
+    background: var(--color-primary);
   }
 }
 
