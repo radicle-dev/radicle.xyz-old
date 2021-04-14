@@ -283,98 +283,63 @@ nav a.active span {
 
 /* GET THE APP */
 
-.email-signup {
+#download-cta {
   align-items: center;
   align-self: center;
   background-color: black;
-  border-radius: 1rem;
+  border-radius: 1.25rem;
   display: flex;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 1.5rem;
   position: relative;
   width: max-content;
   z-index: 1;
 }
 
-@media only screen and (max-width: 30rem) {
-  .email-signup p,
-  .email-signup form {
-    margin: 0;
-  }
+a.download-btn {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  background: var(--color-primary);
+  font-weight: 600;
+  color: var(--color-background);
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
 }
 
-.email-signup p {
+#download-cta p {
   font-size: 1.4rem;
-  padding-left: 1rem;
   color: var(--color-background);
 }
 
 @media only screen and (max-width: 62.5rem) {
-  .email-signup {
+  #download-cta {
     flex-direction: column;
-    padding: 1.5rem 1.25rem;
-    row-gap: 1rem;
     width: 22rem;
+    padding-left: 1rem;
+    row-gap: 1rem;
   }
 
-  .email-signup .main-cta > input[type="email"] {
-    width: 23.4rem;
-  }
-}
-
-.main-cta input[type="email"],
-.main-cta button {
-  font-size: 1.5rem;
-  height: 3rem;
-}
-
-.main-cta button {
-  background-color: var(--color-primary);
-  border: none;
-  padding: 0 1rem;
-}
-
-@media only screen and (max-width: 80rem) {
-  .email-signup p,
-  .email-signup a.main-cta {
-    font-size: 1rem;
-  }
-
-  .email-signup a.main-cta {
-    display: inline-block;
-    padding: .5rem .75rem;
-    background: var(--color-primary);
-    font-weight: bold;
-    color: var(--color-background);
-    margin-left: .5rem;
-    border-radius: .5rem;
-  }
-}
-
-@media only screen and (max-width: 40rem) {
-  .email-signup .main-cta > input[type="email"] {
+  a.download-btn {
+    margin-top: 1rem;
+    width: 100%;
     margin-left: 0;
   }
+}
 
-  #get-the-app p,
-  #get-the-app form {
+@media only screen and (max-width: 30rem) {
+  #download-cta {
+    width: 90%;
+  }
+
+  #download-cta p {
     margin: 0;
     padding: 0;
   }
+}
 
-  #email-signup input[type="email"],
-  #email-signup form button,
-  #email-signup p {
-    width: 80vw;
-    margin-left: 0;
-  }
-
-  #email-signup form button,
-  #email-signup p {
-    margin-bottom: 1rem;
-  }
-
-  #email-signup input[type="email"] {
-    margin-bottom: 0.5rem;
+@media only screen and (max-width: 80rem) {
+  #download-cta p,
+  #download-cta a.download-btn {
+    font-size: 1rem;
   }
 }
 
