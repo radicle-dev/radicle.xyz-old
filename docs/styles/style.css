@@ -501,6 +501,30 @@ a.download-btn {
   place-content: center;
 }
 
+#community .attribute .screenshot img {
+  width: 75%;
+  align-self: center;
+}
+
+#community .attribute .content p:nth-child(2) a {
+  color: var(--color-foreground-level-5);
+  border-bottom: 1px solid;
+}
+
+@media only screen and (max-width: 60rem) {
+  #community .attribute .screenshot img {
+    display: none;
+  }
+
+  #community .attribute:first-child {
+    margin-top: 12rem;
+  }
+
+  #community .attribute p:first-of-type {
+    font-size: 1rem;
+  }
+}
+
 .attribute .content {
   text-align: left;
   margin: 2.5rem 2.5rem 2.5rem 0;
@@ -612,14 +636,14 @@ a.download-btn {
 
 /* SPECIFIC FEATURE STYLES */
 
-.attribute:nth-child(1) .screenshot img {
+.attribute.collab-p2p .screenshot img {
   width: 75%;
   align-self: center;
 }
 
 @media only screen and (max-width: 60rem) {
   .attribute .screenshot,
-  .attribute:nth-child(1) .screenshot img {
+  .attribute.collab-p2p .screenshot img {
     width: 94%;
     margin-bottom: -4.5rem;
     margin-right: -5.3vw;
@@ -631,7 +655,7 @@ a.download-btn {
   }
 }
 
-.attribute:nth-child(2) .screenshot {
+.attribute.work-offline .screenshot {
   background-image: url(/img/ui/timeline.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -642,14 +666,14 @@ a.download-btn {
 }
 
 @media only screen and (max-width: 60rem) {
-  .attribute:nth-child(2) .screenshot {
+  .attribute.work-offline .screenshot {
     background-position: center;
     height: 70vw;
     width: 100%;
   }
 }
 
-.attribute:nth-child(2) .screenshot img {
+.attribute.work-offline .screenshot img {
   width: 45%;
   align-self: center;
   margin-right: -6vw;
@@ -659,14 +683,14 @@ a.download-btn {
   margin: 2.5rem 0 2.5rem 0;
 }
 
-.attribute:nth-child(3) .screenshot img {
+.attribute.own-infrastructure .screenshot img {
   margin-right: -35vw;
   width: 180%;
   align-self: center;
 }
 
 @media only screen and (max-width: 60rem) {
-  .attribute:nth-child(3) .screenshot img {
+  .attribute.own-infrastructure .screenshot img {
     width: 97%;
     margin-bottom: 3rem;
     margin-right: -5.4vw;
@@ -676,13 +700,13 @@ a.download-btn {
   }
 }
 
-.attribute:nth-child(4) .screenshot {
+.attribute.create-community .screenshot {
   background-image: url(/img/ui/outgoing-support.png);
   background-position: 0rem 7rem;
   background-size: 90%;
 }
 
-.attribute:nth-child(4) .screenshot img {
+.attribute.create-community .screenshot img {
   width: 45%;
   align-self: start;
   margin-left: 16rem;
@@ -690,14 +714,14 @@ a.download-btn {
 }
 
 @media only screen and (max-width: 60rem) {
-  .attribute:nth-child(4) .screenshot {
+  .attribute.create-community .screenshot {
     background-position: center;
     height: 70vw;
     width: 100%;
     background-size: 100%;
   }
 
-  .attribute:nth-child(4) .screenshot img {
+  .attribute.create-community .screenshot img {
     width: 45%;
     align-self: center;
     margin: 0 auto;
