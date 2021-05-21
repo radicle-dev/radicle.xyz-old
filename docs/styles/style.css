@@ -511,6 +511,20 @@ a.download-btn {
   border-bottom: 1px solid;
 }
 
+#community h1.headline.druk {
+  background: linear-gradient(
+    89.84deg,
+    #ff00a8 24.68%,
+    #ff55b1 44.66%,
+    #6bbf00 71.95%
+  );
+  color: #000;
+  mix-blend-mode: exclusion;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media only screen and (max-width: 60rem) {
   #community .attribute .screenshot img {
     display: none;
