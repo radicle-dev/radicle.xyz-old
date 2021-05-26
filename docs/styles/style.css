@@ -239,6 +239,14 @@ nav a.active span {
     left: 12vw;
     width: 60vw;
   }
+
+  #community .headline-gif {
+    top: 60vw;
+  }
+
+  #community .attribute {
+    margin-bottom: 5rem;
+  }
 }
 
 .headline {
@@ -531,7 +539,7 @@ a.download-btn {
   }
 
   #community .attribute:first-child {
-    margin-top: 12rem;
+    margin-top: 4rem;
   }
 
   #community .attribute p:first-of-type {
