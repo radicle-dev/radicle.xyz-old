@@ -158,6 +158,7 @@ nav a.active span {
     flex-direction: column;
     align-items: center;
   }
+
   header nav a:first-child {
     margin-left: 0rem;
   }
@@ -167,6 +168,7 @@ nav a.active span {
   header nav {
     align-items: center;
   }
+
   header nav a {
     font-size: 0.875rem;
     margin-right: 0.875rem;
@@ -284,6 +286,7 @@ nav a.active span {
     line-height: 40vw;
     padding-top: 4vw;
   }
+
   h1.subscribed {
     font-size: 38vw;
   }
@@ -717,6 +720,7 @@ a.download-btn {
     margin-bottom: 3rem;
     margin-right: -5.4vw;
   }
+
   .attribute .content {
     z-index: 1;
   }
@@ -1009,6 +1013,7 @@ a.download-btn {
   .two-column-item {
     padding: 2rem;
   }
+
   .two-column-item h3 {
     font-size: 2rem;
     padding-bottom: 1rem;
@@ -1516,6 +1521,7 @@ footer form button:focus {
 
 #download {
   padding-bottom: 5rem;
+  scroll-behavior: smooth;
 }
 
 #download .headline {
@@ -1525,7 +1531,6 @@ footer form button:focus {
   -webkit-text-fill-color: transparent;
 }
 
-#download a.try-it,
 #download button {
   display: none;
 }
@@ -1788,6 +1793,7 @@ footer form button:focus {
   .post-item h2 {
     font-size: 9vw;
   }
+
   .post-item video {
     width: 35vw;
   }
@@ -1810,6 +1816,7 @@ footer form button:focus {
   margin: 0 auto 6rem;
   text-align: left;
 }
+
 #post .content > * {
   cursor: text;
 }
@@ -1929,6 +1936,7 @@ pre.code {
     font-size: 2rem;
     line-height: 2.4rem;
   }
+
   #post h3,
   blockquote {
     font-size: 1rem;
@@ -1961,6 +1969,7 @@ pre.code {
     margin-top: -1rem;
   }
 }
+
 #post .twitter-tweet {
   margin: 0 auto;
 }
