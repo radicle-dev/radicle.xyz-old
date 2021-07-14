@@ -1,49 +1,88 @@
 <!doctype html>
 <html>
 <head>
-  <title key="title">Radicle Orgs</title>
+  <title key="title">Introducing Radicle Orgs</title>
   {{> headMeta }}
-  <meta property="og:title" content="Radicle Blog - Radicle Link" />
-  <meta property="og:image" content="https://radicle.xyz/img/social-share.jpg" />
-  <meta property="twitter:image" content="https://radicle.xyz/img/social-share.jpg" />
-  <meta property="og:description" content="This article dives into the architecture and design of Radicle Link – the peer-to-peer replication protocol that powers Radicle. We discuss our decision to build on Git, how we ensure data availability, and how we replicate data across the…" />
-  <meta name="description" content="This article dives into the architecture and design of Radicle Link – the peer-to-peer replication protocol that powers Radicle. We discuss our decision to build on Git, how we ensure data availability, and how we replicate data across the…" />
+  <meta property="og:title" content="Radicle Blog - Introducing Radicle Orgs" />
+  <meta property="og:image" content="https://radicle.xyz/img/token-launch-share-image.jpg" />
+  <meta property="twitter:image" content="https://radicle.xyz/img/token-launch-share-image.jpg" />
+  <meta property="og:description" content="Introducing Radicle Orgs, a decentralized code management tool for DAOs. Radicle Orgs are a decentralized, platform-agnostic, and more secure alternative to organizations on centralized forges (i.e. GitHub, Gitlab)…" />
+  <meta name="description" content="Introducing Radicle Orgs, a decentralized code management tool for DAOs. Radicle Orgs are a decentralized, platform-agnostic, and more secure alternative to organizations on centralized forges (i.e. GitHub, Gitlab)… …" />
 </head>
 <body id="post">
   <div class="overflow-killer">
-    {{> header }}
+   {{> header }}
     <div class="content">
-      <section id="headline" class="link">
+      <section id="headline" class="rad">
         <h1 class="headline druk">
-          Introducing radicle orgs
+          Introducing Radicle Orgs
         </h1>
+        <p class="subtitle"> </p>
       </section>
       <div id="post-container">
-        <p class="meta">by <a href="https://twitter.com/cloudhead" target="_blank">@cloudhead</a> • <span>November 18th, 2020</span></p>
+        <p class="meta">by <a href="https://twitter.com/abbey_titcomb" target="_blank">@abbey_titcomb</a> • <span>July 15th, 2021</span></p>
+        <div id="fireworks">
+          <video autoplay playsinline loop muted alt="Fireworks behind the RAD token logo.">
+            <source type="video/mp4" src="/img/rad-post/fireworks.mp4">
+          </video>
+          <svg width="128" height="129" viewBox="0 0 128 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="64" cy="64.6897" r="64" fill="black"/>
+            <path d="M65.5709 91.165C64.6042 80.6467 66.1369 66.4709 72.3372 59.6028C78.8669 61.0506 91.9265 56.5825 96.6754 47.521C100.982 39.3042 100.201 27.2456 102.612 23.9624C74.2165 23.9622 69.5055 53.3135 61.3744 75.2942C55.3623 59.0419 36.4945 48.0903 20.0991 54.7704C26.7647 59.378 30.9209 70.7398 39.9524 71.7566C42.7938 72.0766 47.9542 71.7566 51.353 65.3332C59.3957 71.8662 58.2234 79.7888 57.1779 91.165C56.7559 95.7564 55.1673 100.123 55.4008 103.766C55.7356 110.199 67.0131 110.199 67.348 103.766C67.5814 100.123 65.9928 95.7564 65.5709 91.165Z" fill="url(#paint0_linear)"/>
+              <defs>
+                <linearGradient id="paint0_linear" x1="37.087" y1="23.9624" x2="83.6305" y2="114.878" gradientUnits="userSpaceOnUse">
+                  <stop offset="0.208333" stop-color="#FFC700"/>
+                  <stop offset="0.494015" stop-color="#FF55FF"/>
+                  <stop offset="0.697917" stop-color="#5555FF"/>
+                </linearGradient>
+              </defs>
+          </svg>
+        </div>
+        <h3>
+         Introducing Radicle Orgs, a decentralized code management tool for DAOs.
+        </h3>
+        <hr>
         <p>
-          Behind every repository is a version control system&mdash;the most popular of these being Git, created in 2005 by Linus Torvalds for the development of the Linux kernel. Git marked the rise of distributed version control systems as developers realized the centralized model of SVN and CVS didn&#x27;t scale well with the number of contributors. In fact, Git was only created when Linus’ free <a
-          href="http://www.bitkeeper.org/">Bitkeeper</a> license was revoked after a Linux kernel contributor tried to <a href="https://www.linuxjournal.com/content/git-origin-story">reverse engineer its networking protocols</a>. Git brought distributed version control to the forefront and changed the way software is developed today.
-        </p>
-        <figure>{{> svg-link-git }}</figure>
-
-        <p>
-          Code collaboration platforms, or <q>forges</q>, started building on top of Git: they introduced
-          search and discovery, canonicity, and social collaboration (issues &amp; code review) to Git-based workflows,
-          albeit not always following the same distributed model that Git was designed for.
+          "Organizations" have become a must-have tool for any development team. Easily managing a set of repositories in a single place is a standard aspect of our day-to-day code collaboration experience. Unfortunately, when restrained by the social model of centralized forges, organizations come with limitations. The "super-user" admin model that gives individuals privileged access over an organization and its access control is a significant limiting factor to projects and collectives that operate within non-hierarchical structures. It also poses challenges around security, trust, and liability for communities organizing over the internet.
         </p>
         <p>
-          Radicle was designed to provide this same functionality while retaining Git’s peer-to-peer nature, building on
-          what made distributed version control so powerful in the first place.
+         Radicle Orgs are a decentralized, platform-agnostic, and more secure alternative to organizations on centralized forges (i.e. GitHub, Gitlab). Relying on smart contracts instead of admins, Radicle Orgs allow developers to define the rules and permissions around codebases in a trust-minimized way.
         </p>
-
-        <h2>
-          Git gossips well
-        </h2>
         <p>
-          The earliest version of Radicle adopted a generalized approach to replication&mdash;it wasn’t tailored to
-          replicating collaboration artifacts or source code and as we discovered, was ill-suited to the demands of
-          real-world code collaboration.
+          [On-chain anchors][https://docs.radicle.xyz/docs/connecting-to-ethereum/anchoring-projects.md] allow teams to maintain an auditable and transparent history of repositories on Ethereum. DAOs can now truly own their code while experimenting with decentralized admin control and collective governance of codebases. Interactions with orgs can also be used as a basis for distributing developer rewards, releasing software, or making important upgrades to codebases.
         </p>
+        <p>
+          By framing DAOs and multi-sigs in the context of code collaboration, Radicle brings decentralized organizations to the mainstream developer, allowing anyone to decentralize control over their codebase in a trust-minimized way.
+        </p>
+        <h2>Radicle x Gnosis Safe</h2>
+        <p>
+          There are single-signer orgs (owned by one Ethereum address) or multi-signature orgs (owned by multiple Ethereum addresses). Multi-signature orgs are deployed with a [Gnosis Safe][https://gnosis-safe.io/]. This means Radicle users can deploy Safes to govern their org via the Radicle desktop or web client.
+        </p>
+        <p>
+          “Our Gnosis Safe integration with Radicle Orgs gives DAOs access to a new superpower where membership, admin control, governance and canonical project state is truly decentralized,” explains Julien Donck who leads the team developing [Radicle Upstream](https://docs.radicle.xyz/docs/getting-started), the Radicle desktop client. “As a go-to primitive for DAOs, integrating with Gnosis Safe first was a no-brainer for us.”
+        </p>
+        <p>
+          [Gnosis Safe][https://gnosis-safe.io/] is a Web3 operating system for DAOs, teams, and individuals to manage digital assets. Its modular infrastructure enables users and developers to customize access control parameters and multi-sig permissions. Gnosis Safe’s functionality extends through the SafeSnap DAO module for on-chain execution of off-chain votes, and the Safe App ecosystem of dapps accessible directly from Safe’s secure interface.
+        </p>
+        <p>
+          Widely used by Ethereum projects for treasury management, Gnosis Safe currently stewards [>$40billion USD][https://duneanalytics.com/tschubotz/gnosis-safe_2]. Although Gnosis Safe’s primary use is as an out-of-the-box asset management and coordination platform, its open-source architecture can also be modified by projects seeking to adapt its tooling for their own needs. 
+        </p>
+        <p>
+          “We view Radicle Org’s deployment on Gnosis Safe as an exciting open-source use of our tooling for aligned purposes",” says Gnosis CTO Stefan George. “Gnosis Safe is already the platform of choice for DAOs conducting decentralized treasury and membership management, and our integration with Radicle expands that application on a deeper level that we believe will provide greater service to the community.”
+        </p>
+        <p>
+          Building Radicle Orgs on Gnosis Safe’s composable architecture gives development teams the ability to manage and control membership, assets, and access rights to code repositories and other projects according to their needs.
+        </p>
+        <h2>On-chain, in-browser
+        <p>
+          Alongside the launch of Radicle Orgs comes the release of the Radicle web client, [app.radicle.network][https://app.radicle.network/]. Here, you can register ENS names for your orgs and customize their profiles profile. Our web client brings Radicle to the browser, making it easier to share your Radicle code with others.
+        </p>
+        <p>
+          Alongside the launch of Radicle Orgs comes the release of the Radicle web client, app.radicle.network. Here, you can register ENS names for your orgs and customize their profiles profile. Our web client brings Radicle to the browser, making it easier to share your Radicle code with others.
+        </p>
+        <hr>
+        <p>
+          To get started with Radicle Orgs, download [Radicle Upstream](https://radicle.xyz/downloads.html) and follow our docs!
+        </p>  
       </div>
     </div>
   </div>
