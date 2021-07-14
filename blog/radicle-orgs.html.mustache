@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <title key="title">Radicle Orgs</title>
+  {{> headMeta }}
+  <meta property="og:title" content="Radicle Blog - Radicle Link" />
+  <meta property="og:image" content="https://radicle.xyz/img/social-share.jpg" />
+  <meta property="twitter:image" content="https://radicle.xyz/img/social-share.jpg" />
+  <meta property="og:description" content="This article dives into the architecture and design of Radicle Link – the peer-to-peer replication protocol that powers Radicle. We discuss our decision to build on Git, how we ensure data availability, and how we replicate data across the…" />
+  <meta name="description" content="This article dives into the architecture and design of Radicle Link – the peer-to-peer replication protocol that powers Radicle. We discuss our decision to build on Git, how we ensure data availability, and how we replicate data across the…" />
+</head>
+<body id="post">
+  <div class="overflow-killer">
+    {{> header }}
+    <div class="content">
+      <section id="headline" class="link">
+        <h1 class="headline druk">
+          Introducing radicle orgs
+        </h1>
+      </section>
+      <div id="post-container">
+        <p class="meta">by <a href="https://twitter.com/cloudhead" target="_blank">@cloudhead</a> • <span>November 18th, 2020</span></p>
+        <p>
+          Behind every repository is a version control system&mdash;the most popular of these being Git, created in 2005 by Linus Torvalds for the development of the Linux kernel. Git marked the rise of distributed version control systems as developers realized the centralized model of SVN and CVS didn&#x27;t scale well with the number of contributors. In fact, Git was only created when Linus’ free <a
+          href="http://www.bitkeeper.org/">Bitkeeper</a> license was revoked after a Linux kernel contributor tried to <a href="https://www.linuxjournal.com/content/git-origin-story">reverse engineer its networking protocols</a>. Git brought distributed version control to the forefront and changed the way software is developed today.
+        </p>
+        <figure>{{> svg-link-git }}</figure>
+
+        <p>
+          Code collaboration platforms, or <q>forges</q>, started building on top of Git: they introduced
+          search and discovery, canonicity, and social collaboration (issues &amp; code review) to Git-based workflows,
+          albeit not always following the same distributed model that Git was designed for.
+        </p>
+        <p>
+          Radicle was designed to provide this same functionality while retaining Git’s peer-to-peer nature, building on
+          what made distributed version control so powerful in the first place.
+        </p>
+
+        <h2>
+          Git gossips well
+        </h2>
+        <p>
+          The earliest version of Radicle adopted a generalized approach to replication&mdash;it wasn’t tailored to
+          replicating collaboration artifacts or source code and as we discovered, was ill-suited to the demands of
+          real-world code collaboration.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
