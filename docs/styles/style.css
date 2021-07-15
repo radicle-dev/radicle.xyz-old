@@ -1726,6 +1726,10 @@ footer form button:focus {
   );
 }
 
+.orgs .headline {
+  background: linear-gradient(80deg, #0adee8 24.36%, #7f6e17 50.51%);
+}
+
 .integrating .headline {
   background: linear-gradient(
     90deg,
