@@ -708,14 +708,17 @@ a.download-btn {
   margin: 2.5rem 0 2.5rem 0;
 }
 
-.attribute.own-infrastructure .screenshot img {
+.attribute.own-infrastructure .screenshot img,
+.attribute.collab-p2p .screenshot img {
   margin-right: -35vw;
   width: 180%;
   align-self: center;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 60rem) {
-  .attribute.own-infrastructure .screenshot img {
+  .attribute.own-infrastructure .screenshot img,
+  .attribute.collab-p2p .screenshot img {
     width: 97%;
     margin-bottom: 3rem;
     margin-right: -5.4vw;
