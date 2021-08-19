@@ -1052,7 +1052,7 @@ a.download-btn {
   z-index: 1;
 }
 
-@media only screen and (max-width: 30rem) {
+@media only screen and (max-width: 40rem) {
   #timeline h1 {
     font-size: 32vw;
     line-height: 26vw;
@@ -1079,7 +1079,7 @@ a.download-btn {
 
 .timeline {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 1.5rem;
   text-align: left;
   margin-left: 11rem;
@@ -1111,12 +1111,12 @@ a.download-btn {
   top: 2.53125rem;
 }
 
-@media only screen and (max-width: 30rem) {
+@media only screen and (max-width: 40rem) {
   .line {
     left: 0.7rem;
     width: 0.0625rem;
     height: 100%;
-    top: 3.1rem;
+    top: 3.6rem;
     background: linear-gradient(
       #5555ff,
       #55ffff,
@@ -1127,6 +1127,12 @@ a.download-btn {
       #5555ff,
       #5555ff00 90%
     );
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .line {
+    top: 3.1rem;
   }
 }
 
@@ -1143,7 +1149,7 @@ a.download-btn {
   max-width: 16rem;
 }
 
-@media only screen and (max-width: 30rem) {
+@media only screen and (max-width: 40rem) {
   .timeline-item {
     padding-top: 40px;
   }
@@ -1164,7 +1170,7 @@ a.download-btn {
   }
 }
 
-@media screen and (max-width: 30rem) {
+@media screen and (max-width: 40rem) {
   #timeline .subtitle-container,
   .timeline {
     grid-template-columns: 1fr;
@@ -1240,7 +1246,7 @@ a.download-btn {
   margin-left: -0.5625rem;
 }
 
-@media only screen and (max-width: 30rem) {
+@media only screen and (max-width: 40rem) {
   .not-active .icon svg {
     margin-left: 0;
   }
@@ -1250,7 +1256,7 @@ a.download-btn {
   color: var(--color-foreground);
 }
 
-@media only screen and (max-width: 30rem) {
+@media only screen and (max-width: 40rem) {
   .date {
     margin-top: -1.4rem;
   }
