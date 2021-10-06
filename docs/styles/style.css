@@ -1886,6 +1886,17 @@ blockquote {
   padding-top: 1rem;
 }
 
+.callout {
+  background: var(--color-secondary-level-1);
+  color: var(--color-secondary);
+  padding: 1em;
+  border-radius: .5em;
+}
+
+.callout a {
+  border-bottom: 1px solid;
+}
+
 #post blockquote {
   color: var(--color-primary);
   font-style: italic;
