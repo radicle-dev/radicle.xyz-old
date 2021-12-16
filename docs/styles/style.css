@@ -1666,7 +1666,7 @@ footer form button:focus {
   }
 
   #download .download-block {
-    margin-top: 8rem;
+    margin-top: 2rem;
     width: 100%;
   }
 
@@ -1686,6 +1686,11 @@ footer form button:focus {
 
   #download .download-block button#email-me {
     display: inherit;
+  }
+
+  #download #apps {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
