@@ -1669,19 +1669,23 @@ footer form button:focus {
     margin-top: 2rem;
     width: 100%;
   }
-
+  
   #download .download-block h2 {
     font-size: 1rem;
     font-weight: 600;
   }
-
+  
   #download .download-block p {
     font-size: 0.75rem;
     padding-bottom: 0;
   }
-
+  
   #download .download-block button {
     display: none;
+  }
+  
+  #download .download-block.web-client button {
+    display: inherit;
   }
 
   #download .download-block button#email-me {
