@@ -1668,6 +1668,7 @@ footer form button:focus {
   #download .download-block {
     margin-top: 2rem;
     width: 100%;
+    padding: 2rem 1rem 1rem 1rem;
   }
   
   #download .download-block h2 {
@@ -1682,10 +1683,11 @@ footer form button:focus {
   
   #download .download-block button {
     display: none;
+    font-size: 1rem;
   }
   
   #download .download-block.web-client button {
-    display: inherit;
+    display: flex;
   }
 
   #download .download-block button#email-me {
