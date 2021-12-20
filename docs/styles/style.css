@@ -1562,54 +1562,63 @@ footer form button:focus {
   background: var(--color-foreground-level-1);
 }
 
-#download #text {
+#download #apps {
+  display: flex;
+  justify-content: center;
+}
+
+#download .download-block {
   background: var(--color-background);
-  padding: 2rem 2.5rem;
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
   border-radius: 1rem;
   z-index: 1;
   text-align: left;
   position: relative;
-  margin: 0 auto;
-  width: max-content;
+  margin: 0 1rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#download #text * {
-  padding: 0.5rem 0;
-}
-
-#download #text h1 {
+#download .download-block h1 {
   padding: 0;
 }
 
-#download #text h1 span {
+#download .download-block h1 span {
   font-size: 1rem;
   text-transform: uppercase;
   position: relative;
   top: -1.5rem;
 }
 
-#download #text a span {
+#download .download-block a span {
   padding: 0;
 }
 
-#download #text p {
+#download .download-block p {
   margin-bottom: 1rem;
 }
 
-#download #text button {
+#download .download-block button {
   background: var(--color-primary);
   color: var(--color-background);
   height: 3rem;
   font-size: 1.25rem;
   border: none;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
   padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#download #text button#email-me {
+#download .download-block button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#download .download-block button#email-me {
   display: none;
 }
 
@@ -1619,12 +1628,45 @@ footer form button:focus {
   justify-content: center;
 }
 
+#disclaimers {
+  width: 50rem;
+  margin: 0 auto;
+  margin-top: 2vw;
+  text-align: left;
+}
+
+#disclaimers p {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 60rem) {
+  #disclaimers {
+    width: 90vw;
+  }
+  
+  #download .download-block {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  #download #apps {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media only screen and (max-width: 30rem) {
-  #download #text h1 {
+  #download .download-block h1 {
     font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
 
-  #download #text h1 span {
+  #download .download-block h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  #download .download-block h1 span {
     font-size: 0.75rem;
     top: -1.25rem;
   }
@@ -1638,27 +1680,27 @@ footer form button:focus {
     top: 17vh;
     width: 101vw;
   }
-
-  #download #text {
-    margin-top: 8rem;
-    width: 100%;
-  }
-
-  #download #text h2 {
+  
+  #download .download-block h2 {
     font-size: 1rem;
     font-weight: 600;
   }
-
-  #download #text p {
+  
+  #download .download-block p {
     font-size: 0.75rem;
     padding-bottom: 0;
   }
-
-  #download #text button {
+  
+  #download .download-block button {
     display: none;
+    font-size: 1rem;
+  }
+  
+  #download .download-block.web-client button {
+    display: flex;
   }
 
-  #download #text button#email-me {
+  #download .download-block button#email-me {
     display: inherit;
   }
 }
