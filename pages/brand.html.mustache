@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <title key="title">Radicle - Try it</title>
+  {{> headMeta }}
+  <meta property="og:title" content="Radicle - Brand" />
+  <meta property="og:image" content="https://radicle.xyz/img/social-share.jpg" />
+  <meta property="twitter:image" content="https://radicle.xyz/img/social-share.jpg" />
+  <meta property="og:description" content="Radicle is a peer-to-peer stack for building software together." />
+  <meta name="description" content="Radicle is a peer-to-peer stack for building software together." />
+</head>
+<body id="brand">
+<header>
+    <a href="/" id="logo">
+        {{> logo }}
+    </a>
+    <nav>
+        <a href="/blog"><span>Blog</span></a>
+        <a href="/community"><span>Community</span></a>
+        <a href="https://docs.radicle.xyz" target="_blank"><span>Docs</span> ↗</a>
+        <a href="https://github.com/radicle-dev" target="_blank"><span>Code</span> ↗</a>
+        <a href="/tryit"><span>Try it</span> ↓</a>
+    </nav>
+</header>
+<div class="content">
+    <video disableRemotePlayback class="headline-gif gif" autoplay playsinline loop muted title="Animation of a flower growing.">
+      <source type="video/mp4" src="/img/brand.mp4">
+    </video>
+    <h1 class="headline druk">Access Radicle</h1>
+    <div id="disclaimers">
+      <p><a href="https://etherscan.io/"><strong>Etherscan</strong></a> is a Block Explorer and Analytics Platform for Ethereum, a decentralized smart contracts platform. The contract to register Radicle names can be found <a href="https://etherscan.io/address/0x37723287ae6f34866d82ee623401f92ec9013154#writeContract" target="_blank">here</a> and the contract to create Radicle orgs can be found <a href="https://etherscan.io/address/0xa15beb4876f20018b6b4a4116b7560c5fcc9336e#writeContract" target="_blank">here</a>.</p>
+      <p><a href="https://eth.build/"><strong>ethBuild</strong></a> is an educational sandbox for web3, including drag-and-drop programming and open-source building blocks. With ethBuild, you can call a function on an Ethereum contract (like those to register Radicle names and to create Radicle orgs) by sending it a transaction with the function args in the data.</p>
+      <p><a href="https://www.myetherwallet.com/"><strong>MyEtherWallet</strong></a> is a free, client-side interface helping you interact with the Ethereum blockchain. Their easy-to-use, open-source platform allows you to generate wallets, interact with [Radicle] smart contracts, and more.</p>
+      <p>The <a href="https://web3js.readthedocs.io/en/v1.2.11/web3-eth.html#eth"><strong>web3.js Library</strong></a> makes it easy to interact with smart contracts on the Ethereum blockchain, including Radicle smart contracts.</p>
+      <p>The <a href="https://docs.ethers.io/v5/"><strong>ethers.js Library</strong></a> aims to be a complete and compact library for interacting with the Ethereum Blockchain and its ecosystem, including Radicle smart contracts.</p>
+      <p><strong>Disclaimer:</strong></a> This list of access points to the Radicle Network is provided for informational purposes only. Neither is the list conclusive, nor has due diligence been conducted on these operators. Accordingly, no entity has provided any statement regarding technical functionality and/or the trustworthiness of the interfaces listed above. Descriptions are provided by the operators of the interfaces themselves.</p>
+    </div>
+    <div id="blocks">
+      <div class="card-block">
+        <h1>Desktop</h1>
+        <h2>A desktop client for Radicle.</h2>
+        <p>Check out the <a href="https://docs.radicle.xyz/docs/getting-started" target="_blank"><span>Guide to Getting Started</span></a>.</p>
+        <a href="https://releases.radicle.xyz/radicle-upstream-{{> upstream-version }}.dmg">
+          <button>{{> svg-mac }} Download for macOS</button>
+        </a>
+        <a href="https://releases.radicle.xyz/radicle-upstream-{{> upstream-version }}.AppImage">
+          <button>{{> svg-linux }} Download for Linux</button>
+        </a>
+        <form
+          action="mailto:?subject=Download the Radicle app&body=When you get back to your computer download the app here: www.radicle.xyz/tryit.html"
+          method="POST"
+          enctype="text/plain"
+        >
+          <button id="email-me">{{> svg-email }} Email me a link</button>
+        </form>
+      </div>
+      <div class="card-block">
+        <h1>Web</h1>
+        <h2>A web client for Radicle.</h2>
+        <p><strong>Radicle Interface</strong> is an open source web-based client enabling Users to access Radicle-Link and the Radicle’s smart contract system.</p>
+        <a href="https://app.radicle.network">
+          <button>{{> svg-everywhere }} Visit app.radicle.network</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -268,6 +268,22 @@ nav a.active span {
   -webkit-text-fill-color: transparent;
 }
 
+#brand .headline {
+  background: linear-gradient(
+    110.65deg, 
+    #FFFF00 25.99%, 
+    #FF6B08 30.61%, 
+    #E10D46 36.91%, 
+    #AB23AB 42.17%, 
+    #004CFF 50.57%, 
+    #00A2A9 58.14%, 
+    #00FF08 66.12%
+    );
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 22rem;
+}
+
 @media only screen and (min-width: 105rem) {
   .headline {
     font-size: 32rem;
@@ -1562,12 +1578,12 @@ footer form button:focus {
   background: var(--color-foreground-level-1);
 }
 
-#download #apps {
+#blocks {
   display: flex;
   justify-content: center;
 }
 
-#download .download-block {
+.card-block {
   background: var(--color-background);
   padding: 2rem 2.5rem 2.5rem 2.5rem;
   border-radius: 1rem;
@@ -1581,26 +1597,26 @@ footer form button:focus {
   justify-content: space-between;
 }
 
-#download .download-block h1 {
+.card-block h1 {
   padding: 0;
 }
 
-#download .download-block h1 span {
+.card-block h1 span {
   font-size: 1rem;
   text-transform: uppercase;
   position: relative;
   top: -1.5rem;
 }
 
-#download .download-block a span {
+.card-block a span {
   padding: 0;
 }
 
-#download .download-block p {
+.card-block p {
   margin-bottom: 1rem;
 }
 
-#download .download-block button {
+.card-block button {
   background: var(--color-primary);
   color: var(--color-background);
   height: 3rem;
@@ -1613,12 +1629,12 @@ footer form button:focus {
   justify-content: center;
 }
 
-#download .download-block button svg {
+.card-block button svg {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-#download .download-block button#email-me {
+.card-block button#email-me {
   display: none;
 }
 
@@ -1643,30 +1659,30 @@ footer form button:focus {
   #disclaimers {
     width: 90vw;
   }
-  
-  #download .download-block {
+
+  .card-block {
     margin-top: 2rem;
     width: 100%;
     padding: 1rem;
   }
-  
-  #download #apps {
+
+  #blocks {
     flex-direction: column;
     align-items: center;
   }
 }
 
 @media only screen and (max-width: 30rem) {
-  #download .download-block h1 {
+  .card-block h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
   }
 
-  #download .download-block h2 {
+  .card-block h2 {
     margin-bottom: 0.5rem;
   }
 
-  #download .download-block h1 span {
+  .card-block h1 span {
     font-size: 0.75rem;
     top: -1.25rem;
   }
@@ -1681,26 +1697,26 @@ footer form button:focus {
     width: 101vw;
   }
   
-  #download .download-block h2 {
+  .card-block h2 {
     font-size: 1rem;
     font-weight: 600;
   }
   
-  #download .download-block p {
+  .card-block p {
     font-size: 0.75rem;
     padding-bottom: 0;
   }
   
-  #download .download-block button {
+  .card-block button {
     display: none;
     font-size: 1rem;
   }
   
-  #download .download-block.web-client button {
+  .card-block.web-client button {
     display: flex;
   }
 
-  #download .download-block button#email-me {
+  .card-block button#email-me {
     display: inherit;
   }
 }
