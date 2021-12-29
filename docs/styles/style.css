@@ -269,19 +269,10 @@ nav a.active span {
 }
 
 #brand .headline {
-  background: linear-gradient(
-    110.65deg, 
-    #FFFF00 25.99%, 
-    #FF6B08 30.61%, 
-    #E10D46 36.91%, 
-    #AB23AB 42.17%, 
-    #004CFF 50.57%, 
-    #00A2A9 58.14%, 
-    #00FF08 66.12%
-    );
+  background: linear-gradient(110deg, #FFFF00 15%, #FF6B08 20%, #E10D46 40%, #AB23AB 50%, #004CFF 60%, #00A2A9 70%, #00FF08 85%);
   background-clip: text;
   -webkit-background-clip: text;
-  line-height: 22rem;
+  line-height: 24vw;
 }
 
 @media only screen and (min-width: 105rem) {
@@ -1566,6 +1557,10 @@ footer form button:focus {
   display: none;
 }
 
+#brand .headline-gif {
+  left: 44vw;
+}
+
 #download .headline-gif {
   top: 13vw;
   left: 13vw;
@@ -1585,7 +1580,7 @@ footer form button:focus {
 
 .card-block {
   background: var(--color-background);
-  padding: 2rem 2.5rem 2.5rem 2.5rem;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
   border-radius: 1rem;
   z-index: 1;
   text-align: left;
@@ -1608,12 +1603,21 @@ footer form button:focus {
   top: -1.5rem;
 }
 
+.card-block h4 {
+  display: block;
+  margin-top: 1rem;
+}
+
+.card-block .pills {
+  margin-top: 1rem;
+}
+
 .card-block a span {
   padding: 0;
 }
 
 .card-block p {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .card-block button {
@@ -1638,10 +1642,33 @@ footer form button:focus {
   display: none;
 }
 
+.card-block .image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.card-block .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
 #download .content {
   z-index: 1;
   align-items: center;
   justify-content: center;
+}
+
+.pills a {
+  background: var(--color-foreground-level-2);
+  font-weight: 600;
+  color: var(--color-foreground);
+  padding: .5rem 1rem;
+  margin: 0 0.25rem 0.5rem 0;
+  border-radius: 5rem;
+  display: inline-block;
 }
 
 #disclaimers {
@@ -2049,4 +2076,10 @@ pre.code {
 
 #post .twitter-tweet {
   margin: 0 auto;
+}
+
+#brand h2 {
+  width: 90%;
+  max-width: 45rem;
+  margin: 5rem auto;
 }
