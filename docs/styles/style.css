@@ -180,11 +180,6 @@ nav a.active span {
 }
 
 @media only screen and (max-width: 48rem) {
-  a.try-it,
-  #download button {
-    display: none;
-  }
-
   a.code {
     margin-right: 0;
   }
@@ -1554,7 +1549,7 @@ footer form button:focus {
 }
 
 #download button {
-  display: none;
+  /* display: none; */
 }
 
 #brand .headline-gif {
@@ -1638,8 +1633,12 @@ footer form button:focus {
   height: 1.5rem;
 }
 
-.card-block button#email-me {
+.card-block button.display-mobile {
   display: none;
+}
+
+.card-block button.display-everywhere {
+  display: flex;
 }
 
 .card-block .image {
@@ -1743,8 +1742,8 @@ footer form button:focus {
     display: flex;
   }
 
-  .card-block button#email-me {
-    display: inherit;
+  .card-block button.display-mobile {
+    display: flex;
   }
 }
 
