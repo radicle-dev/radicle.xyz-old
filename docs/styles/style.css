@@ -119,11 +119,11 @@ header nav a:last-child {
   margin-right: 0;
 }
 
-#download button {
+#try-it button {
   width: 100%;
 }
 
-#download button svg {
+#try-it button svg {
   fill: var(--color-background);
   box-sizing: unset;
   margin-top: -0.2rem;
@@ -263,13 +263,6 @@ nav a.active span {
   -webkit-text-fill-color: transparent;
 }
 
-#brand .headline {
-  background: linear-gradient(110deg, #FFFF00 15%, #FF6B08 20%, #E10D46 40%, #AB23AB 50%, #004CFF 60%, #00A2A9 70%, #00FF08 85%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  line-height: 24vw;
-}
-
 @media only screen and (min-width: 105rem) {
   .headline {
     font-size: 32rem;
@@ -296,7 +289,7 @@ nav a.active span {
 
 /* GET THE APP */
 
-#download-cta {
+#try-it-cta {
   align-items: center;
   align-self: center;
   background-color: black;
@@ -308,7 +301,7 @@ nav a.active span {
   z-index: 1;
 }
 
-a.download-btn {
+a.try-it-btn {
   display: inline-block;
   padding: 0.5rem 0.75rem;
   background: var(--color-primary);
@@ -318,13 +311,13 @@ a.download-btn {
   border-radius: 0.5rem;
 }
 
-#download-cta p {
+#try-it-cta p {
   font-size: 1.4rem;
   color: var(--color-background);
 }
 
 @media only screen and (max-width: 62.5rem) {
-  #download-cta {
+  #try-it-cta {
     flex-direction: column;
     width: 22rem;
     padding-left: 1rem;
@@ -339,19 +332,19 @@ a.download-btn {
 }
 
 @media only screen and (max-width: 30rem) {
-  #download-cta {
+  #try-it-cta {
     width: 90%;
   }
 
-  #download-cta p {
+  #try-it-cta p {
     margin: 0;
     padding: 0;
   }
 }
 
 @media only screen and (max-width: 80rem) {
-  #download-cta p,
-  #download-cta a.download-btn {
+  #try-it-cta p,
+  #try-it-cta a.download-btn {
     font-size: 1rem;
   }
 }
@@ -1536,35 +1529,30 @@ footer form button:focus {
 
 /* DOWNLOAD PAGE */
 
-#download {
+#try-it {
   padding-bottom: 5rem;
   scroll-behavior: smooth;
 }
 
-#download .headline {
+#try-it .headline {
   background: linear-gradient(90.23deg, #ff0000 35.8%, #0517b3 46.14%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#download button {
+#try-it button {
   /* display: none; */
 }
 
-#brand .headline-gif {
-  left: 44vw;
-}
-
-#download .headline-gif {
+#try-it .headline-gif {
   top: 13vw;
   left: 13vw;
 }
 
-#download .content {
+#try-it .content, #brand .content {
   max-width: 102rem;
   margin: 0 auto;
-  padding: 0 2rem;
   background: var(--color-foreground-level-1);
 }
 
@@ -1573,7 +1561,7 @@ footer form button:focus {
   justify-content: center;
 }
 
-.card-block {
+.card {
   background: var(--color-background);
   padding: 2.5rem 2.5rem 2rem 2.5rem;
   border-radius: 1rem;
@@ -1587,35 +1575,35 @@ footer form button:focus {
   justify-content: space-between;
 }
 
-.card-block h1 {
+.card h1 {
   padding: 0;
 }
 
-.card-block h1 span {
+.card h1 span {
   font-size: 1rem;
   text-transform: uppercase;
   position: relative;
   top: -1.5rem;
 }
 
-.card-block h4 {
+.card h4 {
   display: block;
   margin-top: 1rem;
 }
 
-.card-block .pills {
+.card .pills {
   margin-top: 1rem;
 }
 
-.card-block a span {
+.card a span {
   padding: 0;
 }
 
-.card-block p {
+.card p {
   margin-top: 1rem;
 }
 
-.card-block button {
+.card button {
   background: var(--color-primary);
   color: var(--color-background);
   height: 3rem;
@@ -1628,33 +1616,33 @@ footer form button:focus {
   justify-content: center;
 }
 
-.card-block button svg {
+.card button svg {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-.card-block button.display-mobile {
+.card button.display-mobile {
   display: none;
 }
 
-.card-block button.display-everywhere {
+.card button.display-everywhere {
   display: flex;
 }
 
-.card-block .image {
+.card .image {
   display: flex;
   justify-content: center;
   width: 100%;
   height: auto;
 }
 
-.card-block .image img {
+.card .image img {
   width: 100%;
   height: auto;
   border-radius: 0.25rem;
 }
 
-#download .content {
+#try-it .content {
   z-index: 1;
   align-items: center;
   justify-content: center;
@@ -1683,12 +1671,12 @@ footer form button:focus {
 
 @media only screen and (max-width: 60rem) {
   #disclaimers {
-    width: 90vw;
+    width: 80vw;
   }
 
-  .card-block {
+  .card {
     margin-top: 2rem;
-    width: 100%;
+    width: 80%;
     padding: 1rem;
   }
 
@@ -1699,50 +1687,50 @@ footer form button:focus {
 }
 
 @media only screen and (max-width: 30rem) {
-  .card-block h1 {
+  .card h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
   }
 
-  .card-block h2 {
+  .card h2 {
     margin-bottom: 0.5rem;
   }
 
-  .card-block h1 span {
+  .card h1 span {
     font-size: 0.75rem;
     top: -1.25rem;
   }
 
-  #download .headline-gif {
+  #try-it .headline-gif {
     top: 99vw;
     left: -2vw;
   }
 
-  #download-screenshot {
+  #try-it-screenshot {
     top: 17vh;
     width: 101vw;
   }
   
-  .card-block h2 {
+  .card h2 {
     font-size: 1rem;
     font-weight: 600;
   }
   
-  .card-block p {
+  .card p {
     font-size: 0.75rem;
     padding-bottom: 0;
   }
   
-  .card-block button {
+  .card button {
     display: none;
     font-size: 1rem;
   }
   
-  .card-block.web-client button {
+  .card.web-client button {
     display: flex;
   }
 
-  .card-block button.display-mobile {
+  .card button.display-mobile {
     display: flex;
   }
 }
@@ -2077,8 +2065,32 @@ pre.code {
   margin: 0 auto;
 }
 
+/* BRAND PAGE */
+
+#brand .headline {
+  background: linear-gradient(110deg, #FFFF00 15%, #FF6B08 20%, #E10D46 40%, #AB23AB 50%, #004CFF 60%, #00A2A9 70%, #00FF08 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 24vw;
+}
+
+#brand .headline-gif {
+  left: 44vw;
+}
+
 #brand h2 {
   width: 90%;
   max-width: 45rem;
   margin: 5rem auto;
+}
+
+@media screen and (max-width: 30rem) {
+  #brand .headline {
+    line-height: 40vw;
+  }
+
+  #brand .headline-gif {
+    left: 39vw;
+    top: 80vw;
+  }
 }
