@@ -1588,11 +1588,7 @@ footer form button:focus {
 
 .card h4 {
   display: block;
-  margin-top: 1rem;
-}
-
-.card .pills {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .card a span {
@@ -1642,10 +1638,8 @@ footer form button:focus {
   border-radius: 0.25rem;
 }
 
-#try-it .content {
-  z-index: 1;
-  align-items: center;
-  justify-content: center;
+.pills {
+  margin-top: 1rem;
 }
 
 .pills a {
@@ -1656,6 +1650,16 @@ footer form button:focus {
   margin: 0 0.25rem 0.5rem 0;
   border-radius: 5rem;
   display: inline-block;
+}
+
+.pills a:hover {
+  background: var(--color-foreground-level-3);
+}
+
+#try-it .content {
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 #disclaimers {
@@ -2068,7 +2072,7 @@ pre.code {
 /* BRAND PAGE */
 
 #brand .headline {
-  background: linear-gradient(110deg, #FFFF00 15%, #FF6B08 20%, #E10D46 40%, #AB23AB 50%, #004CFF 60%, #00A2A9 70%, #00FF08 85%);
+  background: radial-gradient(circle at 40%, #FFFF00 15%, #FF6B08 20%, #E10D46 30%, #AB23AB 40%, #004CFF 50%, #00A2A9 60%, #00FF08 70%);
   background-clip: text;
   -webkit-background-clip: text;
   line-height: 24vw;
