@@ -2093,6 +2093,10 @@ pre.code {
   margin: 5rem auto;
 }
 
+#art-land {
+  height: 400vw;
+}
+
 @media screen and (max-width: 30rem) {
   #brand .headline {
     line-height: 40vw;
