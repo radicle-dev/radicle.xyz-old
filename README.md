@@ -14,28 +14,10 @@ This is the repository of the [radicle.xyz](https://radicle.xyz) website.
 
 ## Getting Started
 
-It is recommended that you utilise Python's http server to serve this website
-on your `localhost`.
-
-Follow [this guide](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server#running_a_simple_local_http_server)
-to set up Python's http server on your computer.
-
-- The website is to be served from the `docs/` directory.
-- `index.html` will serve as the entry point.
-
-Run the following commands to start the server and serve the website on your `localhost`:
+Run the following command to start the server:
 
 ```bash
-# Assuming you are already in the project directory
-cd docs
-
-# For Python version 3.X
-# Assuming python executable is globally available
-python -m http.server
-
-# For Python version 2.X
-# Assuming python executable is globally available
-python -m SimpleHTTPServer
+npx http-server docs -e html
 ```
 
 ## Dependencies
@@ -56,7 +38,8 @@ make dependencies
 
 ## Making Changes
 
-- You are **NOT** supposed to directly change the `.html` files.
+⚠️ You are **NOT** supposed to directly change the `.html` files.
+
 - Instead, make edits in corresponding `.html.mustache`
   file present inside `pages/` directory.
 - You can directly change a `stylesheet`. Stylesheets are present in `/docs/styles/`.
@@ -77,6 +60,7 @@ make
 - Building Process requires [`mustache` to be installed](#dependencies).
 - Each `.html.mustache` file in the `pages/` directory will result in a `.html` file in
   `docs/` directory.
+- In order for the `make` command to build a file, the file has to be added to the `Makefile`
 
 ## Important Information
 
