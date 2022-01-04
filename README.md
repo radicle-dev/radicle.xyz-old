@@ -38,7 +38,7 @@ make dependencies
 
 ## Making Changes
 
-⚠️ You are **NOT** supposed to directly change the `.html` files.
+⚠️ Do **NOT** directly change the `.html` files. You will lose your work!
 
 - Instead, make edits in corresponding `.html.mustache`
   file present inside `pages/` directory.
