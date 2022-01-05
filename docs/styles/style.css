@@ -2211,7 +2211,7 @@ pre.code {
   display: block;
   width: 30vw;
   position: absolute;
-  right: 0;
+  right: 20vw;
   margin-bottom: -30rem;
   animation: wifi 10s infinite linear;
 }
@@ -2303,5 +2303,28 @@ pre.code {
   }
   100% {
     opacity: 0;
+  }
+}
+
+#toilet {
+  animation: toilet 10s infinite linear;
+}
+
+@keyframes toilet {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg) scale(0);
+  }
+  30% {
+    opacity: 1;
+    transform: rotate(60deg) scale(3);
+  }
+  60% {
+    opacity: 0;
+    transform: rotate(120deg) scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(180deg) scale(0);
   }
 }
