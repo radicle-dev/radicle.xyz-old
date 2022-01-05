@@ -38,7 +38,12 @@
         <a href="https://releases.radicle.xyz/radicle-upstream-{{> upstream-version }}.AppImage">
           <button>{{> svg-linux }} Download for Linux</button>
         </a>
-        <form action="mailto:?subject=Download the Radicle app&body=When you get back to your computer download the app here: www.radicle.xyz/tryit.html" method="POST" enctype="text/plain">
+
+        <form
+          action="mailto:?subject=Download the Radicle app&body=When you get back to your computer download the app here: www.radicle.xyz/tryit"
+          method="POST"
+          enctype="text/plain"
+        >
           <button class="display-mobile">{{> svg-email }} Email me a link</button>
         </form>
       </div>
