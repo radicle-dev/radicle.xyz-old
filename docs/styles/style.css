@@ -1550,7 +1550,8 @@ footer form button:focus {
   left: 13vw;
 }
 
-#try-it .content, #brand .content {
+#try-it .content,
+#brand .content {
   max-width: 102rem;
   margin: 0 auto;
   background: var(--color-foreground-level-1);
@@ -1719,22 +1720,22 @@ footer form button:focus {
     top: 17vh;
     width: 101vw;
   }
-  
+
   .card h2 {
     font-size: 1rem;
     font-weight: 600;
   }
-  
+
   .card p {
     font-size: 0.75rem;
     padding-bottom: 0;
   }
-  
+
   .card button {
     display: none;
     font-size: 1rem;
   }
-  
+
   .card.web-client button {
     display: flex;
   }
@@ -2077,7 +2078,16 @@ pre.code {
 /* BRAND PAGE */
 
 #brand .headline {
-  background: radial-gradient(circle at 40%, #FFFF00 15%, #FF6B08 20%, #E10D46 30%, #AB23AB 40%, #004CFF 50%, #00A2A9 60%, #00FF08 70%);
+  background: radial-gradient(
+    circle at 40%,
+    #ffff00 15%,
+    #ff6b08 20%,
+    #e10d46 30%,
+    #ab23ab 40%,
+    #004cff 50%,
+    #00a2a9 60%,
+    #00ff08 70%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   line-height: 24vw;
@@ -2097,6 +2107,10 @@ pre.code {
   height: 400vw;
 }
 
+#art-land h2 {
+  margin-top: 50vw;
+}
+
 @media screen and (max-width: 30rem) {
   #brand .headline {
     line-height: 40vw;
@@ -2106,4 +2120,20 @@ pre.code {
     left: 39vw;
     top: 80vw;
   }
+}
+
+#pirate-flag {
+  position: absolute;
+  top: 29vw;
+  left: 7vw;
+  width: 30vw;
+  mix-blend-mode: multiply;
+}
+
+#local-first {
+  position: absolute;
+  top: 119rem;
+  right: 3vw;
+  width: 15vw;
+  z-index: 1;
 }
