@@ -2111,7 +2111,7 @@ pre.code {
   overflow: hidden;
   background: linear-gradient(
     180deg,
-    #ffffff 2%,
+    var(--color-foreground-level-1) 2%,
     #ffff00 18%,
     #ff000d 34%,
     #ab23ab 50%,
@@ -2279,7 +2279,7 @@ pre.code {
 }
 
 #sorry {
-  animation: sorry 10s infinite linear;
+  animation: sorry 4s infinite linear;
 }
 
 @keyframes sorry {
@@ -2298,7 +2298,7 @@ pre.code {
 }
 
 #toilet {
-  animation: toilet 10s infinite linear;
+  animation: toilet 15s infinite linear;
 }
 
 @keyframes toilet {
@@ -2317,5 +2317,20 @@ pre.code {
   100% {
     opacity: 0;
     transform: rotate(180deg) scale(0);
+  }
+}
+#alien {
+  animation: alien 0.5s infinite linear;
+}
+
+@keyframes alien {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
