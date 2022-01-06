@@ -9,7 +9,7 @@
   <meta property="og:description" content="Radicle is a peer-to-peer stack for building software together." />
   <meta name="description" content="Radicle is a peer-to-peer stack for building software together." />
 </head>
-<body id="download">
+<body id="try-it">
 <header>
     <a href="/" id="logo">
         {{> logo }}
@@ -27,8 +27,8 @@
       <source type="video/mp4" src="/img/download-flower.mp4">
     </video>
     <h1 class="headline druk">Access Radicle</h1>
-    <div id="apps">
-      <div class="download-block">
+    <div id="blocks">
+      <div class="card">
         <h1>Desktop</h1>
         <h2>A desktop client for Radicle.</h2>
         <p>Check out the <a href="https://docs.radicle.xyz/docs/getting-started" target="_blank"><span>Guide to Getting Started</span></a>.</p>
@@ -38,20 +38,21 @@
         <a href="https://releases.radicle.xyz/radicle-upstream-{{> upstream-version }}.AppImage">
           <button>{{> svg-linux }} Download for Linux</button>
         </a>
+
         <form
           action="mailto:?subject=Download the Radicle app&body=When you get back to your computer download the app here: www.radicle.xyz/tryit"
           method="POST"
           enctype="text/plain"
         >
-          <button id="email-me">{{> svg-email }} Email me a link</button>
+          <button class="display-mobile">{{> svg-email }} Email me a link</button>
         </form>
       </div>
-      <div class="download-block web-client">
+      <div class="card web-client">
         <h1>Web</h1>
         <h2>A web client for Radicle.</h2>
         <p><strong>Radicle Interface</strong> is an open source web-based client enabling Users to access Radicle-Link and the Radicle’s smart contract system.</p>
         <a href="https://app.radicle.network">
-          <button>{{> svg-everywhere }} Visit app.radicle.network</button>
+          <button class="display-everywhere">{{> svg-everywhere }} Visit app.radicle.network</button>
         </a>
       </div>
     </div>
