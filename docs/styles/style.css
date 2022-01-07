@@ -725,14 +725,35 @@ a.try-it-btn {
 }
 
 .attribute.create-community .screenshot {
-  background-image: url(/img/ui/outgoing-support.png);
+  background-image: url(/img/ui/drips.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  align-self: stretch;
+  display: flex;
+  place-content: center;
+}
+
+@media only screen and (max-width: 60rem) {
+  .attribute.create-community .screenshot {
+    background-position: center;
+    height: 70vw;
+    width: 100%;
+  }
+}
+
+.attribute.create-community .screenshot img {
+  width: 45%;
+  align-self: center;
+  margin-right: -6vw;
+}
+
+/* .attribute.create-community .screenshot {
   background-position: 0rem 7rem;
   background-size: 90%;
 }
 
 .attribute.create-community .screenshot img {
-  width: 45%;
-  align-self: start;
   margin-left: 16rem;
   margin-top: 1rem;
 }
@@ -750,7 +771,7 @@ a.try-it-btn {
     align-self: center;
     margin: 0 auto;
   }
-}
+} */
 
 .float {
   box-shadow: 0px 3vw 3vw rgba(10, 11, 18, 0.287542),
