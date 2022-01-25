@@ -77,4 +77,4 @@ ffmpeg -i file-name.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw
 
 # Legal Information
 
-Copyright © 2019-2020 The Radicle Foundation <hello@radicle.foundation>
+Copyright © 2019-2022 The Radicle Foundation <hello@radicle.foundation>
