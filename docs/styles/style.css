@@ -2170,6 +2170,7 @@ pre.code {
   top: -2rem;
   right: 19vw;
   width: 17vw;
+  max-width: 9rem;
   z-index: 1;
 }
 
