@@ -1,0 +1,76 @@
+# Radicle
+
+## Headlines
+
+Free your code
+Access Radicle
+Code collaboration + Web3 = 🌱
+Collaborate peer-to-peer
+Manage your codebases on-chain
+Own your infrastructure
+No more walled gardens
+Built on open protocols, not platforms
+Explore the codelands
+Software as it should be. Take back control.
+
+## Text snippets
+
+Radicle is a peer-to-peer stack for building software together.
+For unstoppable, permissionless, decentralized open-source development
+Forget platforms. Easily share your code without relying on a third party.
+No central servers, no censorship
+Built on Git, backed by public-key crypto
+Local issues & patches
+Decentralize open source projects with Ethereum-powered Radicle Orgs.
+Manage access control with smart contracts
+Share ownership of repos with multi-sigs
+Anchor project state on-chain
+Free forever, completely open source, available everywhere
+No need to change the way you work. Radicle extends Git with peer-to-peer discovery, giving distributed version control a new superpower.
+The new standard for code collaboration. Link is the peer-to-peer protocol that powers the Radicle network.
+Harness the power of decentralized organizations and digital money. Fund and sustain your open-source work without relying on intermediaries.
+We see Radicle being the first open-source, community-led, self-sustaining network for software collaboration.
+
+---
+
+# Drips
+
+## Headlines
+
+When I drip you drip we drip.
+A social funding network
+Issue your NFT membership
+Create with your community
+
+## Text snippets
+
+An 💎 Ethereum protocol for generating 📮 recurring income, with subscriptions and NFT 🎟 memberships. No 💸 commissions, predatory 👔 middle-men, or 🏦 banks involved.
+Create a circular ♻️ and sustainable social funding network by dripping funds to your favorite 💖 creators and dedicating a percentage of your incoming 💦 drips to others.
+Start receiving recurring payments from your fans.
+A creator sets a goal 🏅 and a minimum fan contribution.
+Fans drip funds in exchange for NFT 🎟 memberships.
+Creators choose 💫 benefits their fans get, like Snapshot voting or Discord access.
+Creators spread the love 💌 and split a percentage of their incoming drips to other communities or users.
+Support and be supported — a crypto-native take on open-source sustainability.
+Fund communities with NFT membership
+Sponsor projects and participate in community governance
+Build your own value flows
+
+---
+
+# Radicle network
+
+## Headlines
+
+Sovereign code infrastructure
+A network of seeds
+Designed for the CLI
+Own your identity
+
+## Text snippets
+
+Radicle 🌱 enables developer communities 🧙 to collaborate on software securely 🔐 on a peer-to-peer network 🌐 built on Git.
+Deploy seed nodes and own your infrastructure. Don't rely on middlemen.
+Manage and publish projects from the command line.
+Link your ENS name to create a sovereign developer identity.
+The Radicle Tools are a set of command-line interfaces that allow developers to manage software securely and publish code on the Radicle network.

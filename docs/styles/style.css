@@ -1579,8 +1579,9 @@ footer form button:focus {
 }
 
 #blocks {
-  display: flex;
-  justify-content: center;
+  width: 95%;
+  max-width: 100rem;
+  margin: 0 auto;
 }
 
 .card {
@@ -1590,9 +1591,9 @@ footer form button:focus {
   z-index: 1;
   text-align: left;
   position: relative;
-  margin: 0 1rem;
+  margin: 1rem;
   width: 25rem;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   justify-content: space-between;
 }
