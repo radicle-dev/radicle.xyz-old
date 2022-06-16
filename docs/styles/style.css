@@ -294,6 +294,9 @@ body#index section:not(:first-child) {
   width: 100%;
   height: 44vw;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 body#index section h2 {
@@ -308,33 +311,41 @@ body#index p.big {
   line-height: 1.5;
 }
 
+p.big code {
+  background-color: white;
+  border-radius: 0.75vw;
+  padding: 0.25rem 0.5rem;
+  box-shadow: 0 0.2vw 0.5vw rgba(0, 0, 0, 0.25);
+  font-family: monospace;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
 /* SPECIFIC SECTIONS */
 
-#radicle-intro {
+section#radicle-intro {
   /* padding: 15% 10% 0 56%; */
   background-image: url("../img/home/radicle-intro-bg.png");
   background-size: 100%;
   background-position: bottom;
   background-repeat: no-repeat;
+  flex-direction: row-reverse;
 }
 
 .callout-text-container {
-  width: 28rem;
+  width: 28vw;
+  margin: 5rem;
 }
 
-#workflows {
+section#workflows {
   background-color: #daf3de;
   display: flex;
 }
 
-#workflows div {
-  width: 50%;
-}
-
-#workflows img {
+section#workflows img {
   position: relative;
   top: -5vw;
-  width: 100%;
+  width: 60vw;
 }
 
 /* GET THE APP */
