@@ -57,17 +57,24 @@ input[type="email"] {
   height: 2rem;
 }
 
-button {
-  padding: 0 0.75rem;
+button,
+a.button {
+  padding: 0.5rem 0.75rem;
   border-radius: 0.5rem;
-  height: 2rem;
-  color: var(--color-background);
+  color: var(--color-foreground);
   cursor: pointer;
-  border: 0.0625rem solid var(--color-foreground-level-2);
+  border: 0.0625rem solid var(--color-foreground-level-3);
   font-weight: 600;
+  display: inline-block;
+  margin-right: 1rem;
 }
 
-button:active {
+a.button:last-child {
+  margin-right: 0;
+}
+
+button:active,
+a.button:active {
   transition: none;
   opacity: 0.5;
 }
@@ -292,7 +299,7 @@ nav a.active span {
 
 body#index section:not(:first-child) {
   width: 100%;
-  height: 44vw;
+  height: 50vw;
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -329,16 +336,9 @@ p.big code {
   margin-top: 2vw;
 }
 
-.cta-block > *:not(:last-child) {
+.cta-block > *:not(:last-child),
+.left > *:not(:last-child) {
   margin-bottom: 1rem;
-}
-
-.cta-block a {
-  display: inline-block;
-  padding: 1vw;
-  color: var(--color-foreground-level-6);
-  border-radius: 1vw;
-  border: 1px solid var(--color-foreground-level-3);
 }
 
 .cta-block svg {
@@ -351,6 +351,32 @@ h3 {
   font-size: 1.25vw;
   line-height: 1.5;
   font-weight: bold;
+}
+
+.closing-box {
+  background-color: var(--color-foreground-level-2);
+  border-radius: 1.5vw;
+  width: 70vw;
+  margin: 2vw auto;
+  display: flex;
+  text-align: left;
+  padding: 2vw;
+  align-content: space-between;
+}
+
+.closing-box .left {
+  width: 100%;
+}
+
+.closing-box .right {
+  display: flex;
+  justify-content: right;
+}
+
+.closing-box .right img {
+  max-width: 30%;
+  height: auto;
+  align-self: center;
 }
 
 /* SPECIFIC SECTIONS */
@@ -697,10 +723,6 @@ footer form button:focus {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-#try-it button {
-  /* display: none; */
 }
 
 #try-it .headline-gif {
