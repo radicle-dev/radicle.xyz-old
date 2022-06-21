@@ -400,6 +400,11 @@ section#workflows {
   display: flex;
 }
 
+section#workflows .right {
+  display: flex;
+  align-items: flex-end;
+}
+
 section#workflows img {
   position: relative;
   top: -5vw;
@@ -709,6 +714,225 @@ footer form button:focus {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* COMMUNITY PAGE */
+
+.container.attributes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.attribute {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 0 10rem;
+  width: 90vw;
+}
+
+.attribute:last-child {
+  margin-bottom: 0;
+}
+
+.attribute:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 60rem) {
+  .attribute,
+  .attribute:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+}
+
+.attribute .screenshot {
+  width: 41vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  align-self: stretch;
+  display: flex;
+  place-content: center;
+}
+
+#community .attribute .screenshot img {
+  width: 75%;
+  align-self: center;
+}
+
+#community .attribute .content p:nth-child(2) a {
+  color: var(--color-foreground-level-5);
+  border-bottom: 1px solid;
+}
+
+#community h1.headline.druk {
+  background: linear-gradient(
+    89.84deg,
+    #ff00a8 24.68%,
+    #ff55b1 44.66%,
+    #6bbf00 71.95%
+  );
+  color: #000;
+  mix-blend-mode: exclusion;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 60rem) {
+  #community .attribute .screenshot img {
+    display: none;
+  }
+
+  #community .attribute:first-child {
+    margin-top: 4rem;
+  }
+
+  #community .attribute p:first-of-type {
+    font-size: 1rem;
+  }
+}
+
+.attribute .content {
+  text-align: left;
+  margin: 2.5rem 2.5rem 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-background);
+  border-radius: 1rem;
+  padding: 5.25rem;
+  width: 32rem;
+}
+
+@media only screen and (max-width: 60rem) {
+  .attribute {
+    flex-direction: column-reverse;
+  }
+
+  .attribute .content {
+    margin: 0;
+  }
+
+  .attribute .content {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 80rem) {
+  .attribute .content {
+    padding: 3rem;
+  }
+}
+
+.attribute h4 {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 700;
+  letter-spacing: -1.125px;
+  padding-bottom: 1.5rem;
+  color: var(--color-foreground);
+}
+
+@media only screen and (max-width: 30rem) {
+  .attribute h4 {
+    font-size: 2rem;
+    line-height: 1.75rem;
+  }
+
+  .attribute p {
+    font-size: 1rem;
+  }
+
+  .attribute {
+    width: 80vw;
+  }
+
+  .attribute > p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    align-items: flex-start;
+  }
+}
+
+.attribute p svg {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.attribute p svg path {
+  fill: var(--color-foreground);
+}
+
+.attribute p:first-of-type {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--color-foreground-level-6);
+  max-width: 26rem;
+  padding: 1.25rem 0 2.5rem;
+}
+
+@media only screen and (max-width: 80rem) {
+  .attribute p:first-of-type {
+    padding: 0 0 1.25rem;
+    font-size: 1.25rem;
+  }
+}
+
+.attribute p:nth-child(n + 3) {
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 80rem) {
+  .attribute p:nth-child(n + 3) {
+    padding-bottom: 1rem;
+  }
+}
+
+.attribute p:nth-child(n + 3):last-child {
+  padding: 0;
+}
+
+@media only screen and (max-width: 64rem) {
+  .container.attributes {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* SPECIFIC FEATURE STYLES */
+
+.attribute.collab-p2p .screenshot img {
+  width: 75%;
+  align-self: center;
+}
+
+@media only screen and (max-width: 60rem) {
+  .screenshot img {
+    width: 94%;
+    margin-bottom: -4.5rem;
+    margin-right: -5.3vw;
+    z-index: 0;
+  }
+
+  .attribute .content {
+    z-index: 1;
+  }
+}
+
+.attribute:nth-child(2n) .content {
+  margin: 2.5rem 0 2.5rem 0;
+}
+
+@media only screen and (max-width: 60rem) {
+  .attribute .content {
+    z-index: 1;
+  }
 }
 
 /* DOWNLOAD PAGE */
