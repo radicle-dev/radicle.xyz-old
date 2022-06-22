@@ -79,6 +79,11 @@ a.button:active {
   opacity: 0.5;
 }
 
+a.button.pink {
+  background-color: var(--color-primary);
+  border: none;
+}
+
 /* HEADER */
 
 header {
@@ -424,6 +429,8 @@ section#workflows img {
   width: max-content;
   max-width: 35rem;
   z-index: 1;
+  margin: 0 auto;
+  gap: 1rem;
 }
 
 #try-it-cta p {
