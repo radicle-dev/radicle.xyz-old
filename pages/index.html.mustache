@@ -10,193 +10,97 @@
   <meta name="description" content="Radicle is a peer-to-peer stack for building software together." />
 </head>
 <body id="index">
-  <div class="overflow-killer">
     {{> header }}
     <div class="content">
-      <section id="headline">
+
+      <div id="headline">
         <video disableRemotePlayback class="headline-gif gif" autoplay playsinline loop muted title="Animation of a flower growing.">
           <source type="video/mp4" src="/img/header-flower.mp4">
         </video>
         <h1 class="headline druk">Free your code</h1>
         <div id="try-it-cta">
-          <p><strong>Radicle is a peer-to-peer stack for building software together.</strong> Sound fun? <a href="tryit" class="try-it-btn">Try it</a></p>
+          <p>
+            Radicle 🌱 enables developers to securely 🔐 collaborate 🤝 on software over a peer-to-peer 👥 network 🌐 built on Git.
+          </p>
         </div>
-      </section>
+      </div>{{! closes headline }}
 
-      <section id="features">
-        <img class="ui full-width" src="/img/ui/project-source-laptop.png" alt="Screenshot of a README file on the project page." />
-        <video disableRemotePlayback class="features-gif gif" autoplay playsinline loop muted title="Animation of a cartoon typing very fast. Each of his fingers split into 3 smaller cyborg fingers allowing him to type even faster.">
-          <source type="video/mp4" src="/img/extending-hands.mp4">
-        </video>
-
-        <h1 class="druk">Code collaboration + Web3 = 🌱</h1>
-        <div class="subtitle-container">
-          <h2>For unstoppable, permissionless, decentralized open-source development</h2>
+      <section id="radicle-intro">
+        <div class="callout-text-container">
+          <h2>The Radicle Network</h2>
+          <p class="big">
+            On Radicle, your code is hosted on Radicle Seed Nodes. The Radicle Foundation maintains public seed nodes you can use, or you can host your own.
+          </p>
         </div>
+      </section>{{! closes intro }}
 
-        <div class="container attributes">
-
-          <div class="attribute collab-p2p">
-            <div class="content">
-              <h4>Collaborate peer-to-peer</h4>
-              <p>Forget platforms. Easily share your code without relying on a third party.</p>
-              <p>{{> svg-offline }} No central servers, no censorship</p>
-              <p>{{> svg-key }} Built on Git, backed by public-key crypto</p>
-              <p>{{> svg-issues }} Local issues & patches</p>
-            </div>
-            <div class="screenshot">
-              <img class="float" src="/img/ui/issue.png" alt="">
-            </div>
-          </div>
-
-          <div class="attribute work-offline">
-            <div class="content">
-              <h4>Manage your codebases on-chain</h4>
-              <p>Decentralize open source projects with Ethereum-powered Radicle Orgs.</p>
-              <p>{{> svg-org }} Manage access control with smart contracts</p>
-              <p>{{> svg-ledger }} Share ownership of repos with multi-sigs</p>
-              <p>{{> svg-anchor }} Anchor project state on-chain</p>
-            </div>
-            <div class="screenshot"></div>
-          </div>
-
-          <div class="attribute own-infrastructure">
-            <div class="content">
-              <h4>Own your infrastructure</h4>
-              <p>Software as it should be. <br />Take back control.</p>
-              <p>{{> svg-free }} Free forever</p>
-              <p>{{> svg-open-source }} Completely open source</p>
-              <p>{{> svg-everywhere }} Available everywhere</p>
-            </div>
-            <div class="screenshot">
-              <img class="float" src="/img/ui/profile.png" alt="">
-            </div>
-          </div>
-
-          <div class="attribute create-community">
-            <div class="content">
-              <h4>Create with your <br/> community</h4>
-              <p>Support and be supported — a crypto-native take on open-source sustainability.</p>
-              <p>{{> svg-heart }} Fund communities with NFT membership</p>
-              <p>{{> svg-pen }} Sponsor projects and participate in community governance</p>
-              <p>{{> svg-currency }} Build your own value flows</p>
-            </div>
-            <div class="screenshot"></div>
-          </div>
-
-        </div>
-      </section>
-
-      <section id="protocols">
-        <div class="container">
-          <h1 class="druk">No more walled gardens</h1>
-          <div class="subtitle-container">
-            <h2>Built on open protocols, not platforms</h2>
-          </div>
-          <video disableRemotePlayback class="protocol-gif gif" autoplay playsinline loop muted>
-            <source type="video/mp4" src="/img/garden.mp4">
-          </video>
-          <div class="protocols">
-            <div class="protocol">
-              <h3>Git</h3>
-              <p>No need to change the way you work. Radicle extends Git with peer-to-peer discovery, giving distributed version control a new superpower.</p>
-              {{> svg-git }}
-            </div>
-            <div class="protocol">
-              <h3>Radicle<br>Link</h3>
-              <p>The new standard for code collaboration. Link is the peer-to-peer protocol that powers the Radicle network.
-                <span class="links">
-                  <a href="https://docs.radicle.xyz" target=><span>Documentation</span> ↗</a>
-                </span>
-              </p>
-              {{> svg-link }}
-            </div>
-            <div class="protocol">
-              <div>
-                <h3>Ethereum</h3>
-                <span>(opt-in)</span>
-              </div>
-              <p>Harness the power of decentralized organizations and digital money. Fund and sustain your open-source work without relying on intermediaries.</p>
-              {{> svg-eth }}
-            </div>
+      <section id="workflows">
+        <div class="callout-text-container">
+          <h2>Familiar workflows</h2>
+          <p class="big">
+            If you’ve used Git before, you’ll feel right at home. Push and pull from and to seed nodes with familar commands like <code>rad push</code> and <code>rad pull</code>.
+          </p>
+          <div class="cta-block">
+            {{> svg-network }}
+            <h3>Discover projects on the Radicle Network</h3>
+            <p>
+              Use the radicle.network app to browse repositories hosted on Seed Nodes.
+            </p>
+            <a class="button" target="_blank" href="https://app.radicle.network/">Explore the codelands</a>
           </div>
         </div>
-      </section>
+        <div class="right">
+          <img src="img/home/cli.png" alt="">
+        </div>
+      </section>{{! closes workflows }}
 
-      <section id="codelands">
-        <div class="container">
-          <h1 class="druk">Explore the codelands</h1>
-          <video disableRemotePlayback class="codelands-gif gif" autoplay playsinline loop muted>
-            <source type="video/mp4" src="/img/blue-screen-of-death-walk.mp4">
-          </video>
-          <div class="two-column">
-            <div class="two-column-item">
-              <h3>Join the Community</h3>
-              <p>We’re building everything publicly and open-source.</p>
-              <br>
-              <br>
-              <p><a target="_blank" href="https://radicle.xyz/community"><span>Hang out with us</span></a></p>
-            </div>
-            <div id="download" class="two-column-item">
-              <h3>Try it out</h3>
-              <p>Join the network and give secure peer-to-peer code hosting a go with our desktop client or web app.</p>
-              <br>
-              <a href="/tryit">Try it out</a>
-            </div>
+      <section id="identity">
+        <div class="callout-text-container">
+        <h2>Self-sovereign identity</h2>
+        <p class="big">
+          Everything you do on Radicle is backed by public-key cryptography. Create your Radicle Identity with our CLI, and use it across the Radicle Network.
+        </p>
+        <div class="cta-block">
+          {{> svg-user }}
+          <img src="icon-identity.png" alt="">
+          <h3>Create your Radicle identity</h3>
+          <p>
+            Use the Radicle CLI’s <code>rad auth</code> command to set up a new Radicle Identity.
+          </p>
+          <a class="button" href="https://radicle.network/get-started.html" target="_blank">Get the CLI</a>
+        </div>
+        </div>
+        <div class="right">
+          <img src="identity.png" alt="">
+        </div>
+      </section>{{! closes identity }}
+
+      <div class="closing-box">
+        <div class="left">
+          <h2>The Radicle DAO</h2>
+          <p>
+            What is the DAO? What does it do? How do I get involved?
+          </p>
+          <div class="links">
+            <a class="button" target="_blank" href="https://radicle.community/c/governance/16">View proposals</a>
+            <a class="button" target="_blank" href="https://gov.radicle.network/#/delegates/radicle">Vote now</a>
           </div>
         </div>
-      </section>
-
-      <section id="timeline">
-        <div class="container">
-          <h1 class="druk"><span class="italic">Where we’re headed</span>→</h1>
-          <div class="subtitle-container">
-            <h2>We see Radicle being the first open-source, community-led, self-sustaining network for software collaboration. Here's what we have in store:</h2>
-          </div>
-          <video disableRemotePlayback class="timeline-gif gif" autoplay playsinline loop muted>
-            <source type="video/mp4" src="/img/roadmap-flower.mp4">
-          </video>
-          <div class="timeline">
-            <div class="line"></div>
-            <div class="timeline-item not-active">
-              <p class="not-here">not here</p>
-              <div class="icon">
-                {{> svg-date-square }}
-              </div>
-              <p class="date">Late 2020</p>
-              <h3>Starting with the basics</h3>
-              <p>The first release of our network and desktop client. Join the network and start securely hosting your code peer-to-peer.</p>
-            </div>
-            <div class="timeline-item not-active">
-              <p class="not-here">not here</p>
-              <div class="icon">
-                 {{> svg-date-square }}
-              </div>
-              <p class="date">Early 2021</p>
-              <h3>Going further <br />with Ethereum</h3>
-              <p>Register global names, collectively manage orgs, and link crypto wallets with our Ethereum integration.</p>
-            </div>
-            <div class="timeline-item not-active">
-              <p class="not-here">not here</p>
-              <div class="icon">
-                 {{> svg-date-square }}
-              </div>
-              <p class="date">Mid 2021</p>
-              <h3>Leveling up with social coding</h3>
-              <p>Code collaboration as you know it. Work better together with bug reporting, code reviews, and discussions — all locally hosted.</p>
-            </div>
-            <div class="timeline-item">
-              <p class="here">We’re here</p>
-              <div class="icon last">
-                 {{> svg-here }}
-              </div>
-              <p class="date">Late 2021</p>
-              <h3>Taking off with developer economies</h3>
-              <p>Empowering developers with DeFi building blocks like NFTs, token streams, and more.</p>
-            </div>
-          </div>
+        <div class="right">
+          <img src="img/brand/token-logo.png" alt="The RAD Token Logo. A green seedling in a blue circle.">
         </div>
-        </section>
+      </div>{{! closes closing box }}
+      
+      <div class="closing-box">
+        <div class="left">
+          <h2>Community</h2>
+          <p>
+            The Radicle community exists in many places.
+          </p>
+          <a class="button" href="#">Join us</a>
+        </div>
+      </div>{{! closes closing box }}
+
     </div>{{! closes content }}
     {{> footer }}
 </body>

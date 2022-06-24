@@ -15,8 +15,8 @@
         {{> logo }}
     </a>
     <nav>
-        <a href="https://radicle.mirror.xyz/"><span>Blog</span></a>
         <a href="/community"><span>Community</span></a>
+        <a href="https://radicle.mirror.xyz/"><span>Blog</span> ↗</a>
         <a href="https://docs.radicle.xyz" target="_blank"><span>Docs</span> ↗</a>
         <a href="https://github.com/radicle-dev" target="_blank"><span>Code</span> ↗</a>
         <a class="active" href="#text"><span>Try it</span> ↓</a>
@@ -28,28 +28,6 @@
     </video>
     <h1 class="headline druk">Access Radicle</h1>
     <div id="blocks">
-      <div class="card">
-        <h1>Desktop</h1>
-        <h2>A desktop client for Radicle.</h2>
-        <p>Check out the <a href="https://docs.radicle.xyz/getting-started" target="_blank"><span>Guide to Getting Started</span></a>.</p>
-        <a href="https://releases.radicle.xyz/radicle-upstream-{{> upstream-version }}-arm64.dmg">
-          <button>{{> svg-mac }} Download for macOS M1</button>
-        </a>
-        <a href="https://releases.radicle.xyz/radicle-upstream-{{> upstream-version }}.dmg">
-          <button>{{> svg-mac }} Download for macOS</button>
-        </a>
-        <a href="https://releases.radicle.xyz/radicle-upstream-{{> upstream-version }}.AppImage">
-          <button>{{> svg-linux }} Download for Linux</button>
-        </a>
-
-        <form
-          action="mailto:?subject=Download the Radicle app&body=When you get back to your computer download the app here: www.radicle.xyz/tryit"
-          method="POST"
-          enctype="text/plain"
-        >
-          <button class="display-mobile">{{> svg-email }} Email me a link</button>
-        </form>
-      </div>
       <div class="card web-client">
         <h1>Web</h1>
         <h2>A web client for Radicle.</h2>
@@ -58,7 +36,16 @@
           <button class="display-everywhere">{{> svg-everywhere }} Visit radicle.network</button>
         </a>
       </div>
+      <div class="card cli">
+        <h1>CLI</h1>
+        <h2>A CLI for Radicle.</h2>
+        <p><strong>The Radicle CLI</strong> is command-line tooling for Radicle. Manage your identity, publish and collaborate on projects.</p>
+        <a href="https://radicle.network/get-started.html" target="_blank">
+          <button class="display-everywhere">{{> svg-everywhere }} Install the CLI</button>
+        </a>
+      </div>
     </div>
+
     <div id="disclaimers">
       <p><a href="https://etherscan.io/"><strong>Etherscan</strong></a> is a Block Explorer and Analytics Platform for Ethereum, a decentralized smart contracts platform. The contract to register Radicle names can be found <a href="https://etherscan.io/address/0x37723287ae6f34866d82ee623401f92ec9013154#writeContract" target="_blank">here</a> and the contract to create Radicle orgs can be found <a href="https://etherscan.io/address/0xa15beb4876f20018b6b4a4116b7560c5fcc9336e#writeContract" target="_blank">here</a>.</p>
       <p><a href="https://eth.build/"><strong>ethBuild</strong></a> is an educational sandbox for web3, including drag-and-drop programming and open-source building blocks. With ethBuild, you can call a function on an Ethereum contract (like those to register Radicle names and to create Radicle orgs) by sending it a transaction with the function args in the data.</p>
