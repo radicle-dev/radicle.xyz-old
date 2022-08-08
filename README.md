@@ -64,9 +64,9 @@ make
 
 ## Important Information
 
-### Conversion of GIF to mp4
+### Conversion of GIF from mp4
 
-The moving images are GIF(s) that have been converted to mp4(s) to keep
+The moving images are GIF(s) that have been converted from mp4(s) to keep
 the size of the page down.
 
 - [ffmpeg](https://ffmpeg.org/) has been used to make this conversion.
